@@ -1,8 +1,3 @@
-# Maven
-
-* [Maven Recipe: Building an aggregate jar](https://rombertw.wordpress.com/2010/05/14/maven-recipe-building-an-aggregate-jar/)
-* [How to Create Two JARs from One Project (...and why you shouldn't)](http://blog.sonatype.com/2010/01/how-to-create-two-jars-from-one-project-and-why-you-shouldnt/) - explains that one output artifact per project is a core assumption of Maven, and thus going against it is a bad idea.
-
 # Spring
 * [SPRING INJECTION WITH @RESOURCE, @AUTOWIRED AND @INJECT](http://blogs.sourceallies.com/2011/08/spring-injection-with-resource-and-autowired/)
 
@@ -20,6 +15,37 @@
 
 * [Spring @Component, @Repository, @Service and @Controller Annotations](http://howtodoinjava.com/spring/spring-core/how-to-use-spring-component-repository-service-and-controller-annotations/)
 * [Difference between Spring @Component, @Service, @Repository, @Controller](http://latest-tutorial.com/2015/01/19/difference-spring-component-service-repository-controller/)
+
+# Spring in Action, pg 45
+@Bean, Spring will
+intercept any calls to it and ensure that the bean produced by that method is returned
+rather than allowing it to be invoked again.
+
+By default, all beans in Spring are singletons
+
+
+To avoid referring to a bean by calling its method.
+This approach to referring to other beans is usually the best choice
+
+nothing that says the CompactDisc bean even needs to be
+declared in JavaConfig; it could have been discovered by component scanning or
+declared in XML
+@Bean
+public CDPlayer cdPlayer(CompactDisc compactDisc) {
+return new CDPlayer(compactDisc);
+}
+
+
+# Thymeleaf expressions ${} vs *{}:
+
+The ${} expressions (such as ${spitter}) are variable
+expressions. Normally, these are Object-Graph Navigation Language (OGNL)
+expressions (http://commons.apache.org/proper/commons-ognl/). But when used
+with Spring, they’re SpEL expressions. In the case of ${spitter}, it resolves to the
+model property whose key is spitter.
+As for *{} expressions, they’re selection expressions. Whereas variable expressions
+are evaluated against the entire SpEL context, selection expressions are evaluated on
+a selected object.
 
 # Spring Mvc
 * [Simplest Spring MVC Hello World Example](http://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/)
