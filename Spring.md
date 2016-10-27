@@ -3,12 +3,12 @@
 
 > When I looked under the hood I determined that the ‘@Autowired’ and ‘@Inject’ annotation behave identically. Both of these annotations use the ‘AutowiredAnnotationBeanPostProcessor’ to inject dependencies. ‘@Autowired’ and ‘@Inject’ can be used interchangeable to inject Spring beans. However the ‘@Resource’ annotation uses the ‘CommonAnnotationBeanPostProcessor’ to inject dependencies. Even though they use different post processor classes they all behave nearly identically. Below is a summary of their execution paths.
  
-**@Autowired and @Inject**
+> **@Autowired and @Inject**
 > 1. Matches by Type
 > 2. Restricts by Qualifiers
 > 3. Matches by Name
 
-**@Resource**
+> **@Resource**
 > 1. Matches by Name
 > 2. Matches by Type
 > 3. Restricts by Qualifiers (ignored if match is found by name)
