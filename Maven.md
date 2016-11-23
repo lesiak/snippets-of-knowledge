@@ -20,3 +20,23 @@ There are 2 possible workarounds for this:
 - downgrade Maven to 3.0.x or 3.1.x
 - attach jar goal in maven-source-plugin to non-existing phase (http://blog.soebes.de/blog/2016/07/01/spoiler-alert-maven-3-dot-4-0-changes-ii/)
 
+
+
+# Cannot release from branch on mercurial
+Error: https://issues.apache.org/jira/browse/SCM-682
+
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-release-plugin</artifactId>
+    <version>2.5.3</version>
+    <dependencies>
+        <dependency>
+            <!-- Specify the version of maven-scm-plugin to avoid https://issues.apache.org/jira/browse/SCM-682
+            (Maven release fails when releasing from a named branch)
+            -->
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-scm-plugin</artifactId>
+            <version>1.9.5</version>
+        </dependency>
+    </dependencies>
+</plugin>
