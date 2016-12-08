@@ -8,4 +8,7 @@
 * [Async functions - making promises friendly](https://developers.google.com/web/fundamentals/getting-started/primers/async-functions)
 * [Introduction to HTTP/2](https://developers.google.com/web/fundamentals/performance/http2/)
 
-
+* [Custom Elements v1: Reusable Web Components](https://developers.google.com/web/fundamentals/getting-started/primers/customelements)
+* [Custom Elements](https://www.html5rocks.com/en/tutorials/webcomponents/customelements/)
+* [Shadow DOM v1: Self-Contained Web Components](https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom)
+* [Shadow DOM 201 CSS and Styling](https://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/)
