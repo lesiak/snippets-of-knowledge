@@ -14,5 +14,7 @@
 * [RenderPartialExtensions.RenderPartial Method](https://msdn.microsoft.com/en-us/library/dd492503(v=vs.118).aspx)
 * [HttpBrowserCapabilitiesBase.IsBrowser Method](https://msdn.microsoft.com/en-us/library/system.web.httpbrowsercapabilitiesbase.isbrowser.aspx)
 * [RequestContext Class](https://msdn.microsoft.com/en-us/library/system.web.routing.requestcontext.aspx)
+* [MvcRouteHandler.IRouteHandler.GetHttpHandler Method](https://msdn.microsoft.com/en-us/library/mt150538.aspx#M:System.Web.Mvc.MvcRouteHandler.System)
+
 
 * [Using Task or async/await in IHttpAsyncHandler](http://stackoverflow.com/questions/9225420/using-task-or-async-await-in-ihttpasynchandler)

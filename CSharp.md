@@ -5,6 +5,9 @@
 * [C# : How C# 6.0 Simplifies, Clarifies and Condenses Your Code](https://msdn.microsoft.com/en-us/magazine/dn879355.aspx)
 * [Interpolated Strings (C# and Visual Basic Reference)](https://msdn.microsoft.com/en-us/library/dn961160.aspx)
 
+* [Exceptions in Managed Threads](https://msdn.microsoft.com/en-us/library/ms228965(v=vs.110).aspx)
 * [How to: Receive First-Chance Exception Notifications](https://msdn.microsoft.com/en-us/library/dd997368(v=vs.110).aspx)
+* [AppDomain.FirstChanceException Event](https://msdn.microsoft.com/en-us/library/system.appdomain.firstchanceexception(v=vs.110).aspx)
 
+# Tools
 * [dotPeek Symbol Server and PDB Generation](https://www.jetbrains.com/help/decompiler/2016.1/Symbol_Server_and_PDB_Generation.html)
