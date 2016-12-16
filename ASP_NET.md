@@ -11,14 +11,25 @@
 * [Web.config File Transformations](https://www.asp.net/mvc/overview/deployment/visual-studio-web-deployment/web-config-transformations)
 
 # Classes
+## Razor
 * [PartialExtensions.Partial Method](https://msdn.microsoft.com/en-us/library/ee402926.aspx)
 * [RenderPartialExtensions.RenderPartial Method](https://msdn.microsoft.com/en-us/library/dd492503(v=vs.118).aspx)
+
+## Context
 * [HttpBrowserCapabilitiesBase.IsBrowser Method](https://msdn.microsoft.com/en-us/library/system.web.httpbrowsercapabilitiesbase.isbrowser.aspx)
 * [RequestContext Class](https://msdn.microsoft.com/en-us/library/system.web.routing.requestcontext.aspx)
 * [MvcRouteHandler.IRouteHandler.GetHttpHandler Method](https://msdn.microsoft.com/en-us/library/mt150538.aspx#M:System.Web.Mvc.MvcRouteHandler.System)
 * [HandleErrorAttribute Class](https://msdn.microsoft.com/en-us/library/system.web.mvc.handleerrorattribute(v=vs.118).aspx)
-* [HtmlString Class](https://msdn.microsoft.com/en-us/library/system.web.htmlstring(v=vs.110).aspx)
+
+## Validation
 * [MetadataTypeAttribute Class](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.metadatatypeattribute(v=vs.110).aspx)
+
+## Web Sockets
+* [WebSocket.SendAsync Method](https://msdn.microsoft.com/en-us/library/system.net.websockets.websocket.sendasync(v=vs.110).aspx)
+
+## Others
+* [HtmlString Class](https://msdn.microsoft.com/en-us/library/system.web.htmlstring(v=vs.110).aspx)
+
 
 # Various
 * [Creating ASP.NET Web Projects in Visual Studio 2013](https://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio)
