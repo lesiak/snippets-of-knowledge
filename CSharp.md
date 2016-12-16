@@ -4,3 +4,7 @@
 * [C# 3.0 Return Type Inference Does Not Work On Method Groups](https://blogs.msdn.microsoft.com/ericlippert/2007/11/05/c-3-0-return-type-inference-does-not-work-on-method-groups/)
 * [C# : How C# 6.0 Simplifies, Clarifies and Condenses Your Code](https://msdn.microsoft.com/en-us/magazine/dn879355.aspx)
 * [Interpolated Strings (C# and Visual Basic Reference)](https://msdn.microsoft.com/en-us/library/dn961160.aspx)
+
+* [How to: Receive First-Chance Exception Notifications](https://msdn.microsoft.com/en-us/library/dd997368(v=vs.110).aspx)
+
+* [dotPeek Symbol Server and PDB Generation](https://www.jetbrains.com/help/decompiler/2016.1/Symbol_Server_and_PDB_Generation.html)
