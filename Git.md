@@ -1,5 +1,6 @@
-#File Permissions
+# Usage
 * [Git file permissions on Windows](http://stackoverflow.com/questions/6476513/git-file-permissions-on-windows)
+* [What's the best CRLF (carriage return, line feed) handling strategy with Git?](http://stackoverflow.com/questions/170961/whats-the-best-crlf-carriage-return-line-feed-handling-strategy-with-git)
 
 * [List all authors of a particular git project](http://www.commandlinefu.com/commands/view/4519/list-all-authors-of-a-particular-git-project)
 git log --all --format='%aN <%cE>' | sort -u

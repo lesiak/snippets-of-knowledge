@@ -5,10 +5,6 @@
 * [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 * [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)
 
-# Promises
-* [JavaScript Promises: an Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/promises)
-* [Async functions - making promises friendly](https://developers.google.com/web/fundamentals/getting-started/primers/async-functions)
-
 # Http/2
 * [Introduction to HTTP/2](https://developers.google.com/web/fundamentals/performance/http2/)
 
@@ -41,6 +37,7 @@
 * [Transitions](https://msdn.microsoft.com/en-us/library/hh673535(v=vs.85).aspx)
 
 * [Selectors](https://msdn.microsoft.com/library/hh772056.aspx)
+* [CSS Selectors from CSS4 till CSS1](http://css4-selectors.com/selectors/)
 * [Whitespace [~=] attribute selector](https://msdn.microsoft.com/en-us/library/aa358832(v=vs.85).aspx)
 
 
