@@ -40,6 +40,10 @@
 * [Transforms](https://msdn.microsoft.com/en-us/library/hh673529(v=vs.85).aspx)
 * [Transitions](https://msdn.microsoft.com/en-us/library/hh673535(v=vs.85).aspx)
 
+* [Selectors](https://msdn.microsoft.com/library/hh772056.aspx)
+* [Whitespace [~=] attribute selector](https://msdn.microsoft.com/en-us/library/aa358832(v=vs.85).aspx)
+
+
 # CSS Layouts
 * [Flexible box ("Flexbox") layout in Internet Explorer 10](https://msdn.microsoft.com/en-us/library/hh673531(v=vs.85).aspx)
 * [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)

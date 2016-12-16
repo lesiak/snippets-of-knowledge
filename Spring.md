@@ -43,4 +43,5 @@ a selected object.
 
 # Spring Mvc
 * [Simplest Spring MVC Hello World Example](http://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/)
-
+* [Spring MVC Exception Handling](http://memorynotfound.com/spring-mvc-exception-handling/)
+* [Spring 3 MVC hello world example](http://www.mkyong.com/spring3/spring-3-mvc-hello-world-example/)
