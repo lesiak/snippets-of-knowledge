@@ -21,6 +21,12 @@
 # Web Sockets
 * [WebSockets: Stable and Ready for Developers](https://msdn.microsoft.com/en-us/hh969243.aspx)
 
+# Web Storage
+* [Introduction to Web Storage](https://msdn.microsoft.com/library/bg142799.aspx)
+
+# Geolocation
+* [Introduction to the Geolocation API](https://msdn.microsoft.com/library/gg589513.aspx)
+
 # CSS
 * [Animations](https://msdn.microsoft.com/library/hh673530.aspx)
 * [Gradients](https://msdn.microsoft.com/en-us/library/hh673532(v=vs.85).aspx)
@@ -31,5 +37,6 @@
 
 # CSS Layouts
 * [Flexible box ("Flexbox") layout in Internet Explorer 10](https://msdn.microsoft.com/en-us/library/hh673531(v=vs.85).aspx)
+* [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Grid layout](https://msdn.microsoft.com/en-us/library/hh673533(v=vs.85).aspx)
 * [Multi-column layout](https://msdn.microsoft.com/en-us/library/hh673534(v=vs.85).aspx)
