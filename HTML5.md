@@ -17,6 +17,9 @@
 * [Custom Elements](https://www.html5rocks.com/en/tutorials/webcomponents/customelements/)
 * [Shadow DOM v1: Self-Contained Web Components](https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom)
 * [Shadow DOM 201 CSS and Styling](https://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-201/)
+* [Shadow DOM 301](https://www.html5rocks.com/en/tutorials/webcomponents/shadowdom-301/)
+* [What's New in Shadow DOM v1 (by examples)](https://hayato.io/2016/shadowdomv1/)
+* [Web Components And the future of Modular CSS](https://philipwalton.github.io/talks/2015-10-26/)
 
 # Web Sockets
 * [WebSockets: Stable and Ready for Developers](https://msdn.microsoft.com/en-us/hh969243.aspx)
@@ -31,6 +34,8 @@
 * [Animations](https://msdn.microsoft.com/library/hh673530.aspx)
 * [Gradients](https://msdn.microsoft.com/en-us/library/hh673532(v=vs.85).aspx)
 * [Hyphenation](https://msdn.microsoft.com/en-us/library/bg124094(v=vs.85).aspx)
+* [hyphens](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens)
+* [Hyphenation arrives in Firefox and Safari](http://blog.fontdeck.com/post/9037028497/hyphens)
 * [Regions](https://msdn.microsoft.com/en-us/library/hh673537(v=vs.85).aspx)
 * [Transforms](https://msdn.microsoft.com/en-us/library/hh673529(v=vs.85).aspx)
 * [Transitions](https://msdn.microsoft.com/en-us/library/hh673535(v=vs.85).aspx)
