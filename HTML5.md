@@ -20,6 +20,9 @@
 # Web Sockets
 * [WebSockets: Stable and Ready for Developers](https://msdn.microsoft.com/en-us/hh969243.aspx)
 
+# Web Workers
+* [Web Workers](https://msdn.microsoft.com/library/hh673568.aspx)
+
 # Web Storage
 * [Introduction to Web Storage](https://msdn.microsoft.com/library/bg142799.aspx)
 
@@ -46,3 +49,5 @@
 * [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Grid layout](https://msdn.microsoft.com/en-us/library/hh673533(v=vs.85).aspx)
 * [Multi-column layout](https://msdn.microsoft.com/en-us/library/hh673534(v=vs.85).aspx)
+
+# Canvas

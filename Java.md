@@ -4,6 +4,7 @@
 
 # Libraries
 * [Dependency Injection with Dagger 2](https://www.future-processing.pl/blog/dependency-injection-with-dagger-2/)
+* [The Netty project](http://netty.io/)
 
 
 * [What's the default classpath when not specifying classpath?](http://stackoverflow.com/questions/8227682/whats-the-default-classpath-when-not-specifying-classpath)

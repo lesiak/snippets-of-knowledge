@@ -26,6 +26,7 @@
 
 ## Web Sockets
 * [WebSocket.SendAsync Method](https://msdn.microsoft.com/en-us/library/system.net.websockets.websocket.sendasync(v=vs.110).aspx)
+* [WebSocket.ReceiveAsync Method](https://msdn.microsoft.com/en-us/library/system.net.websockets.websocket.receiveasync(v=vs.110).aspx)
 
 ## Others
 * [HtmlString Class](https://msdn.microsoft.com/en-us/library/system.web.htmlstring(v=vs.110).aspx)
