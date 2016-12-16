@@ -1,6 +1,7 @@
 # Application Cache and Service Workers
 * [Using the application cache (Deprecated)](https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache)
 * [Application Cache is a Douchebag](http://alistapart.com/article/application-cache-is-a-douchebag)
+* [Application Cache API ("AppCache")](https://msdn.microsoft.com/library/hh673545.aspx)
 * [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 * [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)
 
@@ -19,3 +20,16 @@
 
 # Web Sockets
 * [WebSockets: Stable and Ready for Developers](https://msdn.microsoft.com/en-us/hh969243.aspx)
+
+# CSS
+* [Animations](https://msdn.microsoft.com/library/hh673530.aspx)
+* [Gradients](https://msdn.microsoft.com/en-us/library/hh673532(v=vs.85).aspx)
+* [Hyphenation](https://msdn.microsoft.com/en-us/library/bg124094(v=vs.85).aspx)
+* [Regions](https://msdn.microsoft.com/en-us/library/hh673537(v=vs.85).aspx)
+* [Transforms](https://msdn.microsoft.com/en-us/library/hh673529(v=vs.85).aspx)
+* [Transitions](https://msdn.microsoft.com/en-us/library/hh673535(v=vs.85).aspx)
+
+# CSS Layouts
+* [Flexible box ("Flexbox") layout in Internet Explorer 10](https://msdn.microsoft.com/en-us/library/hh673531(v=vs.85).aspx)
+* [Grid layout](https://msdn.microsoft.com/en-us/library/hh673533(v=vs.85).aspx)
+* [Multi-column layout](https://msdn.microsoft.com/en-us/library/hh673534(v=vs.85).aspx)
