@@ -30,17 +30,13 @@
 * [Introduction to the Geolocation API](https://msdn.microsoft.com/library/gg589513.aspx)
 
 # CSS
+## CSS Key Concepts
 * [Introduction to the CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+* [Visual formatting model](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Visual_formatting_model)
+* [Layout mode](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode)
+* [Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
+* [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float)
 * [position property](https://msdn.microsoft.com/library/ms531140.aspx)
-* [Animations](https://msdn.microsoft.com/library/hh673530.aspx)
-* [Gradients](https://msdn.microsoft.com/en-us/library/hh673532(v=vs.85).aspx)
-* [Hyphenation](https://msdn.microsoft.com/en-us/library/bg124094(v=vs.85).aspx)
-* [hyphens](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens)
-* [Hyphenation arrives in Firefox and Safari](http://blog.fontdeck.com/post/9037028497/hyphens)
-* [Difference between word-break: break-all versus word-wrap: break-word](http://shreerangpatwardhan.blogspot.co.uk/2014/03/difference-between-word-break-break-all.html)
-* [Regions](https://msdn.microsoft.com/en-us/library/hh673537(v=vs.85).aspx)
-* [Transforms](https://msdn.microsoft.com/en-us/library/hh673529(v=vs.85).aspx)
-* [Transitions](https://msdn.microsoft.com/en-us/library/hh673535(v=vs.85).aspx)
 
 ## Selectors
 * [Selectors Level 3](https://www.w3.org/TR/css3-selectors/)
@@ -54,4 +50,28 @@
 * [Grid layout](https://msdn.microsoft.com/en-us/library/hh673533(v=vs.85).aspx)
 * [Multi-column layout](https://msdn.microsoft.com/en-us/library/hh673534(v=vs.85).aspx)
 
+## Css features
+* [Transitions](https://msdn.microsoft.com/en-us/library/hh673535(v=vs.85).aspx)
+* [Using CSS transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+* [Animations](https://msdn.microsoft.com/library/hh673530.aspx)
+* [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
+* [Gradients](https://msdn.microsoft.com/en-us/library/hh673532(v=vs.85).aspx)
+* [Hyphenation](https://msdn.microsoft.com/en-us/library/bg124094(v=vs.85).aspx)
+* [hyphens](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens)
+* [Hyphenation arrives in Firefox and Safari](http://blog.fontdeck.com/post/9037028497/hyphens)
+* [Difference between word-break: break-all versus word-wrap: break-word](http://shreerangpatwardhan.blogspot.co.uk/2014/03/difference-between-word-break-break-all.html)
+* [page-break-inside](https://developer.mozilla.org/en/docs/Web/CSS/page-break-inside)
+* [Regions](https://msdn.microsoft.com/en-us/library/hh673537(v=vs.85).aspx)
+* [Transforms](https://msdn.microsoft.com/en-us/library/hh673529(v=vs.85).aspx)
+
+
 # Canvas
+
+# Tags
+* [meta element](https://msdn.microsoft.com/en-us/library/ms535853.aspx)
+* [http-equiv attribute](https://msdn.microsoft.com/en-us/library/ms533876.aspx)
+* [content attribute](https://msdn.microsoft.com/en-us/library/ms533689.aspx)
+
+# jQuery
+* [:contains() Selector](http://api.jquery.com/contains-selector/)
+* [.find()](http://api.jquery.com/find/)
