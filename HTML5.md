@@ -80,6 +80,27 @@
  * [Hit regions and accessibility](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility)
  * [Optimizing canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas)
  * [Finale](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Finale)
+* [Manipulating video using canvas](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Manipulating_video_using_canvas)
+
+# SVG
+* [SVG Tutorial](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
+ * [Introduction](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Introduction)
+ * [Getting Started](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started)
+ * [Positions](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Positions)
+ * [Basic shapes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)
+ * [Paths](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths)
+ * [Fills and Strokes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Fills_and_Strokes)
+ * [Gradients](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Gradients)
+ * [Patterns](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Patterns)
+ * [Texts](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Texts)
+  * [<textPath>](https://developer.mozilla.org/en/docs/Web/SVG/Element/textPath)
+ * [Basic Transformations](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Transformations)
+ * [Clipping and masking](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Clipping_and_masking)
+ * [Other content in SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Other_content_in_SVG)
+ * [Filter effects](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Filter_effects)
+ * [SVG fonts](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_Fonts)
+ * [SVG image element](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_Image_Tag)
+ * [Tools for SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Tools_for_SVG)
 
 # Tags
 * [meta element](https://msdn.microsoft.com/en-us/library/ms535853.aspx)
