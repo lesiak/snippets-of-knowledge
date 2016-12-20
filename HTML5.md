@@ -64,6 +64,9 @@
 * [Regions](https://msdn.microsoft.com/en-us/library/hh673537(v=vs.85).aspx)
 * [Transforms](https://msdn.microsoft.com/en-us/library/hh673529(v=vs.85).aspx)
 
+# Animations
+* [window.requestAnimationFrame()](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame)
+
 
 # Canvas
 * [Canvas tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
