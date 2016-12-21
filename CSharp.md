@@ -19,5 +19,18 @@
 * [Code Access Security Basics](https://msdn.microsoft.com/en-us/library/33tceax8.aspx)
 * [SecureMethodAttribute Class](https://msdn.microsoft.com/en-us/library/system.enterpriseservices.securemethodattribute.aspx)
 
+# Assemblies
+* [How the Runtime Locates Assemblies](https://msdn.microsoft.com/en-us/library/yx7xezcf(v=vs.110).aspx)
+* [Specific version=false and GAC - what version will assembly use?](https://social.msdn.microsoft.com/Forums/en-US/3a344927-c24d-49dc-a025-47c7efc29ddd/specific-versionfalse-and-gac-what-version-will-assembly-use?forum=csharpide)
+> To clarify, the build time assembly used isn't related to the runtime assembly used.  At runtime the loader will use the GAC to locate strongly named assemblies.  At build time VS does not use the GAC.  It always references a folder path outside the GAC for references.  Another thing to clarify is that the GAC only matters if the assembly is strongly named.  If the assembly is not then the GAC isn't relevant.  Finally note that Specific Version (SV) is strictly a build time attribute and has no impact on the runtime behavior.  As a result SV isn't impacted by the GAC at all.
+> By default when you add a reference to an assembly VS will set it up such that it'll use the latest version.  SV will be false.  If you add the reference while the assembly was at 1.0.0.0 and then later update the assembly (in the referenced path) to 2.0.0.0 and rebuild then your app is suddenly using 2.0.0.0 instead.  This is generally what you want, hence it is the default. 
+> However there are occassions where you want to build against a specific version of an assembly.  The version you build against was determined when you add the reference.  In this case you set SV to true.  Now if you replace the assembly in the referenced path with a new version the compiler is going to complain because it cannot use the specific version you had specified.
+> None of this is relevant at runtime and therefore none of this is impacted by the GAC.  During compilation if the compiler finds a strongly named assembly then it puts the full assembly name into the metadata.  The version that will be stored depends upon SV and the version of the assembly that was found.  At runtime the loader uses a 2 step process to load the assembly.  If the loader determines that the assembly was strongly named then it uses the version number stored in the metadata.  Ignoring publisher policies, the loader will then look in the GAC for the exact version mentioned.  If the assembly cannot be found in the GAC then standard search path is used.  The loader requires that the exact version be found (again ignoring publisher policies).  If the assembly is not strongly named then the version is irrelevant and the loader will use the first one it finds.
+> Going back to your scenario, since the assembly is strongly named the version that was used during compilation is baked into the metadata. At runtime the loader will search the GAC for the exact version.  It doesn't matter whether there are newer versions or not, the version that was built against will be used.  At compile time, since SV is false, the compiler will use the version of the assembly that it finds at the referenced path during compilation irrelevant of what version was originally used.  Whatever that version is will be the one looked for at runtime.
+> Michael Taylor - 11/12/2012
+> http://msmvps.com/blogs/p3net
+
+* [Force .NET application to run in 32bit process on 64bit OS](https://lostechies.com/gabrielschenker/2009/10/21/force-net-application-to-run-in-32bit-process-on-64bit-os/)
+
 # Tools
 * [dotPeek Symbol Server and PDB Generation](https://www.jetbrains.com/help/decompiler/2016.1/Symbol_Server_and_PDB_Generation.html)
