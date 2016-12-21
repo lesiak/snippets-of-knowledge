@@ -28,12 +28,12 @@
  * [WindowTimers.clearTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearTimeout)
  * [WindowTimers.clearInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearInterval)
 * Events
+ * [Event dispatch and DOM event flow](https://www.w3.org/TR/DOM-Level-3-Events/#event-flow)
  * [GlobalEventHandlers](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers)
  * [EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
  * [EventTarget.removeEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)
  * [(Deprecated, IE Only) EventTarget.attachEvent()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/attachEvent)
  * [(Deprecated, IE Only) EventTarget.detachEvent()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/detachEvent)
- * [Event dispatch and DOM event flow](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
  * [Event.target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
  * [Event.currentTarget](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget)
  * [Event.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
