@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style type="text/css">
+        .divStyle
+        {
+            display: table-cell;
+            border: 5px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="DIV1" class="divStyle">
+    DIV 1
+    <div id="DIV2" class="divStyle">
+        DIV 2
+        <div id="DIV3" class="divStyle">
+            DIV 3
+        </div>
+    </div>
+</div>
+<div id="outputDiv"></div>
+<script type="text/javascript">
+    function makeHandler(phaseName) {
+        return function (event) {
+            var outputElement = document.getElementById('outputDiv');
+            var msg = `${phaseName}: this: ${this.id}, event.target: ${event.target.id}`;
+            outputElement.innerHTML = outputElement.innerHTML + "<br/>" + msg;
+        };
+    }
+
+    var outermostDivElement = document.getElementById('DIV1');
+    outermostDivElement.addEventListener("click", makeHandler('Capture'), true);
+    outermostDivElement.addEventListener("click", makeHandler('Bubble'), false);
+      
+</script>
+</body>
+</html>

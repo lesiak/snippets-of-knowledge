@@ -36,6 +36,7 @@
  * [(Deprecated, IE Only) Window.event](https://developer.mozilla.org/en-US/docs/Web/API/Window/event)
  * [Event dispatch and DOM event flow](https://www.w3.org/TR/DOM-Level-3-Events/#event-flow)
  * [Event.target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
+ * [Is event target available in capture phase (yes)](JavaScript/jsEventTargetInCapureAndBubble.html)
  * [Event.currentTarget](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget)
  * [Event.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
  * [Event.preventDefault()](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
