@@ -111,5 +111,15 @@
 * [content attribute](https://msdn.microsoft.com/en-us/library/ms533689.aspx)
 
 # jQuery
+## Selectors
 * [:contains() Selector](http://api.jquery.com/contains-selector/)
 * [.find()](http://api.jquery.com/find/)
+
+## Events
+* [.on()](http://api.jquery.com/on/)
+* [.delegate()](http://api.jquery.com/delegate/)
+* [.live()](http://api.jquery.com/live/)
+
+## Ajax
+* [jQuery.ajax()](http://api.jquery.com/jquery.ajax/)
+* [jQuery.parseXML()](http://api.jquery.com/jQuery.parseXML/)

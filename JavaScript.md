@@ -43,7 +43,10 @@
 * [Regular Expressions](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)
  * [String.prototype.match()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/match)
  * [String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
- * 
+ * [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+ * [String.prototype.search()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
+ * [RegExp object](http://csharp-video-tutorials.blogspot.com/2015/01/javascript-regexp-object.html)
+ * [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 * [Comparison Operators](https://msdn.microsoft.com/library/ky6fyhws.aspx)
 * [Operator Precedence](https://msdn.microsoft.com/library/z3ks45k7.aspx)
 
