@@ -50,6 +50,8 @@
  * [Document.createEvent()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createEvent)
  * [Event.initEvent()](https://developer.mozilla.org/en-US/docs/Web/API/Event/initEvent)
  * [EventTarget.dispatchEvent()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent)
+* DOM
+ * [Expando](https://developer.mozilla.org/en-US/docs/Glossary/Expando)
 * [Regular Expressions](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)
  * [String.prototype.match()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/match)
  * [String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
