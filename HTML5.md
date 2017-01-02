@@ -111,16 +111,32 @@
 * [content attribute](https://msdn.microsoft.com/en-us/library/ms533689.aspx)
 
 # jQuery
+## Core
+* [$( document ).ready()](https://learn.jquery.com/using-jquery-core/document-ready/)
+
 ## Selectors
 * [:contains() Selector](http://api.jquery.com/contains-selector/)
 * [.find()](http://api.jquery.com/find/)
+* [.closest()](https://api.jquery.com/closest/)
 
 ## Events
 * [.on()](http://api.jquery.com/on/)
 * [.bind()](http://api.jquery.com/bind/)
 * [.delegate()](http://api.jquery.com/delegate/)
 * [.live()](http://api.jquery.com/live/)
+* [.one()](http://api.jquery.com/one/)
+* [Understanding Event Delegation](https://learn.jquery.com/events/event-delegation/)
+
+## Manipulation
+* [.attr()](http://api.jquery.com/attr/)
+* [.prop()](http://api.jquery.com/prop/)
+* [.css()](http://api.jquery.com/css/)
 
 ## Ajax
 * [jQuery.ajax()](http://api.jquery.com/jquery.ajax/)
+* [jQuery.get()](https://api.jquery.com/jquery.get/)
+* [jQuery.getJSON()](https://api.jquery.com/jQuery.getJSON/)
+* [jQuery.post()](https://api.jquery.com/jquery.post/)
+* [.load()](http://api.jquery.com/load/)
+* [.serialize()](http://api.jquery.com/serialize/)
 * [jQuery.parseXML()](http://api.jquery.com/jQuery.parseXML/)
