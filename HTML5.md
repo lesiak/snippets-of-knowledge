@@ -117,6 +117,7 @@
 
 ## Events
 * [.on()](http://api.jquery.com/on/)
+* [.bind()](http://api.jquery.com/bind/)
 * [.delegate()](http://api.jquery.com/delegate/)
 * [.live()](http://api.jquery.com/live/)
 
