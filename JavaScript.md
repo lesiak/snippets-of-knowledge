@@ -37,6 +37,7 @@
  * [Event dispatch and DOM event flow](https://www.w3.org/TR/DOM-Level-3-Events/#event-flow)
  * [Event.target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
  * [Is event target available in capture phase (yes)](JavaScript/jsEventTargetInCapureAndBubble.html)
+ * [Bubbling and capturing](https://javascript.info/tutorial/bubbling-and-capturing)
  * [Event.currentTarget](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget)
  * [Event.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation)
  * [Event.preventDefault()](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)
@@ -59,6 +60,7 @@
  * [String.prototype.search()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
  * [RegExp object](http://csharp-video-tutorials.blogspot.com/2015/01/javascript-regexp-object.html)
  * [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+ * [RegExp.prototype.exec()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec)
 * [Comparison Operators](https://msdn.microsoft.com/library/ky6fyhws.aspx)
 * [Operator Precedence](https://msdn.microsoft.com/library/z3ks45k7.aspx)
 

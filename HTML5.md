@@ -66,7 +66,8 @@
 
 # Animations
 * [window.requestAnimationFrame()](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame)
-
+* [requestAnimationFrame for Smart Animating](https://www.paulirish.com/2011/requestanimationframe-for-smart-animating/)
+* [requestAnimationFrame API: now with sub-millisecond precision](https://developers.google.com/web/updates/2012/05/requestAnimationFrame-API-now-with-sub-millisecond-precision)
 
 # Canvas
 * [Canvas tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
@@ -112,7 +113,11 @@
 
 # jQuery
 ## Core
+* [jQuery()](http://api.jquery.com/jQuery/)
 * [$( document ).ready()](https://learn.jquery.com/using-jquery-core/document-ready/)
+* [$(“img”,this) == $(this).find('img')](http://stackoverflow.com/questions/10187280/this-selector-img-this-possible)
+* [jQuery.each()](http://api.jquery.com/jquery.each/)
+* [jQuery.inArray()](https://api.jquery.com/jQuery.inArray/)
 
 ## Selectors
 * [:contains() Selector](http://api.jquery.com/contains-selector/)
@@ -140,3 +145,8 @@
 * [.load()](http://api.jquery.com/load/)
 * [.serialize()](http://api.jquery.com/serialize/)
 * [jQuery.parseXML()](http://api.jquery.com/jQuery.parseXML/)
+
+## Effects
+* [.animate()](http://api.jquery.com/animate/)
+* [.queue()](https://api.jquery.com/queue/)
+* [jquery animation queue](http://csharp-video-tutorials.blogspot.com/2015/05/jquery-animation-queue.html)
