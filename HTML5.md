@@ -25,6 +25,9 @@
 
 # Web Storage
 * [Introduction to Web Storage](https://msdn.microsoft.com/library/bg142799.aspx)
+* [There is no simple solution for local storage](https://hacks.mozilla.org/2012/03/there-is-no-simple-solution-for-local-storage/)
+* [5 Obscure Facts About HTML5 LocalStorage](http://htmlui.com/blog/2011-08-23-5-obscure-facts-about-html5-localstorage.html)
+* [Dive Into HTML5-THE PAST, PRESENT & FUTURE OF LOCAL STORAGE FOR WEB APPLICATIONS](http://diveintohtml5.info/storage.html)
 
 # Geolocation
 * [Introduction to the Geolocation API](https://msdn.microsoft.com/library/gg589513.aspx)
@@ -118,6 +121,7 @@
 * [$(“img”,this) == $(this).find('img')](http://stackoverflow.com/questions/10187280/this-selector-img-this-possible)
 * [jQuery.each()](http://api.jquery.com/jquery.each/)
 * [jQuery.inArray()](https://api.jquery.com/jQuery.inArray/)
+* [.map()](http://api.jquery.com/map/)
 
 ## Selectors
 * [:contains() Selector](http://api.jquery.com/contains-selector/)
@@ -133,9 +137,15 @@
 * [Understanding Event Delegation](https://learn.jquery.com/events/event-delegation/)
 
 ## Manipulation
+* [Category: Manipulation](https://api.jquery.com/category/manipulation/)
 * [.attr()](http://api.jquery.com/attr/)
 * [.prop()](http://api.jquery.com/prop/)
 * [.css()](http://api.jquery.com/css/)
+* [.append()](https://api.jquery.com/append/)
+* [.after()](https://api.jquery.com/after/)
+* [.wrap()](http://api.jquery.com/wrap/)
+* [.wrapAll()](http://api.jquery.com/wrapAll/)
+* [.wrapInner()](http://api.jquery.com/wrapInner/)
 
 ## Ajax
 * [jQuery.ajax()](http://api.jquery.com/jquery.ajax/)
