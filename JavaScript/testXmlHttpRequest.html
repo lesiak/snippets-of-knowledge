@@ -1,0 +1,106 @@
+<html>
+<body>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+<script>
+function log(line) {
+  var outputDiv = document.getElementById('output');
+ outputDiv.innerHTML = outputDiv.innerHTML + line + "<br/>";
+}
+
+function parseXmlIE11(xmlText) { 
+  //var parser = new DOMParser();
+  //var  xmlDoc = parser.parseFromString(xmlText, "text/xml");
+  //parseXmlIE11XPath(xmlDoc);
+  try {
+        var xmlDoc = new ActiveXObject('Microsoft.XMLDOM');  
+        
+        xmlDoc.async = false;  
+        xmlDoc.validateOnParse = false;
+        xmlDoc.loadXML(xmlText);  
+        if (xmlDoc.parseError.errorCode != 0) {  
+          var myErr = xmlDoc.parseError;  
+          log("You have error " + myErr.reason);  
+        } else {  
+          xmlDoc.setProperty("SelectionLanguage", "XPath");  
+          parseXmlIE11XPath(xmlDoc);  
+        }
+      } catch (e) {
+        console.log(e);
+      }   
+}
+
+function parseXmlIE11XPath(xmlDoc) {
+  var nameNode = xmlDoc.selectSingleNode("//location/name"); 
+
+    
+  log(nameNode.text);  
+
+   var locNode = xmlDoc.selectSingleNode("//location/location"); 
+   log(locNode.getAttribute('latitude'));  
+
+   var nodesTemp = xmlDoc.selectNodes( '//temperature/@max' );
+   for (var i =0; i <  nodesTemp.length; ++i ) {
+    var tempNode = nodesTemp[i];
+     log( tempNode.value ); //text is fine as well
+   }
+}
+
+
+function parseXmlChrome(responseXml) {
+
+      //console.log(responseXml.selectSingleNode("weatherdata"));
+      var nodeCity = document.evaluate( '//location/name', responseXml, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null );
+      log(nodeCity.singleNodeValue.innerHTML);
+      log(nodeCity.singleNodeValue.textContent);
+      
+      var nodesTemp = document.evaluate( '//temperature', responseXml, null, XPathResult.ANY_TYPE, null );
+      var tempNode = nodesTemp.iterateNext();
+  
+      while (tempNode) {
+        log( tempNode.getAttribute("max") );
+        tempNode = nodesTemp.iterateNext();
+        break;
+      } 
+
+      var nodesTemp1 = document.evaluate( '//temperature/@max', responseXml, null, XPathResult.ANY_TYPE, null );
+      var tempNode1 = nodesTemp1.iterateNext();
+  
+      while (tempNode1) {
+        log( tempNode1.value );
+        tempNode1 = nodesTemp1.iterateNext();
+       
+      } 
+}
+
+
+
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function (oEvent) {  
+  if (this.readyState === 4) {  
+    if (this.status === 200) {
+      if ("evaluate" in this.responseXML) {
+        parseXmlChrome(this.responseXML);
+      } 
+      else {
+        parseXmlIE11(this.responseText);
+      }
+      
+
+
+	    
+    } else {  
+      log("Error", this.statusText);  
+    }  
+  }  
+};  
+xhr.open("GET", "http://api.openweathermap.org/data/2.5/forecast/city?q=London&mode=xml&APPID=73e346113189f7191233f36df43c6d4d", true);
+xhr.send();
+
+</script>
+<div id="output" />
+</body>
+</html>

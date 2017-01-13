@@ -2,6 +2,7 @@
 * [Using the application cache (Deprecated)](https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache)
 * [Application Cache is a Douchebag](http://alistapart.com/article/application-cache-is-a-douchebag)
 * [Application Cache API ("AppCache")](https://msdn.microsoft.com/library/hh673545.aspx)
+* [HTML5 appcache: what is the NETWORK: section really for?](http://stackoverflow.com/questions/8107906/html5-appcache-what-is-the-network-section-really-for)
 * [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 * [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers)
 
@@ -35,6 +36,7 @@
 # CSS
 ## CSS Key Concepts
 * [Introduction to the CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+* [CSS3 box-sizing Property](http://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
 * [Visual formatting model](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Visual_formatting_model)
 * [Layout mode](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode)
 * [Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
@@ -63,6 +65,7 @@
 * [hyphens](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens)
 * [Hyphenation arrives in Firefox and Safari](http://blog.fontdeck.com/post/9037028497/hyphens)
 * [Difference between word-break: break-all versus word-wrap: break-word](http://shreerangpatwardhan.blogspot.co.uk/2014/03/difference-between-word-break-break-all.html)
+* [What is the difference between “word-break: break-all” versus “word-wrap: break-word” in CSS](http://stackoverflow.com/questions/1795109/what-is-the-difference-between-word-break-break-all-versus-word-wrap-break)
 * [page-break-inside](https://developer.mozilla.org/en/docs/Web/CSS/page-break-inside)
 * [Regions](https://msdn.microsoft.com/en-us/library/hh673537(v=vs.85).aspx)
 * [Transforms](https://msdn.microsoft.com/en-us/library/hh673529(v=vs.85).aspx)
@@ -155,6 +158,7 @@
 * [.load()](http://api.jquery.com/load/)
 * [.serialize()](http://api.jquery.com/serialize/)
 * [jQuery.parseXML()](http://api.jquery.com/jQuery.parseXML/)
+* [jQuery - xpath find?](http://stackoverflow.com/questions/2716517/jquery-xpath-find)
 
 ## Effects
 * [.animate()](http://api.jquery.com/animate/)

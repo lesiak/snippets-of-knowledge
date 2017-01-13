@@ -7,6 +7,7 @@
 * [for...in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
 * [Object.prototype.hasOwnProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
 * [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)
+* [Javascript Switch Statement Quirks](http://www.evotech.net/blog/2007/07/javascript-switch-statement-quirks/)
 
 * [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
 * [isNaN()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
@@ -72,8 +73,12 @@
  * [RegExp object](http://csharp-video-tutorials.blogspot.com/2015/01/javascript-regexp-object.html)
  * [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
  * [RegExp.prototype.exec()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec)
+ * [RegExp.prototype.test()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
 * [Comparison Operators](https://msdn.microsoft.com/library/ky6fyhws.aspx)
 * [Operator Precedence](https://msdn.microsoft.com/library/z3ks45k7.aspx)
+
+# Forms
+* [How to Turn Off Form Autocompletion](https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion)
 
 # Core
 * [What is an Activation object in JavaScript?](http://softwareengineering.stackexchange.com/questions/189967/what-is-an-activation-object-in-javascript)
@@ -84,7 +89,11 @@
 * [Async functions - making promises friendly](https://developers.google.com/web/fundamentals/getting-started/primers/async-functions)
 * [JQUERY DEFERRED BROKEN](https://thewayofcode.wordpress.com/tag/jquery-deferred-broken/)
 
-
+# Data Consumption
+* [JSON.parse()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
+* [Introduction to using XPath in JavaScript](https://developer.mozilla.org/en-US/docs/Introduction_to_using_XPath_in_JavaScript)
+* [How do you run an xPath query in IE11?](http://stackoverflow.com/questions/19300859/how-do-you-run-an-xpath-query-in-ie11)
+* [IXMLDOMDocument methods](https://msdn.microsoft.com/en-us/library/office/microsoft.office.interop.infopath.semitrust.ixmldomdocument_methods.aspx)
 
 # Script loading
 * [Asynchronous script execution](https://msdn.microsoft.com/en-us/library/hh673524(v=vs.85).aspx)
