@@ -65,6 +65,7 @@
  * [Element.insertAdjacentHTML()](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML)
  * [Node.removeChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
  * [Node.replaceChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild)
+ * [ParentNode.append()](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append)
 * [Regular Expressions](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions)
  * [String.prototype.match()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/String/match)
  * [String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)

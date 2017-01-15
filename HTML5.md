@@ -23,6 +23,9 @@
 
 # Web Workers
 * [Web Workers](https://msdn.microsoft.com/library/hh673568.aspx)
+* [Worker.terminate()](https://developer.mozilla.org/en-US/docs/Web/API/Worker/terminate)
+* [WorkerGlobalScope.self](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/self)
+* [Window.self](https://developer.mozilla.org/en/docs/Web/API/Window/self)
 
 # Web Storage
 * [Introduction to Web Storage](https://msdn.microsoft.com/library/bg142799.aspx)

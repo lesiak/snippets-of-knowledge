@@ -19,6 +19,11 @@
 * [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [Grid layout](https://msdn.microsoft.com/en-us/library/hh673533(v=vs.85).aspx)
 * [Multi-column layout](https://msdn.microsoft.com/en-us/library/hh673534(v=vs.85).aspx)
+* [position](http://learnlayout.com/position.html)
+* [float](http://learnlayout.com/float.html)
+* [clear](http://learnlayout.com/clear.html)
+* [the clearfix hack](http://learnlayout.com/clearfix.html)
+* [The very latest new new way to do "clearfix"](http://cssmojo.com/latest_new_clearfix_so_far/)
 
 ## Tables
 * [border-spacing](https://developer.mozilla.org/en/docs/Web/CSS/border-spacing)
