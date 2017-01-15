@@ -116,6 +116,7 @@
 * [.wrap()](http://api.jquery.com/wrap/)
 * [.wrapAll()](http://api.jquery.com/wrapAll/)
 * [.wrapInner()](http://api.jquery.com/wrapInner/)
+* [.empty()](https://api.jquery.com/empty/)
 
 ## Ajax
 * [jQuery.ajax()](http://api.jquery.com/jquery.ajax/)
@@ -131,3 +132,4 @@
 * [.animate()](http://api.jquery.com/animate/)
 * [.queue()](https://api.jquery.com/queue/)
 * [jquery animation queue](http://csharp-video-tutorials.blogspot.com/2015/05/jquery-animation-queue.html)
+* [.hide()](http://api.jquery.com/hide/)

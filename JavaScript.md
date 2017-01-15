@@ -81,6 +81,7 @@
 * [How to Turn Off Form Autocompletion](https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion)
 
 # Core
+* [ReferenceError and the global object](http://stackoverflow.com/questions/10102862/referenceerror-and-the-global-object)
 * [What is an Activation object in JavaScript?](http://softwareengineering.stackexchange.com/questions/189967/what-is-an-activation-object-in-javascript)
 * [Understanding JavaScript’s ‘undefined’](https://javascriptweblog.wordpress.com/2010/08/16/understanding-undefined-and-preventing-referenceerrors/)
 

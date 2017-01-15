@@ -20,6 +20,9 @@
 * [Grid layout](https://msdn.microsoft.com/en-us/library/hh673533(v=vs.85).aspx)
 * [Multi-column layout](https://msdn.microsoft.com/en-us/library/hh673534(v=vs.85).aspx)
 
+## Tables
+* [border-spacing](https://developer.mozilla.org/en/docs/Web/CSS/border-spacing)
+
 ## Css features
 * [Transitions](https://msdn.microsoft.com/en-us/library/hh673535(v=vs.85).aspx)
 * [Using CSS transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
