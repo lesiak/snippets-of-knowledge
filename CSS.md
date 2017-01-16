@@ -42,3 +42,4 @@
 * [page-break-inside](https://developer.mozilla.org/en/docs/Web/CSS/page-break-inside)
 * [Regions](https://msdn.microsoft.com/en-us/library/hh673537(v=vs.85).aspx)
 * [Transforms](https://msdn.microsoft.com/en-us/library/hh673529(v=vs.85).aspx)
+* [Incomplete List of Mistakes in the Design of CSS](https://wiki.csswg.org/ideas/mistakes)

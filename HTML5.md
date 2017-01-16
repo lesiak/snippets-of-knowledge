@@ -96,6 +96,7 @@
 * [:contains() Selector](http://api.jquery.com/contains-selector/)
 * [.find()](http://api.jquery.com/find/)
 * [.closest()](https://api.jquery.com/closest/)
+* [jQuery Selectors](http://codylindley.com/jqueryselectors/)
 
 ## Events
 * [.on()](http://api.jquery.com/on/)
@@ -130,6 +131,8 @@
 * [.serialize()](http://api.jquery.com/serialize/)
 * [jQuery.parseXML()](http://api.jquery.com/jQuery.parseXML/)
 * [jQuery - xpath find?](http://stackoverflow.com/questions/2716517/jquery-xpath-find)
+* [jQuery AJAX calls to a WCF REST Service](https://weblog.west-wind.com/posts/2008/Apr/21/jQuery-AJAX-calls-to-a-WCF-REST-Service)
+* [jquery.ajax(:datafilter)](http://clearhead.me/blog/jquery-ajax-datafilter/)
 
 ## Effects
 * [.animate()](http://api.jquery.com/animate/)

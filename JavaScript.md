@@ -25,6 +25,8 @@
  * [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
  * [Array.prototype.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
  * [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+ * [Array.prototype.every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+ * [Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
 * [Arguments object](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/arguments)
 * [GlobalEventHandlers.onerror](https://developer.mozilla.org/en/docs/Web/API/GlobalEventHandlers/onerror)
@@ -80,6 +82,7 @@
 
 # Forms
 * [How to Turn Off Form Autocompletion](https://developer.mozilla.org/en-US/docs/Web/Security/Securing_your_site/Turning_off_form_autocompletion)
+* [Is javascripts access to a password fields value considered a security risk?](http://stackoverflow.com/questions/1631134/is-javascripts-access-to-a-password-fields-value-considered-a-security-risk)
 
 # Core
 * [ReferenceError and the global object](http://stackoverflow.com/questions/10102862/referenceerror-and-the-global-object)
@@ -92,6 +95,7 @@
 * [JQUERY DEFERRED BROKEN](https://thewayofcode.wordpress.com/tag/jquery-deferred-broken/)
 
 # Data Consumption
+* [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 * [JSON.parse()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 * [Introduction to using XPath in JavaScript](https://developer.mozilla.org/en-US/docs/Introduction_to_using_XPath_in_JavaScript)
 * [How do you run an xPath query in IE11?](http://stackoverflow.com/questions/19300859/how-do-you-run-an-xpath-query-in-ie11)
