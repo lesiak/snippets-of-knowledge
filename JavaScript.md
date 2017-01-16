@@ -63,6 +63,7 @@
 * DOM
  * [Expando](https://developer.mozilla.org/en-US/docs/Glossary/Expando)
 * DOM Manipulation
+ * [Document.getElementsByClassName()](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName)
  * [Document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
  * [Element.insertAdjacentHTML()](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML)
  * [Node.removeChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)

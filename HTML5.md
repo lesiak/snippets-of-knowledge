@@ -82,6 +82,12 @@
 * [meta element](https://msdn.microsoft.com/en-us/library/ms535853.aspx)
 * [http-equiv attribute](https://msdn.microsoft.com/en-us/library/ms533876.aspx)
 * [content attribute](https://msdn.microsoft.com/en-us/library/ms533689.aspx)
+* [Self-closing tags (void elements) in HTML5](http://stackoverflow.com/questions/4693939/self-closing-tags-void-elements-in-html5)
+* [main](https://developer.mozilla.org/en/docs/Web/HTML/Element/main)
+* [figure](https://developer.mozilla.org/en/docs/Web/HTML/Element/figure)
+* [hgroup](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup)
+* [Using HTML sections and outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines)
+* [An overview of accessible web applications and widgets](https://developer.mozilla.org/en-US/docs/Web/Accessibility/An_overview_of_accessible_web_applications_and_widgets)
 
 # jQuery
 ## Core
@@ -105,6 +111,8 @@
 * [.live()](http://api.jquery.com/live/)
 * [.one()](http://api.jquery.com/one/)
 * [Understanding Event Delegation](https://learn.jquery.com/events/event-delegation/)
+* [jQuery how to check if event is already bound](http://csharp-video-tutorials.blogspot.com/2015/05/jquery-how-to-check-if-event-is-already.html)
+* [jQuery find events handlers registered with an object](http://stackoverflow.com/questions/2518421/jquery-find-events-handlers-registered-with-an-object)
 
 ## Manipulation
 * [Category: Manipulation](https://api.jquery.com/category/manipulation/)
