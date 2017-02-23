@@ -103,6 +103,7 @@
 * [.find()](http://api.jquery.com/find/)
 * [.closest()](https://api.jquery.com/closest/)
 * [jQuery Selectors](http://codylindley.com/jqueryselectors/)
+* [Category: Selectors](http://api.jquery.com/category/selectors/)
 
 ## Events
 * [.on()](http://api.jquery.com/on/)

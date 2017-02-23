@@ -7,6 +7,8 @@ git log --all --format='%aN <%cE>' | sort -u
 
 * [Change the author and committer name and e-mail of multiple commits in Git](http://stackoverflow.com/questions/750172/change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-git)
 
+* [Git: How configure KDiff3 as merge tool and diff tool](http://stackoverflow.com/questions/33308482/git-how-configure-kdiff3-as-merge-tool-and-diff-tool)
+
 # Git Svn
 * [Migrating from SVN to Git, preserving branches and tags](http://www.sailmaker.co.uk/blog/2013/05/05/migrating-from-svn-to-git-preserving-branches-and-tags-3/)
 * [convert git-svn tag branches to real tags](http://gitready.com/advanced/2009/02/16/convert-git-svn-tag-branches-to-real-tags.html)

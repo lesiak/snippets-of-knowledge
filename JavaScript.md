@@ -8,6 +8,7 @@
 * [Object.prototype.hasOwnProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
 * [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)
 * [Javascript Switch Statement Quirks](http://www.evotech.net/blog/2007/07/javascript-switch-statement-quirks/)
+* [Object.create()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 
 * [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
 * [isNaN()](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
