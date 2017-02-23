@@ -9,7 +9,9 @@ As a result sources-jar artifact is uploaded to nexus twice, which fails.
 Used
 mvn -Prelease-profile help:effective-pom
 to check that maven source plugin is attached to 2 goals: jar and jar-no-fork
-(See: http://stackoverflow.com/questions/4251488/maven-release-plugin-fails-source-artifacts-getting-deployed-twice)
+See: 
+* [Maven release plugin fails : source artifacts getting deployed twice](http://stackoverflow.com/questions/4251488/maven-release-plugin-fails-source-artifacts-getting-deployed-twice)
+* [Maven plugin executes multiple times during build](http://stackoverflow.com/questions/8041610/maven-plugin-executes-multiple-times-during-build)
 
 Maven 3.0.5 accepted this, but a bug in Maven 3.2.3-3.3.9 causes the sources artifact to be deployed twice, which is rejected by nexus.
 See: https://issues.apache.org/jira/browse/MNG-5939
