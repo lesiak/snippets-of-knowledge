@@ -1,0 +1,1 @@
+* [XSLT for grouping and summing values](http://stackoverflow.com/questions/15112496/xslt-for-grouping-and-summing-values)
