@@ -1,8 +1,10 @@
 # Daily usage
 * [Undoing a git rebase](http://stackoverflow.com/questions/134882/undoing-a-git-rebase)
- - git reflog
- - git reset --hard HEAD@{XXXX}
-
+```
+git reflog
+git reset --hard HEAD@{XXXX}
+```
+ 
 # Setup
 * [Git file permissions on Windows](http://stackoverflow.com/questions/6476513/git-file-permissions-on-windows)
 * [What's the best CRLF (carriage return, line feed) handling strategy with Git?](http://stackoverflow.com/questions/170961/whats-the-best-crlf-carriage-return-line-feed-handling-strategy-with-git)
