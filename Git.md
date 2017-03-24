@@ -1,13 +1,18 @@
-# Usage
+# Daily usage
+* [Undoing a git rebase](http://stackoverflow.com/questions/134882/undoing-a-git-rebase)
+ - git reflog
+ - git reset --hard HEAD@{XXXX}
+
+# Setup
 * [Git file permissions on Windows](http://stackoverflow.com/questions/6476513/git-file-permissions-on-windows)
 * [What's the best CRLF (carriage return, line feed) handling strategy with Git?](http://stackoverflow.com/questions/170961/whats-the-best-crlf-carriage-return-line-feed-handling-strategy-with-git)
+* [Git: How configure KDiff3 as merge tool and diff tool](http://stackoverflow.com/questions/33308482/git-how-configure-kdiff3-as-merge-tool-and-diff-tool)
 
+# Repo rewrite
 * [List all authors of a particular git project](http://www.commandlinefu.com/commands/view/4519/list-all-authors-of-a-particular-git-project)
 git log --all --format='%aN <%cE>' | sort -u
-
 * [Change the author and committer name and e-mail of multiple commits in Git](http://stackoverflow.com/questions/750172/change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-git)
 
-* [Git: How configure KDiff3 as merge tool and diff tool](http://stackoverflow.com/questions/33308482/git-how-configure-kdiff3-as-merge-tool-and-diff-tool)
 
 # Git Svn
 * [Migrating from SVN to Git, preserving branches and tags](http://www.sailmaker.co.uk/blog/2013/05/05/migrating-from-svn-to-git-preserving-branches-and-tags-3/)
