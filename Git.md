@@ -15,6 +15,10 @@ git reset --hard HEAD@{XXXX}
 git log --all --format='%aN <%cE>' | sort -u
 * [Change the author and committer name and e-mail of multiple commits in Git](http://stackoverflow.com/questions/750172/change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-git)
 
+# Aliases
+```
+git config --global alias.lg "log --pretty='%Cred%h%Creset |%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset %C(cyan)[%an]%Creset' --graph"
+```
 
 # Git Svn
 * [Migrating from SVN to Git, preserving branches and tags](http://www.sailmaker.co.uk/blog/2013/05/05/migrating-from-svn-to-git-preserving-branches-and-tags-3/)
