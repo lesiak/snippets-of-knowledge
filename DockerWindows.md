@@ -5,4 +5,7 @@ Clean Containers:
 > Get-Container | where State -eq "exited" | Remove-Container
 ```
 
-Second Command:
+Images:
+```sh
+> Get-ContainerImage
+```
