@@ -17,3 +17,6 @@ In general case it is better to inject EntityManager, because with EntityManager
 
 * [What is difference between CrudRepository and JpaRepository interfaces in Spring Data JPA](http://stackoverflow.com/questions/14014086/what-is-difference-between-crudrepository-and-jparepository-interfaces-in-spring)
 * [Spring Data JPA - “No Property Found for Type” Exception](http://stackoverflow.com/questions/19583540/spring-data-jpa-no-property-found-for-type-exception)
+
+* [Configuring Spring Boot for Oracle](https://springframework.guru/configuring-spring-boot-for-oracle/)
+* [Spring Boot + Spring Data JPA + Oracle example](https://www.mkyong.com/spring-boot/spring-boot-spring-data-jpa-oracle-example/)
