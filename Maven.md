@@ -2,6 +2,7 @@
 
 * [Maven Recipe: Building an aggregate jar](https://rombertw.wordpress.com/2010/05/14/maven-recipe-building-an-aggregate-jar/)
 * [How to Create Two JARs from One Project (...and why you shouldn't)](http://blog.sonatype.com/2010/01/how-to-create-two-jars-from-one-project-and-why-you-shouldnt/) - explains that one output artifact per project is a core assumption of Maven, and thus going against it is a bad idea.
+* [How to get Maven project version to the bash command line](http://stackoverflow.com/questions/3545292/how-to-get-maven-project-version-to-the-bash-command-line)
 
 # The library cannot be released, maven source plugin is executed twice.
 As a result sources-jar artifact is uploaded to nexus twice, which fails.
