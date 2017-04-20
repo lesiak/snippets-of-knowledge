@@ -15,3 +15,5 @@ I don't know how it works exactly in the Java EE, but in Spring, when you specif
 
 In general case it is better to inject EntityManager, because with EntityManagerFactory and @PersistenceUnit you should create/destroy EntityManager every time by hands and manage transactions too.
 
+* [What is difference between CrudRepository and JpaRepository interfaces in Spring Data JPA](http://stackoverflow.com/questions/14014086/what-is-difference-between-crudrepository-and-jparepository-interfaces-in-spring)
+* [Spring Data JPA - “No Property Found for Type” Exception](http://stackoverflow.com/questions/19583540/spring-data-jpa-no-property-found-for-type-exception)
