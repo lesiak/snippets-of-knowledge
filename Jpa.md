@@ -14,3 +14,10 @@
 * [Allow AttributeConverters to be CDI injectable](https://java.net/jira/browse/JPA_SPEC-109)
 * [Parameterized AttributeConverter and/or AttributeConverter metadata access](https://java.net/jira/browse/JPA_SPEC-73)
 
+# Criteria
+* [How to use QueryDSL with JPA, Gradle and IDEA](http://bsideup.blogspot.com/2015/04/querydsl-with-gradle-and-idea.html)
+* [Advanced Spring Data JPA - Specifications and Querydsl](https://spring.io/blog/2011/04/26/advanced-spring-data-jpa-specifications-and-querydsl/)
+* [Hibernate Criterion IN Clause 1000 break up](http://stackoverflow.com/questions/14869054/hibernate-criterion-in-clause-1000-break-up)
+
+# Other
+* [How to set read-only columns in Hibernate?](http://stackoverflow.com/questions/14626341/how-to-set-read-only-columns-in-hibernate)
