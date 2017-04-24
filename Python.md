@@ -20,6 +20,7 @@
 * [PEP 525 -- Asynchronous Generators](https://www.python.org/dev/peps/pep-0525/)
 * [PEP 3104 -- Access to Names in Outer Scopes](https://www.python.org/dev/peps/pep-3104/)
 * [What is the difference between @staticmethod and @classmethod in Python?](http://stackoverflow.com/questions/136097/what-is-the-difference-between-staticmethod-and-classmethod-in-python)
+* [PEP 3134 -- Exception Chaining and Embedded Tracebacks](http://legacy.python.org/dev/peps/pep-3134/)
 
 # Filesystem
 * [How to get an absolute file path in Python](http://stackoverflow.com/questions/51520/how-to-get-an-absolute-file-path-in-python)
