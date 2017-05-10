@@ -3,3 +3,4 @@
 * [How to find available directory objects on Oracle 11g system?](http://stackoverflow.com/questions/6345304/how-to-find-available-directory-objects-on-oracle-11g-system)
 * [UTL_FILE](https://docs.oracle.com/cd/B19306_01/appdev.102/b14258/u_file.htm)
 * [SQL for Analysis and Reporting](https://docs.oracle.com/cd/E11882_01/server.112/e25554/analysis.htm)
+* [What is the difference between varchar and varchar2?](http://stackoverflow.com/questions/1171196/what-is-the-difference-between-varchar-and-varchar2)
