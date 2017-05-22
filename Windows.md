@@ -10,3 +10,7 @@
 
 # Management
 * [Step-by-Step Guide to the Microsoft Management Console](https://msdn.microsoft.com/en-us/library/bb742442.aspx) 
+
+# Keyboard shortcuts
+* Win + magnifier zoom in
+* Win - magnifier zoom out 

@@ -26,6 +26,7 @@
 * [What is the purpose of calling __init__ directly?](http://stackoverflow.com/questions/16126734/what-is-the-purpose-of-calling-init-directly)
 * [PEP 3135 -- New Super](https://www.python.org/dev/peps/pep-3135/)
 * [PEP 318 -- Decorators for Functions and Methods](https://www.python.org/dev/peps/pep-0318/)
+* [types.SimpleNamespace](https://docs.python.org/3/library/types.html#types.SimpleNamespace)
 
 # Courutines & Generators
 * [PEP 342 -- Coroutines via Enhanced Generators](https://www.python.org/dev/peps/pep-0342/)
@@ -55,6 +56,9 @@
 
 # Filesystem
 * [How to get an absolute file path in Python](http://stackoverflow.com/questions/51520/how-to-get-an-absolute-file-path-in-python)
+
+# Books
+* [The 3 Best Python Books for Your Team](http://www.pixelmonkey.org/2015/06/06/pybooks)
 
 # Python 2
 * [http://stackoverflow.com/questions/599625/python-string-prints-as-ustring](http://stackoverflow.com/questions/599625/python-string-prints-as-ustring)
