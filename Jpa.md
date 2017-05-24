@@ -11,6 +11,7 @@
 * [How to fetch multiple entities by id with Hibernate 5](http://www.thoughts-on-java.org/fetch-multiple-entities-id-hibernate/)
 * [Hibernate 5: How to persist LocalDateTime & Co with Hibernate](http://www.thoughts-on-java.org/hibernate-5-date-and-time/)
 * [How to persist LocalDate and LocalDateTime with JPA](http://www.thoughts-on-java.org/persist-localdate-localdatetime-jpa/)
+* [ALL ABOUT JAVA.UTIL.DATE](https://codeblog.jonskeet.uk/2017/04/23/all-about-java-util-date/)
 
 # Future Enhancements:
 * [Allow AttributeConverters to be CDI injectable](https://java.net/jira/browse/JPA_SPEC-109)

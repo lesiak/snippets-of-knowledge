@@ -30,16 +30,7 @@ This approach to referring to other beans is usually the best choice
 * [Difference between using bean id and name in Spring configuration file](http://stackoverflow.com/questions/874505/difference-between-using-bean-id-and-name-in-spring-configuration-file)
 
 
-# Thymeleaf expressions ${} vs *{}:
 
-The ${} expressions (such as ${spitter}) are variable
-expressions. Normally, these are Object-Graph Navigation Language (OGNL)
-expressions (http://commons.apache.org/proper/commons-ognl/). But when used
-with Spring, they’re SpEL expressions. In the case of ${spitter}, it resolves to the
-model property whose key is spitter.
-As for *{} expressions, they’re selection expressions. Whereas variable expressions
-are evaluated against the entire SpEL context, selection expressions are evaluated on
-a selected object.
 
 # Spring Mvc
 * [Simplest Spring MVC Hello World Example](http://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/)

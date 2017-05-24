@@ -19,6 +19,20 @@
 * [Code Access Security Basics](https://msdn.microsoft.com/en-us/library/33tceax8.aspx)
 * [SecureMethodAttribute Class](https://msdn.microsoft.com/en-us/library/system.enterpriseservices.securemethodattribute.aspx)
 
+# Entity Framework
+* [Entity Framework Database First](https://msdn.microsoft.com/en-us/library/jj206878(v=vs.113).aspx)
+* [Entity Framework 6, database-first with Oracle](https://csharp.today/entity-framework-6-database-first-with-oracle/)
+* [Forcing Entity Framework generated classes to have Pascal casing and column names to have Camel casing](https://stackoverflow.com/questions/15132067/forcing-entity-framework-generated-classes-to-have-pascal-casing-and-column-name)
+* [10 Entity Framework 7 Features That You Must Know](http://www.c-sharpcorner.com/UploadFile/55d96a/10-entity-framework-7-features-that-you-must-know/)
+
+# Linq
+* [Linq code to select one item](https://stackoverflow.com/questions/7809745/linq-code-to-select-one-item)
+
+# LinqConnect
+* [LinqConnect Demo](https://www.devart.com/linqconnect/demo.html)
+* [Eager Loading](https://www.devart.com/linqconnect/docs/EagerLoading.html)
+* [Lazy Loading](https://www.devart.com/linqconnect/docs/LazyLoading.html)
+
 # Assemblies
 * [How the Runtime Locates Assemblies](https://msdn.microsoft.com/en-us/library/yx7xezcf(v=vs.110).aspx)
 * [Specific version=false and GAC - what version will assembly use?](https://social.msdn.microsoft.com/Forums/en-US/3a344927-c24d-49dc-a025-47c7efc29ddd/specific-versionfalse-and-gac-what-version-will-assembly-use?forum=csharpide)
