@@ -9,6 +9,8 @@
 # Date and Time
 * [ALL ABOUT JAVA.UTIL.DATE](https://codeblog.jonskeet.uk/2017/04/23/all-about-java-util-date/)
 * [A beginner’s guide to Java time zone handling](https://vladmihalcea.com/2014/11/17/a-beginners-guide-to-java-time-zone-handling/)
+* [Java 8 Time - choosing the right object](http://mattgreencroft.blogspot.com/2014/12/java-8-time-choosing-right-object.html)
+* [Daylight saving time and time zone best practices](https://stackoverflow.com/questions/2532729/daylight-saving-time-and-time-zone-best-practices)
 
 * [What's the default classpath when not specifying classpath?](http://stackoverflow.com/questions/8227682/whats-the-default-classpath-when-not-specifying-classpath)
 

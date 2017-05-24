@@ -12,6 +12,12 @@
 * [Hibernate 5: How to persist LocalDateTime & Co with Hibernate](http://www.thoughts-on-java.org/hibernate-5-date-and-time/)
 * [How to persist LocalDate and LocalDateTime with JPA](http://www.thoughts-on-java.org/persist-localdate-localdatetime-jpa/)
 * [ALL ABOUT JAVA.UTIL.DATE](https://codeblog.jonskeet.uk/2017/04/23/all-about-java-util-date/)
+* [How to store date, time, and timestamps in UTC time zone with JDBC and Hibernate](https://vladmihalcea.com/2017/03/14/how-to-store-date-time-and-timestamps-in-utc-time-zone-with-jdbc-and-hibernate/)
+* [How to store timestamps in UTC using the new hibernate.jdbc.time_zone configuration property](http://in.relation.to/2016/09/12/jdbc-time-zone-configuration-property/)
+* [Spring Boot: Controlling timezones with Hibernate](https://moelholm.com/2016/11/09/spring-boot-controlling-timezones-with-hibernate/)
+* [A beginner’s guide to flush strategies in JPA and Hibernate](https://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/)
+* [Write-Behind Technique In Hibernate](http://learningviacode.blogspot.com/2012/02/write-behind-technique-in-hibernate.html)
+* [Extreme Transaction Processing Patterns: Write-behind Caching](https://www.infoq.com/articles/write-behind-caching)
 
 # Future Enhancements:
 * [Allow AttributeConverters to be CDI injectable](https://java.net/jira/browse/JPA_SPEC-109)

@@ -5,6 +5,8 @@ JdbcDaoSupport, NamedParameterJdbcDaoSupport, SimpleJdbcDaoSupport are unnecessa
 What I recommend - to create templates in XML/class config per data source and reuse/inject them as templates are thread safe according to docs:
 
 * [Spring @Transactional and JDBC autoCommit](http://stackoverflow.com/questions/16301315/spring-transactional-and-jdbc-autocommit)
+* [Spring 4 + Guava Cache Integration Example with GuavaCacheManager and GuavaCache](http://www.concretepage.com/spring-4/spring-4-guava-cache-integration-example-with-guavacachemanager-and-guavacache)
+* [Spring’s @Transactional does not rollback on checked exceptions](https://www.catalysts.cc/en/wissenswertes/spring-transactional-rollback-on-checked-exceptions/)
 
 # ORM
 * [How to inject JPA EntityManager using spring](http://stackoverflow.com/questions/2421339/how-to-inject-jpa-entitymanager-using-spring)
