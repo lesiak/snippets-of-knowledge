@@ -26,3 +26,6 @@
 
 
 * [13 Read-Through, Write-Through, Write-Behind, and Refresh-Ahead Caching](https://docs.oracle.com/cd/E15357_01/coh.360/e15723/cache_rtwtwbra.htm)
+
+* [Oracle GoldenGate](http://www.oracle.com/technetwork/middleware/goldengate/overview/index.html)
+* [Databus](https://github.com/linkedin/databus)

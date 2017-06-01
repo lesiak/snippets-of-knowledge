@@ -1,10 +1,12 @@
 # JPA
+* [High-Performance Hibernate Tutorial](https://vladmihalcea.com/tutorials/hibernate/)
+* [How do I prepare for a Java Hibernate interview?](https://www.quora.com/How-do-I-prepare-for-a-Java-Hibernate-interview/answer/Vlad-Mihalcea-1)
 * [What is the difference between Transaction-scoped Persistence context and Extended Persistence context?](http://stackoverflow.com/questions/2547817/what-is-the-difference-between-transaction-scoped-persistence-context-and-extend)
 
-# Hibernate & JPA Tips
+# Mapping
 * [Hibernate @Enumerated mapping](http://stackoverflow.com/questions/5450902/hibernate-enumerated-mapping)
 * [How to implement a JPA Attribute Converter](http://www.thoughts-on-java.org/jpa-21-how-to-implement-type-converter/)
-* [Hibernate Tips: How to access Hibernate APIs from JPA](http://www.thoughts-on-java.org/hibernate-tips-access-hibernate-apis-jpa/)
+
 
 # Fetching & Selects & Criteria
 * [A beginner’s guide to Hibernate fetching strategies](https://vladmihalcea.com/2013/10/17/hibernate-facts-the-importance-of-fetch-strategy/)
@@ -26,15 +28,18 @@
 * [Criteria.DISTINCT_ROOT_ENTITY vs Projections.distinct](https://stackoverflow.com/questions/25536868/criteria-distinct-root-entity-vs-projections-distinct)
 * [When to use EntityManager.find() vs EntityManager.getReference()](https://stackoverflow.com/questions/1607532/when-to-use-entitymanager-find-vs-entitymanager-getreference)
 * [Mapping NativeQuery results into a POJO](https://stackoverflow.com/questions/25188939/mapping-nativequery-results-into-a-pojo)
+* [The DISTINCT pass-through Hibernate Query Hint](http://in.relation.to/2016/08/04/introducing-distinct-pass-through-query-hint/)
 
 # Updating
 * [A beginner’s guide to flush strategies in JPA and Hibernate](https://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/)
 * [Write-Behind Technique In Hibernate](http://learningviacode.blogspot.com/2012/02/write-behind-technique-in-hibernate.html)
 * [Extreme Transaction Processing Patterns: Write-behind Caching](https://www.infoq.com/articles/write-behind-caching)
-
+* [The anatomy of Hibernate dirty checking mechanism](https://vladmihalcea.com/2014/08/21/the-anatomy-of-hibernate-dirty-checking/)
+* [How to setup Hibernate Gradle plugin for bytecode enhancement?](https://stackoverflow.com/questions/35552109/how-to-setup-hibernate-gradle-plugin-for-bytecode-enhancement)
 
 # Hibernate 5
 * [5 new features in Hibernate 5 every developer should know](http://www.thoughts-on-java.org/5-new-features-hibernate-5-every-developer-know/)
+* [Hibernate Tips: How to access Hibernate APIs from JPA](http://www.thoughts-on-java.org/hibernate-tips-access-hibernate-apis-jpa/)
 
 # Date and Time
 * [Hibernate 5: How to persist LocalDateTime & Co with Hibernate](http://www.thoughts-on-java.org/hibernate-5-date-and-time/)
