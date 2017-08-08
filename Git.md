@@ -14,6 +14,8 @@ git reset --hard HEAD@{XXXX}
 * [List all authors of a particular git project](http://www.commandlinefu.com/commands/view/4519/list-all-authors-of-a-particular-git-project)
 git log --all --format='%aN <%cE>' | sort -u
 * [Change the author and committer name and e-mail of multiple commits in Git](http://stackoverflow.com/questions/750172/change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-git)
+* [Remove folder and its contents from git/GitHub's history](https://stackoverflow.com/questions/10067848/remove-folder-and-its-contents-from-git-githubs-history)
+* [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
 
 # Aliases
 ```
