@@ -4,9 +4,12 @@
 git reflog
 git reset --hard HEAD@{XXXX}
 ```
- 
+
+* [How to move certain commits to another branch in git?](https://stackoverflow.com/questions/2369426/how-to-move-certain-commits-to-another-branch-in-git) 
+
 # Setup
 * [Git file permissions on Windows](http://stackoverflow.com/questions/6476513/git-file-permissions-on-windows)
+* [Git/Bash is extremely slow in Windows 7 x64](https://stackoverflow.com/questions/4485059/git-bash-is-extremely-slow-in-windows-7-x64)
 * [What's the best CRLF (carriage return, line feed) handling strategy with Git?](http://stackoverflow.com/questions/170961/whats-the-best-crlf-carriage-return-line-feed-handling-strategy-with-git)
 * [Git: How configure KDiff3 as merge tool and diff tool](http://stackoverflow.com/questions/33308482/git-how-configure-kdiff3-as-merge-tool-and-diff-tool)
 
