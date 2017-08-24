@@ -11,6 +11,7 @@ git reset --hard HEAD@{XXXX}
 * [Git file permissions on Windows](http://stackoverflow.com/questions/6476513/git-file-permissions-on-windows)
 * [Git/Bash is extremely slow in Windows 7 x64](https://stackoverflow.com/questions/4485059/git-bash-is-extremely-slow-in-windows-7-x64)
 * [What's the best CRLF (carriage return, line feed) handling strategy with Git?](http://stackoverflow.com/questions/170961/whats-the-best-crlf-carriage-return-line-feed-handling-strategy-with-git)
+* [Dealing with line endings](https://help.github.com/articles/dealing-with-line-endings/)
 * [Git: How configure KDiff3 as merge tool and diff tool](http://stackoverflow.com/questions/33308482/git-how-configure-kdiff3-as-merge-tool-and-diff-tool)
 
 # Repo rewrite
