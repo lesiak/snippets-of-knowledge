@@ -1,5 +1,17 @@
 # 
 
+
+# Meta
+* [Entity Framework Core 2.0 Released to Heavy Criticism](https://www.infoq.com/news/2017/08/EF-Core-2.0-1)
+* [New Features in Entity Framework Core 2.0](https://www.infoq.com/news/2017/08/EF-Core-2.0-2)
+* [Breaking Changes in EF Core 2.0](https://www.infoq.com/news/2017/08/EF-Core-2.0-3)
+
+
+# Testing
+* [Testing with InMemory](https://docs.microsoft.com/en-us/ef/core/miscellaneous/testing/in-memory)
+
+#
+
 * [Best Way to Update only modified fields with Entity Framework](https://stackoverflow.com/questions/33137514/best-way-to-update-only-modified-fields-with-entity-framework)
 
 
