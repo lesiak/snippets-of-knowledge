@@ -4,6 +4,9 @@
 * [C# 3.0 Return Type Inference Does Not Work On Method Groups](https://blogs.msdn.microsoft.com/ericlippert/2007/11/05/c-3-0-return-type-inference-does-not-work-on-method-groups/)
 * [C# : How C# 6.0 Simplifies, Clarifies and Condenses Your Code](https://msdn.microsoft.com/en-us/magazine/dn879355.aspx)
 * [Interpolated Strings (C# and Visual Basic Reference)](https://msdn.microsoft.com/en-us/library/dn961160.aspx)
+* [Does C# have an equivalent of Java static nested class?](https://stackoverflow.com/questions/1581977/does-c-sharp-have-an-equivalent-of-java-static-nested-class)
+* [Equivalent of Java's anonymous class in C#?](https://stackoverflow.com/questions/27273328/equivalent-of-javas-anonymous-class-in-c)
+* [Is it possible to make an anonymous class inherit another class?](https://stackoverflow.com/questions/22226838/is-it-possible-to-make-an-anonymous-class-inherit-another-class)
 
 # Exceptions
 * [Exceptions in Managed Threads](https://msdn.microsoft.com/en-us/library/ms228965(v=vs.110).aspx)
@@ -50,3 +53,15 @@
 
 # Tools
 * [dotPeek Symbol Server and PDB Generation](https://www.jetbrains.com/help/decompiler/2016.1/Symbol_Server_and_PDB_Generation.html)
+* [Microsoft Help Viewer](https://msdn.microsoft.com/en-us/library/hh580782.aspx)
+
+## Services
+* [AppVeyor #1 Continuous Delivery service for Windows](https://www.appveyor.com/)
+* [IdentityServer](https://identityserver.io/)
+
+## Libraries
+* [Serilog](https://serilog.net/)
+* [DotNetty](https://github.com/azure/dotnetty)
+* [Dapper - a simple object mapper for .Net](https://github.com/StackExchange/Dapper)
+* [Nancy](https://www.hanselman.com/blog/ExploringAMinimalWebAPIWithNETCoreAndNancyFX.aspx)
+

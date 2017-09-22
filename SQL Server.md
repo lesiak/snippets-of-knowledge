@@ -6,3 +6,6 @@
 
 * [SQL Server updating a time stamp column](https://stackoverflow.com/questions/4592658/sql-server-updating-a-time-stamp-column)
 * [timestamp (Transact-SQL)](https://msdn.microsoft.com/en-us/library/ms182776(v=sql.90).aspx)
+
+## Docker
+* [Run the SQL Server 2017 container image with Docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker)

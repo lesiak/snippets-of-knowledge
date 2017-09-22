@@ -10,6 +10,13 @@
 * [ASP.NET MVC 4 Dependency Injection](https://www.asp.net/mvc/overview/older-versions/hands-on-labs/aspnet-mvc-4-dependency-injection)
 * [Web.config File Transformations](https://www.asp.net/mvc/overview/deployment/visual-studio-web-deployment/web-config-transformations)
 
+## ASP.NET Core
+* [Goodbye Child Actions, Hello View Components](https://davepaquette.com/archive/2016/01/02/goodbye-child-actions-hello-view-components.aspx)
+* [Obscure Bugs: ASP.NET MVC Child Actions](http://www.khalidabuhakmeh.com/obscure-bugs-asp-net-mvc-child-actions)
+
+## Testing
+* [In-Memory ASP.NET Core Integration Tests with TestServer](https://visualstudiomagazine.com/articles/2017/07/01/testserver.aspx)
+
 # Classes
 ## Razor
 * [PartialExtensions.Partial Method](https://msdn.microsoft.com/en-us/library/ee402926.aspx)
