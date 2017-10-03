@@ -58,10 +58,14 @@
 ## Services
 * [AppVeyor #1 Continuous Delivery service for Windows](https://www.appveyor.com/)
 * [IdentityServer](https://identityserver.io/)
+* [Bing Text to Speech API](https://docs.microsoft.com/en-us/azure/cognitive-services/speech/api-reference-rest/bingvoiceoutput)
+* [Microsoft Bing Speech API: Windows Speech-to-Text Sample](https://azure.microsoft.com/en-gb/resources/samples/cognitive-speech-stt-windows/)
 
 ## Libraries
 * [Serilog](https://serilog.net/)
+* [NLog](http://nlog-project.org/)
 * [DotNetty](https://github.com/azure/dotnetty)
 * [Dapper - a simple object mapper for .Net](https://github.com/StackExchange/Dapper)
 * [Nancy](https://www.hanselman.com/blog/ExploringAMinimalWebAPIWithNETCoreAndNancyFX.aspx)
-
+* [App Metrics](http://app-metrics.io/)
+* [Refit](https://github.com/paulcbetts/refit)

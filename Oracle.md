@@ -25,6 +25,9 @@
 
 * [SQL for Analysis and Reporting](https://docs.oracle.com/cd/E11882_01/server.112/e25554/analysis.htm)
 
+
+* [Is recompiling Oracle Packages safe](https://stackoverflow.com/questions/3823932/is-recompiling-oracle-packages-safe)
+
 # Books & Manuals
 * [Database Concepts](https://docs.oracle.com/database/121/CNCPT/toc.htm)
    * [9. Data Concurrency and Consistency](https://docs.oracle.com/database/121/CNCPT/consist.htm)

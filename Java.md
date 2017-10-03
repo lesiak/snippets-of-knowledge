@@ -6,6 +6,8 @@
 * [Dependency Injection with Dagger 2](https://www.future-processing.pl/blog/dependency-injection-with-dagger-2/)
 * [The Netty project](http://netty.io/)
 * [Prometheus](https://prometheus.io/)
+* [Retrofit](http://square.github.io/retrofit/)
+* [JMH - Java Microbenchmark Harness](http://tutorials.jenkov.com/java-performance/jmh.html)
 
 # Date and Time
 * [ALL ABOUT JAVA.UTIL.DATE](https://codeblog.jonskeet.uk/2017/04/23/all-about-java-util-date/)
@@ -22,3 +24,8 @@
 
 # Collections
 * Java 8 ConcurrentHashMap has tree buckets if keys implement Comparable. That guarantees O(log N)
+
+# Streams
+* [Java – How to convert Array to Stream](https://www.mkyong.com/java8/java-how-to-convert-array-to-stream/)
+* [sorting Lists after groupingBy](https://stackoverflow.com/questions/35872236/sorting-lists-after-groupingby)
+* [Writing Comparators - The Java 8 Way](https://praveer09.github.io/technology/2016/06/21/writing-comparators-the-java8-way/)

@@ -13,3 +13,6 @@
 * [Foundations - Working With The .NET Service Bus](https://msdn.microsoft.com/en-us/magazine/dd569756.aspx)
 * [How to use the Service Bus WCF Relay with .NET](https://docs.microsoft.com/en-us/azure/service-bus-relay/service-bus-dotnet-how-to-use-relay)
 * [Azure Queues and Service Bus queues - compared and contrasted](https://docs.microsoft.com/en-gb/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted)
+
+# Tools
+* [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
