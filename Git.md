@@ -32,5 +32,59 @@ git config --global alias.lg "log --pretty='%Cred%h%Creset |%C(yellow)%d%Creset 
 * [How to migrate code from SVN to GIT without losing commits history?](http://stackoverflow.com/questions/9211405/how-to-migrate-code-from-svn-to-git-without-losing-commits-history)
 * [How to import svn branches and tags into git-svn?](http://stackoverflow.com/questions/2244252/how-to-import-svn-branches-and-tags-into-git-svn)
 
+1) Create authors-transform.txt
+```sh
+svn log -q | awk -F '|' '/^r/ {sub("^ ", "", $2); sub(" $", "", $2); print $2" = "$2" <"$2">"}' | sort -u > authors-transform.txt
+```
+
+2) Git Svn Clone Svn repo
+```sh
+git svn clone --no-metadata -A authors-transform.txt --stdlayout http://SVN_REPO tmp
+# git svn init  --no-metadata --authors-file=authors-transform.txt --stdlayout --prefix=svn/ http://SVN_REPO
+```
+
+3) Change svn tag branches to git tags
+```sh
+git for-each-ref --format="%(refname:short) %(objectname)" refs/remotes/origin/tags \
+| while read BRANCH REF
+  do
+        TAG_NAME=`echo ${BRANCH#*/} | sed 's/tags\///'`
+        BODY="$(git log -1 --format=format:%B $REF)"
+        #TAG_NAME1=`echo $TAG_NAME | sed 's/tags\///'`
+        
+        echo "ref=$REF parent=$(git rev-parse $REF^) tagname=$TAG_NAME body=$BODY" >&2
+
+        git tag -a -m "$BODY" $TAG_NAME $REF^  &&\
+        git branch -r -d $BRANCH
+done
+```
+4) Change other svn branches to git branches
+```sh
+for branch in `git branch -r` ; do  
+  BRA=`echo $branch | sed 's/origin\///'`  
+  git branch $BRA refs/remotes/$branch
+done
+```
+
+```sh
+for branch in `git branch -r` ; do    
+  git branch -r -d $branch
+done
+```
+
+5) [Ignore] Already done Change origin/branch to branch
+```sh
+git branch -r | sed -e 's/origin\///g' | xargs -I0 git branch -m origin/0 0
+git branch -m trunk master
+```
+
+6) Pusg to a remote repo
+```sh
+cd tmp
+git remote add origin GIT_REPO
+git push 
+git push --tags
+```
+
 # Git Hg
 * [Converting a Mercurial repository to Git on Windows](https://www.appveyor.com/blog/2014/02/23/converting-mercurial-repository-to-git-on-windows/)
