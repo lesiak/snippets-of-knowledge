@@ -25,8 +25,9 @@
 
 * [SQL for Analysis and Reporting](https://docs.oracle.com/cd/E11882_01/server.112/e25554/analysis.htm)
 
-
+# Recompilation
 * [Is recompiling Oracle Packages safe](https://stackoverflow.com/questions/3823932/is-recompiling-oracle-packages-safe)
+* [First call to a stored procedure, after successful compilation, fails. Oracle 10g](https://stackoverflow.com/questions/7985530/first-call-to-a-stored-procedure-after-successful-compilation-fails-oracle-10)
 
 # Books & Manuals
 * [Database Concepts](https://docs.oracle.com/database/121/CNCPT/toc.htm)

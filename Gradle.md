@@ -4,3 +4,4 @@
 
 * [A Gradle plugin to build Docker images from the build script.](https://github.com/Transmode/gradle-docker)
 * [Gradle maven-publish does not build standalone spring-boot application](https://stackoverflow.com/questions/26212237/gradle-maven-publish-does-not-build-standalone-spring-boot-application)
+* [IDEA-175172 IntelliJ EAP and Gradle 4.0: Wrong internal output directory](https://youtrack.jetbrains.com/issue/IDEA-175172)

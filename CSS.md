@@ -24,6 +24,7 @@
 * [clear](http://learnlayout.com/clear.html)
 * [the clearfix hack](http://learnlayout.com/clearfix.html)
 * [The very latest new new way to do "clearfix"](http://cssmojo.com/latest_new_clearfix_so_far/)
+* [Fun with Viewport Units](https://css-tricks.com/fun-viewport-units/)
 
 ## Tables
 * [border-spacing](https://developer.mozilla.org/en/docs/Web/CSS/border-spacing)

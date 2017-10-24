@@ -9,6 +9,7 @@
 * [Retrofit](http://square.github.io/retrofit/)
 * [JMH - Java Microbenchmark Harness](http://tutorials.jenkov.com/java-performance/jmh.html)
 * [Zipkin - a distributed tracing system](http://zipkin.io/)
+* [Log4j 2 - RollingFileAppender example](https://www.boraji.com/log4j-2-rollingfileappender-example)
 
 # Date and Time
 * [ALL ABOUT JAVA.UTIL.DATE](https://codeblog.jonskeet.uk/2017/04/23/all-about-java-util-date/)
@@ -30,3 +31,10 @@
 * [Java – How to convert Array to Stream](https://www.mkyong.com/java8/java-how-to-convert-array-to-stream/)
 * [sorting Lists after groupingBy](https://stackoverflow.com/questions/35872236/sorting-lists-after-groupingby)
 * [Writing Comparators - The Java 8 Way](https://praveer09.github.io/technology/2016/06/21/writing-comparators-the-java8-way/)
+
+# SSL/TSL
+* [Unable to Connect to SSL Services due to PKIX Path Building Failed](https://confluence.atlassian.com/kb/unable-to-connect-to-ssl-services-due-to-pkix-path-building-failed-779355358.html)
+* [Configure Truststore in Tomcat](https://stackoverflow.com/questions/21833732/configure-truststore-in-tomcat)
+
+# BGGA Closures
+* [Reaction to Actually Using the BGGA closure Prototype](http://hamletdarcy.blogspot.com/2008/02/reaction-to-actually-using-bgga-closure.html)

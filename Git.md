@@ -13,6 +13,7 @@ git reset --hard HEAD@{XXXX}
 * [What's the best CRLF (carriage return, line feed) handling strategy with Git?](http://stackoverflow.com/questions/170961/whats-the-best-crlf-carriage-return-line-feed-handling-strategy-with-git)
 * [Dealing with line endings](https://help.github.com/articles/dealing-with-line-endings/)
 * [Git: How configure KDiff3 as merge tool and diff tool](http://stackoverflow.com/questions/33308482/git-how-configure-kdiff3-as-merge-tool-and-diff-tool)
+* [Pimp My Git – Manage Different Git Identities](https://dzone.com/articles/pimp-my-git-manage-different-git-identities)
 
 # Repo rewrite
 * [List all authors of a particular git project](http://www.commandlinefu.com/commands/view/4519/list-all-authors-of-a-particular-git-project)
