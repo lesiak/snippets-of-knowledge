@@ -69,3 +69,4 @@
 * [Nancy](https://www.hanselman.com/blog/ExploringAMinimalWebAPIWithNETCoreAndNancyFX.aspx)
 * [App Metrics](http://app-metrics.io/)
 * [Refit](https://github.com/paulcbetts/refit)
+* [Zipkin4net](https://github.com/openzipkin/zipkin4net)
