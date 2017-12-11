@@ -38,3 +38,4 @@
 
 # BGGA Closures
 * [Reaction to Actually Using the BGGA closure Prototype](http://hamletdarcy.blogspot.com/2008/02/reaction-to-actually-using-bgga-closure.html)
+* [The Closures Controversy](www.javac.info/bloch-closures-controversy.ppt)
