@@ -40,8 +40,8 @@ svn log -q | awk -F '|' '/^r/ {sub("^ ", "", $2); sub(" $", "", $2); print $2" =
 
 2) Git Svn Clone Svn repo
 ```sh
-git svn clone --no-metadata -A authors-transform.txt --stdlayout http://SVN_REPO tmp
-# git svn init  --no-metadata --authors-file=authors-transform.txt --stdlayout --prefix=svn/ http://SVN_REPO
+git svn clone --no-metadata -A authors-transform.txt --stdlayout http://SVN_REPO_NO_BRANCH_SUFFIX tmp
+# git svn init  --no-metadata --authors-file=authors-transform.txt --stdlayout --prefix=svn/ http://SVN_REPO_NO_BRANCH_SUFFIX
 ```
 
 3) Change svn tag branches to git tags
