@@ -83,7 +83,7 @@ git branch -m trunk master
 ```sh
 cd tmp
 git remote add origin GIT_REPO
-git push 
+git push --set-upstream origin master 
 git push --tags
 ```
 
