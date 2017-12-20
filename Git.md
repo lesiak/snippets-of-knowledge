@@ -44,7 +44,7 @@ git svn clone --no-metadata -A authors-transform.txt --stdlayout http://SVN_REPO
 # git svn init  --no-metadata --authors-file=authors-transform.txt --stdlayout --prefix=svn/ http://SVN_REPO_NO_BRANCH_SUFFIX
 ```
 
-3) Change svn tag branches to git tags
+3) Change svn tag branches to git tags and remove svn tag branches
 ```sh
 git for-each-ref --format="%(refname:short) %(objectname)" refs/remotes/origin/tags \
 | while read BRANCH REF
@@ -66,7 +66,7 @@ for branch in `git branch -r` ; do
   git branch $BRA refs/remotes/$branch
 done
 ```
-
+Remove svn branches
 ```sh
 for branch in `git branch -r` ; do    
   git branch -r -d $branch
