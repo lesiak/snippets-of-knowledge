@@ -13,6 +13,7 @@
 ## ASP.NET Core
 * [Goodbye Child Actions, Hello View Components](https://davepaquette.com/archive/2016/01/02/goodbye-child-actions-hello-view-components.aspx)
 * [Obscure Bugs: ASP.NET MVC Child Actions](http://www.khalidabuhakmeh.com/obscure-bugs-asp-net-mvc-child-actions)
+* [Introduction to logging in ASP.NET Core](https://docs.microsoft.com/en-gb/aspnet/core/fundamentals/logging/?tabs=aspnetcore2x)
 
 ## Testing
 * [In-Memory ASP.NET Core Integration Tests with TestServer](https://visualstudiomagazine.com/articles/2017/07/01/testserver.aspx)

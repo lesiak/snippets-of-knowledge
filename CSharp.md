@@ -1,5 +1,10 @@
 # C#
 
+## Releases
+* [What's new in C# 7.2](https://docs.microsoft.com/en-gb/dotnet/csharp/whats-new/csharp-7-2)
+* [Welcome to C# 7.1](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/welcome-to-c-7-1/)
+
+
 * [Constraints are not part of the signature](https://blogs.msdn.microsoft.com/ericlippert/2009/12/10/constraints-are-not-part-of-the-signature/)
 * [C# 3.0 Return Type Inference Does Not Work On Method Groups](https://blogs.msdn.microsoft.com/ericlippert/2007/11/05/c-3-0-return-type-inference-does-not-work-on-method-groups/)
 * [C# : How C# 6.0 Simplifies, Clarifies and Condenses Your Code](https://msdn.microsoft.com/en-us/magazine/dn879355.aspx)
@@ -30,6 +35,7 @@
 
 # Linq
 * [Linq code to select one item](https://stackoverflow.com/questions/7809745/linq-code-to-select-one-item)
+* [Grouping lists into groups of X items per group](https://stackoverflow.com/questions/23921210/grouping-lists-into-groups-of-x-items-per-group)
 
 # LinqConnect
 * [LinqConnect Demo](https://www.devart.com/linqconnect/demo.html)
@@ -54,6 +60,8 @@
 # Tools
 * [dotPeek Symbol Server and PDB Generation](https://www.jetbrains.com/help/decompiler/2016.1/Symbol_Server_and_PDB_Generation.html)
 * [Microsoft Help Viewer](https://msdn.microsoft.com/en-us/library/hh580782.aspx)
+* [How do I find the .NET version?](https://stackoverflow.com/questions/1565434/how-do-i-find-the-net-version)
+* [ASoft .NET Version Detector](http://www.asoft.be/prod_netver.html)
 
 ## Services
 * [AppVeyor #1 Continuous Delivery service for Windows](https://www.appveyor.com/)
@@ -70,3 +78,8 @@
 * [App Metrics](http://app-metrics.io/)
 * [Refit](https://github.com/paulcbetts/refit)
 * [Zipkin4net](https://github.com/openzipkin/zipkin4net)
+
+## .NetCore
+* [Logging in .NET Core Console Applications](https://blog.bitscry.com/2017/05/31/logging-in-net-core-console-applications/)
+* [Essential .NET - Dependency Injection with .NET Core](https://msdn.microsoft.com/en-us/magazine/mt707534.aspx)
+
