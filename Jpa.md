@@ -30,6 +30,8 @@
 * [Mapping NativeQuery results into a POJO](https://stackoverflow.com/questions/25188939/mapping-nativequery-results-into-a-pojo)
 * [The DISTINCT pass-through Hibernate Query Hint](http://in.relation.to/2016/08/04/introducing-distinct-pass-through-query-hint/)
 
+* [Hibernate disabled insert batching when using an identity identifier generator](https://stackoverflow.com/questions/27697810/hibernate-disabled-insert-batching-when-using-an-identity-identifier-generator)
+
 # Updating
 * [A beginner’s guide to flush strategies in JPA and Hibernate](https://vladmihalcea.com/2014/08/07/a-beginners-guide-to-jpahibernate-flush-strategies/)
 * [Write-Behind Technique In Hibernate](http://learningviacode.blogspot.com/2012/02/write-behind-technique-in-hibernate.html)

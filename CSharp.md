@@ -82,4 +82,4 @@
 ## .NetCore
 * [Logging in .NET Core Console Applications](https://blog.bitscry.com/2017/05/31/logging-in-net-core-console-applications/)
 * [Essential .NET - Dependency Injection with .NET Core](https://msdn.microsoft.com/en-us/magazine/mt707534.aspx)
-
+* [How container actually resolve ILogger<T>](https://stackoverflow.com/questions/48672938/how-container-actually-resolve-iloggert)

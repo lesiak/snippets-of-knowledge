@@ -6,6 +6,7 @@
 * [The Problem with Integer Division](http://python-history.blogspot.co.uk/2009/03/problem-with-integer-division.html)
 * [How to Use Python’s xrange and range](http://pythoncentral.io/how-to-use-pythons-xrange-and-range/)
 * [PEP 465 -- A dedicated infix operator for matrix multiplication](https://www.python.org/dev/peps/pep-0465/)
+* [Difference between numpy dot() and Python 3.5+ matrix multiplication @](https://stackoverflow.com/questions/34142485/difference-between-numpy-dot-and-python-3-5-matrix-multiplication)
 * [PEP 498 -- Literal String Interpolation](https://www.python.org/dev/peps/pep-0498/)
 * [Does Python have a string contains substring method?](http://stackoverflow.com/questions/3437059/does-python-have-a-string-contains-substring-method)
 
