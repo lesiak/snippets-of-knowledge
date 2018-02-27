@@ -17,10 +17,10 @@ git reset --hard HEAD@{XXXX}
 
 # SourceTree
 * [SourceTree 2.0 is horribly slow and not scaling well on Windows 10](https://community.atlassian.com/t5/Sourcetree-discussions/SourceTree-2-0-is-horribly-slow-and-not-scaling-well-on-Windows/td-p/582066)
-- Update to latest version
-- Use embedded Git - Latest version (Tools > Options > Use Embedded Git) 
-- Disable LibGit2 integration (Tools > Options > Disable LibGit2 integration)
-- Set the Log rows to fetch per load to "0" (Tools > Options > General > Repo Settings)
+   - Update to latest version
+   - Use embedded Git - Latest version (Tools > Options > Use Embedded Git) 
+   - Disable LibGit2 integration (Tools > Options > Disable LibGit2 integration)
+   - Set the Log rows to fetch per load to "0" (Tools > Options > General > Repo Settings)
 
 # Repo rewrite
 * [List all authors of a particular git project](http://www.commandlinefu.com/commands/view/4519/list-all-authors-of-a-particular-git-project)
