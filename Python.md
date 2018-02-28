@@ -9,6 +9,7 @@
 * [Difference between numpy dot() and Python 3.5+ matrix multiplication @](https://stackoverflow.com/questions/34142485/difference-between-numpy-dot-and-python-3-5-matrix-multiplication)
 * [PEP 498 -- Literal String Interpolation](https://www.python.org/dev/peps/pep-0498/)
 * [Does Python have a string contains substring method?](http://stackoverflow.com/questions/3437059/does-python-have-a-string-contains-substring-method)
+* [Difference between del, remove and pop on lists](https://stackoverflow.com/questions/11520492/difference-between-del-remove-and-pop-on-lists)
 
 # Language
 * [Incompatibilities moving from Python 2 to Python 3](http://stackoverflow.com/documentation/python/809/incompatibilities-moving-from-python-2-to-python-3)
@@ -16,6 +17,7 @@
 * [PEP 3134 -- Exception Chaining and Embedded Tracebacks](http://legacy.python.org/dev/peps/pep-3134/)
 * [What does ** (double star) and * (star) do for parameters?](http://stackoverflow.com/questions/36901/what-does-double-star-and-star-do-for-parameters)
 * [Extended Slices](https://docs.python.org/2.3/whatsnew/section-slices.html)
+* [How does the @property decorator work?](https://stackoverflow.com/questions/17330160/how-does-the-property-decorator-work)
 
 # Types and classes
 * [PEP 252 -- Making Types Look More Like Classes](https://www.python.org/dev/peps/pep-0252/)
