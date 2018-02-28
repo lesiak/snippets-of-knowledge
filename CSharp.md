@@ -4,7 +4,7 @@
 * [What's new in C# 7.2](https://docs.microsoft.com/en-gb/dotnet/csharp/whats-new/csharp-7-2)
 * [Welcome to C# 7.1](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/welcome-to-c-7-1/)
 
-
+# Random features
 * [Constraints are not part of the signature](https://blogs.msdn.microsoft.com/ericlippert/2009/12/10/constraints-are-not-part-of-the-signature/)
 * [C# 3.0 Return Type Inference Does Not Work On Method Groups](https://blogs.msdn.microsoft.com/ericlippert/2007/11/05/c-3-0-return-type-inference-does-not-work-on-method-groups/)
 * [C# : How C# 6.0 Simplifies, Clarifies and Condenses Your Code](https://msdn.microsoft.com/en-us/magazine/dn879355.aspx)
@@ -12,6 +12,12 @@
 * [Does C# have an equivalent of Java static nested class?](https://stackoverflow.com/questions/1581977/does-c-sharp-have-an-equivalent-of-java-static-nested-class)
 * [Equivalent of Java's anonymous class in C#?](https://stackoverflow.com/questions/27273328/equivalent-of-javas-anonymous-class-in-c)
 * [Is it possible to make an anonymous class inherit another class?](https://stackoverflow.com/questions/22226838/is-it-possible-to-make-an-anonymous-class-inherit-another-class)
+
+# Unit tests
+* [How to access classes in another assembly for unit-testing purposes?](https://stackoverflow.com/questions/1211707/how-to-access-classes-in-another-assembly-for-unit-testing-purposes)
+
+# Debugging
+* [Not Just My Code: How to debug third party libraries without decompiling them](https://medium.com/@jackspektor/not-just-my-code-how-to-debug-third-party-libraries-without-decompiling-them-8e47e706dbe7)
 
 # Exceptions
 * [Exceptions in Managed Threads](https://msdn.microsoft.com/en-us/library/ms228965(v=vs.110).aspx)
