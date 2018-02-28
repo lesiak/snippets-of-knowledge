@@ -29,3 +29,5 @@ This approach to referring to other beans is usually the best choice
 # Spring Boot
 * [Spring Boot with Docker](https://spring.io/guides/gs/spring-boot-docker/)
 * [Using env variable in Spring Boot's application.properties](http://stackoverflow.com/questions/35531661/using-env-variable-in-spring-boots-application-properties)
+* [spring boot adding another properties file to the environment](https://stackoverflow.com/questions/26935960/spring-boot-adding-another-properties-file-to-the-environment)
+* [Spring Boot and multiple external configuration files](https://stackoverflow.com/questions/25855795/spring-boot-and-multiple-external-configuration-files/25862357#25862357)
