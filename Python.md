@@ -30,6 +30,7 @@
 * [PEP 3135 -- New Super](https://www.python.org/dev/peps/pep-3135/)
 * [PEP 318 -- Decorators for Functions and Methods](https://www.python.org/dev/peps/pep-0318/)
 * [types.SimpleNamespace](https://docs.python.org/3/library/types.html#types.SimpleNamespace)
+* [How to create a new unknown or dynamic/expando object in Python](https://stackoverflow.com/questions/14015592/how-to-create-a-new-unknown-or-dynamic-expando-object-in-python)
 
 # Courutines & Generators
 * [PEP 342 -- Coroutines via Enhanced Generators](https://www.python.org/dev/peps/pep-0342/)

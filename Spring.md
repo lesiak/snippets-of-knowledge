@@ -31,3 +31,11 @@ This approach to referring to other beans is usually the best choice
 * [Using env variable in Spring Boot's application.properties](http://stackoverflow.com/questions/35531661/using-env-variable-in-spring-boots-application-properties)
 * [spring boot adding another properties file to the environment](https://stackoverflow.com/questions/26935960/spring-boot-adding-another-properties-file-to-the-environment)
 * [Spring Boot and multiple external configuration files](https://stackoverflow.com/questions/25855795/spring-boot-and-multiple-external-configuration-files/25862357#25862357)
+* [25. Profiles](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-profiles.html)
+
+# Actuator
+* [Spring Boot Actuator](http://www.baeldung.com/spring-boot-actuators)
+* [Health Checks, Metrics & More with Spring Boot Actuator](http://www.briansjavablog.com/2017/09/health-checks-metric-s-more-with-spring.html)
+
+# Other
+* [Spicy Spring : Scheduler does not shutdown](https://blog.jdriven.com/2017/04/spicy-spring-scheduler-not-shutdown/)

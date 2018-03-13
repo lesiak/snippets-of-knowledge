@@ -23,3 +23,4 @@ In general case it is better to inject EntityManager, because with EntityManager
 * [Configuring Spring Boot for Oracle](https://springframework.guru/configuring-spring-boot-for-oracle/)
 * [Spring Boot + Spring Data JPA + Oracle example](https://www.mkyong.com/spring-boot/spring-boot-spring-data-jpa-oracle-example/)
 * [No serializer found for class org.hibernate.proxy.pojo.javassist.Javassist?](https://stackoverflow.com/questions/24994440/no-serializer-found-for-class-org-hibernate-proxy-pojo-javassist-javassist)
+* [Spring data findAll() does not fetch eagerly](https://stackoverflow.com/questions/49192255/spring-data-findall-does-not-fetch-eagerly)

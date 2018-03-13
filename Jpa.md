@@ -39,6 +39,9 @@
 * [The anatomy of Hibernate dirty checking mechanism](https://vladmihalcea.com/2014/08/21/the-anatomy-of-hibernate-dirty-checking/)
 * [How to setup Hibernate Gradle plugin for bytecode enhancement?](https://stackoverflow.com/questions/35552109/how-to-setup-hibernate-gradle-plugin-for-bytecode-enhancement)
 * [JPA Auditing: Automatically Persisting Audit Logs Using EntityListeners](https://dzone.com/articles/jpa-auditing-automatically-persisting-audit-logs)
+* [How to update only a subset of entity attributes using JPA and Hibernate](https://vladmihalcea.com/how-to-update-only-a-subset-of-entity-attributes-using-jpa-and-hibernate/)
+* [How to update only a part of all entity attributes with Hibernate](https://stackoverflow.com/questions/39915906/how-to-update-only-a-part-of-all-entity-attributes-with-hibernate/39917954#39917954)
+* [The anatomy of Hibernate dirty checking mechanism](https://vladmihalcea.com/the-anatomy-of-hibernate-dirty-checking/)
 
 # Hibernate 5
 * [5 new features in Hibernate 5 every developer should know](http://www.thoughts-on-java.org/5-new-features-hibernate-5-every-developer-know/)

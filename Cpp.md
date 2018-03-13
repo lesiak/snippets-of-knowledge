@@ -9,3 +9,6 @@
 
 # Tools
 * [Static Analysis Tools and the SDL (Part One)](https://cloudblogs.microsoft.com/microsoftsecure/2009/06/29/static-analysis-tools-and-the-sdl-part-one/)
+
+# Other
+* [Solve ABA concurrency issue using C++ prior to 20](https://stackoverflow.com/questions/48747895/solve-aba-concurrency-issue-using-c-prior-to-20)
