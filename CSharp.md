@@ -68,6 +68,8 @@
 * [Microsoft Help Viewer](https://msdn.microsoft.com/en-us/library/hh580782.aspx)
 * [How do I find the .NET version?](https://stackoverflow.com/questions/1565434/how-do-i-find-the-net-version)
 * [ASoft .NET Version Detector](http://www.asoft.be/prod_netver.html)
+* [How do I install a NuGet package .nupkg file locally?
+](https://stackoverflow.com/questions/10240029/how-do-i-install-a-nuget-package-nupkg-file-locally)
 
 ## Services
 * [AppVeyor #1 Continuous Delivery service for Windows](https://www.appveyor.com/)
