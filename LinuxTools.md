@@ -2,6 +2,8 @@
 * [MTR](http://www.bitwizard.nl/mtr/)
 * [Linux Network Commands](https://dzone.com/articles/linux-network-commands)
 * [How to create an SSH shortcut](https://scotch.io/tutorials/how-to-create-an-ssh-shortcut)
+* Check open port:
+	netstat -lnp | grep :PORTNUM
 
 # Searching, Formattng
 * grep -A num
