@@ -1,8 +1,19 @@
+# Microsoft Learn tutorials
+* [Introduction to Azure](https://docs.microsoft.com/en-us/learn/azure/)
+* [Store application data with Azure Blob storage](https://docs.microsoft.com/en-us/learn/modules/store-app-data-with-azure-blob-storage/)
+
+# Storage
+* [Azure storage account overview](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
+* [Introduction to Azure Blob storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction)
+
+# Storage Tools
+* [Use the Azure Storage Emulator for Development and Testing](https://docs.microsoft.com/en-us/azure/storage/storage-use-emulator)
+* [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
+
+# Service
 * [Azure Service Definition Schema (.csdef File)](https://msdn.microsoft.com/en-us/library/azure/ee758711.aspx?f=255&MSPPError=-2147217396)
 * [Azure Service Configuration Schema (.cscfg File)](https://msdn.microsoft.com/en-us/library/azure/ee758710.aspx)
 * [How different cscfg files (local versus cloud) are used when cspkg is built using msbuild](http://stackoverflow.com/questions/18565070/how-different-cscfg-files-local-versus-cloud-are-used-when-cspkg-is-built-usin)
-
-* [Use the Azure Storage Emulator for Development and Testing](https://docs.microsoft.com/en-us/azure/storage/storage-use-emulator)
 
 # Debugging
 * [Troubleshoot a web app in Azure App Service using Visual Studio](https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-dotnet-troubleshoot-visual-studio)
@@ -15,4 +26,4 @@
 * [Azure Queues and Service Bus queues - compared and contrasted](https://docs.microsoft.com/en-gb/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted)
 
 # Tools
-* [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
+* [Install the Azure PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps)
