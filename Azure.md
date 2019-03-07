@@ -5,6 +5,7 @@
 # Storage
 * [Azure storage account overview](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
 * [Introduction to Azure Blob storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction)
+* [List Blobs](https://docs.microsoft.com/en-us/rest/api/storageservices/list-blobs)
 
 # Storage Tools
 * [Use the Azure Storage Emulator for Development and Testing](https://docs.microsoft.com/en-us/azure/storage/storage-use-emulator)
