@@ -27,3 +27,4 @@
 
 # Tools
 * [Install the Azure PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps)
+* [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
