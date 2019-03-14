@@ -6,10 +6,10 @@
 * [Azure storage account overview](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
 * [Introduction to Azure Blob storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction)
 * [List Blobs](https://docs.microsoft.com/en-us/rest/api/storageservices/list-blobs)
-
-# Storage Tools
 * [Use the Azure Storage Emulator for Development and Testing](https://docs.microsoft.com/en-us/azure/storage/storage-use-emulator)
 * [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
+* [Transfer data with the AzCopy v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)
+* [How to mount Blob storage as a file system with blobfuse](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-how-to-mount-container-linux)
 
 # Service
 * [Azure Service Definition Schema (.csdef File)](https://msdn.microsoft.com/en-us/library/azure/ee758711.aspx?f=255&MSPPError=-2147217396)
@@ -29,3 +29,6 @@
 # Tools
 * [Install the Azure PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps)
 * [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+
+# Private cloud
+* [What is Azure Stack?](https://azure.microsoft.com/en-us/overview/azure-stack/)
