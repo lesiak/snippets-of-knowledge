@@ -8,3 +8,5 @@
 * [13.3.4. Advisory Locks](https://www.postgresql.org/docs/9.1/static/explicit-locking.html#ADVISORY-LOCKS)
 * [Advisory Locks and How to Use Them](http://shiroyasha.io/advisory-locks-and-how-to-use-them.html)
 * [Advisory Locks in PostgreSQL](https://hashrocket.com/blog/posts/advisory-locks-in-postgres)
+
+* Rest metrics: host:20443/rest/cluster_overview/json
