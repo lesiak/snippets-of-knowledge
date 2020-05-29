@@ -67,6 +67,7 @@
 - json.load
 - importlib.reload
 - subprocess.popen
+- [How are mylist.reverse() and list.reverse(mylist) executed?](https://stackoverflow.com/questions/60682797/how-are-mylist-reverse-and-list-reversemylist-executed)
 
 # Filesystem
 
