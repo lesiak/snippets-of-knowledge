@@ -7,6 +7,7 @@
 
 # Searching, Formattng
 * grep -A num
+* grep -rino pattern files
 * [What makes grep consider a file to be binary?](http://unix.stackexchange.com/questions/19907/what-makes-grep-consider-a-file-to-be-binary)
 
 # JSon Formatting
