@@ -5,22 +5,20 @@
   - sasa
 
 - describe the principles of economies of scale
+   - Microsoft Learn: [Economies of scale](https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/3b-economies-of-scale)
 
 - describe the differences between Capital Expenditure (CapEx) and Operational Expenditure (OpEx)
+   - Microsort Learn: [Capital expenditure (CapEx) versus operational expenditure (OpEx)](https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/3c-capex-vs-opex)
 
 - describe the consumption-based model
 
 - Describe the differences between Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS)
-
 - describe Infrastructure-as-a-Service (IaaS)
    - [What is IaaS?](https://azure.microsoft.com/en-gb/overview/what-is-iaas/)
-
 - describe Platform-as-a-Service (PaaS)
    - [What is PaaS?](https://azure.microsoft.com/en-gb/overview/what-is-paas/)
-
 - describe Software-as-a-Service (SaaS)
    - [What is SaaS?](https://azure.microsoft.com/en-gb/overview/what-is-saas/)
-
 - compare and contrast the three different service types
 
 ### Describe the differences between Public, Private and Hybrid cloud models
@@ -28,17 +26,31 @@
 - describe Private cloud
 - describe Hybrid cloud
 - compare and contrast the three different cloud models
+   - [What are public, private, and hybrid clouds?](https://azure.microsoft.com/en-us/overview/what-are-private-public-hybrid-clouds/)
 
 # Describe Core Azure Services (30-35%)
 ### Describe the core Azure architectural components
 - describe Regions
+   - [Azure global infrastructure](https://azure.microsoft.com/en-us/global-infrastructure/)
+   - [Azure regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
 - describe Availability Zones
+   - [Regions and Availability Zones in Azure](https://docs.microsoft.com/en-us/azure/availability-zones/az-overview)
 - describe Resource Groups
 - describe Azure Resource Manager
+   - [What is Azure Resource Manager?](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
 - describe the benefits and usage of core Azure architectural components
+   - [Azure subscription and service limits, quotas, and constraints](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
+   - [What are Azure management groups?](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview)
+   - [What is Azure Resource Manager?](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
 
 ### Describe some of the core products available in Azure
 - describe products available for Compute such as Virtual Machines, Virtual Machine Scale Sets, App Services, Azure Container Instances (ACI) and Azure Kubernetes Service (AKS)
+   - [Windows virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/overview)
+   - [Linux virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/overview)
+   - [App Service overview](https://docs.microsoft.com/en-us/azure/app-service/overview)
+   - [What are virtual machine scale sets?](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview)
+   - [What is Azure Container Instances?](https://docs.microsoft.com/en-us/azure/container-instances/container-instances-overview)
+   - [Azure Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes)
 - describe products available for Networking such as Virtual Network, Load Balancer, VPN Gateway, Application Gateway and Content Delivery Network
 - describe products available for Storage such as Blob Storage, Disk Storage, File Storage,
 and Archive Storage
