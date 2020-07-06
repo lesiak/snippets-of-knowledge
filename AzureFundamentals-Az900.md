@@ -57,8 +57,11 @@
    - [What is VPN Gateway?](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
    - [What is Azure Application Gateway?](https://docs.microsoft.com/en-us/azure/application-gateway/overview)
    - [What is a content delivery network on Azure?](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview)
-- describe products available for Storage such as Blob Storage, Disk Storage, File Storage,
-and Archive Storage
+- describe products available for Storage such as Blob Storage, Disk Storage, File Storage, and Archive Storage
+   - [What is Azure Blob storage?](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview)
+   - [Azure Blob storage: hot, cool, and archive access tiers](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers?tabs=azure-portal)
+   - [What is Azure Files?](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction)
+   - [Introduction to Azure managed disks](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview)
 - describe products available for Databases such as Cosmos DB, Azure SQL Database, Azure Database for MySQL, Azure Database for PostgreSQL, Azure Database Migration service
 - describe the Azure Marketplace and its usage scenarios
 
