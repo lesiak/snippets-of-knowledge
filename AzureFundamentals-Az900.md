@@ -71,6 +71,7 @@
 - describe Artificial Intelligence (AI) and products that are available for AI such as Azure Machine Learning Service and Studio
 - describe Serverless computing and Azure products that are available for serverless computing such as Azure Functions, Logic Apps, and Event Grid
 - describe DevOps solutions available on Azure such as Azure DevOps and Azure DevTest Labs
+   - [About Azure DevTest Labs](https://docs.microsoft.com/en-us/azure/devtest-labs/devtest-lab-overview)
 - describe the benefits and outcomes of using Azure solutions
 
 ### Describe Azure management tools
