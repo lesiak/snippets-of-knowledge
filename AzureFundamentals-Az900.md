@@ -2,17 +2,13 @@
 
 ### Describe the benefits and considerations of using cloud services
 - describe terms such as High Availability, Scalability, Elasticity, Agility, Fault Tolerance, and Disaster Recovery
-  - sasa
-
 - describe the principles of economies of scale
    - Microsoft Learn: [Economies of scale](https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/3b-economies-of-scale)
-
 - describe the differences between Capital Expenditure (CapEx) and Operational Expenditure (OpEx)
    - Microsort Learn: [Capital expenditure (CapEx) versus operational expenditure (OpEx)](https://docs.microsoft.com/en-us/learn/modules/principles-cloud-computing/3c-capex-vs-opex)
-
 - describe the consumption-based model
 
-- Describe the differences between Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS)
+### Describe the differences between Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS) and Software-as-a-Service (SaaS)
 - describe Infrastructure-as-a-Service (IaaS)
    - [What is IaaS?](https://azure.microsoft.com/en-gb/overview/what-is-iaas/)
    - [Azure infrastructure as a service (IaaS)](https://azure.microsoft.com/en-gb/overview/what-is-azure/iaas/#overview)
@@ -85,10 +81,11 @@
 
 ### Describe securing network connectivity in Azure
 - describe Network Security Groups (NSG)
--  describe Application Security Groups (ASG)
+- describe Application Security Groups (ASG)
 - describe User Defined Rules (UDR)
 - describe Azure Firewall
 - describe Azure DDoS Protection
+   - [Azure DDoS Protection Standard overview](https://docs.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview)
 - choose an appropriate Azure security solution
 
 ### Describe core Azure Identity services
@@ -98,9 +95,12 @@
 
 ### Describe security tools and features of Azure
 - describe Azure Security Center
+   - [What is Azure Security Center?](https://docs.microsoft.com/en-us/azure/security-center/security-center-intro)
 - describe Azure Security Center usage scenarios
 - describe Key Vault
+   - [About Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/overview)
 - describe Azure Information Protection (AIP)
+   - [What is Azure Active Directory Identity Protection?](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection)
 - describe Azure Advanced Threat Protection (ATP)
    - [What is Azure Advanced Threat Protection?](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp)
 
