@@ -105,6 +105,7 @@
 
 ### Describe Azure governance methodologies
 - describe policies and initiatives with Azure Policy
+   - [What is Azure Policy?](https://docs.microsoft.com/en-us/azure/governance/policy/overview)
 - describe Role-Based Access Control (RBAC)
 - describe Locks
    - [Lock resources to prevent unexpected changes](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources)
