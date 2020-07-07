@@ -116,6 +116,7 @@
 
 ### Describe monitoring and reporting options in Azure
 - describe Azure Monitor
+   - [Azure Monitor overview](https://docs.microsoft.com/en-us/azure/azure-monitor/overview)
 - describe Azure Service Health
 - describe the use cases and benefits of Azure Monitor and Azure Service Health
 
