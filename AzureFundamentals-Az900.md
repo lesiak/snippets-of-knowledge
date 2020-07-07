@@ -102,6 +102,7 @@
 - describe Key Vault
 - describe Azure Information Protection (AIP)
 - describe Azure Advanced Threat Protection (ATP)
+   - [What is Azure Advanced Threat Protection?](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp)
 
 ### Describe Azure governance methodologies
 - describe policies and initiatives with Azure Policy
