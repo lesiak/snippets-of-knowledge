@@ -75,6 +75,7 @@
    - [Introduction to Azure Data Lake Storage Gen2](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
    - [What is Azure HDInsight?](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-overview)
    - [What is Azure Databricks?](https://docs.microsoft.com/en-us/azure/databricks/scenarios/what-is-azure-databricks)
+   - [Azure Event Hubs — A big data streaming platform and event ingestion service](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-about)
 - describe Artificial Intelligence (AI) and products that are available for AI such as Azure Machine Learning Service and Studio
    - [What is Azure Machine Learning?](https://docs.microsoft.com/en-gb/azure/machine-learning/overview-what-is-azure-ml)
    - [Azure Machine Learning vs Machine Learning Studio (classic)](https://docs.microsoft.com/en-gb/azure/machine-learning/compare-azure-ml-to-studio-classic)
