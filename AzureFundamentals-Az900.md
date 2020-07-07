@@ -143,6 +143,7 @@
 
 ### Describe Azure Service Level Agreements (SLAs)
 - describe a Service Level Agreement (SLA)
+   - [SLA summary for Azure services](https://azure.microsoft.com/en-us/support/legal/sla/summary/)
 - describe Composite SLAs
 - describe how to determine an appropriate SLA for an application
 
