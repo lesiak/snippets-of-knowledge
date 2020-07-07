@@ -67,6 +67,9 @@
 
 ### Describe some of the solutions available on Azure
 - describe Internet of Things (IoT) and products that are available for IoT on Azure such as IoT Hub and IoT Central
+   - [What is Azure IoT Hub?](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub)
+   - [What is Azure IoT Central?](https://docs.microsoft.com/en-us/azure/iot-central/core/overview-iot-central)
+   - [What is Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge)
 - describe Big Data and Analytics and products that are available for Big Data and Analytics such as Azure Synapse Analytics, HDInsight, and Azure Databricks
 - describe Artificial Intelligence (AI) and products that are available for AI such as Azure Machine Learning Service and Studio
 - describe Serverless computing and Azure products that are available for serverless computing such as Azure Functions, Logic Apps, and Event Grid
