@@ -134,6 +134,7 @@
 - describe Azure Monitor
    - [Azure Monitor overview](https://docs.microsoft.com/en-us/azure/azure-monitor/overview)
    - [Azure Monitor data platform](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-platform)
+   - [Azure Activity log](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log)
 - describe Azure Service Health
    - [Service Health overview](https://docs.microsoft.com/en-us/azure/service-health/service-health-overview)
 - describe the use cases and benefits of Azure Monitor and Azure Service Health
