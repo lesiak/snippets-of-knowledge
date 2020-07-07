@@ -141,6 +141,7 @@
 - describe the Pricing calculator
 - describe the Total Cost of Ownership (TCO) calculator
 - describe best practices for minimizing Azure costs such as performing cost analysis, creating spending limits and quotas, using tags to identify cost owners, using Azure reservations and using Azure Advisor recommendations
+   - [Use tags to organize your Azure resources and management hierarchy](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources)
 - describe Azure Cost Management
 
 ### Describe Azure Service Level Agreements (SLAs)
