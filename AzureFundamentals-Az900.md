@@ -76,6 +76,10 @@
    - [What is Azure HDInsight?](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-overview)
    - [What is Azure Databricks?](https://docs.microsoft.com/en-us/azure/databricks/scenarios/what-is-azure-databricks)
 - describe Artificial Intelligence (AI) and products that are available for AI such as Azure Machine Learning Service and Studio
+   - [What is Azure Machine Learning?](https://docs.microsoft.com/en-gb/azure/machine-learning/overview-what-is-azure-ml)
+   - [Azure Machine Learning vs Machine Learning Studio (classic)](https://docs.microsoft.com/en-gb/azure/machine-learning/compare-azure-ml-to-studio-classic)
+   - [What are Azure Cognitive Services?](https://docs.microsoft.com/en-gb/azure/cognitive-services/welcome)
+   - [About Azure Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction)
 - describe Serverless computing and Azure products that are available for serverless computing such as Azure Functions, Logic Apps, and Event Grid
 - describe DevOps solutions available on Azure such as Azure DevOps and Azure DevTest Labs
    - [About Azure DevTest Labs](https://docs.microsoft.com/en-us/azure/devtest-labs/devtest-lab-overview)
