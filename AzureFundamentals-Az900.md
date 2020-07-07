@@ -135,6 +135,7 @@
    - [Azure Monitor overview](https://docs.microsoft.com/en-us/azure/azure-monitor/overview)
    - [Azure Monitor data platform](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-platform)
 - describe Azure Service Health
+   - [Service Health overview](https://docs.microsoft.com/en-us/azure/service-health/service-health-overview)
 - describe the use cases and benefits of Azure Monitor and Azure Service Health
 
 ### Describe privacy, compliance and data protection standards in Azure
