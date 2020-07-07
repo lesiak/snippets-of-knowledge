@@ -185,6 +185,8 @@
 
 ### Describe the support options available with Azure
 - Understand describe support plans that are available such as Developer, Standard, Professional Direct and Premier
+   - [Compare support plans](https://azure.microsoft.com/en-us/support/plans/)
 - Understand describe how to open a support ticket
+   - [Create an Azure support request](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/how-to-create-azure-support-request)
 - Understand describe available support channels outside of support plan channels
 - describe the Knowledge Center
