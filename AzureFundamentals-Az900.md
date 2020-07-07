@@ -63,6 +63,11 @@
    - [What is Azure Files?](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction)
    - [Introduction to Azure managed disks](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview)
 - describe products available for Databases such as Cosmos DB, Azure SQL Database, Azure Database for MySQL, Azure Database for PostgreSQL, Azure Database Migration service
+   - [Welcome to Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction)
+   - [What is Azure SQL Database?](https://docs.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview)
+   - [What is Azure Database for MySQL?](https://docs.microsoft.com/en-us/azure/mysql/overview)
+   - [What is Azure Database for PostgreSQL?](https://docs.microsoft.com/en-us/azure/postgresql/overview)
+   - [What is Azure Database Migration Service?](https://docs.microsoft.com/en-us/azure/dms/dms-overview)
 - describe the Azure Marketplace and its usage scenarios
 
 ### Describe some of the solutions available on Azure
