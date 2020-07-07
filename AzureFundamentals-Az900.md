@@ -82,6 +82,10 @@
    - [What are Azure Cognitive Services?](https://docs.microsoft.com/en-gb/azure/cognitive-services/welcome)
    - [About Azure Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction)
 - describe Serverless computing and Azure products that are available for serverless computing such as Azure Functions, Logic Apps, and Event Grid
+   - [An introduction to Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+   - [Overview - What is Azure Logic Apps?](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-overview)
+   - [What is Azure Event Grid?](https://docs.microsoft.com/en-us/azure/event-grid/overview)
+   - [Choose between Azure messaging services - Event Grid, Event Hubs, and Service Bus](https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services)
 - describe DevOps solutions available on Azure such as Azure DevOps and Azure DevTest Labs
    - [About Azure DevTest Labs](https://docs.microsoft.com/en-us/azure/devtest-labs/devtest-lab-overview)
 - describe the benefits and outcomes of using Azure solutions
