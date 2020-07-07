@@ -180,3 +180,11 @@
 - describe Public and Private Preview features
 - describe the term General Availability (GA)
 - describe how to monitor feature updates and product changes
+
+# Retired from the exam
+
+### Describe the support options available with Azure
+- Understand describe support plans that are available such as Developer, Standard, Professional Direct and Premier
+- Understand describe how to open a support ticket
+- Understand describe available support channels outside of support plan channels
+- describe the Knowledge Center
