@@ -107,6 +107,7 @@
 - describe policies and initiatives with Azure Policy
 - describe Role-Based Access Control (RBAC)
 - describe Locks
+   - [Lock resources to prevent unexpected changes](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources)
 - describe Azure Advisor security assistance
 - describe Azure Blueprints
 
