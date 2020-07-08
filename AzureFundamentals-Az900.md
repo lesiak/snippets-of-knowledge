@@ -174,6 +174,8 @@
    - [Use tags to organize your Azure resources and management hierarchy](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources)
    - [What are Azure Reservations?](https://docs.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations)
 - describe Azure Cost Management
+   - [What is Azure Cost Management and Billing?](https://docs.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview)
+   - [Prevent unexpected charges with Azure billing and cost management](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/getting-started)
 
 ### Describe Azure Service Level Agreements (SLAs)
 - describe a Service Level Agreement (SLA)
