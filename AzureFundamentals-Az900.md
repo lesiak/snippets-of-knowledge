@@ -39,8 +39,7 @@
    - [Extra: Azure resource providers and types](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types)
    - [Extra: Move resources to a new resource group or subscription](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 - describe the benefits and usage of core Azure architectural components
-   - [Azure subscription and service limits, quotas, and constraints](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
-   - [What are Azure management groups?](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview)
+   
    - [What is Azure Resource Manager?](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
 
 ### Describe some of the core products available in Azure
@@ -160,8 +159,10 @@
 ### Describe Azure subscriptions
 
 - describe an Azure Subscription
+   - [Azure subscription and service limits, quotas, and constraints](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
 - describe the uses and options with Azure subscriptions such access control and offer types
 - describe subscription management using Management groups
+   - [What are Azure management groups?](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview)
 
 ### Describe planning and management of costs
 - describe options for purchasing Azure products and services
