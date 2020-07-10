@@ -118,6 +118,8 @@
 ### Describe core Azure Identity services
 - describe the difference between authentication and authorization
 - describe Azure Active Directory
+   - [What is Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)
+   - [Azure Active Directory pricing](https://azure.microsoft.com/en-us/pricing/details/active-directory/)
 - describe Azure Multi-Factor Authentication
 
 ### Describe security tools and features of Azure
