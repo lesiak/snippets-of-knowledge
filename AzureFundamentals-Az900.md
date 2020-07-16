@@ -56,11 +56,16 @@
    - [Choose an Azure compute service for your application](https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree)
    - [Kubernetes core concepts for Azure Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads)
    - [Azure Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes)
+   - [Introduction to private Docker container registries in Azure](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-intro)
 - describe products available for Networking such as Virtual Network, Load Balancer, VPN Gateway, Application Gateway and Content Delivery Network
    - [What is Azure Virtual Network?](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview)
    - [What is Azure Load Balancer?](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-overview)
    - [What is Azure Application Gateway?](https://docs.microsoft.com/en-us/azure/application-gateway/overview)
+   - [About Point-to-Site VPN](https://docs.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about)
    - [What is VPN Gateway?](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+   - [VPN Gateway design](https://docs.microsoft.com/en-us/azure/vpn-gateway/design)
+   - [Virtual network peering](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview)
+   - [ExpressRoute overview](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-introduction)
    - [What is a content delivery network on Azure?](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview)
 - describe products available for Storage such as Blob Storage, Disk Storage, File Storage, and Archive Storage
    - [What is Azure Blob storage?](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview)
@@ -109,7 +114,9 @@
 
 ### Describe securing network connectivity in Azure
 - describe Network Security Groups (NSG)
+   - [Network security groups](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview)
 - describe Application Security Groups (ASG)
+   - [Application security groups](https://docs.microsoft.com/en-us/azure/virtual-network/application-security-groups)
 - describe User Defined Rules (UDR)
 - describe Azure Firewall
 - describe Azure DDoS Protection
