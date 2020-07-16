@@ -122,6 +122,8 @@
    - [Application security groups](https://docs.microsoft.com/en-us/azure/virtual-network/application-security-groups)
 - describe User Defined Rules (UDR)
 - describe Azure Firewall
+   - [What is Azure Firewall?](https://docs.microsoft.com/en-us/azure/firewall/overview)
+   - [What is Azure Web Application Firewall?](https://docs.microsoft.com/en-us/azure/web-application-firewall/overview)
 - describe Azure DDoS Protection
    - [Azure DDoS Protection Standard overview](https://docs.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview)
 - choose an appropriate Azure security solution
