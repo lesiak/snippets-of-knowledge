@@ -87,6 +87,7 @@
 
 ### Describe some of the solutions available on Azure
 - describe Internet of Things (IoT) and products that are available for IoT on Azure such as IoT Hub and IoT Central
+   - [Azure technologies and services for creating IoT solutions](https://docs.microsoft.com/en-us/azure/iot-fundamentals/iot-services-and-technologies)
    - [What is Azure IoT Hub?](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub)
    - [What is Azure IoT Central?](https://docs.microsoft.com/en-us/azure/iot-central/core/overview-iot-central)
    - [What is Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge)
