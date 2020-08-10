@@ -112,6 +112,7 @@
    - [Connectors for Azure Logic Apps](https://docs.microsoft.com/en-us/azure/connectors/apis-list)
    - [What is Azure Event Grid?](https://docs.microsoft.com/en-us/azure/event-grid/overview)
    - [Choose between Azure messaging services - Event Grid, Event Hubs, and Service Bus](https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services)
+   - [Events, Data Points, and Messages - Choosing the right Azure messaging service for your data](https://azure.microsoft.com/en-us/blog/events-data-points-and-messages-choosing-the-right-azure-messaging-service-for-your-data/)
 - describe DevOps solutions available on Azure such as Azure DevOps and Azure DevTest Labs
    - [About Azure DevTest Labs](https://docs.microsoft.com/en-us/azure/devtest-labs/devtest-lab-overview)
 - describe the benefits and outcomes of using Azure solutions
