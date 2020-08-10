@@ -127,6 +127,12 @@
 ### Describe Azure management tools
 - describe Azure tools such as Azure Portal, Azure PowerShell, Azure CLI and Cloud Shell
 - describe Azure Advisor
+   - [Introduction to Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-overview)
+   - [Improve the reliability of your application by using Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-high-availability-recommendations)
+   - [Make resources more secure with Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-security-recommendations)
+   - [Improve the performance of Azure applications by using Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-performance-recommendations)
+   - [Reduce service costs by using Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations)
+   - [Achieve operational excellence by using Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-operational-excellence-recommendations)
 
 # Describe Security, Privacy, Compliance, and Trust (25-30%)
 
@@ -191,7 +197,7 @@
 - describe Azure Government cloud services
 - describe Azure China cloud services
 
-### Describe Azure Pricing, Service Level Agreements, and Lifecycles (20-25%)
+# Describe Azure Pricing, Service Level Agreements, and Lifecycles (20-25%)
 
 ### Describe Azure subscriptions
 
