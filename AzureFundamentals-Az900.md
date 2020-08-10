@@ -109,6 +109,7 @@
 - describe Serverless computing and Azure products that are available for serverless computing such as Azure Functions, Logic Apps, and Event Grid
    - [An introduction to Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
    - [Overview - What is Azure Logic Apps?](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-overview)
+   - [Connectors for Azure Logic Apps](https://docs.microsoft.com/en-us/azure/connectors/apis-list)
    - [What is Azure Event Grid?](https://docs.microsoft.com/en-us/azure/event-grid/overview)
    - [Choose between Azure messaging services - Event Grid, Event Hubs, and Service Bus](https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services)
 - describe DevOps solutions available on Azure such as Azure DevOps and Azure DevTest Labs
