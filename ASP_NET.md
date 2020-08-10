@@ -48,3 +48,12 @@
 
 # Web Services
 * [WCF vs ASMX WebServices](http://keithelder.net/2008/10/17/wcf-vs-asmx-webservices/)
+
+# Exam
+- [Claims-Based Apps - Claims-Based Authorization with WIF](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/november/claims-based-authorization-with-wif)
+- [How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF](https://docs.microsoft.com/en-us/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif)
+- [How to: Access Claims in an ASP.NET Page](https://docs.microsoft.com/en-us/previous-versions/windows-identity-foundation/ee517271(v=msdn.10))
+- [PrincipalPermissionAttribute Class](https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.principalpermissionattribute?view=netframework-4.6)
+- [AuthenticationTypes Class](https://docs.microsoft.com/en-us/dotnet/api/system.security.claims.authenticationtypes?view=netframework-4.6)
+- [IPrincipal.IsInRole(String) Method](https://docs.microsoft.com/en-us/dotnet/api/system.security.principal.iprincipal.isinrole?view=netframework-4.6#System_Security_Principal_IPrincipal_IsInRole_System_String_)
+- [IIdentity.IsAuthenticated Property](https://docs.microsoft.com/en-us/dotnet/api/system.security.principal.iidentity.isauthenticated?view=netframework-4.6)
