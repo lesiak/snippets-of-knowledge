@@ -142,7 +142,8 @@
    - [Virtual network service tags](https://docs.microsoft.com/en-us/azure/virtual-network/service-tags-overview)
 - describe Application Security Groups (ASG)
    - [Application security groups](https://docs.microsoft.com/en-us/azure/virtual-network/application-security-groups)
-- describe User Defined Rules (UDR)
+- describe User Defined Routes (UDR)
+   - [Virtual network traffic routing](https://docs.microsoft.com/en-gb/azure/virtual-network/virtual-networks-udr-overview)
 - describe Azure Firewall
    - [What is Azure Firewall?](https://docs.microsoft.com/en-us/azure/firewall/overview)
    - [What is Azure Web Application Firewall?](https://docs.microsoft.com/en-us/azure/web-application-firewall/overview)
