@@ -114,6 +114,13 @@
    - [Choose between Azure messaging services - Event Grid, Event Hubs, and Service Bus](https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services)
    - [Events, Data Points, and Messages - Choosing the right Azure messaging service for your data](https://azure.microsoft.com/en-us/blog/events-data-points-and-messages-choosing-the-right-azure-messaging-service-for-your-data/)
 - describe DevOps solutions available on Azure such as Azure DevOps and Azure DevTest Labs
+   - [What is Azure DevOps?](https://docs.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops?view=azure-devops)
+   - [What features and services do I get with Azure DevOps?](https://docs.microsoft.com/en-us/azure/devops/user-guide/services?view=azure-devops)
+   - [What is Azure Repos?](https://docs.microsoft.com/en-us/azure/devops/repos/get-started/what-is-repos?view=azure-devops) 
+   - [What is Azure Pipelines?](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops)
+   - [What is Azure Boards?](https://docs.microsoft.com/en-us/azure/devops/boards/get-started/what-is-azure-boards?view=azure-devops&tabs=agile-process)
+   - [Exploratory and manual testing scenarios and capabilities](https://docs.microsoft.com/en-us/azure/devops/test/overview?view=azure-devops)
+   - [What is Azure Artifacts?](https://docs.microsoft.com/en-us/azure/devops/artifacts/overview?view=azure-devops)
    - [About Azure DevTest Labs](https://docs.microsoft.com/en-us/azure/devtest-labs/devtest-lab-overview)
 - describe the benefits and outcomes of using Azure solutions
 
@@ -168,6 +175,7 @@
 - describe Azure Monitor
    - [Azure Monitor overview](https://docs.microsoft.com/en-us/azure/azure-monitor/overview)
    - [Azure Monitor data platform](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-platform)
+   - [What is Application Insights?](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
    - [Azure Activity log](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log)
 - describe Azure Service Health
    - [Service Health overview](https://docs.microsoft.com/en-us/azure/service-health/service-health-overview)
