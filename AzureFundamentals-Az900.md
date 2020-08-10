@@ -177,7 +177,9 @@
 - describe Locks
    - [Lock resources to prevent unexpected changes](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources)
 - describe Azure Advisor security assistance
+   - [Make resources more secure with Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-security-recommendations)
 - describe Azure Blueprints
+   - [What is Azure Blueprints?](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview)
 
 ### Describe monitoring and reporting options in Azure
 - describe Azure Monitor
