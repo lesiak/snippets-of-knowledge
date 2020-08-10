@@ -139,6 +139,7 @@
 ### Describe securing network connectivity in Azure
 - describe Network Security Groups (NSG)
    - [Network security groups](https://docs.microsoft.com/en-us/azure/virtual-network/security-overview)
+   - [Virtual network service tags](https://docs.microsoft.com/en-us/azure/virtual-network/service-tags-overview)
 - describe Application Security Groups (ASG)
    - [Application security groups](https://docs.microsoft.com/en-us/azure/virtual-network/application-security-groups)
 - describe User Defined Rules (UDR)
