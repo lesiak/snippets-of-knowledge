@@ -158,6 +158,10 @@
 - describe the difference between authentication and authorization
 - describe Azure Active Directory
    - [What is Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)
+   - [What is Azure AD Privileged Identity Management?](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure)
+   - [What is Azure Active Directory Identity Protection?](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection)
+   - [What is Conditional Access?](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview)
+   - [What are managed identities for Azure resources?](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview)
    - [Azure Active Directory pricing](https://azure.microsoft.com/en-us/pricing/details/active-directory/)
    - [Assign or remove licenses in the Azure Active Directory portal](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups)
 - describe Azure Multi-Factor Authentication
