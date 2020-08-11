@@ -146,6 +146,7 @@
    - [Virtual network traffic routing](https://docs.microsoft.com/en-gb/azure/virtual-network/virtual-networks-udr-overview)
 - describe Azure Firewall
    - [What is Azure Firewall?](https://docs.microsoft.com/en-us/azure/firewall/overview)
+   - [Azure Firewall features](https://docs.microsoft.com/en-us/azure/firewall/features)
    - [What is Azure Web Application Firewall?](https://docs.microsoft.com/en-us/azure/web-application-firewall/overview)
 - describe Azure DDoS Protection
    - [Azure DDoS Protection Standard overview](https://docs.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview)
