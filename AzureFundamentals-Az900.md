@@ -148,6 +148,8 @@
    - [What is Azure Firewall?](https://docs.microsoft.com/en-us/azure/firewall/overview)
    - [Azure Firewall features](https://docs.microsoft.com/en-us/azure/firewall/features)
    - [What is Azure Web Application Firewall?](https://docs.microsoft.com/en-us/azure/web-application-firewall/overview)
+   - [Azure Web Application Firewall on Azure Application Gateway](https://docs.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview)
+   - [Azure Web Application Firewall on Azure Front Door](https://docs.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview)
 - describe Azure DDoS Protection
    - [Azure DDoS Protection Standard overview](https://docs.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview)
 - choose an appropriate Azure security solution
