@@ -229,6 +229,7 @@
 - describe options around Azure Free account
 - describe the factors affecting costs such as resource types, services, locations, ingress and egress traffic
 - describe Zones for billing purposes
+   - [Bandwidth Pricing Details](https://azure.microsoft.com/en-in/pricing/details/bandwidth/)
 - describe the Pricing calculator
    - [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/)
 - describe the Total Cost of Ownership (TCO) calculator
