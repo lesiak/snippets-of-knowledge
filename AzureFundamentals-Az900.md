@@ -194,6 +194,8 @@
 - describe Azure Monitor
    - [Azure Monitor overview](https://docs.microsoft.com/en-us/azure/azure-monitor/overview)
    - [Azure Monitor data platform](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-platform)
+   - [Logs in Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-platform-logs)
+   - [Metrics in Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/data-platform-metrics)
    - [What is Application Insights?](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
    - [Azure Activity log](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log)
 - describe Azure Service Health
