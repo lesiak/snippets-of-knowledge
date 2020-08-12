@@ -181,6 +181,8 @@
 - describe policies and initiatives with Azure Policy
    - [What is Azure Policy?](https://docs.microsoft.com/en-us/azure/governance/policy/overview)
 - describe Role-Based Access Control (RBAC)
+   - [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview)
+   - [Classic subscription administrator roles, Azure roles, and Azure AD roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles)
 - describe Locks
    - [Lock resources to prevent unexpected changes](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources)
 - describe Azure Advisor security assistance
