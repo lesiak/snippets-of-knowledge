@@ -230,7 +230,9 @@
 - describe the factors affecting costs such as resource types, services, locations, ingress and egress traffic
 - describe Zones for billing purposes
 - describe the Pricing calculator
+   - [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/)
 - describe the Total Cost of Ownership (TCO) calculator
+   - [Total Cost of Ownership (TCO) Calculator](https://azure.microsoft.com/en-us/pricing/tco/calculator/)
 - describe best practices for minimizing Azure costs such as performing cost analysis, creating spending limits and quotas, using tags to identify cost owners, using Azure reservations and using Azure Advisor recommendations
    - [Use tags to organize your Azure resources and management hierarchy](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources)
    - [What are Azure Reservations?](https://docs.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations)
