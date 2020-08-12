@@ -205,8 +205,10 @@
 ### Describe privacy, compliance and data protection standards in Azure
 - describe industry compliance terms such as GDPR, ISO and NIST
 - describe the Microsoft Privacy Statement
+   - [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement)
 - describe the Trust center
 - describe the Service Trust Portal
+   - [Service Trust Portal](https://servicetrust.microsoft.com/)
 - describe Compliance Manager
 - determine if Azure is compliant for a business need
 - describe Azure Government cloud services
