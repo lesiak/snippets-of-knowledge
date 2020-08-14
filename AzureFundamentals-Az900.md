@@ -223,6 +223,9 @@
 - determine if Azure is compliant for a business need
 - describe Azure Government cloud services
 - describe Azure China cloud services
+   - [Microsoft Azure operated by 21Vianet](https://docs.microsoft.com/en-us/azure/china/overview-operations)
+   - [Frequently asked questions about Azure China](https://docs.microsoft.com/en-us/azure/china/resources-faq)
+   - [Performance and connectivity considerations](https://docs.microsoft.com/en-us/azure/china/concepts-performance-and-connectivity)
 
 # Describe Azure Pricing, Service Level Agreements, and Lifecycles (20-25%)
 
