@@ -164,7 +164,11 @@
    - [What are managed identities for Azure resources?](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview)
    - [Azure Active Directory pricing](https://azure.microsoft.com/en-us/pricing/details/active-directory/)
    - [Assign or remove licenses in the Azure Active Directory portal](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups)
+   - [Registering your application in Azure AD](https://docs.microsoft.com/en-us/skype-sdk/ucwa/registeringyourapplicationinazuread)
+   - [Remote access to on-premises applications through Azure AD Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy)
+   - [What authentication and verification methods are available in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)
 - describe Azure Multi-Factor Authentication
+   - [How it works: Azure Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks)
 
 ### Describe security tools and features of Azure
 - describe Azure Security Center
