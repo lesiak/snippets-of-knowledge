@@ -189,6 +189,8 @@
    - [Make resources more secure with Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/advisor-security-recommendations)
 - describe Azure Blueprints
    - [What is Azure Blueprints?](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview)
+   - [Understand the lifecycle of an Azure Blueprint](https://docs.microsoft.com/en-us/azure/governance/blueprints/concepts/lifecycle)
+   - [Understand resource locking in Azure Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/concepts/resource-locking)
 
 ### Describe monitoring and reporting options in Azure
 - describe Azure Monitor
@@ -199,6 +201,7 @@
    - [What is Application Insights?](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
    - [Azure Activity log](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log)
 - describe Azure Service Health
+   - [Azure status overview](https://docs.microsoft.com/en-us/azure/service-health/azure-status-overview)
    - [Service Health overview](https://docs.microsoft.com/en-us/azure/service-health/service-health-overview)
 - describe the use cases and benefits of Azure Monitor and Azure Service Health
 
