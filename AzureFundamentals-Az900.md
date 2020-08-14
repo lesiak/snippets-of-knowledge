@@ -176,6 +176,13 @@
    - [What is Azure Information Protection?](https://docs.microsoft.com/en-us/azure/information-protection/what-is-information-protection)
 - describe Azure Advanced Threat Protection (ATP)
    - [What is Azure Advanced Threat Protection?](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp)
+   - [Tutorial: Understanding security alerts](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/understanding-security-alerts)
+   - [Tutorial: Reconnaissance alerts](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-reconnaissance-alerts)
+   - [Tutorial: Compromised credential alerts](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-compromised-credentials-alerts)
+   - [Tutorial: Lateral movement alerts](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-lateral-movement-alerts)
+   - [Tutorial: Domain dominance alerts](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-domain-dominance-alerts)
+   - [Tutorial: Exfiltration alerts](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/atp-exfiltration-alerts)
+
 
 ### Describe Azure governance methodologies
 - describe policies and initiatives with Azure Policy
