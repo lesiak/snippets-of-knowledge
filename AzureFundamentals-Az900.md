@@ -277,8 +277,13 @@
 
 ### Describe service lifecycle in Azure
 - describe Public and Private Preview features
+   - [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/en-us/support/legal/preview-supplemental-terms/)
+   - [Lifecycle FAQ - Microsoft Azure](https://docs.microsoft.com/en-us/lifecycle/faq/azure)
+   - [Fixed Lifecycle Policy](https://docs.microsoft.com/en-us/lifecycle/policies/fixed)
+   - [Modern Lifecycle Policy](https://docs.microsoft.com/en-us/lifecycle/policies/modern)
 - describe the term General Availability (GA)
 - describe how to monitor feature updates and product changes
+   - [Azure updates](https://azure.microsoft.com/en-us/updates/)
 
 # Retired from the exam
 
