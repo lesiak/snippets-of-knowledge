@@ -270,6 +270,7 @@
 - describe a Service Level Agreement (SLA)
    - [SLA summary for Azure services](https://azure.microsoft.com/en-us/support/legal/sla/summary/)
 - describe Composite SLAs
+   - [Compose SLAs across services](https://docs.microsoft.com/en-us/learn/modules/explore-azure-infrastructure/7-composite-sla)
 - describe how to determine an appropriate SLA for an application
 
 ### Describe service lifecycle in Azure
