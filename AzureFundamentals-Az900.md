@@ -167,6 +167,7 @@
    - [Registering your application in Azure AD](https://docs.microsoft.com/en-us/skype-sdk/ucwa/registeringyourapplicationinazuread)
    - [Remote access to on-premises applications through Azure AD Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy)
    - [What authentication and verification methods are available in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)
+   - [Associate or add an Azure subscription to your Azure Active Directory tenant](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
 - describe Azure Multi-Factor Authentication
    - [How it works: Azure Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks)
 
@@ -245,6 +246,7 @@
 
 - describe an Azure Subscription
    - [Azure subscription and service limits, quotas, and constraints](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
+   - [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/en-us/microsoft-365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings?view=o365-worldwide)
 - describe the uses and options with Azure subscriptions such access control and offer types
 - describe subscription management using Management groups
    - [What are Azure management groups?](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview)
