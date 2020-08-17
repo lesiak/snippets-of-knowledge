@@ -218,12 +218,19 @@
 
 ### Describe privacy, compliance and data protection standards in Azure
 - describe industry compliance terms such as GDPR, ISO and NIST
+   - [Azure Security and Compliance Blueprint - Data Analytics for NIST SP 800-171](https://docs.microsoft.com/en-us/previous-versions/azure/security/blueprints/nist171-analytics-overview)
+   - [Azure Security and Compliance Blueprint - HIPAA/HITRUST Health Data and AI](https://docs.microsoft.com/en-us/previous-versions/azure/security/blueprints/azure-health)
+   - [Azure Security and Compliance Blueprint: Analytics for PCI DSS](https://docs.microsoft.com/en-us/previous-versions/azure/security/blueprints/pcidss-analytics-overview)
+   - [NIST SP 800–171](https://docs.microsoft.com/pl-pl/microsoft-365/compliance/offering-nist-sp-800-171?view=o365-worldwide)
+   - [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/pl-pl/microsoft-365/compliance/offering-pci-dss?view=o365-worldwide)
+   - [HITRUST](https://en.wikipedia.org/wiki/HITRUST)
 - describe the Microsoft Privacy Statement
    - [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement)
 - describe the Trust center
 - describe the Service Trust Portal
    - [Service Trust Portal](https://servicetrust.microsoft.com/)
 - describe Compliance Manager
+   - [Explore your service compliance with Compliance Manager](https://docs.microsoft.com/en-us/learn/modules/intro-to-governance/6-azure-compliance)
 - determine if Azure is compliant for a business need
 - describe Azure Government cloud services
 - describe Azure China cloud services
