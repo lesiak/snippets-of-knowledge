@@ -92,6 +92,7 @@
    - [What is Azure IoT Central?](https://docs.microsoft.com/en-us/azure/iot-central/core/overview-iot-central)
    - [Take a tour of the Azure IoT Central UI](https://docs.microsoft.com/en-us/azure/iot-central/core/overview-iot-central-tour)
    - [What is Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge)
+   - [Azure IoT solution accelerators](https://azure.microsoft.com/en-us/features/iot-accelerators/)
 - describe Big Data and Analytics and products that are available for Big Data and Analytics such as Azure Synapse Analytics, HDInsight, and Azure Databricks
    - [What is Azure Synapse Analytics (formerly SQL DW)?](https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-overview-what-is)
    - [Azure Synapse Analytics (formerly SQL DW) architecture](https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/massively-parallel-processing-mpp-architecture)
