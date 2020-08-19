@@ -217,6 +217,7 @@
 - describe Azure Service Health
    - [Azure status overview](https://docs.microsoft.com/en-us/azure/service-health/azure-status-overview)
    - [Service Health overview](https://docs.microsoft.com/en-us/azure/service-health/service-health-overview)
+   - [Monitor your service health](https://docs.microsoft.com/en-us/learn/modules/intro-to-governance/7-monitoring)
 - describe the use cases and benefits of Azure Monitor and Azure Service Health
 
 ### Describe privacy, compliance and data protection standards in Azure
