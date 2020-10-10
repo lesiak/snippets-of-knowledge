@@ -86,4 +86,17 @@
 - [How to: Set a Page's Cacheability Programmatically](https://docs.microsoft.com/en-us/previous-versions/aspnet/z852zf6b(v=vs.100))
 - [How to: Set Expiration Values for ASP.NET Page Caching](https://docs.microsoft.com/en-us/previous-versions/aspnet/y18he7cw(v=vs.100))
 
+## Config
 - [Configuring ASP.NET Process Identity](https://docs.microsoft.com/en-us/previous-versions/aspnet/dwc1xthy(v=vs.100))
+
+## Routing
+- [ASP.NET Routing](https://docs.microsoft.com/en-us/previous-versions/cc668201(v=vs.140))
+- [ViewResult Class](https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.viewresult?view=aspnet-mvc-5.2)
+- [IView Interface](https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.iview?view=aspnet-mvc-5.2)
+
+## Resources
+- [ASP.NET Web Page Resources Overview](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms227427(v=vs.100))
+- [https://docs.microsoft.com/en-us/dotnet/api/system.web.httpcontext.getglobalresourceobject?view=netframework-4.8](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpcontext.getglobalresourceobject?view=netframework-4.8)
+- [How to: Retrieve Resource Values Programmatically](https://docs.microsoft.com/en-us/previous-versions/ms227982(v=vs.140))
+- [ResourceManager Class](https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager?view=netcore-3.1)
+- [ResourceSet Class](https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourceset?view=netcore-3.1)
