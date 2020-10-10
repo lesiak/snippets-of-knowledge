@@ -50,6 +50,8 @@
 * [WCF vs ASMX WebServices](http://keithelder.net/2008/10/17/wcf-vs-asmx-webservices/)
 
 # Exam
+
+## Security
 - [Claims-Based Apps - Claims-Based Authorization with WIF](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/november/claims-based-authorization-with-wif)
 - [How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF](https://docs.microsoft.com/en-us/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif)
 - [How to: Access Claims in an ASP.NET Page](https://docs.microsoft.com/en-us/previous-versions/windows-identity-foundation/ee517271(v=msdn.10))
@@ -57,3 +59,31 @@
 - [AuthenticationTypes Class](https://docs.microsoft.com/en-us/dotnet/api/system.security.claims.authenticationtypes?view=netframework-4.6)
 - [IPrincipal.IsInRole(String) Method](https://docs.microsoft.com/en-us/dotnet/api/system.security.principal.iprincipal.isinrole?view=netframework-4.6#System_Security_Principal_IPrincipal_IsInRole_System_String_)
 - [IIdentity.IsAuthenticated Property](https://docs.microsoft.com/en-us/dotnet/api/system.security.principal.iidentity.isauthenticated?view=netframework-4.6)
+- [https://docs.microsoft.com/en-us/aspnet/identity/overview/getting-started/introduction-to-aspnet-identity](https://docs.microsoft.com/en-us/aspnet/identity/overview/getting-started/introduction-to-aspnet-identity)
+- [Understanding OWIN Forms authentication in MVC 5](https://devblogs.microsoft.com/aspnet/understanding-owin-forms-authentication-in-mvc-5/)
+- [ASP.NET Forms Authentication Overview](https://docs.microsoft.com/en-us/previous-versions/aspnet/7t6b43z4(v=vs.100))
+- [ASP.NET Impersonation](https://docs.microsoft.com/en-us/previous-versions/aspnet/xh507fc5(v=vs.100))
+- [Custom Token Handlers](https://docs.microsoft.com/en-us/previous-versions/dotnet/framework/security/custom-token-handlers)
+- [SecurityTokenHandler Class](https://docs.microsoft.com/en-us/dotnet/api/system.identitymodel.tokens.securitytokenhandler?view=netframework-4.6)
+- [Adding ASP.NET Identity to an Empty or Existing Web Forms Project](https://docs.microsoft.com/en-us/aspnet/identity/overview/getting-started/adding-aspnet-identity-to-an-empty-or-existing-web-forms-project)
+- [Customizing profile information in ASP.NET Identity in VS 2013 templates](https://devblogs.microsoft.com/aspnet/customizing-profile-information-in-asp-net-identity-in-vs-2013-templates/)
+- [OWIN Middleware in the IIS integrated pipeline](https://docs.microsoft.com/en-us/aspnet/aspnet/overview/owin-and-katana/owin-middleware-in-the-iis-integrated-pipeline)
+- [Create an ASP.NET MVC 5 App with Facebook, Twitter, LinkedIn and Google OAuth2 Sign-on (C#)](https://docs.microsoft.com/en-us/aspnet/mvc/overview/security/create-an-aspnet-mvc-5-app-with-facebook-and-google-oauth2-and-openid-sign-on)
+
+## State Management
+- [ASP.NET State Management Overview](https://docs.microsoft.com/en-us/previous-versions/aspnet/75x4ha6s(v=vs.100))
+- [ASP.NET Session State Overview](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178581(v=vs.100))
+- [Session-State Modes](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178586(v=vs.100))
+- [Session Identifiers](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178582(v=vs.100))
+- [ASP.NET State Management Recommendations](https://docs.microsoft.com/en-us/previous-versions/aspnet/z1hkazw7(v=vs.100))
+
+## Caching
+- [ASP.NET Caching Overview](https://docs.microsoft.com/en-us/previous-versions/aspnet/ms178597(v=vs.100))
+- [Caching ASP.NET Pages](https://docs.microsoft.com/en-us/previous-versions/aspnet/06bh14hk(v=vs.100))
+- [Setting the Cacheability of a Page](https://docs.microsoft.com/en-us/previous-versions/aspnet/w9s3a17d(v=vs.100))
+- [Caching Multiple Versions of a Page](https://docs.microsoft.com/en-us/previous-versions/aspnet/xadzbzd6(v=vs.100))
+- [How to: Set the Cacheability of an ASP.NET Page Declaratively](https://docs.microsoft.com/en-us/previous-versions/aspnet/zd1ysf1y(v=vs.100))
+- [How to: Set a Page's Cacheability Programmatically](https://docs.microsoft.com/en-us/previous-versions/aspnet/z852zf6b(v=vs.100))
+- [How to: Set Expiration Values for ASP.NET Page Caching](https://docs.microsoft.com/en-us/previous-versions/aspnet/y18he7cw(v=vs.100))
+
+- [Configuring ASP.NET Process Identity](https://docs.microsoft.com/en-us/previous-versions/aspnet/dwc1xthy(v=vs.100))
