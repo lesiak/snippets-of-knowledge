@@ -12,3 +12,8 @@ npm install -g LIB --save
 npm install -g LIB --save-dev
 tsc -t ES5 main.ts
 tsc -w \*.ts
+
+- [Why can't I return a generic 'T' to satisfy a Partial<T>?
+](https://stackoverflow.com/questions/46980763/why-cant-i-return-a-generic-t-to-satisfy-a-partialt)
+- [Why is the intersection of Omit<T, keyof U> and `U` not just `T`? [duplicate]
+](https://stackoverflow.com/questions/64323786/why-is-the-intersection-of-omitt-keyof-u-and-u-not-just-t)
