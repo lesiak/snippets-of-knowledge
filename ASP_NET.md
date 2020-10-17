@@ -115,3 +115,67 @@
 - [Walkthrough: Integrating ASP.NET Tracing with System.Diagnostics Tracing](https://docs.microsoft.com/en-us/previous-versions/b0ectfxd(v=vs.140))
 - [Debug.Assert Method](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.debug.assert?view=netcore-3.1)
 - [Trace.Assert Method](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.trace.assert?view=netcore-3.1)
+
+- [ASP.NET Health Monitoring](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.0/ms178701(v=vs.85))
+- [ASP.NET Health Monitoring Overview](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.0/ms178703(v=vs.85))
+- [Configuring ASP.NET Health Monitoring](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.0/ms178704(v=vs.85))
+- [How to: Implement and Raise Custom ASP.NET Health Monitoring Events](https://docs.microsoft.com/en-us/previous-versions/ms227980(v=vs.140))
+- [How to: Implement the Health Monitoring Custom Provider Example](https://docs.microsoft.com/en-us/previous-versions/ms178718(v=vs.140))
+
+- [Understanding Action Filters (C#)](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/controllers-and-routing/understanding-action-filters-cs)
+
+## Security
+
+- [Securing Roles](https://docs.microsoft.com/en-us/previous-versions/ms178402(v=vs.140))
+- [Securing Membership](https://docs.microsoft.com/en-us/previous-versions/ms178398(v=vs.140))
+- [Securing Profile Properties](https://docs.microsoft.com/en-us/previous-versions/ms178415(v=vs.140))
+- [Securing Session State](https://docs.microsoft.com/en-us/previous-versions/ms178201(v=vs.140))
+- [ASP.NET Configuration File Hierarchy and Inheritance](https://docs.microsoft.com/en-us/previous-versions/ms178685(v=vs.140))
+- [Securing ASP.NET Configuration](https://docs.microsoft.com/en-us/previous-versions/ms178699(v=vs.140))
+- [ASP.NET Configuration Scenarios](https://docs.microsoft.com/en-us/previous-versions/dtbwsx8s(v=vs.140))
+
+- [ASP.NET MVC - The Features and Foibles of ASP.NET MVC Model Binding](https://docs.microsoft.com/en-us/archive/msdn-magazine/2012/february/asp-net-mvc-the-features-and-foibles-of-asp-net-mvc-model-binding)
+
+
+- [BrowserHelpers Class](https://docs.microsoft.com/en-us/dotnet/api/system.web.webpages.browserhelpers?view=aspnet-webpages-3.2)
+- [Using Browser Link in Visual Studio 2013](https://docs.microsoft.com/en-us/aspnet/visual-studio/overview/2013/using-browser-link)
+
+- [HttpException Class](https://docs.microsoft.com/en-us/dotnet/api/system.web.httpexception?view=netframework-4.8)
+
+## Performance
+- [Bundling and Minification](https://docs.microsoft.com/en-us/aspnet/mvc/overview/performance/bundling-and-minification)
+- [Cutting Edge - Programming CSS: Bundling and Minification](https://docs.microsoft.com/en-us/archive/msdn-magazine/2013/october/cutting-edge-programming-css-bundling-and-minification)
+
+- [Request Validation in ASP.NET](https://docs.microsoft.com/en-us/previous-versions/aspnet/hh882339(v=vs.110))
+- [XSRF/CSRF Prevention in ASP.NET MVC and Web Pages](https://docs.microsoft.com/en-us/aspnet/mvc/overview/security/xsrfcsrf-prevention-in-aspnet-mvc-and-web-pages)
+
+
+- [Enabling the ASP.NET Ajax script loader for your own scripts](https://weblogs.asp.net/bleroy/enabling-the-asp-net-ajax-script-loader-for-your-own-scripts)
+
+- [Introduction to Programming Web Services in Managed Code](https://docs.microsoft.com/en-us/previous-versions/yzbxwf53(v=vs.140))
+- [Code Model for Web Services in Managed Code](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/68zt3df9(v=vs.90))
+- [Code Model for Accessing Web Services in Managed Code](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/991bcaxf(v=vs.90))
+- [How to: Create a Web Service Method](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/4ef803zd(v=vs.90))
+- [How to: Use the WebMethod Attribute](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/byxd99hx(v=vs.90))
+
+- [Cryptographic Services](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/92f9ye3s(v=vs.100))
+
+## Request handling
+
+- [ASP.NET Application Life Cycle Overview for IIS 7.0](https://docs.microsoft.com/en-us/previous-versions/bb470252(v=vs.140))
+- [ASP.NET Application Life Cycle Overview for IIS 5.0 and 6.0](https://docs.microsoft.com/en-us/previous-versions/ms178473(v=vs.140))
+- [ASP.NET Compilation Overview](https://docs.microsoft.com/en-us/previous-versions/ms178466(v=vs.140))
+- [Understanding ASP.NET Dynamic Compilation](https://docs.microsoft.com/en-us/previous-versions/ms366723(v=vs.140))
+- [Shared Code Folders in ASP.NET Web Site Projects](https://docs.microsoft.com/en-us/previous-versions/t990ks23(v=vs.140))
+- [ASP.NET Web Site Project Precompilation Overview](https://docs.microsoft.com/en-us/previous-versions/bb398860(v=vs.140))
+- [ASP.NET Page Life Cycle Overview](https://docs.microsoft.com/en-us/previous-versions/ms178472(v=vs.140))
+
+- [HTTP Handlers and HTTP Modules Overview](https://docs.microsoft.com/en-us/previous-versions/bb398986(v=vs.140))
+- [How to: Register HTTP Handlers](https://docs.microsoft.com/en-us/previous-versions/46c5ddfy(v=vs.140))
+- [Walkthrough: Creating a Synchronous HTTP Handler](https://docs.microsoft.com/en-us/previous-versions/ms228090(v=vs.140))
+- [Walkthrough: Creating an Asynchronous HTTP Handler](https://docs.microsoft.com/en-us/previous-versions/ms227433(v=vs.140))
+- [Walkthrough: Creating and Registering HTTP Handler Factories](https://docs.microsoft.com/en-us/previous-versions/ms227439(v=vs.140))
+- [Walkthrough: Creating and Registering a Custom HTTP Module](https://docs.microsoft.com/en-us/previous-versions/ms227673(v=vs.140))
+- [How to: Configure an HTTP Handler Extension in IIS](https://docs.microsoft.com/en-us/previous-versions/bb515343(v=vs.140))
+
+- [Don't Block on Async Code](https://blog.stephencleary.com/2012/07/dont-block-on-async-code.html)
