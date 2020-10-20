@@ -179,3 +179,54 @@
 - [How to: Configure an HTTP Handler Extension in IIS](https://docs.microsoft.com/en-us/previous-versions/bb515343(v=vs.140))
 
 - [Don't Block on Async Code](https://blog.stephencleary.com/2012/07/dont-block-on-async-code.html)
+
+- [Forms Authentication Across Applications](https://docs.microsoft.com/en-us/previous-versions/eb0zx8fc(v=vs.140))
+- [machineKey Element (ASP.NET Settings Schema)](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v=vs.100))
+- [How To: Configure MachineKey in ASP.NET 2.0](https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff649308(v=pandp.10))
+- [Cryptographic Improvements in ASP.NET 4.5, pt. 1](https://devblogs.microsoft.com/aspnet/cryptographic-improvements-in-asp-net-4-5-pt-1/)
+- [Cryptographic Improvements in ASP.NET 4.5, pt. 2](https://devblogs.microsoft.com/aspnet/cryptographic-improvements-in-asp-net-4-5-pt-2/)
+- [Cryptographic Improvements in ASP.NET 4.5, pt. 3](https://devblogs.microsoft.com/aspnet/cryptographic-improvements-in-asp-net-4-5-pt-3-2/)
+
+## Protected configuration
+- [Encrypting Configuration Information Using Protected Configuration](https://docs.microsoft.com/en-us/previous-versions/53tyfkaw(v=vs.140))
+- [Overview of Protected Configuration](https://docs.microsoft.com/en-us/previous-versions/hh8x3tas(v=vs.140))
+- [Specifying a Protected Configuration Provider](https://docs.microsoft.com/en-us/previous-versions/68ze1hb2(v=vs.140))
+- [Encrypting and Decrypting Configuration Sections](https://docs.microsoft.com/en-us/previous-versions/zhhddkxy(v=vs.140))
+- [Importing and Exporting Protected Configuration RSA Key Containers](https://docs.microsoft.com/en-us/previous-versions/yxw286t2(v=vs.140))
+- [Understanding Machine-Level and User-Level RSA Key Containers](https://docs.microsoft.com/en-us/previous-versions/f5cs0acs(v=vs.140))
+- [Walkthrough: Encrypting Configuration Information Using Protected Configuration](https://docs.microsoft.com/en-us/previous-versions/dtkwfdky(v=vs.140))
+- [Walkthrough: Creating and Exporting an RSA Key Container](https://docs.microsoft.com/en-us/previous-versions/2w117ede(v=vs.140))
+- [Implementing a Protected Configuration Provider](https://docs.microsoft.com/en-us/previous-versions/wfc2t3az(v=vs.140))
+
+## IIS
+- [ASP.NET Integration with IIS 7](https://docs.microsoft.com/en-us/iis/application-frameworks/building-and-running-aspnet-applications/aspnet-integration-with-iis)
+- [Moving an ASP.NET Application from IIS 6.0 to IIS 7.0](https://docs.microsoft.com/en-us/previous-versions/aspnet/bb515251(v=vs.100))
+- [Troubleshooting Failed Requests Using Tracing in IIS 7](https://docs.microsoft.com/en-us/iis/troubleshoot/using-failed-request-tracing/troubleshooting-failed-requests-using-tracing-in-iis)
+- [IIS Modules Overview](https://docs.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-modules-overview)
+
+## Tracing
+- [Trace Switches](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/3at424ac(v=vs.100))
+- [How to: Create, Initialize and Configure Trace Switches](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches)
+- [Trace Listeners](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/trace-listeners)
+- [How to: Use TraceSource and Filters with Trace Listeners](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-use-tracesource-and-filters-with-trace-listeners)
+- [How to: Create and Initialize Trace Listeners](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners)
+- [How to: Create and Initialize Trace Sources](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-create-and-initialize-trace-sources)
+- [How to: Add Trace Statements to Application Code](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code)
+- [How to: Compile Conditionally with Trace and Debug](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug)
+- [Tracing and Instrumenting Applications](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
+
+- [Code Contracts](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/code-contracts)
+
+## Routing
+- [MvcRouteHandler Class](https://docs.microsoft.com/en-us/dotnet/api/system.web.mvc.mvcroutehandler?view=aspnet-mvc-5.2)
+ - [PageRouteHandler Class](https://docs.microsoft.com/en-us/dotnet/api/system.web.routing.pageroutehandler?view=netframework-4.8)
+ - [How to: Use Routing with Web Forms](https://docs.microsoft.com/en-us/previous-versions/aspnet/cc668202(v=vs.100))
+
+ - [Passing Data in an ASP.NET MVC Application](https://docs.microsoft.com/en-us/previous-versions/aspnet/dd394711(v=vs.100))
+ - [A Beginner's Tutorial on Various Ways of Passing Data in ASP.NET MVC Application](https://www.codeproject.com/Articles/576514/AplusBeginner-27splusTutorialplusonplusVariousplus)
+
+ - [ASP.NET Web Projects](https://docs.microsoft.com/en-us/previous-versions/ywdtth2f(v=vs.140))
+ - [Web Application Projects versus Web Site Projects in Visual Studio](https://docs.microsoft.com/en-us/previous-versions/aspnet/dd547590(v=vs.110))
+ - [ASP.NET Web Application Project Precompilation Overview](https://docs.microsoft.com/en-us/previous-versions/aspnet/aa983464(v=vs.110))
+ - [App_Code folder doesn’t work with Web Application Projects (WAPs)](http://vishaljoshi.blogspot.com/2009/07/appcode-folder-doesnt-work-with-web.html)
+ - [ASP.NET Web Site Project Deployment Overview](https://docs.microsoft.com/en-us/previous-versions/377y0s6t(v=vs.140))
