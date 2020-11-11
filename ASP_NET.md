@@ -186,6 +186,8 @@
 - [Cryptographic Improvements in ASP.NET 4.5, pt. 1](https://devblogs.microsoft.com/aspnet/cryptographic-improvements-in-asp-net-4-5-pt-1/)
 - [Cryptographic Improvements in ASP.NET 4.5, pt. 2](https://devblogs.microsoft.com/aspnet/cryptographic-improvements-in-asp-net-4-5-pt-2/)
 - [Cryptographic Improvements in ASP.NET 4.5, pt. 3](https://devblogs.microsoft.com/aspnet/cryptographic-improvements-in-asp-net-4-5-pt-3-2/)
+- [https://devblogs.microsoft.com/aspnet/understanding-owin-forms-authentication-in-mvc-5/](https://devblogs.microsoft.com/aspnet/understanding-owin-forms-authentication-in-mvc-5/)
+- [ASP.NET Forms Authentication Overview](https://docs.microsoft.com/en-us/previous-versions/7t6b43z4(v=vs.140))
 
 ## Protected configuration
 - [Encrypting Configuration Information Using Protected Configuration](https://docs.microsoft.com/en-us/previous-versions/53tyfkaw(v=vs.140))
@@ -232,3 +234,7 @@
  - [ASP.NET Web Site Project Deployment Overview](https://docs.microsoft.com/en-us/previous-versions/377y0s6t(v=vs.140))
 
  - [ASP.NET Web Server Control Event Model](https://docs.microsoft.com/en-us/previous-versions/aspnet/y3bwdsh3(v=vs.100))
+ - [Developing Custom ASP.NET Server Controls](https://docs.microsoft.com/en-us/previous-versions/zt27tfhy(v=vs.140))
+ - [Walkthrough: Developing and Using a Custom Web Server Control](https://docs.microsoft.com/en-us/previous-versions/yhzc935f(v=vs.140))
+
+ - [compilation Element (ASP.NET Settings Schema)](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.5/s10awwz0(v=vs.90))
