@@ -230,3 +230,5 @@
  - [ASP.NET Web Application Project Precompilation Overview](https://docs.microsoft.com/en-us/previous-versions/aspnet/aa983464(v=vs.110))
  - [App_Code folder doesn’t work with Web Application Projects (WAPs)](http://vishaljoshi.blogspot.com/2009/07/appcode-folder-doesnt-work-with-web.html)
  - [ASP.NET Web Site Project Deployment Overview](https://docs.microsoft.com/en-us/previous-versions/377y0s6t(v=vs.140))
+
+ - [ASP.NET Web Server Control Event Model](https://docs.microsoft.com/en-us/previous-versions/aspnet/y3bwdsh3(v=vs.100))
