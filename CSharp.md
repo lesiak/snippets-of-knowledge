@@ -28,6 +28,7 @@
 * [C# 5 Async Exception Handling](http://www.interact-sw.co.uk/iangblog/2010/11/01/csharp5-async-exceptions)
 * [Creating an observable sequence](http://www.introtorx.com/uat/content/v1.0.10621.0/04_CreatingObservableSequences.html)
 * [Observable.FromAsyncPattern Method](https://msdn.microsoft.com/en-us/library/system.reactive.linq.observable.fromasyncpattern(v=vs.103).aspx)
+* [Exploring the async/await State Machine – Stack Traces and Refactoring Pitfalls](https://vkontech.com/exploring-the-async-await-state-machine-stack-traces-and-refactoring-pitfalls/)
 
 # Code Security
 * [Code Access Security Basics](https://msdn.microsoft.com/en-us/library/33tceax8.aspx)
