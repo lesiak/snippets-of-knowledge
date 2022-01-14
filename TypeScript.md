@@ -17,3 +17,6 @@ tsc -w \*.ts
 ](https://stackoverflow.com/questions/46980763/why-cant-i-return-a-generic-t-to-satisfy-a-partialt)
 - [Why is the intersection of Omit<T, keyof U> and `U` not just `T`? [duplicate]
 ](https://stackoverflow.com/questions/64323786/why-is-the-intersection-of-omitt-keyof-u-and-u-not-just-t)
+
+- [Using async/await with a forEach loop](https://stackoverflow.com/questions/37576685/using-async-await-with-a-foreach-loop/37576787#37576787)
+- [What is the explicit promise construction antipattern and how do I avoid it?](https://stackoverflow.com/questions/23803743/what-is-the-explicit-promise-construction-antipattern-and-how-do-i-avoid-it)
