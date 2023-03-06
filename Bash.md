@@ -10,3 +10,23 @@
 * [How do I pass a wildcard parameter to a bash file](https://stackoverflow.com/questions/19458104/how-do-i-pass-a-wildcard-parameter-to-a-bash-file)
 
 * [How best to include other scripts?](https://stackoverflow.com/questions/192292/how-best-to-include-other-scripts)
+
+# Variables
+* [How to check if a variable is set in Bash](https://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash)
+
+Here's how to test whether a parameter is unset, or empty ("Null") or set with a value:
+```
++--------------------+----------------------+-----------------+-----------------+
+|   Expression       |       parameter      |     parameter   |    parameter    |
+|   in script:       |   Set and Not Null   |   Set But Null  |      Unset      |
++--------------------+----------------------+-----------------+-----------------+
+| ${parameter:-word} | substitute parameter | substitute word | substitute word |
+| ${parameter-word}  | substitute parameter | substitute null | substitute word |
+| ${parameter:=word} | substitute parameter | assign word     | assign word     |
+| ${parameter=word}  | substitute parameter | substitute null | assign word     |
+| ${parameter:?word} | substitute parameter | error, exit     | error, exit     |
+| ${parameter?word}  | substitute parameter | substitute null | error, exit     |
+| ${parameter:+word} | substitute word      | substitute null | substitute null |
+| ${parameter+word}  | substitute word      | substitute word | substitute null |
++--------------------+----------------------+-----------------+-----------------+
+```
