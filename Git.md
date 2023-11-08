@@ -4,7 +4,26 @@
 git reflog
 git reset --hard HEAD@{XXXX}
 ```
-
+* [Remove tracking branches no longer on remote](https://stackoverflow.com/questions/7726949/remove-tracking-branches-no-longer-on-remote)
+```
+git remote prune origin
+```
+* [What are the differences between git remote prune, git prune, git fetch --prune, etc](https://stackoverflow.com/questions/20106712/what-are-the-differences-between-git-remote-prune-git-prune-git-fetch-prune)
+> There are potentially three versions of every remote branch:
+> 
+> 1. The actual branch on the remote repository
+> (e.g., remote repo at https://example.com/repo.git, `refs/heads/master`)
+> 2. Your snapshot of that branch locally (stored under `refs/remotes/...`)
+> (e.g., local repo, refs/remotes/origin/master)
+> 3. And a local branch that might be tracking the remote branch
+> (e.g., local repo, `refs/heads/master`)
+>
+> Let's start with `git prune`. This removes *objects* that are no longer being referenced, it does not remove references. In your case, you have a local branch. That means there's a ref named `random_branch_I_want_deleted` that refers to some objects that represent the history of that branch. So, by definition, `git prune` will not remove `random_branch_I_want_deleted`. Really, `git prune` is a way to delete data that has accumulated in Git but is not being referenced by anything. In general, it doesn't affect your view of any branches.
+> 
+> `git remote prune origin` and `git fetch --prune` both operate on references under `refs/remotes/...` (I'll refer to these as remote references). It doesn't affect local branches. The git remote version is useful if you only want to remove remote references under a particular remote. Otherwise, the two do exactly the same thing. So, in short, `git remote prune` and `git fetch --prune` operate on number 2 above. For example, if you deleted a branch using the git web GUI and don't want it to show up in your local branch list anymore (`git branch -r`), then this is the command you should use.
+> 
+> To remove a local branch, you should use git `branch -d` (or `-D` if it's not merged anywhere). FWIW, there is no git command to automatically remove the local tracking branches if a remote branch disappears.
+ 
 * [How to move certain commits to another branch in git?](https://stackoverflow.com/questions/2369426/how-to-move-certain-commits-to-another-branch-in-git) 
 
 # Setup
