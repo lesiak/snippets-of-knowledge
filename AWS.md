@@ -39,6 +39,9 @@
 - [Placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
 
 ## EC2 Auto-Scaling
+- [Step and simple scaling policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)
+  > Step scaling and simple scaling policies scale the capacity of your Auto Scaling group in predefined increments based on CloudWatch alarms. You can define separate scaling policies to handle scaling out (increasing capacity) and scaling in (decreasing capacity) when an alarm threshold is breached.
+- [Target tracking scaling policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html)
 - [Scaling policy based on Amazon SQS](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html)
 
 ## Cloud Watch
@@ -127,6 +130,7 @@
   - [AWS Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect.html)
   - [AWS Direct Connect + AWS Transit Gateway](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect-aws-transit-gateway.html)
   - [AWS Direct Connect + AWS Site-to-Site VPN](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect-site-to-site-vpn.html)
+    > With AWS Direct Connect + AWS Site-to-Site VPN, you can combine AWS Direct Connect connections with an AWS-managed VPN solution. AWS Direct Connect public VIFs establish a dedicated network connection between your network and public AWS resources such as an AWS Site-to-Site VPN endpoint. **Once you establish the connection to the service, you can create IPsec connections to the corresponding Amazon VPC virtual private gateways**.
   - [AWS Direct Connect + AWS Transit Gateway + AWS Site-to-Site VPN](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect-aws-transit-gateway-vpn.html)
   - [AWS VPN CloudHub](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-vpn-cloudhub.html)
   - [AWS Transit Gateway + SD-WAN solutions](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-transit-gateway-sd-wan.html)
@@ -141,6 +145,14 @@
 
 ## Direct Connect
 - [Direct Connect gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways-intro.html)
+- Do I need a Direct connect gateway to use AWS Direct Connect?  
+  > **When you don't need a Direct Connect Gateway:**
+  > **Single connection**: If you have a single AWS Direct Connect connection to a single AWS Region, you don't need a Direct Connect Gateway.
+  > **When you need a Direct Connect Gateway:**
+  > - Multiple AWS Regions
+  > - Multiple AWS Accounts
+  An AWS Direct Connect Gateway is a virtual router that allows you to manage and route traffic between your on-premises network and multiple AWS Regions or accounts. It's a logical component that sits between your on-premises network and AWS, providing a centralized point of management for your Direct Connect connections.
+  > 
 - [AWS Direct Connect Resiliency Recommendations](https://aws.amazon.com/directconnect/resiliency-recommendation/)
 
 ## Load Balancers
@@ -206,6 +218,7 @@
     - A/B Testing
     - User Authentication and Authorization
     - User Prioritization
+- Gotcha: CloudFront cannot listen on UDP
 
 ## AWS Global Accelerator
 - [What is AWS Global Accelerator?](https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html)
@@ -248,6 +261,11 @@
 - [How Amazon EFS works](https://docs.aws.amazon.com/efs/latest/ug/how-it-works.html)
 - [Replicating file systems](https://docs.aws.amazon.com/efs/latest/ug/efs-replication.html)
 - [Managing file system storage](https://docs.aws.amazon.com/efs/latest/ug/lifecycle-management-efs.html)
+  > Lifecycle policies:
+  > - Transition into IA
+  > - Transition into Archive
+  > - Transition into Standard
+- [Amazon EFS Infrequent Access](https://aws.amazon.com/efs/features/infrequent-access/)
 - [Managing mount targets](https://docs.aws.amazon.com/efs/latest/ug/accessing-fs.html)
   - For Amazon EFS file systems that use Regional storage classes, you can create a mount target in each Availability Zone in an AWS Region. 
   - For One Zone file systems, you can only create a single mount target in the same Availability Zone as the file system.
@@ -460,6 +478,9 @@
 - [How do I move an account from an existing AWS Organization to another AWS Organization?](https://repost.aws/knowledge-center/organizations-move-accounts)
   > - Use the AWS Organizations console if you have only a few accounts to migrate.
   > - If you're migrating many accounts, then use the AWS Organizations API or AWS Command Line Interface (AWS CLI) to move the accounts instead.
+- [How to Use AWS Organizations to Automate End-to-End Account Creation](https://aws.amazon.com/blogs/security/how-to-use-aws-organizations-to-automate-end-to-end-account-creation/)
+  > - AWS Organizations API to create accounts
+  > - CloudFormation to configure accounts
 
 ## Systems Manager
 - [Patching your Windows EC2 instances using AWS Systems Manager Patch Manager](https://aws.amazon.com/blogs/mt/patching-your-windows-ec2-instances-using-aws-systems-manager-patch-manager/)
@@ -475,10 +496,19 @@
 
 ## GuardDuty
 - [What is Amazon GuardDuty?](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html)
+  > GuardDuty uses machine learning and anomaly detection to identify potential threats in your AWS environment, including network traffic, system calls, and DNS queries.
+  >
+  > GuardDuty is more focused on detecting and alerting on potential security threats, making it a better choice for protecting against attacks.
+  > GuardDuty can detect various types of attacks, including:
+  > * Network-based attacks, such as port scanning and SQL injection
+  > * Malware and ransomware
+  > * Unauthorized access to resources
+  > * Anomalous API calls
 - [Creating custom responses to GuardDuty findings with Amazon CloudWatch Events](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html)
 
 ## Inspector
 - [Amazon Inspector - Automated vulnerability management](https://aws.amazon.com/inspector/)
+  > Inspector is focused on identifying vulnerabilities and compliance issues, which can help prevent attacks, but it does not detect or alert on active threats.
 
 ## License Manager 
 - [AWS License Manager](https://aws.amazon.com/license-manager/)
