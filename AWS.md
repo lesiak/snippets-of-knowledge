@@ -136,6 +136,7 @@
   > f your cluster doesn't have outbound internet access, then it must meet the following requirements:
   > - Your cluster must pull images from a container registry that's in your VPC.
   > - Your cluster must have endpoint private access enabled. This is required for nodes to register with the cluster endpoint.
+- [Encrypt Kubernetes secrets with AWS KMS on existing clusters](https://docs.aws.amazon.com/eks/latest/userguide/enable-kms.html)
 
 # Networking  
 ## VPC
@@ -156,6 +157,8 @@
     - Gotcha: Network ACL only applies to services in a subnet - cannot be used for CloudFront
 - [Share your VPC subnets with other accounts](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html)
   > VPC sharing allows multiple AWS accounts to create their application resources, such as Amazon EC2 instances, Amazon Relational Database Service (RDS) databases, Amazon Redshift clusters, and AWS Lambda functions, into shared, centrally-managed virtual private clouds (VPCs). In this model, the account that owns the VPC (owner) shares one or more subnets with other accounts (participants) that belong to the same organization from AWS Organizations.
+- [Update your security groups to reference peer security groups](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-security-groups.html)
+  > - **You cannot reference the security group of a peer VPC that's in a different Region. Instead, use the CIDR block of the peer VPC.**
 
 ## PrivateLink
 - [What is AWS PrivateLink?](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html)
@@ -330,6 +333,7 @@
 
 ## Route53
 - [DNS domain name format](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DomainNameFormat.html)
+  - Using an asterisk (*) in the names of hosted zones and records
 - [Configuring DNS failover](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring.html)
 - [Choosing a routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)
   - Simple routing policy
@@ -576,6 +580,7 @@
 > 2. You ship the Edge device or devices back to AWS.
 > 3. After AWS receives your shipment, the Edge device automatically loads its data into an Amazon S3 bucket.
 > 4. AWS DMS takes the files and migrates the data to the target data store. If you are using change data capture (CDC), those updates are written to the Amazon S3 bucket and then applied to the target data store.
+- [Creating tasks for ongoing replication using AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Task.CDC.html)
 
 ## AWS Transfer Family
 - [AWS Transfer Family | Secure File Transfer Service](https://aws.amazon.com/aws-transfer-family/)
