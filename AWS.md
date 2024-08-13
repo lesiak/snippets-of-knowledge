@@ -55,6 +55,10 @@
 - [Elastic Network Adapter – High Performance Network Interface for Amazon EC2](https://aws.amazon.com/blogs/aws/elastic-network-adapter-high-performance-network-interface-for-amazon-ec2/)
 - [Now Available – Elastic Fabric Adapter (EFA) for Tightly-Coupled HPC Workloads](https://aws.amazon.com/blogs/aws/now-available-elastic-fabric-adapter-efa-for-tightly-coupled-hpc-workloads/)
 - [How do I turn on and configure enhanced networking on my EC2 instances?](https://repost.aws/knowledge-center/enable-configure-enhanced-networking)
+- [Enhanced networking on Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enhanced-networking.html)
+  > You can enable enhanced networking using one of the following mechanisms:
+  > - Elastic Network Adapter (ENA)
+  > - Intel 82599 Virtual Function (VF) interface
 - [Hibernate your Amazon EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Hibernate.html)
 - [Instance purchasing options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html)
   > **Reserved Instances do not reserve capacity**
@@ -63,6 +67,8 @@
 - [Differences between Capacity Reservations, Reserved Instances, and Savings Plans](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html#capacity-reservations-differences)
 - [Placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
 - [Best practices for handling EC2 Spot Instance interruptions](https://aws.amazon.com/blogs/compute/best-practices-for-handling-ec2-spot-instance-interruptions/)
+- [Add instance store volumes to an Amazon EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/add-instance-store-volumes.html)
+  > Instance store volumes can be attached to an instance only when you launch it. You can't attach instance store volumes to an instance after you've launched it.
 
 ## EC2 Auto-Scaling
 - [Step and simple scaling policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)
@@ -92,6 +98,7 @@
 - [Streaming CloudWatch Logs data to Amazon OpenSearch Service](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_OpenSearch_Stream.html)
   > You can configure a CloudWatch Logs log group to stream data it receives to your Amazon OpenSearch Service cluster in near real-time through a CloudWatch Logs subscription. For more information, see Real-time processing of log data with subscriptions.
   - Firehose is a possible solution as well, but it involves another service
+- [Analyzing log data with CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)
 
 ### CloudWatch Container Insighsts
 - [Container Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html)
@@ -131,7 +138,9 @@
 - [EKS | Enabling secret encryption on an existing cluster](https://docs.aws.amazon.com/eks/latest/userguide/enable-kms.html)
 - [Private cluster requirements](https://docs.aws.amazon.com/eks/latest/userguide/private-clusters.html)
 - [Metrics Server](https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/#metrics-server)
+  > The Metrics Server collects resource metrics like CPU and memory usage from each node and its pods and provides these metrics to the Kubernetes API server for use by the Horizontal Pod Autoscaler, which automatically scales the number of pods in a deployment, replication controller, replica set, or stateful set based on observed CPU utilization.
 - [EKS Autoscaling](https://docs.aws.amazon.com/eks/latest/userguide/autoscaling.html)
+  > The Kubernetes Cluster Autoscaler automatically adjusts the size of the Kubernetes cluster when there are pods that failed to run in the cluster due to insufficient resources or when there are nodes in the cluster that have been underutilized for an extended period and their pods can be placed on other existing nodes.
 - [Deploy private clusters with limited internet access](https://docs.aws.amazon.com/eks/latest/userguide/private-clusters.html)
   > f your cluster doesn't have outbound internet access, then it must meet the following requirements:
   > - Your cluster must pull images from a container registry that's in your VPC.
@@ -186,11 +195,17 @@
 - [Your customer gateway device](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html)
 - [Site-to-Site VPN single and multiple VPN connection examples](https://docs.aws.amazon.com/vpn/latest/s2svpn/Examples.html)
   - Single Site-to-Site VPN connection
+  ![](AWSResources/vpn-how-it-works-vgw.png "A VPC with an attached virtual private gateway and a VPN connection to your on-premises network.")
   - Single Site-to-Site VPN connection with a transit gateway
+  ![](AWSResources/vpn-how-it-works-tgw.png "A single Site-to-Site VPN connection with a transit gateway.")
   - Multiple Site-to-Site VPN connections
+  ![](AWSResources/branch-offices-vgw.png "Multiple Site-to-Site VPN layout")
   - Multiple Site-to-Site VPN connections with a transit gateway
+  ![](AWSResources/branch-offices-tgw.png "Multiple Site-to-Site VPN connections with a transit gateway")
   - Site-to-Site VPN connection with AWS Direct Connect
+  ![](AWSResources/vpn-direct-connect.png "Site-to-Site VPN connection with AWS Direct Connect")
   - Private IP Site-to-Site VPN connection with AWS Direct Connect
+  ![](AWSResources/private-ip-dx.png "Private IP Site-to-Site VPN connection with AWS Direct Connect")
 - [Using redundant Site-to-Site VPN connections to provide failover](https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-redundant-connection.html)
 - [Network-to-Amazon VPC connectivity options](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/network-to-amazon-vpc-connectivity-options.html)
   - [AWS Site-to-Site VPN](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-site-to-site-vpn.html)
@@ -217,7 +232,7 @@
   > - A transit gateway when you have multiple VPCs in the same Region
   > - A virtual private gateway
   - [Virtual private gateway associations](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways-intro.html#virtual-private-gateway)
-    !["A Direct Connect gateway that connects VPCs in two AWS Regions and your data center.](AWSResources/dx-gateway.png "A Direct Connect gateway that connects VPCs in two AWS Regions and your data center.")
+    ![A Direct Connect gateway that connects VPCs in two AWS Regions and your data center.](AWSResources/dx-gateway.png "A Direct Connect gateway that connects VPCs in two AWS Regions and your data center.")
   - [Virtual private gateway associations across accounts](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways-intro.html#virtual-private-gateway-across-accounts)
     ![A Direct Connect gateway that connects three AWS accounts and your data center.](AWSResources/dx-gateway-shared.png "A Direct Connect gateway that connects three AWS accounts and your data center.")
   - [Transit gateway associations](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways-intro.html#transit-gateway)
@@ -242,6 +257,8 @@
 
 - [Health checks for your target groups](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/target-group-health-checks.html)
 - [How do I attach backend instances with private IP addresses to my internet-facing load balancer in ELB?](https://repost.aws/knowledge-center/public-load-balancer-private-ec2)
+  > - you must enable a public subnet in the ELB that is in the same AZ as the private subnet.
+  > - Configure your load balancer's security group and network access control list (ACL) settings
 - [Monitor your Network Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-monitoring.html)
    - CloudWatch metrics
    - VPC Flow Logs (One per network interface. There is one network interface per load balancer subnet)
@@ -327,6 +344,10 @@
   > Lambda proxy integration is a lightweight, flexible API Gateway API integration type that allows you to integrate an API method – or an entire API – with a Lambda function. The Lambda function can be written in any language that Lambda supports. Because it's a proxy integration, you can change the Lambda function implementation at any time without needing to redeploy your API.
 - [Using Amazon API Gateway as a proxy for DynamoDB](https://aws.amazon.com/blogs/compute/using-amazon-api-gateway-as-a-proxy-for-dynamodb/)
 - [Use API Gateway Lambda authorizers](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html)
+- [Create private integrations for HTTP APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-private.html)
+   > Private integrations enable you to create API integrations with private resources in a VPC, such as Application Load Balancers or Amazon ECS container-based applications.
+   >
+   > To create a private integration, you must first create a **VPC link**.
 
 ## AppSync
 - [GraphQL | Building Serverless APIs on AWS](https://aws.amazon.com/graphql/serverless-api/)
@@ -356,6 +377,7 @@
 
 ## EBS
 - [Amazon EBS volume types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)
+  - [Cold HDD](hhttps://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_sc1) - a good fit for large, sequential cold-data workloads
 - [Amazon EBS fast snapshot restore](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-fast-snapshot-restore.html)
   > Amazon EBS fast snapshot restore (FSR) enables you to create a volume from a snapshot that is fully initialized at creation. This eliminates the latency of I/O operations on a block when it is accessed for the first time. Volumes that are created using fast snapshot restore instantly deliver all of their provisioned performance.
 - [Amazon Data Lifecycle Manager | EBS snapshots and EBS-backed AMI](https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lifecycle.html)
@@ -363,6 +385,11 @@
   - Incremental snapshot deletion
 - [EBS Snapshot Copy (Between Regions)](https://aws.amazon.com/blogs/aws/ebs-snapshot-copy/)
 - [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html)
+  > Use Amazon EBS encryption as a straight-forward encryption solution for your EBS resources associated with your EC2 instances. With Amazon EBS encryption, you aren't required to build, maintain, and secure your own key management infrastructure. Amazon EBS encryption uses AWS KMS keys when creating encrypted volumes and snapshots.
+  >
+  > **Encryption operations occur on the servers that host EC2 instances, ensuring the security of both data-at-rest and data-in-transit between an instance and its attached EBS storage.**
+  > 
+  > You can attach both encrypted and unencrypted volumes to an instance simultaneously.
 - [Amazon EBS–optimized EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-optimized.html)
 - [Attach a volume to multiple instances with Amazon EBS Multi-Attach](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html)
   > Amazon EBS Multi-Attach enables you to attach a single Provisioned IOPS SSD (io1 or io2) volume to multiple instances that are in the same Availability Zone.
@@ -463,6 +490,7 @@
 ## DynamoDB
 - [DynamoDB on-demand and provisioned capacity](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/capacity.html)
 - [Managing throughput capacity automatically with DynamoDB auto scaling](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html)
+  > Amazon DynamoDB auto scaling uses the AWS Application Auto Scaling service to dynamically adjust provisioned throughput capacity on your behalf, in response to actual traffic patterns. This enables a table or a global secondary index (GSI) to increase its provisioned read and write capacity to handle sudden increases in traffic, without throttling. When the workload decreases, Application Auto Scaling decreases the throughput so that you don't pay for unused provisioned capacity.
 - [Change data capture for DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html)
 - [Using Kinesis Data Streams to capture changes to DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds.html)
 
@@ -528,7 +556,7 @@
   > You can scale up each secondary cluster independently, by adding one or more Aurora Replicas (read-only Aurora DB instances) to serve read-only workloads.
   >
   > Only the primary cluster performs write operations. Clients that perform write operations connect to the DB cluster endpoint of the primary DB cluster. As shown in the diagram, Aurora global database uses the cluster storage volume and not the database engine for replication.
-- [High availability for Amazon Aurora]()
+- [High availability for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html)
   - High availability for Aurora data
     > Aurora stores copies of the data in a DB cluster across multiple Availability Zones in a single AWS Region. Aurora stores these copies regardless of whether the instances in the DB cluster span multiple Availability Zones. For more information on Aurora, see Managing an Amazon Aurora DB cluster.
     > 
@@ -538,6 +566,7 @@
   - High availability across AWS Regions with Aurora global databases
   - Fault tolerance for an Aurora DB cluster
   - High availability with Amazon RDS Proxy
+    > With RDS Proxy, you can build applications that can transparently tolerate database failures without needing to write complex failure handling code. The proxy automatically routes traffic to a new database instance while preserving application connections. It also bypasses Domain Name System (DNS) caches to reduce failover times by up to 66% for Aurora Multi-AZ databases.
 - [Recovering an Amazon Aurora global database from an unplanned outage](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery.html#aurora-global-database-failover)
 - [Amazon Aurora storage and reliability](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.StorageReliability.html)
 - [How is Aurora serverless different than aurora with autoscaling?](https://stackoverflow.com/questions/74352620/how-is-aurora-serverless-different-than-aurora-with-autoscaling)
@@ -547,6 +576,10 @@
 - [Multi-Master is no longer available as of Feb 28, 2023](https://aws.amazon.com/about-aws/whats-new/2019/08/amazon-aurora-multimaster-now-generally-available/)
   >  - Multi-master was only available for Aurora MySQL 5.6, which is now deprecated.
   - Gotcha: Multi-master used to work only within a Region it does not work across Regions.
+- [Using switchover or failover in an Amazon Aurora global database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery.html)
+  - [Recovering an Amazon Aurora global database from an unplanned outage](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery.html#aurora-global-database-failover)
+    - Managed failover
+    - Manual failover
 
 ## Caching
 - [Authenticating with the Redis AUTH command](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/auth.html)
@@ -563,6 +596,7 @@
 
 ## Lake Formation
 - [What is AWS Lake Formation?](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html)
+- [Granting and revoking permissions on Data Catalog resources](https://docs.aws.amazon.com/lake-formation/latest/dg/granting-catalog-permissions.html)
 - [Lake Formation tag-based access control](https://docs.aws.amazon.com/lake-formation/latest/dg/tag-based-access-control.html)
 
 # Data Migration & Transfer
@@ -584,6 +618,7 @@
 
 ## AWS Transfer Family
 - [AWS Transfer Family | Secure File Transfer Service](https://aws.amazon.com/aws-transfer-family/)
+  ![](AWSResources/transfer-family-diagram.png "")
 
 ## Snow family:
 - [AWS Snow Family](https://aws.amazon.com/snow/)
@@ -720,8 +755,8 @@
 - [What Is AWS CloudTrail?](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)
 - [Creating a trail for an organization](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-trail-organization.html)
   > If you have created an organization in AWS Organizations, you can create a trail that logs all events for all AWS accounts in that organization. This is sometimes called an organization trail.
-
-- [Analyzing log data with CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html)
+- [Working with CloudTrail trails](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-trails.html)
+  > Trails capture a record of AWS activities, delivering and storing these events in an Amazon S3 bucket, with optional delivery to CloudWatch Logs and Amazon EventBridge.
 - [Tutorial: Create an EventBridge rule that reacts to AWS API calls via CloudTrail](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-log-api-call.html)
 - [Monitoring AWS Config with Amazon EventBridge](https://docs.aws.amazon.com/config/latest/developerguide/monitor-config-with-cloudwatchevents.html)
   > Amazon EventBridge delivers a near real-time stream of system events that describe changes in AWS resources. Use Amazon EventBridge to detect and react to changes in the status of AWS Config events.
@@ -841,6 +876,40 @@
   > AWS Amplify simplifies the process of hosting web applications with automated deployment processes. It also integrates with CloudFront, providing a global content delivery network to efficiently serve the game interface.
 
 # Billing and Pricing
+
+### Billing dashboard/bills
+| Data field                      | Period  | Output      | Use for                |
+|---------------------------------|---------|-------------|------------------------|
+| AWS account ID                  | Monthly | PDF and CSV | Simple monthly reports |
+| Service (EC2)                   |         |             |                        |
+| Usage Type (BoxUsage:t3:large)  |         |             |                        |
+| Operation (Runinstance)         |         |             |                        |
+| Item Description (OS & Pricing) |         |             |                        |
+| Usage Quantity                  |         |             |                        |
+| Cost                            |         |             |                        |
+
+### AWS Cost Explorer
+| Data field                 | Period              | Output               | Use for                    |
+|----------------------------|---------------------|----------------------|----------------------------|
+| All fields from Bills File | Monthly (Last 12 M) | Billing Dashboard UI | Daily/weekly cost tracking |
+| User Defined Tags          | Daily               | CSV (no programatic access)        | Leverage Cost Awareness    |
+| API Operation              |                     | Cost Explorer API    | Trend and Budget analysis  |
+| Region A/Z                 |                     |                      |                            |
+| Platform (OS)              |                     |                      |                            |
+| Purchase Option            |                     |                      |                            |
+| Tenancy                    |                     |                      |                            |
+
+### Cost and Usage Report
+| Data field                 | Period | Output | Use for                |
+|----------------------------|--------|--------|------------------------|
+| All fields from Bills File | Hourly | S3     | Hourly/Daily reporting |
+| Resource-id                | Daily  |        |                        |
+| API Operation              |        |        |                        |
+| Region A/Z                 |        |        |                        |
+| Platform (OS)              |        |        |                        |
+| Purchase Option            |        |        |                        |
+| Tenancy                    |        |        |                        |
+
 - [AWS Compute Optimizer FAQs](https://aws.amazon.com/compute-optimizer/faqs/)
   > AWS Compute Optimizer helps you identify the optimal AWS resource configurations, such as Amazon Elastic Compute Cloud (EC2) instance types, Amazon Elastic Block Store (EBS) volume configurations, task sizes of Amazon Elastic Container Service (ECS) services on AWS Fargate, commercial software licenses, AWS Lambda function memory sizes, and Amazon Relational Database Service (RDS) DB instance classes, using machine learning to analyze historical utilization metrics. Compute Optimizer provides a set of APIs and a console experience to help you reduce costs and increase workload performance by recommending the optimal AWS resources for your AWS workloads.
 - [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)
@@ -849,6 +918,11 @@
 - [What are AWS Cost and Usage Reports?](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)
   > The AWS Cost and Usage Reports (AWS CUR) contains the most comprehensive set of cost and usage data available. You can use Cost and Usage Reports to publish your AWS billing reports to an Amazon Simple Storage Service (Amazon S3) bucket that you own. You can receive reports that break down your costs by the hour, day, or month, by product or product resource, or by tags that you define yourself. AWS updates the report in your bucket once a day in comma-separated value (CSV) format. You can view the reports using spreadsheet software such as Microsoft Excel or Apache OpenOffice Calc, or access them from an application using the Amazon S3 API.
 - [Configuring AWS Budgets actions](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-controls.html)
+  > AWS Budgets is a tool that enables you to set custom cost and usage budgets. You can set your budget amount, and AWS provides you with estimated charges and forecasted costs for your AWS usage. Configuring the budgets in the Billing and Cost Management console is a recommended step.
+  >
+  > AWS Budgets can execute budget actions (like preventing additional resource provisioning) using an IAM role with the necessary permissions.
+  > 
+  > Configuring alerts in AWS Budgets and linking a budget action to an IAM role for automatic prevention of additional resource provisioning is a correct and efficient way to manage costs.
 - [Reserved Instances and Savings Plans discount sharing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn-off.html)
 
 # Architecture & Design
