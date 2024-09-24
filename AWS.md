@@ -366,6 +366,17 @@ p
   - [Software VPN](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/software-vpn-1.html)
   - [Software VPN-to-AWS Site-to-Site VPN](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/software-vpn-to-aws-site-to-site-vpn.html)
   - Gotcha: No Amazon-managed VPN between VPCs
+- [Scaling VPN throughput using AWS Transit Gateway](https://aws.amazon.com/blogs/networking-and-content-delivery/scaling-vpn-throughput-using-aws-transit-gateway/)
+  > Virtual private gateways are a highly available logical function that provides routing to VPCs by VPN or AWS Direct Connect gateway. You can use static or dynamic routing to route to and from the VPC. Before the launch of AWS Transit Gateway, virtual private gateways were the only choice for VPN connectivity, other than third-party solutions. Virtual private gateways with a VPN are suitable for single-VPC connectivity.
+  > 
+  > Typically, when connecting multiple VPCs to the on-premises environment, each VPC must have a separate VPN connection through a respective virtual private gateway, or follow the transit VPC architecture. VPN connection is a secure connection between your on-premises equipment and your VPCs. Each VPN connection has two VPN tunnels which you can use for high availability. VPN tunnel is an encrypted link where data can pass from the customer network to or from AWS. The following diagram shows the high-level connectivity with virtual private gateways. 
+  >
+  > **Virtual Private Gateway with Multiple VPCs and VPN Connections**
+  > ![](AWSResources/Virtual-Private-Gateway-with-Multiple-VPCs-and-VPN-Connections.png "")
+  > With AWS Transit Gateway, you can simplify the connectivity between multiple VPCs and also connect to any VPC attached to AWS Transit Gateway with a single VPN connection. AWS Transit Gateway also enables you to scale the IPsec VPN throughput with equal cost multi-path (ECMP) routing support over multiple VPN tunnels. A single VPN tunnel still has a maximum throughput of 1.25 Gbps. If you establish multiple VPN tunnels to an ECMP-enabled transit gateway, it can scale beyond the default maximum limit of 1.25 Gbps.  You also must enable the dynamic routing option on your transit gateway to be able to take advantage of ECMP for scalability. 
+  >
+  > **Transit gateway with multiple VPC attachments and VPN connection**
+  > ![](AWSResources/Transit-gateway-with-multiple-VPC-attachments-and-VPN-connection.png "")
 
 ## Direct Connect
 - [What is AWS Direct Connect?](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html)
