@@ -138,6 +138,7 @@ p
 - [Auto Scaling launch templates](https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templates.html)
 - [Configure termination policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-termination-policies.html)
   ![](AWSResources/termination-policy-default-flowchart-diagram.png "")
+- [Control which Auto Scaling instances terminate during scale in](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html)
 
 ## Cloud Watch
 - [Enable or turn off detailed monitoring for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-cloudwatch-new.html)
@@ -377,6 +378,18 @@ p
   >
   > **Transit gateway with multiple VPC attachments and VPN connection**
   > ![](AWSResources/Transit-gateway-with-multiple-VPC-attachments-and-VPN-connection.png "")
+- [Building a Scalable and Secure Multi-VPC AWS Network Infrastructure](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/welcome.html)
+  - [AWS Transit Gateway](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/transit-gateway.html)
+  - [Transit VPC solution](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/transit-vpc-solution.html)
+- [Moving to Transit Gateway](https://www.linkedin.com/pulse/moving-transit-gateway-andrew-larssen/)
+  > From the AWS documentation this is what Transit Gateway can do:
+  > - Transit Gateway abstracts away the complexity of maintaining VPN connections with hundreds of VPCs.
+  > - Transit Gateway removes the need to manage and scale EC2 based software appliances. AWS is responsible for managing all resources needed to route traffic.
+  > - Transit Gateway removes the need to manage high availability by providing a highly available and redundant Multi-AZ infrastructure.
+  > - Transit Gateway improves bandwidth for inter-VPC communication to burst speeds of 50 Gbps per AZ.
+  > Transit Gateway streamlines user costs to a simple per hour per/GB transferred model.
+  > Transit Gateway decreases latency by removing EC2 proxies and the need for VPN encapsulation.
+
 
 ## Direct Connect
 - [What is AWS Direct Connect?](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html)
@@ -434,6 +447,7 @@ p
   > The selected subnet does not have a route to an internet gateway. This means that your load balancer will not receive internet traffic.
   > You can proceed with this selection; however, for internet traffic to reach your load balancer, you must update the subnet’s route table in the VPC console .
 - [Access logs for your Application Load Balancer | to S3 bucket](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html)
+- [What is a Network Load Balancer?](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html)
 - [What is a Gateway Load Balancer?](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html)
 - [Scaling network traffic inspection using AWS Gateway Load Balancer](https://aws.amazon.com/blogs/networking-and-content-delivery/scaling-network-traffic-inspection-using-aws-gateway-load-balancer/)
 ![](AWSResources/GWLB-Blog-Distributed-Architecture-Figure-1.jpg)
@@ -466,6 +480,7 @@ For more information about allowing traffic to your instances, see Target securi
     >
     > Old version: We end up with a TCP listener on a NLB that accepts traffic and forwards it to an internal ALB. The ALB terminates TLS, examines HTTP headers, and routes requests based on your configured rules to target groups with your instances, servers, or containers. The AWS Lambda function keeps everything in sync by watching the ALB for IP address changes and updating the NLB target group. In the end we’ll have a few static IP addresses that are easy for whitelisting, and we won’t lose any of the benefits of ALB. Note that we will be sending all of the traffic through two load balancers.
   - Global Accelerator
+- [Application Load Balancers Now Support Multiple TLS Certificates With Smart Selection Using SNI](https://aws.amazon.com/blogs/aws/new-application-load-balancer-sni/)
 
 ## Cloudfront
 - [How CloudFront delivers content](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowCloudFrontWorks.html)
@@ -537,6 +552,7 @@ For more information about allowing traffic to your instances, see Target securi
     - User Prioritization
 - Gotcha: CloudFront cannot listen on UDP
 - [Authorization@Edge using cookies: Protect your Amazon CloudFront content from being downloaded by unauthenticated users](https://aws.amazon.com/blogs/networking-and-content-delivery/authorizationedge-using-cookies-protect-your-amazon-cloudfront-content-from-being-downloaded-by-unauthenticated-users/)
+- [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html)
 
 ## AWS Global Accelerator
 - [What is AWS Global Accelerator?](https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html)
@@ -687,6 +703,9 @@ For more information about allowing traffic to your instances, see Target securi
 > | S3 Glacier Instant Retrieval | 90 days | Quarterly | Milliseconds | No |
 > | S3 Glacier Flexible Retrieval | 90 days | Semi-annually | Minutes to 12 hours | Yes |
 > | S3 Glacier Deep Archive | 180 days | Annually | 9 to 48 hours | Yes |
+- [Deprecated: What Is Amazon S3 Glacier?](https://docs.aws.amazon.com/amazonglacier/latest/dev/introduction.html)
+  - See also [Confused: buckets / vaults for S3 Glacier](https://www.reddit.com/r/aws/comments/18lp8uv/confused_buckets_vaults_for_s3_glacier/)
+  > Glacier used to be its own service separate from S3 with its own CLI commands and no way to upload files via the AWS Console (website). Now Glacier is just a storage tier - several actually - of S3 so you can upload files using the AWS CLI or console directly by setting the storage class to Glacier or Deep Archive.
 - [Bucket policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)
 - [Controlling access from VPC endpoints with bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html)
   - [Restricting access to a specific VPC endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-accesss-vpc-endpoint)
@@ -762,6 +781,10 @@ For more information about allowing traffic to your instances, see Target securi
 - [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
 - [Deleting an object from an MFA delete-enabled bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMFADelete.html)
   - `x-amz-mfa` header
+- [Logging options for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/logging-with-S3.html)
+  - AWS CloudTrail
+  - Amazon S3 server logs
+  >  We recommend that you use CloudTrail for logging bucket-level and object-level S3 API actions for your Amazon S3 resources
 - [Amazon S3 server access log format](https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html)
 - [Using server-side encryption with Amazon S3 managed keys (SSE-S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html)
 - [Using server-side encryption with AWS KMS keys (SSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html)
@@ -809,6 +832,7 @@ For more information about allowing traffic to your instances, see Target securi
 - [DynamoDB on-demand and provisioned capacity](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/capacity.html)
 - [Managing throughput capacity automatically with DynamoDB auto scaling](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html)
   > Amazon DynamoDB auto scaling uses the AWS Application Auto Scaling service to dynamically adjust provisioned throughput capacity on your behalf, in response to actual traffic patterns. This enables a table or a global secondary index (GSI) to increase its provisioned read and write capacity to handle sudden increases in traffic, without throttling. When the workload decreases, Application Auto Scaling decreases the throughput so that you don't pay for unused provisioned capacity.
+- [Amazon DynamoDB auto scaling: Performance and cost optimization at any scale](https://aws.amazon.com/blogs/database/amazon-dynamodb-auto-scaling-performance-and-cost-optimization-at-any-scale/)
 - [Change data capture for DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html)
 - [Using Kinesis Data Streams to capture changes to DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds.html)
 - [Amazon DynamoDB global tables](https://aws.amazon.com/dynamodb/global-tables/)
@@ -999,6 +1023,7 @@ For more information about allowing traffic to your instances, see Target securi
   - SNOWBALL EDGE STORAGE OPTIMIZED 80 TB
   - SNOWBALL EDGE STORAGE OPTIMIZED 210 TB
   - SNOWBALL EDGE COMPUTE OPTIMIZED 28 TB
+- [AWS Snow Family Feature comparison matrix](https://aws.amazon.com/snow/#Feature_comparison_matrix)
 
 # Integration
 ## SQS
@@ -1208,6 +1233,10 @@ For more information about allowing traffic to your instances, see Target securi
   - Examples: Logging data events for Amazon S3 objects
 - [Sending events to CloudWatch Logs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/send-cloudtrail-events-to-cloudwatch-logs.html)
 
+## EventBridge
+- [EventBridge is the evolution of Amazon CloudWatch Events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cwe-now-eb.html)
+- [Receiving events from a SaaS partner with Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-saas.html)
+
 ## AWS Organizations
 - [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
   - SCPs affect only member accounts in the organization. They have no effect on users or roles in the management account.
@@ -1337,6 +1366,7 @@ For more information about allowing traffic to your instances, see Target securi
 - [AWS Private 5G](https://aws.amazon.com/private5g/)
 - [AWS Amplify](https://aws.amazon.com/amplify/)
   > AWS Amplify simplifies the process of hosting web applications with automated deployment processes. It also integrates with CloudFront, providing a global content delivery network to efficiently serve the game interface.
+- [Automate OS Image Build Pipelines with EC2 Image Builder](https://aws.amazon.com/blogs/aws/automate-os-image-build-pipelines-with-ec2-image-builder/)
 
 # Billing and Pricing
 
@@ -1387,6 +1417,13 @@ For more information about allowing traffic to your instances, see Target securi
   > 
   > Configuring alerts in AWS Budgets and linking a budget action to an IAM role for automatic prevention of additional resource provisioning is a correct and efficient way to manage costs.
 - [Reserved Instances and Savings Plans discount sharing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn-off.html)
+- [AWS Trusted Advisor check reference](https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor-check-reference.html)
+- Cost optimization
+- Performance
+- Security
+- Fault tolerance
+- Service limits
+- Operational Excellence
 
 # Architecture & Design
 - [Rapidly recover mission-critical systems in a disaster](https://aws.amazon.com/blogs/publicsector/rapidly-recover-mission-critical-systems-in-a-disaster/)
