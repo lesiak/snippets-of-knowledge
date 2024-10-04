@@ -118,6 +118,8 @@ p
   - Cross-Region copying
   - Cross-account copying
   - Encryption and copying
+- [Access instance metadata for an EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html)
+  > http://169.254.169.254/latest/meta-data/
 
 ## EC2 Auto-Scaling
 - [Step and simple scaling policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)
@@ -779,6 +781,9 @@ For more information about allowing traffic to your instances, see Target securi
   > `aws:SecureTransport`
 - [Key differences between a website endpoint and a REST API endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteEndpoints.html#WebsiteRestEndpointDiff)
 - [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
+- [Website endpoints](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteEndpoints.html)
+  > - s3-website dash (-) Region ‐ http://bucket-name.s3-website-Region.amazonaws.com
+  > - s3-website dot (.) Region ‐ http://bucket-name.s3-website.Region.amazonaws.com
 - [Deleting an object from an MFA delete-enabled bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMFADelete.html)
   - `x-amz-mfa` header
 - [Logging options for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/logging-with-S3.html)
@@ -824,6 +829,12 @@ For more information about allowing traffic to your instances, see Target securi
   > In either case, you could allow specific actions against a specific bucket - perhaps the ability to upload, read, delete objects.
 - [Amazon S3 Event Notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html)
   - [Event notification types and destinations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-how-to-event-types-and-destinations.html)
+    > Destinations:
+    > - Amazon Simple Notification Service (Amazon SNS) topics
+    > - Amazon Simple Queue Service (Amazon SQS) queues
+    > - AWS Lambda
+    > - Amazon EventBridge
+    > Amazon Simple Queue Service FIFO (First-In-First-Out) queues aren't supported as an Amazon S3 event notification destination. To send a notification for an Amazon S3 event to an Amazon SQS FIFO queue, you can use Amazon EventBridge. For more information, see Enabling Amazon EventBridge.
 - [How can I copy all objects from one Amazon S3 bucket to another bucket?](https://repost.aws/knowledge-center/move-objects-s3-bucket)
   - aws s3 sync
   - S3 Batch Operations 
@@ -869,6 +880,8 @@ For more information about allowing traffic to your instances, see Target securi
 - [AWS DataSync FAQs](https://aws.amazon.com/datasync/faqs/)
 - [Choosing a service endpoint for your AWS DataSync agent](https://docs.aws.amazon.com/datasync/latest/userguide/choose-service-endpoint.html)
 - [Transferring files from on premises to AWS and back without leaving your VPC using AWS DataSync](https://aws.amazon.com/blogs/storage/transferring-files-from-on-premises-to-aws-and-back-without-leaving-your-vpc-using-aws-datasync/)
+- [AWS data sync vs storage gateway use case](https://stackoverflow.com/questions/68175584/aws-data-sync-vs-storage-gateway-use-case)
+  > You can combine both services. Use AWS DataSync to migrate existing data to Amazon S3, and then use the File Gateway configuration of AWS Storage Gateway to retain access to the migrated data and ongoing updates from your on-premises file-based applications.
 
 ## RDS
 - [Configuring and managing a Multi-AZ deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
@@ -973,6 +986,7 @@ For more information about allowing traffic to your instances, see Target securi
     - Create a customer managed key and give access to it
     - Copy and share the snapshot from the source account
     - Copy the shared snapshot in the target account
+- [Amazon RDS Cross-Region Automated Backups Regional Expansion](https://aws.amazon.com/about-aws/whats-new/2021/07/amazon-rds-cross-region-automated-backups-regional-expansion/)
 
 ## Caching
 - [Authenticating with the Redis AUTH command](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/auth.html)
@@ -1079,6 +1093,9 @@ For more information about allowing traffic to your instances, see Target securi
 - [Use the Kinesis Client Library]https://docs.aws.amazon.com/streams/latest/dev/shared-throughput-kcl-consumers.html)
   > Instantiates a record processor for every shard it manages
 - [Amazon Managed Service for Apache Flink](https://aws.amazon.com/managed-service-apache-flink/)
+- [Implementing Efficient and Reliable Producers with the Amazon Kinesis Producer Library](https://aws.amazon.com/blogs/big-data/implementing-efficient-and-reliable-producers-with-the-amazon-kinesis-producer-library/)
+  > - Use Batching
+  > - Use parallel HTTP requests
 
 # Analytics
 
