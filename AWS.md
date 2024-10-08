@@ -61,6 +61,8 @@
     > A service-linked role is a type of service role that is linked to an AWS service.
 - [Policy summaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand.html)
 - [AWS IAM Access Analyzer](https://aws.amazon.com/iam/access-analyzer/)
+- [AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html)
+  - [Tasks that require root user credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#root-user-tasks)
 
 # Compute
 
@@ -863,6 +865,8 @@ For more information about allowing traffic to your instances, see Target securi
 - [How can I copy all objects from one Amazon S3 bucket to another bucket?](https://repost.aws/knowledge-center/move-objects-s3-bucket)
   - aws s3 sync
   - S3 Batch Operations 
+- [Working with object metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html)
+  > Amazon S3 uses AWS KMS keys to encrypt your Amazon S3 objects. AWS KMS encrypts only the object data. The checksum, along with the specified algorithm, are stored as part of the object's metadata. If server-side encryption is requested for the object, then the checksum is stored in encrypted form. For more information about server-side encryption, see Protecting data with encryption.
 
 ## DynamoDB
 - [DynamoDB on-demand and provisioned capacity](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/capacity.html)
@@ -951,6 +955,11 @@ For more information about allowing traffic to your instances, see Target securi
 - [Amazon RDS Custom for Oracle – New Control Capabilities in Database Environment](https://aws.amazon.com/blogs/aws/amazon-rds-custom-for-oracle-new-control-capabilities-in-database-environment/)
 - [RDS Performance Insights](https://aws.amazon.com/rds/performance-insights/)
 - [RDS encryption vs TDE](https://www.sqlservercentral.com/blogs/rds-encryption-vs-tde)
+- [Amazon RDS FAQs](https://aws.amazon.com/rds/faqs/)
+  > **What happens during Multi-AZ failover and how long does it take?**
+  > Failover is automatically handled by Amazon RDS so that you can resume database operations as quickly as possible without administrative intervention. When failing over, Amazon RDS simply flips the canonical name record (CNAME) for your DB instance to point at the standby, which is in turn promoted to become the new primary. We encourage you to follow best practices and implement database connection retry at the application layer.
+  >
+  > Failovers, as defined by the interval between the detection of the failure on the primary and the resumption of transactions on the standby, typically complete within one to two minutes. Failover time can also be affected by whether large uncommitted transactions must be recovered; the use of adequately large instance types is recommended with Multi-AZ for best results. AWS also recommends the use of Provisioned IOPS with Multi-AZ instances, for fast, predictable, and consistent throughput performance.
 
 ## Aurora
 - [Amazon Aurora DB clusters](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.html)
