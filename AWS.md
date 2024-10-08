@@ -142,6 +142,8 @@ p
   ![](AWSResources/termination-policy-default-flowchart-diagram.png "")
 - [Control which Auto Scaling instances terminate during scale in](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-termination.html)
 - [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html)
+- [Use instance scale-in protection to control instance termination](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-instance-protection.html)
+  > Instance scale-in protection gives you control over which instances Amazon EC2 Auto Scaling can terminate. 
 
 ## Cloud Watch
 - [Enable or turn off detailed monitoring for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-cloudwatch-new.html)
@@ -280,6 +282,12 @@ p
     - created in a specific Availability Zone 
     - implemented with redundancy in that zone
     - quota (of 5) of NAT gateways that you can create in each Availability Zone
+    - A NAT gateway supports 5 Gbps of bandwidth and automatically scales up to 45 Gbps.
+    - You can associate exactly one Elastic IP address with a NAT gateway.
+    - A NAT gateway supports the following protocols: TCP, UDP, and ICMP.
+    - You cannot associate a security group with a NAT gateway.
+    - You can use a network access control list (network ACL) to control the traffic to and from the subnet in which the NAT gateway is located.
+    - A NAT gateway can support up to 55,000 simultaneous connections to each unique destination.
 - [Compare NAT gateways and NAT instances](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html)
   - Nat Gateway:
     - You cannot associate security groups with NAT gateways. 
@@ -445,6 +453,7 @@ p
 > Note: For transit virtual interface, AWS advertises only routes that you specify in the allowed prefixes list on the Direct Connect gateway. For a list of all AWS Regions that offer Direct Connect support for AWS Transit Gateway, see AWS Transit Gateway support.
 
 ## Load Balancers
+- [How Elastic Load Balancing works](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html)
 - [Load balancer subnets and routing](https://docs.aws.amazon.com/prescriptive-guidance/latest/load-balancer-stickiness/subnets-routing.html)
   > for internewt facing, the load balancer must be mapped to a public subnet. Otherwise:
   >
@@ -794,6 +803,7 @@ For more information about allowing traffic to your instances, see Target securi
 - [Website endpoints](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteEndpoints.html)
   > - s3-website dash (-) Region ‐ http://bucket-name.s3-website-Region.amazonaws.com
   > - s3-website dot (.) Region ‐ http://bucket-name.s3-website.Region.amazonaws.com
+  > Amazon S3 website endpoints do not support HTTPS or access points. If you want to use HTTPS, you can use Amazon CloudFront to serve a static website hosted on Amazon S3.
 - [Deleting an object from an MFA delete-enabled bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMFADelete.html)
   - `x-amz-mfa` header
 - [Logging options for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/logging-with-S3.html)
@@ -997,6 +1007,9 @@ For more information about allowing traffic to your instances, see Target securi
     - Copy and share the snapshot from the source account
     - Copy the shared snapshot in the target account
 - [Amazon RDS Cross-Region Automated Backups Regional Expansion](https://aws.amazon.com/about-aws/whats-new/2021/07/amazon-rds-cross-region-automated-backups-regional-expansion/)
+- [Cloning a volume for an Amazon Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Clone.html)
+- [Backtracking an Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Backtrack.html)
+- [Replication between Aurora and MySQL or between Aurora and another Aurora DB cluster (binary log replication)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Replication.MySQL.html)
 
 ## Caching
 - [Authenticating with the Redis AUTH command](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/auth.html)
@@ -1014,6 +1027,7 @@ For more information about allowing traffic to your instances, see Target securi
 - [Amazon Redshift Introduces Result Caching for Sub-Second Response for Repeat Queries](https://aws.amazon.com/about-aws/whats-new/2017/11/amazon-redshift-introduces-result-caching-for-sub-second-response-for-repeat-queries/)
   > Dashboard, visualization, and business intelligence (BI) tools that execute repeat queries will see a significant boost in performance due to result caching. In addition, result caching frees up resources to improve performance of all other queries. 
 - [My Amazon S3 bucket has data files created by the UNLOAD command from another account. Why can't I access those files?](https://repost.aws/knowledge-center/s3-access-denied-redshift-unload) 
+- [Amazon Redshift Spectrum Extends Data Warehousing Out to Exabytes—No Loading Required](https://aws.amazon.com/blogs/big-data/amazon-redshift-spectrum-extends-data-warehousing-out-to-exabytes-no-loading-required/)
 
 ## Lake Formation
 - [What is AWS Lake Formation?](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html)
@@ -1141,6 +1155,15 @@ For more information about allowing traffic to your instances, see Target securi
 - [What are AWS WAF, AWS Shield Advanced;, and AWS Firewall Manager?](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html)
 
 ## KMS
+- [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html)
+
+> |          | **Customer managed keys** | **AWS managed keys** | **AWS owned keys** |
+> |----------|---------------------------|----------------------|------------------- |
+> | **Key policy** | Exclusively controlled by the customer | Controlled by service; viewable by customer | Exclusively controlled and only viewable by the AWS service that encrypts your data |
+> | **Logging** | CloudTrail customer trail or event data store | CloudTrail customer trail or event data store | Not viewable by the customer |
+> | **Lifecycle management** | Customer manages rotation, deletion and Regional location | AWS KMS manages rotation (annual), deletion and Regional location | AWS service manages rotation (annual), deletion and Regional location |
+> | **Pricing** | Monthly fee for existence of keys (pro-rated<br><br>hourly). Also charged for key usage | No charge for key usage; but the caller is charged for API usage on these keys | No charges to customer |
+
 - [Rotating AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html)
 - [Deleting AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys.html)
 > Because it is destructive and potentially dangerous to delete a KMS key, AWS KMS requires you to set a waiting period of 7 – 30 days. The default waiting period is 30 days.
