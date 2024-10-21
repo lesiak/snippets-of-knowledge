@@ -95,6 +95,8 @@ p
 - [Differences between Capacity Reservations, Reserved Instances, and Savings Plans](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html#capacity-reservations-differences)
 - [Placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
 - [Best practices for handling EC2 Spot Instance interruptions](https://aws.amazon.com/blogs/compute/best-practices-for-handling-ec2-spot-instance-interruptions/)
+- [Instance store temporary block storage for EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)
+- [Data persistence for Amazon EC2 instance store volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-store-lifetime.html)
 - [Add instance store volumes to an Amazon EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/add-instance-store-volumes.html)
   > Instance store volumes can be attached to an instance only when you launch it. You can't attach instance store volumes to an instance after you've launched it.
 - [Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
@@ -471,6 +473,7 @@ p
 > - Attach Amazon VPCs in the same AWS Region to the transit gateway. Then, access multiple VPCs in different AWS accounts in the same AWS Region using a transit virtual interface.
 > 
 > Note: For transit virtual interface, AWS advertises only routes that you specify in the allowed prefixes list on the Direct Connect gateway. For a list of all AWS Regions that offer Direct Connect support for AWS Transit Gateway, see AWS Transit Gateway support.
+- [AWS Direct Connect Resiliency Recommendations](https://aws.amazon.com/directconnect/resiliency-recommendation/)
 
 ## Load Balancers
 - [How Elastic Load Balancing works](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html)
@@ -590,6 +593,10 @@ For more information about allowing traffic to your instances, see Target securi
 - [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html)
 - [Amazon CloudFront – Content Uploads Via POST, PUT, other HTTP Methods](https://aws.amazon.com/blogs/aws/amazon-cloudfront-content-uploads-post-put-other-methods/)
 - [Serve private content with signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)
+  > **How to serve private content**
+  > - (Optional but recommended) Require your users to access your content only through CloudFront.
+  > - Specify the trusted key groups or trusted signers that you want to use to create signed URLs or signed cookies. We recommend that you use trusted key groups.
+  > - Write your application to respond to requests from authorized users either with signed URLs or with Set-Cookie headers that set signed cookies.
 - [New – TLS Termination for Network Load Balancers](https://aws.amazon.com/blogs/aws/new-tls-termination-for-network-load-balancers/)
 - [Mutual authentication for Application Load Balancer reliably verifies certificate-based client identities](https://aws.amazon.com/blogs/aws/mutual-authentication-for-application-load-balancer-to-reliably-verify-certificate-based-client-identities/)
 
@@ -721,6 +728,7 @@ For more information about allowing traffic to your instances, see Target securi
   - `DeleteOnTermination`
   - New Instance - Console
   - Running Instance - `aws ec2 modify-instance-attribute` command
+- [Understanding Burst vs. Baseline Performance with Amazon RDS and GP2](https://aws.amazon.com/blogs/database/understanding-burst-vs-baseline-performance-with-amazon-rds-and-gp2/)
 
 ## EFS
 - [How Amazon EFS works](https://docs.aws.amazon.com/efs/latest/ug/how-it-works.html)
@@ -740,13 +748,21 @@ For more information about allowing traffic to your instances, see Target securi
   - For One Zone file systems, you can only create a single mount target in the same Availability Zone as the file system.
 - [Working with interface VPC endpoints in Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/efs-vpc-endpoints.html)
 - [Amazon EFS performance](https://docs.aws.amazon.com/efs/latest/ug/performance.html)
+  > The following configurations impact the performance of an Amazon EFS file system:
+  > - **File system type** – Regional or One Zone
+  > - **Performance mode** – General Purpose or Max I/O
+  > - **Throughput mode** – Elastic, Provisioned, or Bursting
+  >
   > Amazon EFS offers two performance modes, General Purpose and Max I/O.
+  > Due to the higher per-operation latencies with Max I/O, we recommend using General Purpose performance mode for all file systems.
 - [Creating and managing EFS resources](https://docs.aws.amazon.com/efs/latest/ug/creating-using.html)
   - Create an Amazon EFS file system
   - Create mount targets for the file system
   - Create security groups – Both an Amazon EC2 instance and a mount target must have associated security groups.
 - [Working with Amazon EFS access points](https://docs.aws.amazon.com/efs/latest/ug/efs-access-points.html)
 - [Using service-linked roles for Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/using-service-linked-roles.html)
+- [Using IAM to control file system data access](https://docs.aws.amazon.com/efs/latest/ug/iam-access-control-nfs-efs.html)
+- [Network File System (NFS) level users, groups, and permissions](https://docs.aws.amazon.com/efs/latest/ug/accessing-fs-nfs-permissions.html)
 
 ## S3
 - [What is Amazon S3?](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
@@ -903,6 +919,8 @@ For more information about allowing traffic to your instances, see Target securi
   >
   > **Requests using scan ranges**
   > - `ScanRange` parameter
+- [Amazon S3 analytics – Storage Class Analysis](https://docs.aws.amazon.com/AmazonS3/latest/userguide/analytics-storage-class.html)
+  > Storage class analysis only provides recommendations for Standard to Standard IA classes.
 
 
 ## DynamoDB
@@ -1001,6 +1019,10 @@ For more information about allowing traffic to your instances, see Target securi
   > Failover is automatically handled by Amazon RDS so that you can resume database operations as quickly as possible without administrative intervention. When failing over, Amazon RDS simply flips the canonical name record (CNAME) for your DB instance to point at the standby, which is in turn promoted to become the new primary. We encourage you to follow best practices and implement database connection retry at the application layer.
   >
   > Failovers, as defined by the interval between the detection of the failure on the primary and the resumption of transactions on the standby, typically complete within one to two minutes. Failover time can also be affected by whether large uncommitted transactions must be recovered; the use of adequately large instance types is recommended with Multi-AZ for best results. AWS also recommends the use of Provisioned IOPS with Multi-AZ instances, for fast, predictable, and consistent throughput performance.
+- [How do I minimize downtime during required Amazon RDS maintenance?](https://repost.aws/knowledge-center/rds-required-maintenance)
+  > Upgrades to the database engine level require downtime. Even if your RDS DB instance uses a Multi-AZ deployment, both the primary and standby DB instances upgrade at the same time. This causes downtime until the upgrade completes, and the duration of the downtime varies based on the size of your DB instance. For more information, check the documentation for your DB engine in Upgrading a DB instance engine version.
+
+
 
 ## Aurora
 - [Amazon Aurora DB clusters](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.html)
@@ -1186,6 +1208,7 @@ For more information about allowing traffic to your instances, see Target securi
   > - Use parallel HTTP requests
 - [Amazon Kinesis Data Streams Adds Enhanced Fan-Out and HTTP/2 for Faster Streaming](https://aws.amazon.com/blogs/aws/kds-enhanced-fanout/)
   > Kinesis Data Streams are scaled using the concept of a shard. One shard provides an ingest capacity of 1MB/second or 1000 records/second and an output capacity of 2MB/second. It’s not uncommon for customers to have thousands or tens of thousands of shards supporting 10s of GB/sec of ingest and egress. Before the enhanced fan-out capability, that 2MB/second/shard output was shared between all of the applications consuming data from the stream. With enhanced fan-out developers can register stream consumers to use enhanced fan-out and receive their own 2MB/second pipe of read throughput per shard, and this throughput automatically scales with the number of shards in a stream. Prior to the launch of Enhanced Fan-out customers would frequently fan-out their data out to multiple streams to support their desired read throughput for their downstream applications.
+- [Building a scalable streaming data processor with Amazon Kinesis Data Streams on AWS Fargate](https://aws.amazon.com/blogs/big-data/building-a-scalable-streaming-data-processor-with-amazon-kinesis-data-streams-on-aws-fargate/)
 
 # Analytics
 
@@ -1311,6 +1334,9 @@ For more information about allowing traffic to your instances, see Target securi
   > Use AD Connector if you only need to allow your on-premises users to log in to AWS applications and services with their Active Directory credentials. You can also use AD Connector to join Amazon EC2 instances to your existing Active Directory domain.
   > 
   > Use Simple AD if you need a low-scale, low-cost directory with basic Active Directory compatibility that supports Samba 4–compatible applications, or you need LDAP compatibility for LDAP-aware applications.
+- [AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html)
+- [AD Connector](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_ad_connector.html)
+- [Simple AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_simple_ad.html)
 
 ## Cognito
 - [Amazon Cognito user pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html)
