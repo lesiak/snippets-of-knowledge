@@ -746,6 +746,7 @@ For more information about allowing traffic to your instances, see Target securi
 - [Managing mount targets](https://docs.aws.amazon.com/efs/latest/ug/accessing-fs.html)
   - For Amazon EFS file systems that use Regional storage classes, you can create a mount target in each Availability Zone in an AWS Region. 
   - For One Zone file systems, you can only create a single mount target in the same Availability Zone as the file system.
+  - The mount target security group acts as a virtual firewall that controls the traffic.
 - [Working with interface VPC endpoints in Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/efs-vpc-endpoints.html)
 - [Amazon EFS performance](https://docs.aws.amazon.com/efs/latest/ug/performance.html)
   > The following configurations impact the performance of an Amazon EFS file system:
