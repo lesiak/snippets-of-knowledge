@@ -1147,6 +1147,9 @@ For more information about allowing traffic to your instances, see Target securi
   - SNOWBALL EDGE STORAGE OPTIMIZED 210 TB
   - SNOWBALL EDGE COMPUTE OPTIMIZED 28 TB
 - [AWS Snow Family Feature comparison matrix](https://aws.amazon.com/snow/#Feature_comparison_matrix)
+- [AWS stops selling Snowmobile truck for cloud migrations March 2024](https://www.cnbc.com/2024/04/17/aws-stops-selling-snowmobile-truck-for-cloud-migrations.html)
+  - 100 PB
+  - suggested for over 10 PB
 
 # Integration
 ## SQS
