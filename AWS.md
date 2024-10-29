@@ -187,6 +187,7 @@ p
   > - **Notify one or more subscribers by using an Amazon Simple Notification Service topic**. Subscribers can be applications as well as persons. For more information about Amazon SNS, see What is Amazon SNS?.
   > - **Invoke a Lambda function**. This is the easiest way for you to automate custom actions on alarm state changes.
   > - **Alarms based on EC2 metrics can also perform EC2 actions**, such as stopping, terminating, rebooting, or recovering an EC2 instance. For more information, see [Create alarms to stop, terminate, reboot, or recover an EC2 instance.](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/UsingAlarmActions.html)
+    - Deprecates - [How do I use Lambda to stop and start Amazon EC2 instances at regular intervals?](https://repost.aws/knowledge-center/start-stop-lambda-eventbridge)
   > - Alarms can perform actions to **scale an Auto Scaling group**. For more information, see Step and simple scaling policies for Amazon EC2 Auto Scaling.
   > - Alarms can **create OpsItems in Systems Manager Ops Center or create incidents in AWS Systems Manager Incident Manager**. These actions are performed only when the alarm goes into ALARM state. For more information, see Configuring CloudWatch to create OpsItems from alarms and Incident creation.
 
@@ -226,6 +227,7 @@ p
    - Account quota of 1,000 concurrent executions across all functions in an AWS Region
    - Reserved Concurrency | reserve a portion of your account's concurrency for a function
    - Provisioned Concurrency |  pre-initialize a number of environment instances for a function.
+- [New – Provisioned Concurrency for Lambda Functions](https://aws.amazon.com/blogs/aws/new-provisioned-concurrency-for-lambda-functions/)
 - [Best Practices for Developing on AWS Lambda](https://aws.amazon.com/blogs/architecture/best-practices-for-developing-on-aws-lambda/)
   > #### Tip #1: When to VPC-Enable a Lambda Function
   > Lambda functions always operate from an AWS-owned VPC. By default, your function has full ability to make network requests to any public internet address — this includes access to any of the public AWS APIs. For example, your function can interact with AWS DynamoDB APIs to PutItem or Query for records. You should only enable your functions for VPC access when you need to interact with a private resource located in a private subnet. An RDS instance is a good example.
@@ -267,6 +269,9 @@ p
 - [Managing Lambda dependencies with layers](https://docs.aws.amazon.com/lambda/latest/dg/chapter-layers.html)
 - [Lambda – Container Image Support](https://aws.amazon.com/blogs/aws/new-for-aws-lambda-container-image-support/)
   >  To work with Lambda, these images must implement the Lambda Runtime API.
+- [Visualize Lambda function invocations using AWS X-Ray](https://docs.aws.amazon.com/lambda/latest/dg/services-xray.html)
+- [Networking and VPC configurations](https://docs.aws.amazon.com/lambda/latest/operatorguide/networking-vpc.html)
+- [Announcing improved VPC networking for AWS Lambda functions](https://aws.amazon.com/blogs/compute/announcing-improved-vpc-networking-for-aws-lambda-functions/)
 
 ## ECS
 - [Amazon ECS task IAM role](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html)
@@ -291,6 +296,7 @@ p
   > - Your cluster must pull images from a container registry that's in your VPC.
   > - Your cluster must have endpoint private access enabled. This is required for nodes to register with the cluster endpoint.
 - [Encrypt Kubernetes secrets with AWS KMS on existing clusters](https://docs.aws.amazon.com/eks/latest/userguide/enable-kms.html)
+- [Amazon EKS Simplifies Kubernetes Cluster Authentication](https://aws.amazon.com/about-aws/whats-new/2019/05/amazon-eks-simplifies-kubernetes-cluster-authentication/)
 
 # Networking  
 ## VPC
