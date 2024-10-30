@@ -2,6 +2,14 @@
 * [A JVM Does That??? (2011) [pdf]](http://www.azulsystems.com/blog/wp-content/uploads/2011/03/2011_WhatDoesJVMDo.pdf)
 * [Allocation on the JVM: Down the rabbit hole](http://jcdav.is/2016/07/11/JVM-allocation-secrets/)
 
+# Native memory usage
+* [Native Memory Allocation in Java](https://dzone.com/articles/native-memory-allocation-in-examples)
+* [Logging vs Memory](https://tersesystems.com/blog/2020/07/09/logging-vs-memory/)
+  > Even when you use a heap ByteBuffer for I/O, it is copied into a temporary direct ByteBuffer. The JDK caches one temporary buffer per thread, without any memory limits. As a result, if you call I/O methods with large heap ByteBuffers from multiple threads, your process can use a huge amount of additional native memory, which looks like a native memory leak. This can cause your process to unexpectedly run into memory limits and get killed.
+* [Fixing Java's ByteBuffer native memory "leak"](https://www.evanjones.ca/java-bytebuffer-leak.html)
+* [jvm-alloc-rate-meter](https://github.com/clojure-goes-fast/jvm-alloc-rate-meter)
+* [Using pmap and gdb to find native memory leak](https://stackoverflow.com/questions/61002346/using-pmap-and-gdb-to-find-native-memory-leak)
+
 # Libraries
 * [Dependency Injection with Dagger 2](https://www.future-processing.pl/blog/dependency-injection-with-dagger-2/)
 * [The Netty project](http://netty.io/)
