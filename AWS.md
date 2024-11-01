@@ -216,6 +216,12 @@ p
 - [High Performance Computing Lens - AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/high-performance-computing-lens/welcome.html)
 
 ## Batch
+- [Components of AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/batch_components.html)
+  - Jobs
+  - Job definitions
+  - Job queues
+  - Compute environment
+- [Compute environments for AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html)
 - [Multi-node parallel jobs](https://docs.aws.amazon.com/batch/latest/userguide/multi-node-parallel-jobs.html)
   > You can use multi-node parallel jobs to run single jobs that span multiple Amazon EC2 instances. With AWS Batch multi-node parallel jobs, you can run large-scale, high-performance computing applications and distributed GPU model training without the need to launch, configure, and manage Amazon EC2 resources directly. An AWS Batch multi-node parallel job is compatible with any framework that supports IP-based, internode communication. Examples include Apache MXNet, TensorFlow, Caffe2, or Message Passing Interface (MPI).
 
@@ -1112,6 +1118,7 @@ For more information about allowing traffic to your instances, see Target securi
   > Dashboard, visualization, and business intelligence (BI) tools that execute repeat queries will see a significant boost in performance due to result caching. In addition, result caching frees up resources to improve performance of all other queries. 
 - [My Amazon S3 bucket has data files created by the UNLOAD command from another account. Why can't I access those files?](https://repost.aws/knowledge-center/s3-access-denied-redshift-unload) 
 - [Amazon Redshift Spectrum Extends Data Warehousing Out to Exabytes—No Loading Required](https://aws.amazon.com/blogs/big-data/amazon-redshift-spectrum-extends-data-warehousing-out-to-exabytes-no-loading-required/)
+- [Quickly Filter Data in Amazon Redshift Using Interleaved Sorting](https://gitlab.ocado.tech/phoenix-business-logic/production-repositories/customer-order-processor/-/pipelines/25685232)
 
 ## Lake Formation
 - [What is AWS Lake Formation?](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html)
@@ -1603,3 +1610,6 @@ For more information about allowing traffic to your instances, see Target securi
 
 # Architecture & Design
 - [Rapidly recover mission-critical systems in a disaster](https://aws.amazon.com/blogs/publicsector/rapidly-recover-mission-critical-systems-in-a-disaster/)
+- [A Beginner's Guide to Scaling to 11 Million+ Users on Amazon's AWS](https://highscalability.com/a-beginners-guide-to-scaling-to-11-million-users-on-amazons/)
+- [Creating Your Own EC2 Spot Market](https://netflixtechblog.com/creating-your-own-ec2-spot-market-6dd001875f5)
+- [Creating Your Own EC2 Spot Market — Part 2](https://netflixtechblog.com/creating-your-own-ec2-spot-market-part-2-106e53be9ed7)
