@@ -45,6 +45,7 @@
 - [Controlling access to and for IAM users and roles using tags | PrincipalTag](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_iam-tags.html)
 - [How can I use IAM roles to restrict API calls from specific IP addresses to the AWS Management Console?](https://repost.aws/knowledge-center/iam-restrict-calls-ip-addresses)
 - [Setting an account password policy for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html?icmpid=docs_iam_console)
+- [Permit IAM users to change their own passwords](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_enable-user-change.html)
 - [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)
   - Role
     > Roles can be assumed by the following:
@@ -59,6 +60,40 @@
     > A service role is an IAM role that a service assumes to perform actions on your behalf.
   - AWS service-linked role
     > A service-linked role is a type of service role that is linked to an AWS service.
+  > When a user assumes a role in AWS, the process involves the following steps:  
+  > 1. AssumeRole API Call: The user makes an AssumeRole API call to AWS Security Token Service (STS). This call includes the ARN of the role to be assumed and optionally a session name and external ID.  
+  > 2. Temporary Security Credentials: AWS STS returns a set of temporary security credentials (access key ID, secret access key, and session token) that the user can use to make AWS service requests.  
+  > 3. Session Context: These temporary credentials include information about the assumed role, such as the role ARN and the session name. This information is embedded in the session token.  
+  > 4. Request Signing: When the user makes requests to AWS services using the temporary credentials, the requests are signed with the session token. AWS services can decode the session token to determine the role being assumed.  
+  > 5. Access Control: AWS services use the role's permissions to authorize the requests. The user's original permissions are not considered while they are acting under the assumed role.  
+  > Here is an example of how a user might assume a role using the AWS SDK for Python (Boto3):
+  > ```
+  > import boto3
+  > 
+  > # Create an STS client
+  > sts_client = boto3.client('sts')
+  > 
+  > # Assume a role
+  > response = sts_client.assume_role(
+  >  RoleArn='arn:aws:iam::123456789012:role/example-role',
+  >  RoleSessionName='example-session'
+  > )
+  >
+  > # Extract the temporary credentials
+  > credentials = response['Credentials']
+  > 
+  > # Use the temporary credentials to create a new session
+  > session = boto3.Session(
+  >    aws_access_key_id=credentials['AccessKeyId'],
+  >    aws_secret_access_key=credentials['SecretAccessKey'],
+  >    aws_session_token=credentials['SessionToken']
+  > )
+  >
+  > # Use the session to make requests to AWS services
+  > s3_client = session.client('s3')
+  > response = s3_client.list_buckets()
+  > print(response)
+  > ```
 - [Policy summaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand.html)
 - [AWS IAM Access Analyzer](https://aws.amazon.com/iam/access-analyzer/)
 - [AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html)
