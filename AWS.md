@@ -429,13 +429,29 @@
 - [Gateway endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html) Do not use PrivateLink
   - S3
   - DynamoDB
+- [AWS PrivateLink for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html)
+> | **Feature** | **Gateway endpoints for Amazon S3** | **Interface endpoints for Amazon S3** |
+> | --- | --- | --- |
+> | **Network Traffic** | Remains on AWS network | Remains on AWS network |
+> | **IP Addresses** | Amazon S3 public IP addresses | Private IP addresses from your Amazon VPC |
+> | **On-Premises Access** | Do not allow access from on premises | Allow access from on premises |
+> | **Cross-Region Access** | Do not allow access from another AWS Region | Allow access from a VPC in another AWS Region using Amazon VPC peering or AWS Transit Gateway |
+> | **Billing** | Not billed | Billed |
+- [AWS PrivateLink for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/privatelink-interface-endpoints.html)
+> | **Feature** | **Gateway Endpoints for DynamoDB** | **Interface Endpoints for DynamoDB** |
+> | --- | --- | --- |
+> | **Network Traffic** | Remains on AWS network | Remains on AWS network |
+> | **IP Addresses** | Amazon DynamoDB public IP addresses | Private IP addresses from your Amazon VPC |
+> | **On-Premises Access** | Do not allow access from on premises | Allow access from on premises |
+> | **Cross-Region Access** | Do not allow access from another AWS Region | Allow access from an Amazon VPC endpoint in another AWS Region using Amazon VPC peering or AWS Transit Gateway |
+> | **Billing** | Not billed | Billed |
 - [Gateway endpoints for Amazon S3](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html)
   > Amazon S3 supports both gateway endpoints and interface endpoints. With a gateway endpoint, you can access Amazon S3 from your VPC, without requiring an internet gateway or NAT device for your VPC, and with no additional cost. However, gateway endpoints do not allow access from on-premises networks, from peered VPCs in other AWS Regions, or through a transit gateway. For those scenarios, you must use an interface endpoint, which is available for an additional cost. For more information, see Types of VPC endpoints for Amazon S3 in the Amazon S3 User Guide.
 - [Share your services through AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-share-your-services.html)
   > You can host your own AWS PrivateLink powered service, known as an endpoint service, and share it with other AWS customers.
   >
   > PrivateLink endpoint in consumer VPC
-  > Load balancer (NLB or GLB) in provider VPC
+  > Load balancer (NLB or GWLB) in provider VPC
 - [Reduce Cost and Increase Security with Amazon VPC Endpoints](https://aws.amazon.com/blogs/architecture/reduce-cost-and-increase-security-with-amazon-vpc-endpoints/)
     
 ## VPN
@@ -910,22 +926,6 @@ For more information about allowing traffic to your instances, see Target securi
   > For example, suppose that you place a legal hold on an object version and that object version is also protected by a retention period. If the retention period expires, the object doesn't lose its WORM protection. Rather, the legal hold continues to protect the object until an authorized user explicitly removes the legal hold. Similarly, if you remove a legal hold while an object version has a retention period in effect, the object version remains protected until the retention period expires.
 - [Create Write-Once-Read-Many Archive Storage with Amazon Glacier](https://aws.amazon.com/blogs/aws/glacier-vault-lock/)
 - [S3 Lock Policies and Glacier Vault Lock](http://www.ebsguide.com/9-s3-lock-policies-and-glacier-vault-lock/)
-- [AWS PrivateLink for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html)
-> | **Feature** | **Gateway endpoints for Amazon S3** | **Interface endpoints for Amazon S3** |
-> | --- | --- | --- |
-> | **Network Traffic** | Remains on AWS network | Remains on AWS network |
-> | **IP Addresses** | Amazon S3 public IP addresses | Private IP addresses from your Amazon VPC |
-> | **On-Premises Access** | Do not allow access from on premises | Allow access from on premises |
-> | **Cross-Region Access** | Do not allow access from another AWS Region | Allow access from a VPC in another AWS Region using Amazon VPC peering or AWS Transit Gateway |
-> | **Billing** | Not billed | Billed |
-- [AWS PrivateLink for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/privatelink-interface-endpoints.html)
-> | **Feature** | **Gateway Endpoints for DynamoDB** | **Interface Endpoints for DynamoDB** |
-> | --- | --- | --- |
-> | **Network Traffic** | Remains on AWS network | Remains on AWS network |
-> | **IP Addresses** | Amazon DynamoDB public IP addresses | Private IP addresses from your Amazon VPC |
-> | **On-Premises Access** | Do not allow access from on premises | Allow access from on premises |
-> | **Cross-Region Access** | Do not allow access from another AWS Region | Allow access from an Amazon VPC endpoint in another AWS Region using Amazon VPC peering or AWS Transit Gateway |
-> | **Billing** | Not billed | Billed |
 - [Retrieving S3 Glacier Archives Using AWS Console](https://docs.aws.amazon.com/amazonglacier/latest/dev/downloading-an-archive-two-steps.html)
 - [Amazon S3 Access Points](https://aws.amazon.com/s3/features/access-points/)
 - [Protecting data with encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html)
