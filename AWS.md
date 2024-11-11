@@ -401,6 +401,7 @@
     - Default SG allows inbound from from within the group and all outbound traffic
     - Custom SG denies all inbound and allows all outbound traffic by default
 - [Control subnet traffic with network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
+- [Network ACL basics](https://docs.aws.amazon.com/vpc/latest/userguide/nacl-basics.html)
     - [Default network ACL | Allows all inbound and outbound](https://docs.aws.amazon.com/vpc/latest/userguide/default-network-acl.html)
     - Custom Network ACL | Denies all inbound and outbound by default
     - Gotcha: Network ACL only applies to services in a subnet - cannot be used for CloudFront
@@ -425,7 +426,7 @@
   > There is another type of VPC endpoint, Gateway, which creates a gateway endpoint to send traffic to Amazon S3 or DynamoDB. Gateway endpoints do not use AWS PrivateLink, unlike the other types of VPC endpoints. For more information, see Gateway endpoints.
 - [Access AWS services through AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-access-aws-services.html)
 - [Securely Access Services Over AWS PrivateLink](https://docs.aws.amazon.com/whitepapers/latest/aws-privatelink/aws-privatelink.html)
-- [Gateway endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html)
+- [Gateway endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html) Do not use PrivateLink
   - S3
   - DynamoDB
 - [Gateway endpoints for Amazon S3](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html)
