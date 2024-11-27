@@ -754,6 +754,44 @@
 - [How to Build GraphQL Resolvers for AWS Data Sources](https://aws.amazon.com/graphql/resolvers/)
 
 ## Route53
+- [Working with hosted zones](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html)
+  > A hosted zone is a container for records, and records contain information about how you want to route traffic for a specific domain, such as example.com, and its subdomains (acme.example.com, zenith.example.com).
+  >  A hosted zone and the corresponding domain have the same name. There are two types of hosted zones:
+  > - *Public hosted zones* contain records that specify how you want to route traffic on the internet. For more information, see [Working with public hosted zones](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/AboutHZWorkingWith.html).
+  > - *Private hosted zones* contain records that specify how you want to route traffic in an Amazon VPC. For more information, see [Working with private hosted zones](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/AboutHZWorkingWith.html).
+- [Which Amazon VPC options do I need to turn on to use my private hosted zone?](https://repost.aws/knowledge-center/vpc-enable-private-hosted-zone)
+  > - DNS hostnames
+  > - DNS resolution 
+- [Considerations when working with a private hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-considerations.html)
+  > **Amazon VPC settings**
+  > To use private hosted zones, you must set the following Amazon VPC settings to true:
+  > - `enableDnsHostnames`
+  > - `enableDnsSupport`
+- [Considerations when working with public hosted zones](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-public-considerations.html)
+- [Working with records](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rrsets-working-with.html)
+  > Each record includes the name of a domain or a subdomain, a record type (for example, a record with a type of MX routes email), and other information applicable to the record type (for MX records, the host name of one or more mail servers and a priority for each server). For information about the different record types, see Supported DNS record types.
+  >
+  >The name of each record in a hosted zone must end with the name of the hosted zone. For example, the example.com hosted zone can contain records for www.example.com and accounting.tokyo.example.com subdomains, but cannot contain records for a www.example.ca subdomain.
+- [Supported DNS record types](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ResourceRecordTypes.html)
+  - A record type
+  - AAAA record type
+  - CAA record type
+  - CNAME record type
+  - DS record type
+  - MX record type
+  - NAPTR record type
+  - NS record type
+  - PTR record type
+  - SOA record type
+  - SPF record type
+  - SRV record type
+  - TXT record type
+- [Choosing between alias and non-alias records](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html)
+  > Amazon Route 53 alias records provide a Route 53–specific extension to DNS functionality. Alias records let you route traffic to selected AWS resources, including but not limited to, CloudFront distributions and Amazon S3 buckets. They also let you route traffic from one record in a hosted zone to another record.
+  > 
+  > Unlike a CNAME record, you can create an alias record at the top node of a DNS namespace, also known as the zone apex. For example, if you register the DNS name *example.com*, the zone apex is *example.com*. 
+  > You can't create a CNAME record for example.com, but you can create an alias record for *example.com* that routes traffic to *www.example.com* (as long as the record type for *www.example.com* is not of type CNAME).
+- [NS and SOA records that Amazon Route 53 creates for a public hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/SOA-NSrecords.html)
 - [DNS domain name format](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DomainNameFormat.html)
   - Using an asterisk (*) in the names of hosted zones and records
 - [Configuring DNS failover](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring.html)
@@ -775,36 +813,8 @@
   > Determining the health of an ELB endpoint is more complex than health checking a single IP address. For example, what if your application is running fine on EC2, but the load balancer itself isnt reachable? Or if your load balancer and your EC2 instances are working correctly, but a bug in your code causes your application to crash? Or how about if the EC2 instances in one Availability Zone of a multi-AZ ELB are experiencing problems?
   >
   > Route 53 DNS Failover handles all of these failure scenarios by integrating with ELB behind the scenes. Once enabled, Route 53 automatically configures and manages health checks  for individual ELB nodes. Route 53 also takes advantage of the EC2 instance health checking that ELB performs (information on configuring your ELB health checks is available [here](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html)). By combining the results of health checks of your EC2 instances and your ELBs, Route 53 DNS Failover is able to evaluate the health of the load balancer and the health of the application running on the EC2 instances behind it. In other words, if any part of the stack goes down, Route 53 detects the failure and routes traffic away from the failed endpoint.
-- [Supported DNS record types](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ResourceRecordTypes.html)
-  - A record type
-  - AAAA record type
-  - CAA record type
-  - CNAME record type
-  - DS record type
-  - MX record type
-  - NAPTR record type
-  - NS record type
-  - PTR record type
-  - SOA record type
-  - SPF record type
-  - SRV record type
-  - TXT record type
-- [Choosing between alias and non-alias records](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-choosing-alias-non-alias.html)
-  > Amazon Route 53 alias records provide a Route 53–specific extension to DNS functionality. Alias records let you route traffic to selected AWS resources, including but not limited to, CloudFront distributions and Amazon S3 buckets. They also let you route traffic from one record in a hosted zone to another record.
-  > 
-  > Unlike a CNAME record, you can create an alias record at the top node of a DNS namespace, also known as the zone apex. For example, if you register the DNS name *example.com*, the zone apex is *example.com*. You can't create a CNAME record for example.com, but you can create an alias record for *example.com* that routes traffic to **www.example.com (as long as the record type for *www.example.com* is not of type CNAME).
-- [NS and SOA records that Amazon Route 53 creates for a public hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/SOA-NSrecords.html)
 - [Routing traffic to a website that is hosted in an Amazon S3 bucket](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/RoutingToS3Bucket.html)
 - [Routing traffic to an Amazon CloudFront distribution by using your domain name](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-cloudfront-distribution.html)
-- [Which Amazon VPC options do I need to turn on to use my private hosted zone?](https://repost.aws/knowledge-center/vpc-enable-private-hosted-zone)
-  > - DNS hostnames
-  > - DNS resolution 
-- [Considerations when working with a private hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-considerations.html)
-  > **Amazon VPC settings**
-  > To use private hosted zones, you must set the following Amazon VPC settings to true:
-  > - `enableDnsHostnames`
-  > - `enableDnsSupport`
-- [Considerations when working with public hosted zones](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-public-considerations.html)
 - [What is Amazon Route 53 Resolver?](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html)
   > Amazon Route 53 Resolver responds recursively to DNS queries from AWS resources for public records, Amazon VPC-specific DNS names, and Amazon Route 53 private hosted zones, and is available by default in all VPCs.
   > 
