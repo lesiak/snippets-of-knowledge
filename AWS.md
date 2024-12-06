@@ -831,7 +831,7 @@
   > If you have workloads that leverage both VPCs and on-premises resources, you also need to resolve DNS records hosted on-premises. Similarly, these on-premises resources may need to resolve names hosted on AWS. Through Resolver endpoints and conditional forwarding rules, you can resolve DNS queries between your on-premises resources and VPCs to create a hybrid cloud setup over VPN or Direct Connect (DX). Specifically:
   > - Inbound Resolver endpoints allow DNS queries to your VPC from your on-premises network or another VPC.
   > - Outbound Resolver endpoints allow DNS queries from your VPC to your on-premises network or another VPC.
-  > - #Resolver rules enable you to create one forwarding rule for each domain name and specify the name of the domain for which you want to forward DNS queries from your VPC to an on-premises DNS resolver and from your on-premises to your VPC. Rules are applied directly to your VPC and can be shared across multiple accounts.
+  > - Resolver rules enable you to create one forwarding rule for each domain name and specify the name of the domain for which you want to forward DNS queries from your VPC to an on-premises DNS resolver and from your on-premises to your VPC. Rules are applied directly to your VPC and can be shared across multiple accounts.
 
 # Storage
 
@@ -839,6 +839,7 @@
 - [Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes.html)
   > You can attach multiple EBS volumes to a single instance. The volume and instance must be in the same Availability Zone. 
   > Depending on the volume and instance types, you can use Multi-Attach to mount a volume to multiple instances at the same time.
+- [Features and benefits of Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/EBSFeatures.html)
 - [Amazon EBS volume types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)
   - [Cold HDD](hhttps://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_sc1) - a good fit for large, sequential cold-data workloads
 - [Amazon EBS fast snapshot restore](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-fast-snapshot-restore.html)
