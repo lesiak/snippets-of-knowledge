@@ -917,8 +917,13 @@
   > Glacier used to be its own service separate from S3 with its own CLI commands and no way to upload files via the AWS Console (website). Now Glacier is just a storage tier - several actually - of S3 so you can upload files using the AWS CLI or console directly by setting the storage class to Glacier or Deep Archive.
 - [Bucket policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)
 - [Controlling access from VPC endpoints with bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html)
-  - [Restricting access to a specific VPC endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-accesss-vpc-endpoint)
-  - [Restricting access to a specific VPC](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-access-vpc)
+  > VPC endpoints for Amazon S3 provide two ways to control access to your Amazon S3 data:
+  >
+  > You can control the requests, users, or groups that are allowed through a specific VPC endpoint. For information about this type of access control, see Controlling access to VPC endpoints using endpoint policies in the VPC User Guide.
+  >
+  > You can control which VPCs or VPC endpoints have access to your buckets by using Amazon S3 bucket policies. For examples of this type of bucket policy access control, see the following topics on restricting access.
+  - [Restricting access to a specific VPC endpoint | aws:SourceVpce](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-accesss-vpc-endpoint)
+  - [Restricting access to a specific VPC | aws:SourceVpc](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-access-vpc)
 - [Identity-based policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security_iam_id-based-policy-examples.html)
 - [Access Management](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-management.html)
   > By default, all Amazon S3 resources are private. By default, the root user of the AWS account that created the resource (resource owner) and IAM users within that account with the necessary permissions can access a resource that they created. The resource owner decides who else can access the resource and the actions that others are allowed to perform on the resource.
