@@ -904,6 +904,8 @@
 - [What is Amazon S3?](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
   - [Amazon S3 data consistency model](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#ConsistencyModel)
     > Amazon S3 provides strong read-after-write consistency for PUT and DELETE requests of objects in your Amazon S3 bucket in all AWS Regions. This behavior applies to both writes to new objects as well as PUT requests that overwrite existing objects and DELETE requests.
+
+### S3 Storage Classes
 - [Amazon S3 Storage Classes](https://aws.amazon.com/s3/storage-classes/)
 - [Long-term data storage using S3 Glacier storage classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/glacier-storage-classes.html)
 
@@ -915,25 +917,6 @@
 - [Deprecated: What Is Amazon S3 Glacier?](https://docs.aws.amazon.com/amazonglacier/latest/dev/introduction.html)
   - See also [Confused: buckets / vaults for S3 Glacier](https://www.reddit.com/r/aws/comments/18lp8uv/confused_buckets_vaults_for_s3_glacier/)
   > Glacier used to be its own service separate from S3 with its own CLI commands and no way to upload files via the AWS Console (website). Now Glacier is just a storage tier - several actually - of S3 so you can upload files using the AWS CLI or console directly by setting the storage class to Glacier or Deep Archive.
-- [Bucket policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)
-- [Controlling access from VPC endpoints with bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html)
-  > VPC endpoints for Amazon S3 provide two ways to control access to your Amazon S3 data:
-  >
-  > You can control the requests, users, or groups that are allowed through a specific VPC endpoint. For information about this type of access control, see Controlling access to VPC endpoints using endpoint policies in the VPC User Guide.
-  >
-  > You can control which VPCs or VPC endpoints have access to your buckets by using Amazon S3 bucket policies. For examples of this type of bucket policy access control, see the following topics on restricting access.
-  - [Restricting access to a specific VPC endpoint | aws:SourceVpce](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-accesss-vpc-endpoint)
-  - [Restricting access to a specific VPC | aws:SourceVpc](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-access-vpc)
-- [Identity-based policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security_iam_id-based-policy-examples.html)
-- [Access Management](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-management.html)
-  > By default, all Amazon S3 resources are private. By default, the root user of the AWS account that created the resource (resource owner) and IAM users within that account with the necessary permissions can access a resource that they created. The resource owner decides who else can access the resource and the actions that others are allowed to perform on the resource.
-- [Access control list (ACL) overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html)
-  >  With bucket policies, there is a single policy for the entire bucket, but object ACLs are specified for each object. We recommend that you keep ACLs turned off, except in unusual circumstances where you must individually control access for each object.
-  
-  > When you grant access rights, you specify each grantee as a type="value" pair, where type is one of the following:
-  > - `id` – If the value specified is the canonical user ID of an AWS account
-  > - `uri` – If you are granting permissions to a predefined group
-  > - `emailAddress` – If the value specified is the email address of an AWS account 
 - [Managing your storage lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)
   - Transition Actions
   - Expiration Acions
@@ -942,6 +925,29 @@
   > - Minimum 30 Days for Transition to S3 Standard-IA or S3 One Zone-IA
   > - Minimum 30-Day Storage Charge for S3 Standard-IA and S3 One Zone-IA
 - [When is the Amazon S3 lifecycle rule executed?](https://stackoverflow.com/questions/58292389/when-is-the-amazon-s3-lifecycle-rule-executed)
+
+### S3 Access management
+- [Access Management](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-management.html)
+  > By default, all Amazon S3 resources are private. By default, the root user of the AWS account that created the resource (resource owner) and IAM users within that account with the necessary permissions can access a resource that they created. The resource owner decides who else can access the resource and the actions that others are allowed to perform on the resource.
+
+- [Identity-based policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security_iam_id-based-policy-examples.html)
+- [Bucket policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)
+- [Amazon S3 Access Points](https://aws.amazon.com/s3/features/access-points/)
+- [Access control list (ACL) overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html)
+  >  With bucket policies, there is a single policy for the entire bucket, but object ACLs are specified for each object. We recommend that you keep ACLs turned off, except in unusual circumstances where you must individually control access for each object.
+  
+  > When you grant access rights, you specify each grantee as a type="value" pair, where type is one of the following:
+  > - `id` – If the value specified is the canonical user ID of an AWS account
+  > - `uri` – If you are granting permissions to a predefined group
+  > - `emailAddress` – If the value specified is the email address of an AWS account 
+- [Controlling access from VPC endpoints with bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html)
+  > VPC endpoints for Amazon S3 provide two ways to control access to your Amazon S3 data:
+  >
+  > You can control the requests, users, or groups that are allowed through a specific VPC endpoint. For information about this type of access control, see Controlling access to VPC endpoints using endpoint policies in the VPC User Guide.
+  >
+  > You can control which VPCs or VPC endpoints have access to your buckets by using Amazon S3 bucket policies. For examples of this type of bucket policy access control, see the following topics on restricting access.
+  - [Restricting access to a specific VPC endpoint | aws:SourceVpce](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-accesss-vpc-endpoint)
+  - [Restricting access to a specific VPC | aws:SourceVpc](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-access-vpc)
 - [Amazon S3 Object Lambda](https://aws.amazon.com/s3/features/object-lambda/)
 - [Using S3 Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html)
   > Object Lock provides two ways to manage object retention: *retention periods* and *legal holds*. An object version can have a retention period, a legal hold, or both.
@@ -967,7 +973,8 @@
 - [Create Write-Once-Read-Many Archive Storage with Amazon Glacier](https://aws.amazon.com/blogs/aws/glacier-vault-lock/)
 - [S3 Lock Policies and Glacier Vault Lock](http://www.ebsguide.com/9-s3-lock-policies-and-glacier-vault-lock/)
 - [Retrieving S3 Glacier Archives Using AWS Console](https://docs.aws.amazon.com/amazonglacier/latest/dev/downloading-an-archive-two-steps.html)
-- [Amazon S3 Access Points](https://aws.amazon.com/s3/features/access-points/)
+
+### S3 Encryption
 - [Protecting data with encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html)
 - [Amazon S3 now automatically encrypts all new objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-encryption-faq.html)
 - [Using server-side encryption with Amazon S3 managed keys (SSE-S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html)
@@ -994,12 +1001,16 @@
   > `x-amz-server-side-encryption` header
 - [What S3 bucket policy can I use to comply with the AWS Config rule s3-bucket-ssl-requests-only?](https://repost.aws/knowledge-center/s3-bucket-policy-for-config-rule)
   > `aws:SecureTransport`
-- [Key differences between a website endpoint and a REST API endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteEndpoints.html#WebsiteRestEndpointDiff)
+
+### S3 Static Websites
 - [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
 - [Website endpoints](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteEndpoints.html)
   > - s3-website dash (-) Region ‐ http://bucket-name.s3-website-Region.amazonaws.com
   > - s3-website dot (.) Region ‐ http://bucket-name.s3-website.Region.amazonaws.com
+  >
   > Amazon S3 website endpoints do not support HTTPS or access points. If you want to use HTTPS, you can use Amazon CloudFront to serve a static website hosted on Amazon S3.
+  - [Key differences between a website endpoint and a REST API endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteEndpoints.html#WebsiteRestEndpointDiff)
+- [Deploying a static website to AWS Amplify Hosting from an S3 general purpose bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-amplify.html)
 - [Deleting an object from an MFA delete-enabled bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMFADelete.html)
   - `x-amz-mfa` header
 - [Logging options for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/logging-with-S3.html)
