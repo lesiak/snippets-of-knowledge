@@ -925,6 +925,8 @@
   > - Minimum 30 Days for Transition to S3 Standard-IA or S3 One Zone-IA
   > - Minimum 30-Day Storage Charge for S3 Standard-IA and S3 One Zone-IA
 - [When is the Amazon S3 lifecycle rule executed?](https://stackoverflow.com/questions/58292389/when-is-the-amazon-s3-lifecycle-rule-executed)
+- [Amazon S3 analytics – Storage Class Analysis](https://docs.aws.amazon.com/AmazonS3/latest/userguide/analytics-storage-class.html)
+  > Storage class analysis only provides recommendations for Standard to Standard IA classes.
 
 ### S3 Access management
 - [Access Management](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-management.html)
@@ -958,8 +960,10 @@
   > - **Bucket owner preferred** – The bucket owner owns and has full control over new objects that other accounts write to the bucket with the bucket-owner-full-control canned ACL.
   > - **Object writer** – The AWS account that uploads an object owns the object, has full control over it, and can grant other users access to it through ACLs.
 
-### S3 Locks
+### S3 Object Lambda
 - [Amazon S3 Object Lambda](https://aws.amazon.com/s3/features/object-lambda/)
+
+### S3 Locks
 - [Using S3 Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html)
   > Object Lock provides two ways to manage object retention: *retention periods* and *legal holds*. An object version can have a retention period, a legal hold, or both.
   > - **Retention period** – A retention period specifies a fixed period of time during which an object remains locked.
@@ -1055,7 +1059,8 @@
   > or maintaining duplicate copies of data. The trusted account can then define permissions to provide specific access to their own end users. 
   > This simplifies access management for multiple trusted users and doesn’t require the bucket owner to configure each of those permissions themselves. 
   > These trusted accounts can enforce distinct permissions by prefixes, object tags, and network controls on resources in the bucket owner’s account.
-- [Amazon S3 data consistency model](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#ConsistencyModel)
+
+### S3 Misc
 - [S3 Transfer Acceleration](https://aws.amazon.com/s3/transfer-acceleration/)
 - [General S3 FAQs](https://aws.amazon.com/s3/faqs/)
   > **Q: How should I choose between S3 Transfer Acceleration and Amazon CloudFront’s PUT/POST?**
@@ -1072,11 +1077,16 @@
     > - Amazon Simple Queue Service (Amazon SQS) queues
     > - AWS Lambda
     > - Amazon EventBridge
-    > Amazon Simple Queue Service FIFO (First-In-First-Out) queues aren't supported as an Amazon S3 event notification destination. To send a notification for an Amazon S3 event to an Amazon SQS FIFO queue, you can use Amazon EventBridge. For more information, see Enabling Amazon EventBridge.
+    > - Amazon Simple Queue Service FIFO (First-In-First-Out) queues aren't supported as an Amazon S3 event notification destination. To send a notification for an Amazon S3 event to an Amazon SQS FIFO queue, you can use Amazon EventBridge. For more information, see Enabling Amazon EventBridge.
 - [How can I copy all objects from one Amazon S3 bucket to another bucket?](https://repost.aws/knowledge-center/move-objects-s3-bucket)
   - aws s3 sync
   - S3 Batch Operations 
 - [Working with object metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html)
+  > By default, S3 Metadata provides system-defined object metadata, such as an object's creation time and storage class, and custom metadata, such as tags and user-defined metadata that was included during object upload. 
+  > S3 Metadata also provides event metadata, such as when an object is updated or deleted, and the AWS account that made the request.
+  > 
+  > Metadata tables are stored in S3 table buckets, which provide storage that's optimized for tabular data. To query your metadata, you can integrate your table bucket with AWS analytics services, such as Amazon Athena, Amazon Redshift, and Amazon QuickSight.
+  >
   > Amazon S3 uses AWS KMS keys to encrypt your Amazon S3 objects. AWS KMS encrypts only the object data. The checksum, along with the specified algorithm, are stored as part of the object's metadata. If server-side encryption is requested for the object, then the checksum is stored in encrypted form. For more information about server-side encryption, see Protecting data with encryption.
 - [Use Byte-Range Fetches](https://docs.aws.amazon.com/whitepapers/latest/s3-optimizing-performance-best-practices/use-byte-range-fetches.html)
   > Using the Range HTTP header in a GET Object request, you can fetch a byte-range from an object, transferring only the specified portion. You can use concurrent connections to Amazon S3 to fetch different byte ranges from within the same object. This helps you achieve higher aggregate throughput versus a single whole-object request. Fetching smaller ranges of a large object also allows your application to improve retry times when requests are interrupted. 
@@ -1084,10 +1094,7 @@
   > Amazon S3 Select only allows you to query one object at a time. It works on an object stored in CSV, JSON, or Apache Parquet format. It also works with an object that is compressed with GZIP or BZIP2 (for CSV and JSON objects only), and a server-side encrypted object. You can specify the format of the results as either CSV or JSON, and you can determine how the records in the result are delimited.
   >
   > **Requests using scan ranges**
-  > - `ScanRange` parameter
-- [Amazon S3 analytics – Storage Class Analysis](https://docs.aws.amazon.com/AmazonS3/latest/userguide/analytics-storage-class.html)
-  > Storage class analysis only provides recommendations for Standard to Standard IA classes.
-
+  > - `ScanRange` parameter in [SelectObjectContent Request body](https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html#API_SelectObjectContent_RequestSyntax)
 
 ## DynamoDB
 - [DynamoDB on-demand and provisioned capacity](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/capacity.html)
