@@ -948,6 +948,17 @@
   > You can control which VPCs or VPC endpoints have access to your buckets by using Amazon S3 bucket policies. For examples of this type of bucket policy access control, see the following topics on restricting access.
   - [Restricting access to a specific VPC endpoint | aws:SourceVpce](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-accesss-vpc-endpoint)
   - [Restricting access to a specific VPC | aws:SourceVpc](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-access-vpc)
+- [Controlling ownership of objects and disabling ACLs for your bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html)
+  > Object Ownership has three settings that you can use to control ownership of objects uploaded to your bucket and to disable or enable ACLs:
+   >
+  > **ACLs disabled**
+  > - **Bucket owner enforced (default)** – ACLs are disabled, and the bucket owner automatically owns and has full control over every object in the bucket. ACLs no longer affect permissions to data in the S3 bucket. The bucket uses policies to define access control.
+  >
+  > **ACLs enabled**
+  > - **Bucket owner preferred** – The bucket owner owns and has full control over new objects that other accounts write to the bucket with the bucket-owner-full-control canned ACL.
+  > - **Object writer** – The AWS account that uploads an object owns the object, has full control over it, and can grant other users access to it through ACLs.
+
+### S3 Locks
 - [Amazon S3 Object Lambda](https://aws.amazon.com/s3/features/object-lambda/)
 - [Using S3 Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html)
   > Object Lock provides two ways to manage object retention: *retention periods* and *legal holds*. An object version can have a retention period, a legal hold, or both.
@@ -1013,33 +1024,37 @@
 - [Deploying a static website to AWS Amplify Hosting from an S3 general purpose bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-amplify.html)
 - [Deleting an object from an MFA delete-enabled bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMFADelete.html)
   - `x-amz-mfa` header
+
+  ### S3 Logging
 - [Logging options for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/logging-with-S3.html)
   - AWS CloudTrail
   - Amazon S3 server logs
   >  We recommend that you use CloudTrail for logging bucket-level and object-level S3 API actions for your Amazon S3 resources
 - [Amazon S3 server access log format](https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html)
+
+### S3 Cross-account access
 - [How do I provide cross-account access to objects that are in Amazon S3 buckets?](https://repost.aws/knowledge-center/cross-account-access-s3)
-  > **AWS Identity and Access Management (IAM) policies and resource-based bucket policies** for programmatic-only access to S3 bucket objects
-  > - Create an S3 bucket in Account A.
-  > - Create an IAM role or user in Account B.
+  > 1. **AWS Identity and Access Management (IAM) policies and resource-based bucket policies** for programmatic-only access to S3 bucket objects
+  >   - Create an S3 bucket in Account A.
+  >   - Create an IAM role or user in Account B.
   > - Give the IAM role in Account B permission to download (GetObject) and upload (PutObject) objects to and from a specific bucket. 
   > - Configure the bucket policy for Account A to grant permissions to the IAM role or user that you created in Account B. Use this bucket policy to grant a user the permissions to GetObject and PutObject for objects in a bucket that's owned by Account A
   >
-  > **IAM policies and resource-based access control lists (ACLs)** for programmatic-only access to S3 bucket objects
-  > **Cross-account IAM roles** for programmatic and console access to S3 bucket objects
+  > 2. **IAM policies and resource-based access control lists (ACLs)** for programmatic-only access to S3 bucket objects
+  >
+  > 3. **Cross-account IAM roles** for programmatic and console access to S3 bucket objects
   > - Create an IAM role in Account A.
   > - Grant the role permissions to perform the required S3 operations.
   > - In the role's trust policy, grant a role or user from Account B permissions to assume the role in Account A:
   > - Grant an IAM role or user in Account B permissions to assume the IAM role that you created in Account A.
-- [Controlling ownership of objects and disabling ACLs for your bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html)
-  > Object Ownership has three settings that you can use to control ownership of objects uploaded to your bucket and to disable or enable ACLs:
-   >
-  > **ACLs disabled**
-  > - **Bucket owner enforced (default)** – ACLs are disabled, and the bucket owner automatically owns and has full control over every object in the bucket. ACLs no longer affect permissions to data in the S3 bucket. The bucket uses policies to define access control.
-  >
-  > **ACLs enabled**
-  > - **Bucket owner preferred** – The bucket owner owns and has full control over new objects that other accounts write to the bucket with the bucket-owner-full-control canned ACL.
-  > - **Object writer** – The AWS account that uploads an object owns the object, has full control over it, and can grant other users access to it through ACLs.
+- [Simplify and scale access management to shared datasets with cross-account Amazon S3 Access Points](https://aws.amazon.com/blogs/storage/simplify-and-scale-access-management-to-shared-datasets-with-cross-account-amazon-s3-access-points/)  
+  > In 2019, AWS launched Amazon S3 Access Points for bucket owners to easily create thousands of access configurations without having 
+  > to manage a single bucket policy that spans multiple access patterns as their application and storage footprint scales. 
+  > At re:Invent 2022, AWS launched cross-account Amazon S3 Access Points for bucket owners to delegate access management to trusted AWS accounts to create their own access points. 
+  > By using this feature, bucket owners can grant data access to cross-account users without managing IAM roles or multiple access point policies, 
+  > or maintaining duplicate copies of data. The trusted account can then define permissions to provide specific access to their own end users. 
+  > This simplifies access management for multiple trusted users and doesn’t require the bucket owner to configure each of those permissions themselves. 
+  > These trusted accounts can enforce distinct permissions by prefixes, object tags, and network controls on resources in the bucket owner’s account.
 - [Amazon S3 data consistency model](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#ConsistencyModel)
 - [S3 Transfer Acceleration](https://aws.amazon.com/s3/transfer-acceleration/)
 - [General S3 FAQs](https://aws.amazon.com/s3/faqs/)
