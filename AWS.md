@@ -1108,17 +1108,24 @@
 - [Enable point-in-time recovery](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/PointInTimeRecovery_Howitworks.html)
 
 ## FSx
+- [Choosing an Amazon FSx File System](https://aws.amazon.com/fsx/when-to-choose-fsx/)
 - [Mounting Amazon FSx file systems from on-premises or a peered Amazon VPC](https://docs.aws.amazon.com/fsx/latest/LustreGuide/mounting-on-premises.html)
+
+### FSx for Windows
 - [Availability and durability: Single-AZ and Multi-AZ file systems](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/high-availability-multiAZ.html)
+- [Accessing SMB file shares remotely with Amazon FSx for Windows File Server](https://aws.amazon.com/blogs/storage/accessing-smb-file-shares-remotely-with-amazon-fsx-for-windows-file-server/)
+
+### FSx for Lustre
 - [Amazon FSx for Lustre](https://aws.amazon.com/fsx/lustre/)
-  - [Mounting from Amazon Elastic Container Service](https://docs.aws.amazon.com/fsx/latest/LustreGuide/mounting-ecs.html)
+- [Linking your file system to an Amazon S3 bucket](https://docs.aws.amazon.com/fsx/latest/LustreGuide/create-dra-linked-data-repo.html)
+- [Mounting from Amazon Elastic Container Service](https://docs.aws.amazon.com/fsx/latest/LustreGuide/mounting-ecs.html)
   - Gotcha: Mounting FSx for Lustre on an AWS Fargate launch type isn't supported.
   > Access and process Amazon S3 data from a high-performance file system by linking your file systems to S3 buckets.
-- [Accessing SMB file shares remotely with Amazon FSx for Windows File Server](https://aws.amazon.com/blogs/storage/accessing-smb-file-shares-remotely-with-amazon-fsx-for-windows-file-server/)
+
+  ### FSx for NetApp ONTAP
 - [Amazon FSx for NetApp ONTAP](https://aws.amazon.com/fsx/netapp-ontap/)
   - NetApp ONTAP or other NAS appliances
   - NFS, SMB, iSCSI, and NVMe-over-TCP protocols
-- [Choosing an Amazon FSx File System](https://aws.amazon.com/fsx/when-to-choose-fsx/)
 
 ## Storage gateway
 ### File Gateway
