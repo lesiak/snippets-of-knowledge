@@ -458,6 +458,10 @@
 - [Reduce Cost and Increase Security with Amazon VPC Endpoints](https://aws.amazon.com/blogs/architecture/reduce-cost-and-increase-security-with-amazon-vpc-endpoints/)
     
 ## VPN
+- [What is AWS Client VPN?](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-user-what-is.html)
+  - Client VPN endpoint
+  - VPN client application
+- [What is AWS Client VPN? (Admin)](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html)
 - [What is AWS Site-to-Site VPN?](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html)
 - [How AWS Site-to-Site VPN works](https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html)
   > A Site-to-Site VPN connection consists of the following components:
