@@ -1121,9 +1121,27 @@
 - [Choosing an Amazon FSx File System](https://aws.amazon.com/fsx/when-to-choose-fsx/)
 
 ## Storage gateway
+### File Gateway
 - [Amazon S3 File Gateway](https://aws.amazon.com/storagegateway/file/s3/)
+- [What is Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html)
+- [How Amazon S3 File Gateway works](https://docs.aws.amazon.com/filegateway/latest/files3/file-gateway-concepts.html)
 - [Amazon FSx File Gateway](https://aws.amazon.com/storagegateway/file/fsx/)
+- [What is Amazon FSx File Gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/what-is-file-fsxw.html)
+
+### Volume Gateway
+- [What is Volume Gateway?](https://docs.aws.amazon.com/storagegateway/latest/vgw/WhatIsStorageGateway.html)
+  - Cached volumes
+  - Stored volumes
+- [How Volume Gateway works](https://docs.aws.amazon.com/storagegateway/latest/vgw/StorageGatewayConcepts.html)
+
+### Tape Gateway
+- [What is Tape Gateway?](https://docs.aws.amazon.com/storagegateway/latest/tgw/WhatIsStorageGateway.html)
+- [How Tape Gateway works](https://docs.aws.amazon.com/storagegateway/latest/tgw/StorageGatewayConcepts.html)
+
+###  Storage Gateway Hardware Appliance
 - [AWS Storage Gateway Hardware Appliance](https://aws.amazon.com/storagegateway/hardware-appliance/)
+  > Frequently, branch offices, research and development departmental workgroups, and laboratory or industrial sites lack the on-premises infrastructure to run a virtual machine appliance, hypervisors, server clusters, and networked storage systems. Building and managing this infrastructure, or waiting for a future budgeting cycle to begin work or scale operations, simply may not make sense. The Storage Gateway Hardware Appliance can be dropped in and rapidly set up, providing local applications access to virtually unlimited cloud storage for a wide variety of use cases.
+  >
   > The AWS Storage Gateway Hardware Appliance is a physical, standalone, validated server configuration for on-premises deployments. It comes pre-loaded with Storage Gateway software, and provides all the required CPU, memory, network, and SSD cache resources for creating and configuring File Gateway, Volume Gateway, or Tape Gateway. The Storage Gateway Hardware Appliance is designed to provide you with a simple out of the box experience that does not require any additional infrastructure, and is managed from the AWS Console or API.
   >
   > Compare AWS Storage gateway with AWS Storage gateway hardware appliance
@@ -1133,9 +1151,6 @@
   >
   > **AWS Storage Gateway Hardware Appliance**
   > * A pre-configured, physical appliance that is shipped to your location.
-- [What is Volume Gateway?](https://docs.aws.amazon.com/storagegateway/latest/vgw/WhatIsStorageGateway.html)
-  - Cached volumes
-  - Stored volumes
 
 ## DataSync
 - [AWS DataSync features](https://aws.amazon.com/datasync/features/)
