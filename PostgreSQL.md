@@ -1,9 +1,12 @@
-# 
+# Common Table Expressions
 * [WITH Queries (Common Table Expressions)](https://www.postgresql.org/docs/9.1/static/queries-with.html)
 * [PostgreSQL’s CTEs are optimisation fences](https://blog.2ndquadrant.com/postgresql-ctes-are-optimization-fences/)
+
+# Index Types
 * [Index Types](https://www.postgresql.org/docs/9.2/static/indexes-types.html)
 * [GIN and GiST Index Types](https://www.postgresql.org/docs/current/static/textsearch-indexes.html)
 
+# Advisory Locks
 * [Advisory Locks](https://www.postgresql.org/docs/9.1/static/functions-admin.html)
 * [13.3.4. Advisory Locks](https://www.postgresql.org/docs/9.1/static/explicit-locking.html#ADVISORY-LOCKS)
 * [Advisory Locks and How to Use Them](http://shiroyasha.io/advisory-locks-and-how-to-use-them.html)
@@ -134,10 +137,48 @@ Infortunately, if the field is text[], it needs a workaround as it is a bug:
 https://github.com/jOOQ/jOOQ/issues/4754
 
 
-# modifying value:
+### modifying value:
 ```
 dslContext.update(Tables.RABBITS_ARRAY)
                   .set(Tables.RABBITS_ARRAY.INFO, new String[]{"carrots", "lettuce", "pumpkin"})
                   .where(Tables.RABBITS_ARRAY.NAME.equal("Henry"))
                   .execute();
 ```
+
+# No space left on RDS - autovacuum do not clean stale data
+1. Get manually RW access to RDS instance
+2. Find out what table has most stale rows run
+    ```SQL
+    SELECT relname          AS TableName,
+           n_live_tup       AS LiveTuples,
+           n_dead_tup       AS DeadTuples,
+           last_autovacuum  AS Autovacuum,
+           last_autoanalyze AS Autoanalyze
+    FROM pg_stat_user_tables;
+   ```
+4. Check the size of data in this table:
+   ```SQL
+   select table_name,
+          pg_size_pretty(pg_total_relation_size(quote_ident(table_name))),
+          pg_total_relation_size(quote_ident(table_name))
+   from information_schema.tables
+   where table_schema = 'MY_SCHEMA'
+   order by 3 desc;
+   ```
+3. Execute command:
+    ```SQL
+    VACUUM FULL table_name;
+    ```
+    where `table_name` is the name of a table that you want to manually vacuum.`
+
+## What if manual vacuum doesn't help
+
+It might be problem with transaction holding rows too long, if you want to check idle transactions run query: 
+
+```SQL
+    SELECT backend_start, xact_start, state, query FROM pg_stat_activity WHERE state = 'idle in transaction' ORDER BY xact_start;
+```
+
+Where 
+ - `backend_start` is time when this process was started. For client backends, this is the time the client connected to the server.
+ - `xact_start` is time when this process' current transaction was started, or null if no transaction is active. 
