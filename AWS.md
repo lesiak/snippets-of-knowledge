@@ -1194,6 +1194,8 @@
 
 - [Working with DB instance read replicas | Async](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
   - Gotcha: You cannot create an RDS Read Replica of a database that is running on Amazon EC2.
+- [Working with Multi-AZ DB cluster read replicas for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_MultiAZDBCluster_ReadRepl.html)
+  > Currently, you can't create a Multi-AZ DB cluster read replica from an existing Multi-AZ DB cluster.
 - [Supported Regions and DB engines for cross-Region read replicas in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionReadReplicas.html) 
   - MariaDB, MySQL, PostgreSQL, Oracle, and SQL Server
 - [Amazon RDS Read Replicas Now Support Multi-AZ Deployments](https://aws.amazon.com/about-aws/whats-new/2018/01/amazon-rds-read-replicas-now-support-multi-az-deployments/)
