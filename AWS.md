@@ -1290,7 +1290,7 @@
 - [Overview of backing up and restoring an Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Backups.html)
 - [Sharing a DB snapshot](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ShareSnapshot.html)
   - Sharing public snapshots
-  - Sharing encrypted snapshots
+  - [Sharing encrypted snapshots](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/share-encrypted-snapshot.html)
     - Create a customer managed key and give access to it
     - Copy and share the snapshot from the source account
     - Copy the shared snapshot in the target account
