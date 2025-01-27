@@ -1324,6 +1324,20 @@
    - Workload management
    - Using Amazon Redshift with other services
 - [Querying external data using Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-using-spectrum.html)
+   - Amazon Redshift Spectrum overview
+   - Getting started with Amazon Redshift Spectrum
+   - IAM policies for Amazon Redshift Spectrum
+   - Redshift Spectrum and AWS Lake Formation
+   - Data files for queries in Amazon Redshift Spectrum
+   - External schemas in Amazon Redshift Spectrum
+   - External tables for Redshift Spectrum
+   - Using Apache Iceberg tables with Amazon Redshift
+   - Amazon Redshift Spectrum query performance
+   - Data handling options
+   - Example: Performing correlated subqueries in Redshift Spectrum
+   - Metrics in Amazon Redshift Spectrum
+   - Query troubleshooting in Amazon Redshift Spectrum
+   - Tutorial: Querying nested data with Amazon Redshift Spectrum
 - [Amazon Redshift Introduces Result Caching for Sub-Second Response for Repeat Queries](https://aws.amazon.com/about-aws/whats-new/2017/11/amazon-redshift-introduces-result-caching-for-sub-second-response-for-repeat-queries/)
   > Dashboard, visualization, and business intelligence (BI) tools that execute repeat queries will see a significant boost in performance due to result caching. In addition, result caching frees up resources to improve performance of all other queries. 
 - [My Amazon S3 bucket has data files created by the UNLOAD command from another account. Why can't I access those files?](https://repost.aws/knowledge-center/s3-access-denied-redshift-unload) 
