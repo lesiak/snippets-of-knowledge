@@ -1323,6 +1323,11 @@
    - Columnar storage
    - Workload management
    - Using Amazon Redshift with other services
+- [Amazon Redshift Introduces Result Caching for Sub-Second Response for Repeat Queries](https://aws.amazon.com/about-aws/whats-new/2017/11/amazon-redshift-introduces-result-caching-for-sub-second-response-for-repeat-queries/)
+  > Dashboard, visualization, and business intelligence (BI) tools that execute repeat queries will see a significant boost in performance due to result caching. In addition, result caching frees up resources to improve performance of all other queries.
+- [Quickly Filter Data in Amazon Redshift Using Interleaved Sorting](https://gitlab.ocado.tech/phoenix-business-logic/production-repositories/customer-order-processor/-/pipelines/25685232)
+
+### Redshift Spectrum
 - [Querying external data using Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-using-spectrum.html)
    - Amazon Redshift Spectrum overview
    - Getting started with Amazon Redshift Spectrum
@@ -1338,12 +1343,14 @@
    - Metrics in Amazon Redshift Spectrum
    - Query troubleshooting in Amazon Redshift Spectrum
    - Tutorial: Querying nested data with Amazon Redshift Spectrum
-- [Amazon Redshift Introduces Result Caching for Sub-Second Response for Repeat Queries](https://aws.amazon.com/about-aws/whats-new/2017/11/amazon-redshift-introduces-result-caching-for-sub-second-response-for-repeat-queries/)
-  > Dashboard, visualization, and business intelligence (BI) tools that execute repeat queries will see a significant boost in performance due to result caching. In addition, result caching frees up resources to improve performance of all other queries. 
-- [My Amazon S3 bucket has data files created by the UNLOAD command from another account. Why can't I access those files?](https://repost.aws/knowledge-center/s3-access-denied-redshift-unload) 
 - [Amazon Redshift Spectrum Extends Data Warehousing Out to Exabytes—No Loading Required](https://aws.amazon.com/blogs/big-data/amazon-redshift-spectrum-extends-data-warehousing-out-to-exabytes-no-loading-required/)
-- [Quickly Filter Data in Amazon Redshift Using Interleaved Sorting](https://gitlab.ocado.tech/phoenix-business-logic/production-repositories/customer-order-processor/-/pipelines/25685232)
 
+### Redshift cross account access
+- [How do I copy or unload data from Amazon Redshift to an Amazon S3 bucket that's in another account?](https://repost.aws/knowledge-center/redshift-s3-cross-account)
+- [Deprecared: My Amazon S3 bucket has data files created by the UNLOAD command from another account. Why can't I access those files?](https://web.archive.org/web/20221225124338/https://repost.aws/knowledge-center/s3-access-denied-redshift-unload)
+- [Deprecated: S3 Objects created using UNLOAD command from the Redshift cluster are not accessible to the bucket owner user of the AWS account](https://stackoverflow.com/questions/71059739/s3-objects-created-using-unload-command-from-the-redshift-cluster-are-not-access)
+- Deprecated by: [Amazon S3 now applies two security best practices to all new buckets by default](https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-s3-security-best-practices-buckets-default/)
+  
 ## Lake Formation
 - [What is AWS Lake Formation?](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html)
 - [Granting and revoking permissions on Data Catalog resources](https://docs.aws.amazon.com/lake-formation/latest/dg/granting-catalog-permissions.html)
