@@ -1303,12 +1303,14 @@
 - [What is Amazon ElastiCache?](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.html)
     - Serverless caching
     - Self designed clusters
+- [Amazon ElastiCache Serverless for Redis and Memcached is now available](https://aws.amazon.com/blogs/aws/amazon-elasticache-serverless-for-redis-and-memcached-now-generally-available/)
+    > If you use ElastiCache Serverless for Memcached, there are significant benefits of high availability and instant scaling because they are not natively available in the Memcached engine. You no longer have to write custom business logic, manage multiple caches, or use a third-party proxy layer to replicate data to get high availability with Memcached. Now you can get up to 99.99 percent availability SLA and data replication across multiple Availability Zones.
 - [Authenticating with the Redis AUTH command](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/auth.html)
 - [ElastiCache Role-Based Access Control (RBAC)](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Clusters.RBAC.html)
 - [Comparing Redis OSS and Memcached](https://aws.amazon.com/elasticache/redis-vs-memcached/)
 - [Comparing Valkey, Memcached, and Redis OSS self-designed caches](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SelectEngine.html)
 - [Turbocharge Amazon S3 with Amazon ElastiCache for Redis](https://aws.amazon.com/blogs/storage/turbocharge-amazon-s3-with-amazon-elasticache-for-redis/)
-- [ElastiCache - Mitigating Failures](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/FaultTolerance.html)
+- [Resilience in Amazon ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/disaster-recovery-resiliency.html)
   - Redis OSS Replication Groups - 1 to 5 Read Replica nodes
   - Redis OSS Multi-AZ
 - [Amazon ElastiCache for Redis is now HIPAA Eligible to help you power secure Healthcare Applications with sub-millisecond latency](https://aws.amazon.com/about-aws/whats-new/2017/11/amazon-elasticache-for-redis-is-now-hipaa-eligible-to-help-you-power-secure-healthcare-applications-with-sub-millisecond-latency/)
