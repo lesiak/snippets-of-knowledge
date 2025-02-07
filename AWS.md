@@ -1391,7 +1391,10 @@
 ## AWS Glue
 - [What is AWS Glue?](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)
 - [Deprecated: What is AWS Data Pipeline?](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/what-is-datapipeline.html)
-  > Now, there are other services that offer customers a better experience. For example, you can use AWS Glue to to run and orchestrate Apache Spark applications, AWS Step Functions to help orchestrate AWS service components, or Amazon Managed Workflows for Apache Airflow (Amazon MWAA) to help manage workflow orchestration for Apache Airflow.
+  > Now, there are other services that offer customers a better experience. For example, you can use:
+  > - AWS Glue to to run and orchestrate Apache Spark applications
+  > - AWS Step Functions to help orchestrate AWS service components
+  > - Amazon Managed Workflows for Apache Airflow (Amazon MWAA) to help manage workflow orchestration for Apache Airflow.
 
 ## AWS Transfer Family
 - [AWS Transfer Family | Secure File Transfer Service](https://aws.amazon.com/aws-transfer-family/)
