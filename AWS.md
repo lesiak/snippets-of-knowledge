@@ -1399,6 +1399,8 @@
 ## AWS Transfer Family
 - [AWS Transfer Family | Secure File Transfer Service](https://aws.amazon.com/aws-transfer-family/)
   ![](AWSResources/transfer-family-diagram.png "")
+- [What is AWS Transfer Family?](https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-family.html)
+- [AWS Transfer Family managed workflows](https://docs.aws.amazon.com/transfer/latest/userguide/transfer-workflows.html)
 
 ## Snow family:
 - [AWS Snow Family](https://aws.amazon.com/snow/)
