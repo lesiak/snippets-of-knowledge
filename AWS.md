@@ -1402,16 +1402,18 @@
 - [What is AWS Transfer Family?](https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-family.html)
 - [AWS Transfer Family managed workflows](https://docs.aws.amazon.com/transfer/latest/userguide/transfer-workflows.html)
 
-## Snow family:
-- [AWS Snow Family](https://aws.amazon.com/snow/)
-  - Snowcone: 8 TB HDD + 14TB SSD
-  - SNOWBALL EDGE STORAGE OPTIMIZED 80 TB
+## Snowball
+- [AWS Snowball](https://aws.amazon.com/snowball/)
+  - Discontinued ~~Snowcone: 8 TB HDD + 14TB SSD~~
+  - Discontinued ~~SNOWBALL EDGE STORAGE OPTIMIZED 80 TB~~
   - SNOWBALL EDGE STORAGE OPTIMIZED 210 TB
   - SNOWBALL EDGE COMPUTE OPTIMIZED 28 TB
-- [AWS Snow Family Feature comparison matrix](https://aws.amazon.com/snow/#Feature_comparison_matrix)
+- [AWS Snowball features](https://aws.amazon.com/snowball/features/)
 - [AWS stops selling Snowmobile truck for cloud migrations March 2024](https://www.cnbc.com/2024/04/17/aws-stops-selling-snowmobile-truck-for-cloud-migrations.html)
   - 100 PB
   - suggested for over 10 PB
+- [AWS Snow device updates](https://aws.amazon.com/blogs/storage/aws-snow-device-updates/)
+  > Effective November 12, 2024, AWS will discontinue previous generation AWS Snowball devices and both Snowcone devices (HDD and SDD). We will continue to support existing customers using these end-of-life devices until November 12, 2025. The latest generation AWS Snowball devices are available for all customers.
 
 # Integration
 ## SQS
