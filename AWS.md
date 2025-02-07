@@ -1419,7 +1419,7 @@
 ## SQS
 - [Amazon SQS FIFO queue quotas](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/quotas-fifo.html)
   > -  Messages per queue (backlog): unlimited
-  > - Messages per queue (in flight): 20,000 (received from a queue by a consumer, but not yet deleted from the queue)
+  > - Messages per queue (in flight): ~~20,000~~ 120,000 (received from a queue by a consumer, but not yet deleted from the queue)
 - [Amazon SQS standard queue quotas](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/quotas-queues.html)
   > -  Messages per queue (backlog): unlimited
   > - Messages per queue (in flight): 120,000 (received from a queue by a consumer, but not yet deleted from the queue)
