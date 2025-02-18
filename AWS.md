@@ -1429,8 +1429,12 @@
   > - Message size: The minimum message size is 1 byte (1 character). The maximum is 262,144 bytes (256 KiB).
   > - Standard queues support a nearly unlimited number of API calls per second, per API action (SendMessage, ReceiveMessage, or DeleteMessage).
   > - FIFO queues
-  >   - FIFO queues support a quota of 300 transactions per second, per API action (SendMessage, ReceiveMessage, and DeleteMessage).
-  >   - If you use batching, FIFO queues support up to 3,000 messages per second, per API action (SendMessage, ReceiveMessage, and DeleteMessage). The 3,000 messages per second represent 300 API calls, each with a batch of 10 messages.
+  >   - Each partition in a FIFO queue is limited to 300 transactions per second, per API action (SendMessage, ReceiveMessage, and DeleteMessage). This limit applies specifically to non-high throughput mode. By switching to high throughput mode, you can surpass this default limit.
+  >   - If you use batching, non-high throughput FIFO queues support up to 3,000 messages per second, per API action (SendMessage, ReceiveMessage, and DeleteMessage). The 3,000 messages per second represent 300 API calls, each with a batch of 10 messages.
+  > - High throughput for FIFO queues
+  >   - Amazon SQS FIFO limits are based on the number of API requests, not message limits.
+  >   - These limits define how frequently each API operation (such as SendMessage, ReceiveMessage, or DeleteMessage) can be performed independently, ensuring efficient system performance within the allowed transactions per second (TPS).
+
 - [Do Amazon SQS FIFO queues support multiple consumers?](https://aws.amazon.com/sqs/faqs/)
   > By design, Amazon SQS FIFO queues don't serve messages from the same message group to more than one consumer at a time. However, if your FIFO queue has multiple message groups, you can take advantage of parallel consumers, allowing Amazon SQS to serve messages from different message groups to different consumers.
 - [Amazon SQS visibility timeout](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html)
