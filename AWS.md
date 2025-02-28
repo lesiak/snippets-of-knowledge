@@ -1488,6 +1488,7 @@
   - [Develop consumers with the AWS SDK for Java](https://docs.aws.amazon.com/streams/latest/dev/develop-consumers-sdk.html)
   - [How Lambda processes records from Amazon Kinesis Data Streams](https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html)
   - [Develop consumers using Amazon Data Firehose](https://docs.aws.amazon.com/streams/latest/dev/kdf-consumer.html)
+- [Troubleshoot Kinesis Data Streams consumers](https://docs.aws.amazon.com/streams/latest/dev/troubleshooting-consumers.html)
 - [Implementing Efficient and Reliable Producers with the Amazon Kinesis Producer Library](https://aws.amazon.com/blogs/big-data/implementing-efficient-and-reliable-producers-with-the-amazon-kinesis-producer-library/)
   > - Use Batching
   > - Use parallel HTTP requests
