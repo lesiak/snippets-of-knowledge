@@ -4,6 +4,35 @@
 git reflog
 git reset --hard HEAD@{XXXX}
 ```
+
+# Search
+
+### git log -S
+- Searches the commit history for changes that added or removed a specific string.
+- It is used to find commits where the string was introduced or removed.
+- Focuses on historical changes rather than the current state of the repository.
+- Example: `git log -S"myString"`
+
+* In a git repo, I know that myString occured in some version of application.conf file. How can I look for versions that added or removed this string?
+
+You can use the git log command with the -S option to find commits that added or removed a specific string in a file. Here's how you can do it:
+```
+git log -S"myString" -- application.conf
+```
+**Explanation:**
+```
+-S"myString": Searches for commits where the string myString was added or removed.
+-- application.conf: Limits the search to the application.conf file.
+```
+This will show a list of commits where the string myString was introduced or removed. You can inspect each commit using git show <commit-hash> to see the exact changes.
+
+### git grep
+- Searches for a string or pattern in the content of files in the current working directory or a specific branch.
+- It is used to find occurrences of a string in the current state of the repository (or a specific branch).
+- Does not provide historical information about when the string was added or removed.
+- Example: `git grep "myString"`
+
+# Cleanup tracking branches
 * [Remove tracking branches no longer on remote](https://stackoverflow.com/questions/7726949/remove-tracking-branches-no-longer-on-remote)
 ```
 git remote prune origin
