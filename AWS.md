@@ -1501,9 +1501,24 @@
 
 
 ## Amazon Managed Service for Apache Flink
-- [Amazon Kinesis Data Analytics for SQL Applications: How It Works](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/how-it-works.html)
+- [Amazon Kinesis Data Analytics for SQL Applications discontinuation](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/discontinuation.html)
+  > We recommend that you migrate your applications to [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html) or [Amazon Managed Service for Apache Flink Studio](https://aws.amazon.com/managed-service-apache-flink/studio/) before October 15, 2025.
+  > 
+  > **Why are you no longer offering Amazon Kinesis Data Analytics for SQL applications?**
+  > We have found that customers prefer Amazon Managed Service for Apache Flink offerings for real-time data stream processing workloads. Amazon Managed Service for Apache Flink is a serverless, low latency, highly scalable and available real-time stream processing service using Apache Flink, an open source engine for processing data streams. Amazon Managed Service for Apache Flink offers functionality such as native scaling, exactly once processing semantics, multi-language support (including SQL), over 40 source and destination connectors, durable application state, and more. These features help customers build end to end streaming pipelines and ensure the accuracy and timeliness of data.
+
+- [Deprecated: Amazon Kinesis Data Analytics for SQL Applications: How It Works](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/how-it-works.html)
+  > ![](AWSResources/kinesis-data-analytics-for-sql.png "Amazon Kinesis Data Analytics for SQL")
   - Gotcha: Kinesis Data Streams can handle real-time data ingestion and Lambda can perform real-time processing, but this approach requires managing the stream consumers (like AWS Lambda) and ensuring they are scaled properly.
-- [Amazon Managed Service for Apache Flink](https://aws.amazon.com/managed-service-apache-flink/)
+- [What is Amazon Managed Service for Apache Flink?](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html)
+  > You have two options for running your Flink jobs with Amazon Managed Service for Apache Flink. With [Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/getting-started.html), you build Flink applications in Java, Scala, or Python (and embedded SQL) using an IDE of your choice and the Apache Flink Datastream or Table APIs. With [Managed Service for Apache Flink Studio](https://docs.aws.amazon.com/managed-flink/latest/java/how-notebook.html), you can interactively query data streams in real time and easily build and run stream processing applications using standard SQL, Python, and Scala.
+  > ![](AWSResources/msf-decision-tree.png "Decision tree for selecting Flink application, Deployed Studio application, or Studio Notebook based on use case and programming experience.")
+  > **Apache Flink APIs**
+  > - Flink SQL
+  > - Table API
+  > - DataStream API
+  > - Process Function
+- [Apache Flink APIs](https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/concepts/overview/#flinks-apis)
 
 ## Data Firehose
 - [Choose source and destination for your Firehose stream](https://docs.aws.amazon.com/firehose/latest/dev/create-name.html)
