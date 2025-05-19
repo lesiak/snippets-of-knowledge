@@ -1483,8 +1483,11 @@
 - [Choose the data stream capacity mode](https://docs.aws.amazon.com/streams/latest/dev/how-do-i-size-a-stream.html)
 - [Read data from Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/building-consumers.html)
   - [Develop enhanced fan-out consumers with dedicated throughput](https://docs.aws.amazon.com/streams/latest/dev/enhanced-consumers.html)
-  - [Use the Kinesis Client Library](https://docs.aws.amazon.com/streams/latest/dev/shared-throughput-kcl-consumers.html)
-    > Instantiates a record processor for every shard it manages
+  - [Use the Kinesis Client Library](https://docs.aws.amazon.com/streams/latest/dev/kcl.html)
+    - > Instantiates a record processor for every shard it manages
+    - [KCL concepts](https://docs.aws.amazon.com/streams/latest/dev/kcl-concepts.html)
+    - [KCL 1.x and 2.x information](https://docs.aws.amazon.com/streams/latest/dev/shared-throughput-kcl-consumers.html)
+    - [Migrate from KCL 2.x to KCL 3.x](https://docs.aws.amazon.com/streams/latest/dev/kcl-migration-from-2-3.html)
   - [Develop consumers with the AWS SDK for Java](https://docs.aws.amazon.com/streams/latest/dev/develop-consumers-sdk.html)
   - [How Lambda processes records from Amazon Kinesis Data Streams](https://docs.aws.amazon.com/lambda/latest/dg/with-kinesis.html)
   - [Develop consumers using Amazon Data Firehose](https://docs.aws.amazon.com/streams/latest/dev/kdf-consumer.html)
