@@ -1521,10 +1521,11 @@
 - [Apache Flink APIs](https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/concepts/overview/#flinks-apis)
 
 ## Data Firehose
+- [What is Amazon Data Firehose?](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)
 - [Choose source and destination for your Firehose stream](https://docs.aws.amazon.com/firehose/latest/dev/create-name.html)
   > - **Direct PUT** – Choose this option to create a Firehose stream that producer applications write to directly. Here is a list of AWS services and agents and open source services that integrate with Direct PUT in Amazon Data Firehose. This list is not exhaustive, and there may be additional services that can be used to send data directly to Firehose.
   > - **Amazon Kinesis Data Streams** – Choose this option to configure a Firehose stream that uses a Kinesis data stream as a data source. You can then use Firehose to read data easily from an existing Kinesis data stream and load it into destinations.
-  > - **Amazon MSK** – Choose this option to configure a Firehose stream that uses Amazon MSK as a data source. You can then use Firehose to read data easily from an existing Amazon MSK clusters and load it into specified S3 buckets.
+  > - **Amazon MSK (Managed Streaming for Apache Kafka)** – Choose this option to configure a Firehose stream that uses Amazon MSK as a data source. You can then use Firehose to read data easily from an existing Amazon MSK clusters and load it into specified S3 buckets.
 - [Amazon Data Firehose Destinations](https://docs.aws.amazon.com/firehose/latest/dev/create-destination.html)
   > Gotcha: DynamoDB is not supported
 
