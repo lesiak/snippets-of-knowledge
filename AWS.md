@@ -1391,6 +1391,10 @@
 
 ## AWS Glue
 - [What is AWS Glue?](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)
+  > AWS Glue is a fully managed extract, transform, and load (ETL) service. AWS Glue has three main components: 
+  > 1) a crawler that automatically scans your data sources, identifies data formats, and infers schemas, 
+  > 2) a fully managed ETL service that allows you to transform and move data to various destinations, and 
+  > 3) a Data Catalog that stores metadata information about databases and tables either stored in S3 or an ODBC- or JDBC-compliant data store.
 - [Deprecated: What is AWS Data Pipeline?](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/what-is-datapipeline.html)
   > Now, there are other services that offer customers a better experience. For example, you can use:
   > - AWS Glue to to run and orchestrate Apache Spark applications
