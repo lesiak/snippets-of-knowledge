@@ -1558,6 +1558,7 @@
   > - Amazon EMR on Amazon EKS
 
 ## QuickSight
+- [What is Amazon QuickSight?](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
 - [How Amazon QuickSight works](https://docs.aws.amazon.com/quicksight/latest/user/how-quicksight-works.html)
   ![](AWSResources/quicksight-workflow-overview.png "")
 - [Refreshing data in Amazon QuickSight](https://docs.aws.amazon.com/quicksight/latest/user/refreshing-data.html)
@@ -1566,6 +1567,11 @@
   > If QuickSight connects to the data store by using a direct query, the data automatically refreshes when you open an associated dataset, analysis, or dashboard. Filter controls are refreshed automatically every 24 hours.
   >
   > To refresh SPICE datasets, QuickSight must independently authenticate using stored credentials to connect to the data. QuickSight can't refresh manually uploaded data—even from S3 buckets, even though it's stored in SPICE—because QuickSight doesn't store its connection and location metadata. If you want to automatically refresh data that's stored in an S3 bucket, create a dataset by using the S3 data source card.
+- [Importing data into SPICE](https://docs.aws.amazon.com/quicksight/latest/user/spice.html)
+  > Importing (also called ingesting) your data into SPICE can save time and money:
+  > * Your analytical queries process faster.
+  > * You don't need to wait for a direct query to process. 
+  > * Data stored in SPICE can be reused multiple times without incurring additional costs. If you use a data source that charges per query, you're charged for querying the data when you first create the dataset and later when you refresh the dataset.
 - [Logging operations with AWS CloudTrail](https://docs.aws.amazon.com/quicksight/latest/user/logging-using-cloudtrail.html)
 
 # Security
