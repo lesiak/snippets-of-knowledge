@@ -1558,6 +1558,7 @@
   > - Amazon EMR on Amazon EKS
 
 ## QuickSight
+- [What is Amazon QuickSight?](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
 - [How Amazon QuickSight works](https://docs.aws.amazon.com/quicksight/latest/user/how-quicksight-works.html)
   ![](AWSResources/quicksight-workflow-overview.png "")
 - [Refreshing data in Amazon QuickSight](https://docs.aws.amazon.com/quicksight/latest/user/refreshing-data.html)
