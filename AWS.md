@@ -1576,10 +1576,24 @@
 
 # Security
 - [What are AWS WAF, AWS Shield Advanced;, and AWS Firewall Manager?](https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html)
+  > AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to your protected web application resources. You can protect the following resource types:
+  > - Amazon CloudFront distribution
+  > - Amazon API Gateway REST API
+  > - Application Load Balancer
+  > - AWS AppSync GraphQL API
+  > - Amazon Cognito user pool
+  > - AWS App Runner service
+  > - AWS Verified Access instance
+  > - AWS Amplify
+- [AWS WAF FAQs](https://aws.amazon.com/waf/faqs/)
 - [How does AWS WAF protect my web site or application?](https://aws.amazon.com/waf/faqs)
   > AWS WAF is tightly integrated with Amazon CloudFront, the Application Load Balancer (ALB), Amazon API Gateway, and AWS AppSync – services that AWS customers commonly use to deliver content for their websites and applications. When you use AWS WAF on Amazon CloudFront, your rules run in all AWS Edge Locations, located around the world close to your end users. This means security doesn’t come at the expense of performance. Blocked requests are stopped before they reach your web servers. When you use AWS WAF on regional services, such as Application Load Balancer, Amazon API Gateway, and AWS AppSync, your rules run in region and can be used to protect internet-facing resources as well as internal resources.
-- [What services does AWS WAF support?]((https://aws.amazon.com/waf/faqs)
+- [What services does AWS WAF support?](https://aws.amazon.com/waf/faqs)
   > AWS WAF can be deployed on Amazon CloudFront, the Application Load Balancer (ALB), Amazon API Gateway, and AWS AppSync. As part of Amazon CloudFront it can be part of your Content Distribution Network (CDN) protecting your resources and content at the Edge locations. As part of the Application Load Balancer it can protect your origin web servers running behind the ALBs. As part of Amazon API Gateway, it can help secure and protect your REST APIs. As part of AWS AppSync, it can help secure and protect your GraphQL APIs.
+  >
+  > **Can I use AWS WAF to protect web sites not hosted in AWS?**
+  >
+  > Yes, AWS WAF is integrated with Amazon CloudFront, which supports custom origins outside of AWS.
 - [Protecting the application layer with AWS WAF web ACLs and Shield Advanced](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-app-layer-web-ACL-and-rbr.html)
 - [AWS Firewall Manager FAQs](https://aws.amazon.com/firewall-manager/faqs/)
   > **What does AWS Firewall Manager configure?**
@@ -1591,6 +1605,16 @@
   > - AWS Network Firewalls
   > - Amazon Route 53 Resolver DNS Firewall rules 
   > across accounts and resources in your organization.
+  >
+  > **Which AWS resources can AWS Firewall Manager configure rules on ?**
+  >
+  > Using AWS Firewall Manager, you can 
+  > - Easily roll out AWS WAF rules across Application Load Balancer, API Gateways and Amazon CloudFront distributions. 
+  > - You can create AWS Shield Advanced protections for your Application Load Balancers, ELB Classic Load Balancers, Elastic IP Addresses and CloudFront distributions. 
+  > - You can configure new Amazon Virtual Private Cloud (VPC) security groups and audit any existing security groups for your Amazon EC2, Application Load Balancers (ALBs) and ENI resource types. 
+  > - You can also deploy AWS Network Firewalls across accounts and VPCs in your organization.
+  > - Finally, with AWS Firewall Manager, you can also associate Amazon Route 53 Resolver DNS Firewall rules across VPCs in your organization.
+  > - You can configure new Amazon Virtual Private Cloud (VPC) network access control lists (ACLs) for your VPC subnets.
 
 ## KMS
 - [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html)
