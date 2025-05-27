@@ -1648,6 +1648,13 @@
 ## AWS Network Firewall
 - [What is AWS Network Firewall?](https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html)
 - [How AWS Network Firewall works](https://docs.aws.amazon.com/network-firewall/latest/developerguide/how-it-works.html)
+  > ![](AWSResources/arch-igw-simple.png "Network Firewall")
+  >
+  > Image: A VPC spans the Region and contains a Network Firewall firewall subnet and a customer subnet. The firewall subnet is between the customer subnet and an internet gateway and is filtering traffic in both directions.
+  >
+  > **Firewall subnet** – A subnet that you've designated for exclusive use by Network Firewall for a firewall endpoint. A firewall endpoint can't filter traffic coming into or going out of the subnet in which it resides, so don't use your firewall subnets for anything other than Network Firewall.
+  >
+  > To enable the firewall's protection, you modify your Amazon VPC route tables to send your network traffic through the Network Firewall firewall endpoints.
 
 ## Web Application Firewall
 - [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html)
