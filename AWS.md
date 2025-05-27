@@ -1703,9 +1703,8 @@
   > - You can configure new Amazon Virtual Private Cloud (VPC) network access control lists (ACLs) for your VPC subnets.
 
 ## AWS Certificate Manager (ACM)
-- [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/)
-  >  provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services and your internal connected resources. ACM removes the time-consuming manual process of purchasing, uploading, and renewing SSL/TLS certificates.
-- [ACM certificate characteristics](https://docs.aws.amazon.com/acm/latest/userguide/acm-certificate.html)
+- [What is AWS Certificate Manager?](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html)
+  > AWS Certificate Manager (ACM) handles the complexity of creating, storing, and renewing public and private SSL/TLS X.509 certificates and keys that protect your AWS websites and applications. You can provide certificates for your integrated AWS services either by issuing them directly with ACM or by importing third-party certificates into the ACM management system. ACM certificates can secure singular domain names, multiple specific domain names, wildcard domains, or combinations of these. ACM wildcard certificates can protect an unlimited number of subdomains. You can also export ACM certificates signed by AWS Private CA for use anywhere in your internal PKI.
 - [How to monitor expirations of imported certificates in AWS Certificate Manager (ACM)](https://aws.amazon.com/blogs/security/how-to-monitor-expirations-of-imported-certificates-in-aws-certificate-manager-acm/)
 
 ## IAM Identity Center
