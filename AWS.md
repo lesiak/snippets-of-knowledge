@@ -1618,22 +1618,32 @@
 
 ## KMS
 - [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html)
-
-> |          | **Customer managed keys** | **AWS managed keys** | **AWS owned keys** |
-> |----------|---------------------------|----------------------|------------------- |
-> | **Key policy** | Exclusively controlled by the customer | Controlled by service; viewable by customer | Exclusively controlled and only viewable by the AWS service that encrypts your data |
-> | **Logging** | CloudTrail customer trail or event data store | CloudTrail customer trail or event data store | Not viewable by the customer |
-> | **Lifecycle management** | Customer manages rotation, deletion and Regional location | AWS KMS manages rotation (annual), deletion and Regional location | AWS service manages rotation (annual), deletion and Regional location |
-> | **Pricing** | Monthly fee for existence of keys (pro-rated<br><br>hourly). Also charged for key usage | No charge for key usage; but the caller is charged for API usage on these keys | No charges to customer |
-
+  > |          | **Customer managed keys** | **AWS managed keys** | **AWS owned keys** |
+  > |----------|---------------------------|----------------------|------------------- |
+  > | **Key policy** | Exclusively controlled by the customer | Controlled by service; viewable by customer | Exclusively controlled and only viewable by the AWS service that encrypts your data |
+  > | **Logging** | CloudTrail customer trail or event data store | CloudTrail customer trail or event data store | Not viewable by the customer |
+  > | **Lifecycle management** | Customer manages rotation, deletion and Regional location | AWS KMS manages rotation (annual), deletion and Regional location | AWS service manages rotation (annual), deletion and Regional location |
+  > | **Pricing** | Monthly fee for existence of keys (pro-rated<br><br>hourly). Also charged for key usage | No charge for key usage; but the caller is charged for API usage on these keys | No charges to customer |
+- [Generate data keys](https://docs.aws.amazon.com/kms/latest/developerguide/data-keys.html)
+- [Generate data key pairs](https://docs.aws.amazon.com/kms/latest/developerguide/data-key-pairs.html) 
 - [Rotating AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html)
+  > AWS KMS saves all previous versions of the cryptographic material in perpetuity so you can decrypt any data encrypted with that KMS key. AWS KMS does not delete any rotated key material until you delete the KMS key.
+  >
+  > automatic key rotation has no effect on the data that the KMS key protects. It does not rotate the data keys that the KMS key generated or re-encrypt any data protected by the KMS key, and it will not mitigate the effect of a compromised data key.
+  >
+  > You might decide to create a new KMS key and use it in place of the original KMS key. This has the same effect as rotating the key material in an existing KMS key, so it's often thought of as manually rotating the key. Manual rotation is a good choice when you want to rotate KMS keys that are not eligible for automatic key rotation, including asymmetric KMS keys, HMAC KMS keys, KMS keys in custom key stores, and KMS keys with imported key material.
 - [Deleting AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys.html)
-> Because it is destructive and potentially dangerous to delete a KMS key, AWS KMS requires you to set a waiting period of 7 – 30 days. The default waiting period is 30 days.
->
-> During the waiting period, the KMS key status and key state is Pending deletion.
-> - A KMS key pending deletion cannot be used in any cryptographic operations.
-> - AWS KMS does not rotate the key material of KMS keys that are pending deletion.
+  > Because it is destructive and potentially dangerous to delete a KMS key, AWS KMS requires you to set a waiting period of 7 – 30 days. The default waiting period is 30 days.
+  >
+  > During the waiting period, the KMS key status and key state is Pending deletion.
+  > - A KMS key pending deletion cannot be used in any cryptographic operations.
+  > - AWS KMS does not rotate the key material of KMS keys that are pending deletion.
 - [Multi-Region keys in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-overview.html)
+  > Multi-Region keys are not global. You create a multi-Region primary key and then replicate it into Regions that you select within an AWS partition. Then you manage the multi-Region key in each Region independently. Neither AWS nor AWS KMS ever automatically creates or replicates multi-Region keys into any Region on your behalf. AWS managed keys, the KMS keys that AWS services create in your account for you, are always single-Region keys.
+  > 
+  > You cannot convert an existing single-Region key to a multi-Region key. This design ensures that all data protected with existing single-Region keys maintain the same data residency and data sovereignty properties.
+  >
+  > For most data security needs, the Regional isolation and fault tolerance of Regional resources make standard AWS KMS single-Region keys a best-fit solution. However, when you need to encrypt or sign data in client-side applications across multiple Regions, multi-Region keys might be the solution.
 
 ## AWS Network Firewall
 - [What is AWS Network Firewall?](https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html)
