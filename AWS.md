@@ -1678,7 +1678,12 @@
 - [Geo-Blocking](https://aws.amazon.com/developer/application-security-performance/articles/geo-blocking/)
 > Geo-blocking can be implemented using:
 > - CloudFront's native geographic restrictions
+>
+>    Use [CloudFront geographic restrictions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/georestrictions.html) to restrict countries at the distribution level, with no additional charges
 > - edge functions 
+>
+>   To implement geo based logic in CloudFront functions, you need to allow list the required CloudFront headers (e.g., CloudFront-Viewer-Country or CloudFront-Viewer-Country-Region) in an origin request policy attached to the same CloudFront cache behavior to which the function is associated.
+>
 > - AWS WAF
 
 ## AWS Firewall Manager
