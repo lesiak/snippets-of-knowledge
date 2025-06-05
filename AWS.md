@@ -1630,6 +1630,7 @@
   > - AWS Verified Access instance
   > - AWS Amplify
 - [Protecting the application layer with AWS WAF web ACLs and Shield Advanced](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-app-layer-web-ACL-and-rbr.html)
+  > At a minimum, your Shield Advanced protection requires you to associate a web ACL with a rate-based rule, which limits the rate of requests for each IP address.
 
 ## Web Application Firewall (WAF)
 - [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html)
