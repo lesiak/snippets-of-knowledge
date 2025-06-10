@@ -1781,6 +1781,10 @@
   > AWS Security Hub provides you with a comprehensive view of your security state in AWS and helps you assess your AWS environment against security industry standards and best practices.
   >
   > Security Hub collects security data across AWS accounts, AWS services, and supported third-party products and helps you analyze your security trends and identify the highest priority security issues.
+  >
+  > Security Hub runs checks against security controls and generates control findings to help you assess your compliance against security best practices.
+  >
+  > In addition to generating control findings, Security Hub also receives findings from other AWS services—such as Amazon GuardDuty, Amazon Inspector, and Amazon Macie— and supported third-party products.
 - [REL13-BP02 Use defined recovery strategies to meet the recovery objectives](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_planning_for_recovery_disaster_recovery.html)
   - Backup and restore (RPO in hours, RTO in 24 hours or less)
   - Pilot light (RPO in minutes, RTO in tens of minutes)
