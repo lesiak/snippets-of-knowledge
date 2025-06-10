@@ -1774,6 +1774,7 @@
   > - Assign IAM roles based on user characteristics
   > - Accept a variety of identity providers
   > - Validate your own identities
+- [Accessing AWS services using an identity pool after sign-in](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-integrating-user-pools-with-identity-pools.html)
 
 ## Other
 - [What is AWS Security Hub?](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)
