@@ -1819,6 +1819,9 @@
   - Data events
   - Network activity events
   - Insights events
+- [Working with CloudTrail event history](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html)
+   > - The Event history page on the CloudTrail console only shows management events. It does not show data events, Insights events, or network activity events.
+   > - The event history is limited to the past 90 days of events. For an ongoing record of events in your AWS account, create an event data store or a trail.
 - [Creating a trail for an organization](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-trail-organization.html)
   > If you have created an organization in AWS Organizations, you can create a trail that logs all events for all AWS accounts in that organization. This is sometimes called an organization trail.
 - [Working with CloudTrail trails](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-trails.html)
