@@ -1848,7 +1848,7 @@
   - If a user or role has an IAM permission policy that grants access to an action that is either not allowed or explicitly denied by the applicable SCPs, the user or role can't perform that action.
   - SCPs affect all users and roles in attached accounts, including the root user. The only exceptions are those described in Tasks and entities not restricted by SCPs.
   - SCPs do not affect any service-linked role. Service-linked roles enable other AWS services to integrate with AWS Organizations and can't be restricted by SCPs.
-
+- [SCP evaluation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_evaluation.html)
 ### Account management
 - [How do I move an account from an existing AWS Organization to another AWS Organization?](https://repost.aws/knowledge-center/organizations-move-accounts)
   > - Use the AWS Organizations console if you have only a few accounts to migrate.
@@ -1858,6 +1858,11 @@
   > 1. Remove the member account from the old organization.
   > 2. Send an invite to the member account from the new organization.
   > 3. Accept the invite to the new organization from the member account.
+  >
+  > To join the old organization's management account to the new organization, complete the following steps:
+  > 1. Remove the member accounts from the organization.
+  > 2. Delete the old organization.
+  > 3. Invite the old management account to the new organization as a member account.
 
 - [How to Use AWS Organizations to Automate End-to-End Account Creation](https://aws.amazon.com/blogs/security/how-to-use-aws-organizations-to-automate-end-to-end-account-creation/)
   > - AWS Organizations API to create accounts
