@@ -1881,6 +1881,7 @@
 
 ## AWS Config
 - [What Is AWS Config?](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)
+- [How AWS Config Works](https://docs.aws.amazon.com/config/latest/developerguide/how-does-config-work.html)
 - AWS Config Managed rules 
   - [access-keys-rotated](https://docs.aws.amazon.com/config/latest/developerguide/access-keys-rotated.html)
   - [required-tags](https://docs.aws.amazon.com/config/latest/developerguide/required-tags.html)
