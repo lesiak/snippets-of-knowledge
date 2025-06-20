@@ -1912,7 +1912,7 @@
 
 
 ## AWS Control Tower
-- [AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
+- [What Is AWS Control Tower?](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
   - Landing Zone
   - Controls
     > A control (sometimes called a guardrail) is a high-level rule that provides ongoing governance for your overall AWS environment. It's expressed in plain language. Three kinds of controls exist: *preventive*, *detective*, and *proactive*. Three categories of guidance apply to controls: *mandatory*, *strongly recommended*, or *elective*.
@@ -1928,6 +1928,12 @@
   > - The preventive controls are implemented using Service Control Policies (SCPs), which are part of AWS Organizations.
   > - The detective controls are implemented using AWS Config rules.
   > - The proactive controls are implemented using AWS CloudFormation hooks.
+- [How controls work](https://docs.aws.amazon.com/controltower/latest/userguide/how-controls-work.html)
+  > For those who are familiar with AWS: 
+  > - In AWS Control Tower preventive controls are implemented with service control policies (SCPs) and resource control policies (RCPs). 
+  > - Detective controls are implemented with AWS Config rules.
+  > - Proactive controls are implemented with AWS CloudFormation hooks.
+
 
 
 ## Systems Manager
