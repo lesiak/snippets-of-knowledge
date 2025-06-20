@@ -1867,7 +1867,7 @@
   
   RCPs alone are not sufficient in granting permissions to the resources in your organization. No permissions are granted by an RCP. An RCP defines a permissions guardrail, or sets limits, on the actions that identities can take on resources in your organizations.
 
-### Management Policies Policies in AWS Organizations
+### Management Policies in AWS Organizations
 - [Management policies in AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_management_policies.html)
 
 ### Account management
@@ -1953,6 +1953,7 @@
 ## Systems Manager
 - [What is AWS Systems Manager?](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html)
   > **What are the main features of Systems Manager?**
+  >
   > The primary features of Systems Manager are shared between the unified console and the individual tools Systems Manager provides to help you manage nodes at scale.
   >
   > **Unified console**
@@ -1977,46 +1978,61 @@
 - [What is the unified console?](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-unified-console.html)
 - [Using AWS Systems Manager tools](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-tools.html)
   
-  **Node tools**
+- [AWS Systems Manager Node Management](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-instances-and-nodes.html)
   - Compliance
   - Distributor
+    > Distributor, a tool in AWS Systems Manager, helps you package and publish software to AWS Systems Manager managed nodes. You can package and publish your own software or use Distributor to find and publish AWS-provided agent software packages, such as AmazonCloudWatchAgent, or third-party packages such as Trend Micro. Publishing a package advertises specific versions of the package's document to managed nodes that you identify using node IDs, AWS account IDs, tags, or an AWS Region.
+    - [Install or update Distributor packages](https://docs.aws.amazon.com/systems-manager/latest/userguide/distributor-working-with-packages-deploy.html)
+      > **Installing or updating a package one time**
+      >
+      > Uses **Run Command** with the command document AWS-ConfigureAWSPackage and your Distributor package already selected.
+      >
+      > **Scheduling a package installation or update**
+      >
+      >  Install on a schedule This command opens **State Manager**
   - Fleet Manager
   - Hybrid Activations
   - Inventory
-  - **Patch Manager**
+  - **[Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager.html)**
+    > You can use Patch Manager to apply patches for both operating systems and applications. (On Windows Server, application support is limited to updates for applications released by Microsoft.) You can use Patch Manager to install Service Packs on Windows nodes and perform minor version upgrades on Linux nodes.
   - **Run Command**
-  - **Session Manager**
-  - State Manager
+  - **[Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)**
+  - **[State Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-state.html)**
+    > State Manager, a tool in AWS Systems Manager, is a secure and scalable configuration management service that automates the process of keeping your managed nodes and other AWS resources in a state that you define.
+    >
+    > **State Manager associations**
+    >
+    > A State Manager association is a configuration that you assign to your AWS resources. The configuration defines the state that you want to maintain on your resources. For example, an association can specify that antivirus software must be installed and running on a managed node, or that certain ports must be closed.
+    >
+    > **Flexible scheduling options**
+    >
+    > Immediate or delayed processing
+    - [Understanding how State Manager works](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-about.html)
 
-  **Change Management tools**
+- [AWS Systems Manager Change Management](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-actions-and-change.html)
   - Automation
   - Change Calendar
   - Change Manager
   - Documents
+    > A Systems Manager document (SSM document) defines the actions that Systems Manager performs. SSM document types include Command documents, which are used by State Manager and Run Command, and Automation runbooks, which are used by Systems Manager Automation. Systems Manager includes dozens of pre-configured documents that you can use by specifying parameters at runtime. Documents can be expressed in JSON or YAML, and include steps and parameters that you specify.
   - Maintenance Windows
   - Quick Setup
 
-  **Application tools**
+- [AWS Systems Manager Application Management](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-application-management.html)
   - AppConfig
   - Application Manager
   - **Parameter Store**
   
-  **Operation Tools**
+- [AWS Systems Manager operations tools](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-ops-center.html)
   - CloudWatch Dashboards
   - Explorer
   - Incident Manager
   - OpsCenter
 
-- [Operations Management](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-ops-center.html)
-- [AWS Systems Manager Application Management](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-application-management.html)
-- [AWS Systems Manager Change Management](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-actions-and-change.html)
-- [AWS Systems Manager Node Management](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-instances-and-nodes.html)
-  - [AWS Systems Manager Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager.html)
-    > You can use Patch Manager to apply patches for both operating systems and applications. (On Windows Server, application support is limited to updates for applications released by Microsoft.) You can use Patch Manager to install Service Packs on Windows nodes and perform minor version upgrades on Linux nodes.
+  Examples:
   - [Patching your Windows EC2 instances using AWS Systems Manager Patch Manager](https://aws.amazon.com/blogs/mt/patching-your-windows-ec2-instances-using-aws-systems-manager-patch-manager/)
-  - [Install or update packages | Run Command & State Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/distributor-working-with-packages-deploy.html)
-  - [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
-
+  
+  
 ## Configuration 
 - [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
 - [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/)
