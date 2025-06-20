@@ -1931,6 +1931,62 @@
 
 
 ## Systems Manager
+- [What is AWS Systems Manager?](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html)
+  > **What are the main features of Systems Manager?**
+  > The primary features of Systems Manager are shared between the unified console and the individual tools Systems Manager provides to help you manage nodes at scale.
+  >
+  > **Unified console**
+  >
+  > The unified console provides a centralized experience to view and manage your nodes. This console leverages several Systems Manager tools and more to provide you with the following:
+  > - Centralized views of your nodes
+  > - Detailed node insights
+  > - Automated diagnosis and remediation of common node issues
+  > 
+  > For more information about the unified console, see What is the unified console?.
+  >
+  > **Tools**
+  >
+  > Tools consist of the individual capabilities of Systems Manager and their features such as Run Command, Session Manager, Automation, and Parameter Store. With Systems Manager tools you can do the following:
+  > - Patch nodes at scale
+  > - Securely connect to nodes without opening inbound ports
+  > - Run commands remotely on nodes
+  > - Securely store data referenced by applications
+  > - Automate common systems administration tasks
+  >
+  > For more information about Systems Manager tools, see Using AWS Systems Manager tools.
+- [What is the unified console?](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-unified-console.html)
+- [Using AWS Systems Manager tools](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-tools.html)
+  
+  **Node tools**
+  - Compliance
+  - Distributor
+  - Fleet Manager
+  - Hybrid Activations
+  - Inventory
+  - **Patch Manager**
+  - **Run Command**
+  - **Session Manager**
+  - State Manager
+
+  **Change Management tools**
+  - Automation
+  - Change Calendar
+  - Change Manager
+  - Documents
+  - Maintenance Windows
+  - Quick Setup
+
+  **Application tools**
+  - AppConfig
+  - Application Manager
+  - **Parameter Store**
+  
+  **Operation Tools**
+  - CloudWatch Dashboards
+  - Explorer
+  - Incident Manager
+  - OpsCenter
+
 - [Operations Management](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-ops-center.html)
 - [AWS Systems Manager Application Management](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-application-management.html)
 - [AWS Systems Manager Change Management](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-actions-and-change.html)
