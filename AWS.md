@@ -2035,6 +2035,15 @@
   
 ## Configuration 
 - [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html)
+  > You can use Parameter Store parameters with other Systems Manager tools and AWS services to retrieve secrets and configuration data from a central store. Parameters work with Systems Manager tools such as Run Command, Automation, and State Manager, tools in AWS Systems Manager. You can also reference parameters in a number of other AWS services, including the following:
+  > - Amazon Elastic Compute Cloud (Amazon EC2)
+  > - Amazon Elastic Container Service (Amazon ECS)
+  > - AWS Secrets Manager
+  > - AWS Lambda
+  > - AWS CloudFormation
+  > - AWS CodeBuild
+  > - AWS CodePipeline
+  > - AWS CodeDeploy
 - [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/)
   > Newer service. Supports key rotation 
   >
