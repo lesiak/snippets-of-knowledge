@@ -2076,16 +2076,22 @@
   > * Unauthorized access to resources
   > * Anomalous API calls
   >
-  > **Foundational threat detection**
+  > **Foundational threat detection** - When you enable GuardDuty in an AWS account, GuardDuty automatically starts ingesting the foundational data sources associated with that account. These data sources include
   > - AWS CloudTrail management events
   > - VPC flow logs (from Amazon EC2 instances)
   > - DNS logs.
   >
-  > **Use-case focused GuardDuty protection plans)**
+  > **Extended Threat Detection** – This capability detects multi-stage attacks that span foundational data source  
+  >
+  > **Use-case focused GuardDuty protection plans**
   >
   > - S3 Protection (S3 data access events and S3 configurations)
   > - EKS Protection (Amazon EKS cluster control plane activity by analyzing Amazon EKS audit logs.)
-  > - Runtime Monitorung (on-host, operating system-level activity)
+  > - Runtime Monitoring (on-host, operating system-level activity)
+  > - Malware Protection for EC2
+  > - Malware Protection for S3
+  > - RDS Protection
+  - Lambda Protection
 - [Creating custom responses to GuardDuty findings with Amazon CloudWatch Events](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html)
   > GuardDuty creates an event for Amazon CloudWatch Events when any change in findings takes place. Finding changes that will create a CloudWatch event include newly generated findings or newly aggregated findings. Events are emitted on a best effort basis.
 - [GuardDuty finding types](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html)
