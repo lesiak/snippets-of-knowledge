@@ -2101,6 +2101,7 @@
 ## Inspector
 - [Amazon Inspector - Automated vulnerability management](https://aws.amazon.com/inspector/)
   > Inspector is focused on identifying vulnerabilities and compliance issues, which can help prevent attacks, but it does not detect or alert on active threats.
+- [Amazon Inspector Overview Demo](https://www.youtube.com/watch?v=Nx8s7lwapoE)
 
 ## License Manager 
 - [AWS License Manager](https://aws.amazon.com/license-manager/)
