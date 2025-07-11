@@ -2103,8 +2103,9 @@
   > Inspector is focused on identifying vulnerabilities and compliance issues, which can help prevent attacks, but it does not detect or alert on active threats.
 - [Amazon Inspector Overview Demo](https://www.youtube.com/watch?v=Nx8s7lwapoE)
 
-## License Manager 
-- [AWS License Manager](https://aws.amazon.com/license-manager/)
+## License Manager
+- [What is AWS License Manager?](https://docs.aws.amazon.com/license-manager/latest/userguide/license-manager.html)
+- [How License Manager works](https://docs.aws.amazon.com/license-manager/latest/userguide/license-manager-overview.html)
 
 ## Service Catalog
 - [AWS Service Catalog | Manage IaC templates](https://aws.amazon.com/servicecatalog/)
