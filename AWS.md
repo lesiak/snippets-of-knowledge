@@ -2125,7 +2125,7 @@
 - [Amazon Textract](https://aws.amazon.com/textract/)
 
 # Misc
-- [AWS Private 5G](https://aws.amazon.com/private5g/)
+- [Deprecated: AWS Private 5G](https://aws.amazon.com/about-aws/whats-new/2025/05/aws-service-changes/)
 - [AWS Amplify](https://aws.amazon.com/amplify/)
   > AWS Amplify simplifies the process of hosting web applications with automated deployment processes. It also integrates with CloudFront, providing a global content delivery network to efficiently serve the game interface.
 - [Automate OS Image Build Pipelines with EC2 Image Builder](https://aws.amazon.com/blogs/aws/automate-os-image-build-pipelines-with-ec2-image-builder/)
