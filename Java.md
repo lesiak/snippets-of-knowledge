@@ -1,6 +1,7 @@
 # JVM
 * [A JVM Does That??? (2011) [pdf]](http://www.azulsystems.com/blog/wp-content/uploads/2011/03/2011_WhatDoesJVMDo.pdf)
 * [Allocation on the JVM: Down the rabbit hole](http://jcdav.is/2016/07/11/JVM-allocation-secrets/)
+* [Memory Layout of Objects in Java](https://www.baeldung.com/java-memory-layout)
 
 # Native memory usage
 * [Native Memory Allocation in Java](https://dzone.com/articles/native-memory-allocation-in-examples)
@@ -9,6 +10,56 @@
 * [Fixing Java's ByteBuffer native memory "leak"](https://www.evanjones.ca/java-bytebuffer-leak.html)
 * [jvm-alloc-rate-meter](https://github.com/clojure-goes-fast/jvm-alloc-rate-meter)
 * [Using pmap and gdb to find native memory leak](https://stackoverflow.com/questions/61002346/using-pmap-and-gdb-to-find-native-memory-leak)
+
+# JCMD
+```
+# jcmd            // list of processes
+# jcmd <PID> help // list of available commands
+# jcmd <PID> help <command>
+# jcmd <PID> GC.class_histogram
+# jcmd <PID> GC.heap_dump
+# jcmd <PID> GC.heap_info
+# jcmd <PID> VM.native_memory
+# jcmd <PID> VM.native_memory summary.diff
+```
+
+# JFR
+```
+# jcmd <pid> JFR.start settings=profile
+# jcmd <pid> JFR.dump name=1 filename=/Users/MyUser/FILENAME.jfr
+# jcmd <pid> JFR.stop
+
+# java -XX:StartFlightRecording="disk=true, filename=memory-tracking.jfr, dumponexit=true, settings=profile" -cp classpath ...
+
+# jfr view --verbose allocation-by-class memory-tracking.jfr
+# jfr view --verbose allocation-by-site memory-tracking.jfr
+```
+
+Uruchamianie z kodu:
+```
+val recording = new jdk.jfr.Recording()l
+recording.start();
+// recording.enable(Class eventClass);
+recording.dump(Path destination);
+recording.stop(); 
+```
+
+# JFR Streaming
+// TODO
+
+# Java Mission Control
+brew install --cask jdk-mission-control
+
+# async-profiler
+* [A Guide to async-profiler](https://www.baeldung.com/java-async-profiler)
+
+Ma przewage nad JFR - widzi co sie dzieje na poziomie JVM i OS
+Jezeli problem jest w apcke to 1 krok JFR.
+Jezeli w apce nic nie widac to async-profiler 
+```
+asprof start -e alloc <pid>
+asprof stop -o flamegraph f0 flamegraph.htmp <pid>
+```
 
 # Libraries
 * [Dependency Injection with Dagger 2](https://www.future-processing.pl/blog/dependency-injection-with-dagger-2/)
