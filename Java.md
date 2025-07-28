@@ -61,6 +61,14 @@ asprof start -e alloc <pid>
 asprof stop -o flamegraph f0 flamegraph.htmp <pid>
 ```
 
+# Java memory traps
+
+### Jackson INTERN_FIELD_NAMES
+Feature that determines whether JSON object field names are to be canonicalized using `String.intern()` or not: if enabled, all field names will be intern()ed (and caller can count on this being true for all such names); if disabled, no intern()ing is done. There may still be basic canonicalization (that is, same String will be used to represent all identical object property names for a single document).
+Note: this setting only has effect if `CANONICALIZE_FIELD_NAMES` is true -- otherwise no canonicalization of any sort is done.
+
+This setting is enabled by default.
+
 # Libraries
 * [Dependency Injection with Dagger 2](https://www.future-processing.pl/blog/dependency-injection-with-dagger-2/)
 * [The Netty project](http://netty.io/)
