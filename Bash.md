@@ -30,3 +30,10 @@ Here's how to test whether a parameter is unset, or empty ("Null") or set with a
 | ${parameter+word}  | substitute word      | substitute word | substitute null |
 +--------------------+----------------------+-----------------+-----------------+
 ```
+
+### Bash script to convert from HTML entities to characters
+https://stackoverflow.com/questions/5929492/bash-script-to-convert-from-html-entities-to-characters
+
+```
+cat foo.html | python3 -c 'import html, sys; [print(html.unescape(l), end="") for l in sys.stdin]'
+```
