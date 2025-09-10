@@ -1810,6 +1810,10 @@
 - [Refer to resource outputs in another CloudFormation stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/walkthrough-crossstackref.html)
 - [New – CloudFormation Drift Detection](https://aws.amazon.com/blogs/aws/new-cloudformation-drift-detection/)
 
+### AWS Cloud Development Kit (AWS CDK) v2
+- [What is the AWS CDK?](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
+  > The AWS Cloud Development Kit (AWS CDK) is an open-source software development framework for defining cloud infrastructure in code and provisioning it through AWS CloudFormation.
+
 # Governance and Management
 
 ## Cloud Trail
