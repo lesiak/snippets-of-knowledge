@@ -2143,6 +2143,8 @@
 # Billing and Pricing
 
 ### Billing dashboard/bills
+- [Using the AWS Billing and Cost Management home page](https://docs.aws.amazon.com/cost-management/latest/userguide/view-billing-dashboard.html)
+
 | Data field                      | Period  | Output      | Use for                |
 |---------------------------------|---------|-------------|------------------------|
 | AWS account ID                  | Monthly | PDF and CSV | Simple monthly reports |
@@ -2154,6 +2156,13 @@
 | Cost                            |         |             |                        |
 
 ### AWS Cost Explorer
+- [Analyzing your costs and usage with AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)
+> AWS Cost Explorer is a tool that enables you to view and analyze your costs and usage. You can explore your usage and costs using the main graph, the Cost Explorer cost and usage reports, or the Cost Explorer RI reports. You can view data for up to the last 13 months, forecast how much you're likely to spend for the next 12 months, and get recommendations for what Reserved Instances to purchase. You can use Cost Explorer to identify areas that need further inquiry and see trends that you can use to understand your costs.
+>
+> You can view your costs and usage using the Cost Explorer user interface free of charge. You can also access your data programmatically using the Cost Explorer API. Each paginated API request incurs a charge of $0.01. You can't disable Cost Explorer after you enable it.
+>
+> In addition, Cost Explorer provides preconfigured views that display at-a-glance information about your cost trends and give you a head start on customizing views that suit your needs.
+
 | Data field                 | Period              | Output               | Use for                    |
 |----------------------------|---------------------|----------------------|----------------------------|
 | All fields from Bills File | Monthly (Last 12 M) | Billing Dashboard UI | Daily/weekly cost tracking |
@@ -2165,6 +2174,9 @@
 | Tenancy                    |                     |                      |                            |
 
 ### Cost and Usage Report
+- [What are AWS Cost and Usage Reports?](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)
+> AWS Cost and Usage Reports (AWS CUR) contains the most comprehensive set of cost and usage data available. You can use Cost and Usage Reports to publish your AWS billing reports to an Amazon Simple Storage Service (Amazon S3) bucket that you own. You can receive reports that break down your costs by the hour, day, or month, by product or product resource, or by tags that you define yourself. AWS updates the report in your bucket once a day in comma-separated value (CSV) format.
+
 | Data field                 | Period | Output | Use for                |
 |----------------------------|--------|--------|------------------------|
 | All fields from Bills File | Hourly | S3     | Hourly/Daily reporting |
