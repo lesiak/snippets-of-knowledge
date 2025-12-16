@@ -2118,6 +2118,7 @@
 # ML
 - [Amazon Comprehend - NLP](https://aws.amazon.com/comprehend/)
 - [Amazon Kendra - Enterprise Search Engine](https://aws.amazon.com/kendra/)
+- [What is Amazon Macie?](https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html)
 - [Types of Amazon Macie findings](https://docs.aws.amazon.com/macie/latest/user/findings-types.html)
   - SensitiveData:S3Object/Credentials
   - SensitiveData:S3Object/CustomIdentifier
