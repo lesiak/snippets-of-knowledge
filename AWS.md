@@ -136,6 +136,7 @@
   > - The number of instances for which to reserve capacity
   > - The instance attributes, including the instance type, platform, Availability Zone, and tenancy
 - [Differences between Capacity Reservations, Reserved Instances, and Savings Plans](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html#capacity-reservations-differences)
+- [Using new vCPU-based On-Demand Instance limits with Amazon EC2](https://aws.amazon.com/blogs/compute/preview-vcpu-based-instance-limits/)
 - [Placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)
 - [Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
 - [How Spot Instances work](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-spot-instances-work.html)
