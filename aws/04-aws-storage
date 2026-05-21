@@ -1,0 +1,583 @@
+# Storage
+
+## EBS
+- [Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes.html)
+  > You can attach multiple EBS volumes to a single instance. The volume and instance must be in the same Availability Zone. 
+  > Depending on the volume and instance types, you can use Multi-Attach to mount a volume to multiple instances at the same time.
+- [Features and benefits of Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/EBSFeatures.html)
+- [Amazon EBS volume types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)
+  - [Cold HDD](hhttps://docs.aws.amazon.com/ebs/latest/userguide/hdd-vols.html#EBSVolumeTypes_sc1) - a good fit for large, sequential cold-data workloads
+- [Amazon EBS fast snapshot restore](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-fast-snapshot-restore.html)
+  > Amazon EBS fast snapshot restore (FSR) enables you to create a volume from a snapshot that is fully initialized at creation. This eliminates the latency of I/O operations on a block when it is accessed for the first time. Volumes that are created using fast snapshot restore instantly deliver all of their provisioned performance.
+- [Amazon Data Lifecycle Manager | EBS snapshots and EBS-backed AMI](https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lifecycle.html)
+- [Delete an Amazon EBS snapshot](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-deleting-snapshot.html)
+  - Incremental snapshot deletion
+- [EBS Snapshot Copy (Between Regions)](https://aws.amazon.com/blogs/aws/ebs-snapshot-copy/)
+- [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html)
+  > Use Amazon EBS encryption as a straight-forward encryption solution for your EBS resources associated with your EC2 instances. With Amazon EBS encryption, you aren't required to build, maintain, and secure your own key management infrastructure. Amazon EBS encryption uses AWS KMS keys when creating encrypted volumes and snapshots.
+  >
+  > **Encryption operations occur on the servers that host EC2 instances, ensuring the security of both data-at-rest and data-in-transit between an instance and its attached EBS storage.**
+  > 
+  > You can attach both encrypted and unencrypted volumes to an instance simultaneously.
+- [Amazon EBS–optimized EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-optimized.html)
+- [Attach a volume to multiple instances with Amazon EBS Multi-Attach](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html)
+  > Amazon EBS Multi-Attach enables you to attach a single Provisioned IOPS SSD (io1 or io2) volume to multiple instances that are in the same Availability Zone.
+- [Use EBS direct APIs to access the contents of an EBS snapshot](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-accessing-snapshot.html)
+- [Restoring on-premises applications from Amazon EBS Snapshots created by EBS direct APIs](https://aws.amazon.com/blogs/storage/restoring-on-premises-applications-from-amazon-ebs-snapshots-created-by-ebs-direct-apis/)
+- [How can I prevent my Amazon EBS volumes from deletion when I terminate Amazon EC2 instances?](https://repost.aws/knowledge-center/deleteontermination-ebs)
+  - `DeleteOnTermination`
+  - New Instance - Console
+  - Running Instance - `aws ec2 modify-instance-attribute` command
+- [Understanding Burst vs. Baseline Performance with Amazon RDS and GP2](https://aws.amazon.com/blogs/database/understanding-burst-vs-baseline-performance-with-amazon-rds-and-gp2/)
+
+## EFS
+- [How Amazon EFS works](https://docs.aws.amazon.com/efs/latest/ug/how-it-works.html)
+- [Replicating file systems](https://docs.aws.amazon.com/efs/latest/ug/efs-replication.html)
+  > After the initial replication is finished, Amazon EFS maintains a Recovery Point Objective (RPO) of 15 minutes for most file systems. However, if the source file system has files that change very frequently and has either more than 100 million files or files that are larger than 100 GB, replication may take longer than 15 minutes.
+  - Cross-region replication is supported
+- [Managing file system storage](https://docs.aws.amazon.com/efs/latest/ug/lifecycle-management-efs.html)
+  > Lifecycle policies:
+  > - Transition into IA
+  > - Transition into Archive
+  > - Transition into Standard
+  >
+  > Lifecycle policies apply to the entire EFS file system.
+- [Amazon EFS Infrequent Access](https://aws.amazon.com/efs/features/infrequent-access/)
+- [Managing mount targets](https://docs.aws.amazon.com/efs/latest/ug/accessing-fs.html)
+  - For Amazon EFS file systems that use Regional storage classes, you can create a mount target in each Availability Zone in an AWS Region. 
+  - For One Zone file systems, you can only create a single mount target in the same Availability Zone as the file system.
+  - The mount target security group acts as a virtual firewall that controls the traffic.
+- [Working with interface VPC endpoints in Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/efs-vpc-endpoints.html)
+- [Amazon EFS performance](https://docs.aws.amazon.com/efs/latest/ug/performance.html)
+  > The following configurations impact the performance of an Amazon EFS file system:
+  > - **File system type** – Regional or One Zone
+  > - **Performance mode** – General Purpose or Max I/O
+  > - **Throughput mode** – Elastic, Provisioned, or Bursting
+  >
+  > Amazon EFS offers two performance modes, General Purpose and Max I/O.
+  > Due to the higher per-operation latencies with Max I/O, we recommend using General Purpose performance mode for all file systems.
+- [Creating and managing EFS resources](https://docs.aws.amazon.com/efs/latest/ug/creating-using.html)
+  - Create an Amazon EFS file system
+  - Create mount targets for the file system
+  - Create security groups – Both an Amazon EC2 instance and a mount target must have associated security groups.
+- [Working with Amazon EFS access points](https://docs.aws.amazon.com/efs/latest/ug/efs-access-points.html)
+- [Using service-linked roles for Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/using-service-linked-roles.html)
+- [Using IAM to control file system data access](https://docs.aws.amazon.com/efs/latest/ug/iam-access-control-nfs-efs.html)
+- [Network File System (NFS) level users, groups, and permissions](https://docs.aws.amazon.com/efs/latest/ug/accessing-fs-nfs-permissions.html)
+
+## S3
+- [What is Amazon S3?](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+  - [Amazon S3 data consistency model](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#ConsistencyModel)
+    > Amazon S3 provides strong read-after-write consistency for PUT and DELETE requests of objects in your Amazon S3 bucket in all AWS Regions. This behavior applies to both writes to new objects as well as PUT requests that overwrite existing objects and DELETE requests.
+
+### S3 Storage Classes
+- [Amazon S3 Storage Classes](https://aws.amazon.com/s3/storage-classes/)
+- [Long-term data storage using S3 Glacier storage classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/glacier-storage-classes.html)
+
+> | S3 Glacier Storage Class | Minimum Storage Duration | Recommended Access Frequency | Average Retrieval Times | Archival? |
+> | --- | --- | --- | --- | --- |
+> | S3 Glacier Instant Retrieval | 90 days | Quarterly | Milliseconds | No |
+> | S3 Glacier Flexible Retrieval | 90 days | Semi-annually | Minutes to 12 hours | Yes |
+> | S3 Glacier Deep Archive | 180 days | Annually | 9 to 48 hours | Yes |
+- [Deprecated: What Is Amazon S3 Glacier?](https://docs.aws.amazon.com/amazonglacier/latest/dev/introduction.html)
+  - See also [Confused: buckets / vaults for S3 Glacier](https://www.reddit.com/r/aws/comments/18lp8uv/confused_buckets_vaults_for_s3_glacier/)
+  > Glacier used to be its own service separate from S3 with its own CLI commands and no way to upload files via the AWS Console (website). Now Glacier is just a storage tier - several actually - of S3 so you can upload files using the AWS CLI or console directly by setting the storage class to Glacier or Deep Archive.
+- [Managing your storage lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html)
+  - Transition Actions
+  - Expiration Acions
+  - ![](AWSResources/lifecycle-transitions-v4.png "")
+- [Transitioning objects using Amazon S3 Lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-transition-general-considerations.html)
+  > - Minimum 30 Days for Transition to S3 Standard-IA or S3 One Zone-IA
+  > - Minimum 30-Day Storage Charge for S3 Standard-IA and S3 One Zone-IA
+- [When is the Amazon S3 lifecycle rule executed?](https://stackoverflow.com/questions/58292389/when-is-the-amazon-s3-lifecycle-rule-executed)
+- [Amazon S3 analytics – Storage Class Analysis](https://docs.aws.amazon.com/AmazonS3/latest/userguide/analytics-storage-class.html)
+  > Storage class analysis only provides recommendations for Standard to Standard IA classes.
+
+### S3 Access management
+- [Access Management](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-management.html)
+  > By default, all Amazon S3 resources are private. By default, the root user of the AWS account that created the resource (resource owner) and IAM users within that account with the necessary permissions can access a resource that they created. The resource owner decides who else can access the resource and the actions that others are allowed to perform on the resource.
+
+- [Identity-based policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security_iam_id-based-policy-examples.html)
+- [Bucket policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)
+- [Amazon S3 Access Points](https://aws.amazon.com/s3/features/access-points/)
+- [Access control list (ACL) overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html)
+  >  With bucket policies, there is a single policy for the entire bucket, but object ACLs are specified for each object. We recommend that you keep ACLs turned off, except in unusual circumstances where you must individually control access for each object.
+  
+  > When you grant access rights, you specify each grantee as a type="value" pair, where type is one of the following:
+  > - `id` – If the value specified is the canonical user ID of an AWS account
+  > - `uri` – If you are granting permissions to a predefined group
+  > - `emailAddress` – If the value specified is the email address of an AWS account 
+- [Controlling access from VPC endpoints with bucket policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html)
+  > VPC endpoints for Amazon S3 provide two ways to control access to your Amazon S3 data:
+  >
+  > You can control the requests, users, or groups that are allowed through a specific VPC endpoint. For information about this type of access control, see Controlling access to VPC endpoints using endpoint policies in the VPC User Guide.
+  >
+  > You can control which VPCs or VPC endpoints have access to your buckets by using Amazon S3 bucket policies. For examples of this type of bucket policy access control, see the following topics on restricting access.
+  - [Restricting access to a specific VPC endpoint | aws:SourceVpce](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-accesss-vpc-endpoint)
+  - [Restricting access to a specific VPC | aws:SourceVpc](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies-vpc-endpoint.html#example-bucket-policies-restrict-access-vpc)
+- [Controlling ownership of objects and disabling ACLs for your bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html)
+  > Object Ownership has three settings that you can use to control ownership of objects uploaded to your bucket and to disable or enable ACLs:
+   >
+  > **ACLs disabled**
+  > - **Bucket owner enforced (default)** – ACLs are disabled, and the bucket owner automatically owns and has full control over every object in the bucket. ACLs no longer affect permissions to data in the S3 bucket. The bucket uses policies to define access control.
+  >
+  > **ACLs enabled**
+  > - **Bucket owner preferred** – The bucket owner owns and has full control over new objects that other accounts write to the bucket with the bucket-owner-full-control canned ACL.
+  > - **Object writer** – The AWS account that uploads an object owns the object, has full control over it, and can grant other users access to it through ACLs.
+
+### S3 Object Lambda
+- [Amazon S3 Object Lambda](https://aws.amazon.com/s3/features/object-lambda/)
+
+### S3 Locks
+- [Using S3 Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html)
+  > Object Lock provides two ways to manage object retention: *retention periods* and *legal holds*. An object version can have a retention period, a legal hold, or both.
+  > - **Retention period** – A retention period specifies a fixed period of time during which an object remains locked.
+  > - **Legal hold** – A legal hold provides the same protection as a retention period, but it has no expiration date. Instead, a legal hold remains in place until you explicitly remove it. Legal holds are independent from retention periods and are placed on individual object versions.
+  >
+  > Object Lock works only in buckets that have S3 Versioning enabled. When you lock an object version, Amazon S3 stores the lock information in the metadata for that object version.
+  > #### Retention modes
+  > S3 Object Lock provides two retention modes that apply different levels of protection to your objects:
+  > - Compliance mode
+  > - Governance mode
+  >
+  > In *compliance mode*, a protected object version can't be overwritten or deleted by any user, including the root user in your AWS account. When an object is locked in compliance mode, its retention mode can't be changed, and its retention period can't be shortened. Compliance mode helps ensure that an object version can't be overwritten or deleted for the duration of the retention period.
+  >
+  > In *governance mode*, users can't overwrite or delete an object version or alter its lock settings unless they have special permissions. With governance mode, you protect objects against being deleted by most users, but you can still grant some users permission to alter the retention settings or delete the objects if necessary. You can also use governance mode to test retention-period settings before creating a compliance-mode retention period.
+  >
+  > #### Legal holds
+  > With Object Lock, you can also place a legal hold on an object version. Like a retention period, a legal hold prevents an object version from being overwritten or deleted. However, a legal hold doesn't have an associated fixed amount of time and remains in effect until removed. Legal holds can be freely placed and removed by any user who has the s3:PutObjectLegalHold permission.
+  > 
+  > Legal holds are independent from retention periods. Placing a legal hold on an object version doesn't affect the retention mode or retention period for that object version.
+  > 
+  > For example, suppose that you place a legal hold on an object version and that object version is also protected by a retention period. If the retention period expires, the object doesn't lose its WORM protection. Rather, the legal hold continues to protect the object until an authorized user explicitly removes the legal hold. Similarly, if you remove a legal hold while an object version has a retention period in effect, the object version remains protected until the retention period expires.
+- [Create Write-Once-Read-Many Archive Storage with Amazon Glacier](https://aws.amazon.com/blogs/aws/glacier-vault-lock/)
+- [S3 Lock Policies and Glacier Vault Lock](http://www.ebsguide.com/9-s3-lock-policies-and-glacier-vault-lock/)
+- [Retrieving S3 Glacier Archives Using AWS Console](https://docs.aws.amazon.com/amazonglacier/latest/dev/downloading-an-archive-two-steps.html)
+
+### S3 Encryption
+- [Protecting data with encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html)
+- [Amazon S3 now automatically encrypts all new objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-encryption-faq.html)
+- [Using server-side encryption with Amazon S3 managed keys (SSE-S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html)
+- [Using server-side encryption with AWS KMS keys (SSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html)
+  > SSE-KMS encryption workflow
+  > 
+  > If you choose to encrypt your data using an AWS managed key or a customer managed key, AWS KMS and Amazon S3 perform the following envelope encryption actions:
+  >
+  > 1. Amazon S3 requests a plaintext data key and a copy of the key encrypted under the specified KMS key.
+  > 2. AWS KMS generates a data key, encrypts it under the KMS key, and sends both the plaintext data key and the encrypted data key to Amazon S3.
+  > 3. Amazon S3 encrypts the data using the data key and removes the plaintext key from memory as soon as possible after use.
+  > 4. Amazon S3 stores the encrypted data key as metadata with the encrypted data.
+  > 
+  > When you request that your data be decrypted, Amazon S3 and AWS KMS perform the following actions:
+  > 1. Amazon S3 sends the encrypted data key to AWS KMS in a Decrypt request.
+  > 2. AWS KMS decrypts the encrypted data key by using the same KMS key and returns the plaintext data key to Amazon S3.
+  > 3. Amazon S3 decrypts the encrypted data, using the plaintext data key, and removes the plaintext data key from memory as soon as possible.
+- [Using server-side encryption with customer-provided keys (SSE-C)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerSideEncryptionCustomerKeys.html)
+  > With the encryption key that you provide as part of your request, Amazon S3 manages data encryption as it writes to disks and data decryption when you access your objects. 
+  >
+  > Amazon S3 does not store the encryption key that you provide. Instead, it stores a randomly salted Hash-based Message Authentication Code (HMAC) value of the encryption key to validate future requests. The salted HMAC value cannot be used to derive the value of the encryption key or to decrypt the contents of the encrypted object. That means if you lose the encryption key, you lose the object.
+- [Replicating encrypted objects (SSE-C, SSE-S3, SSE-KMS, DSSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-config-for-kms-objects.html)
+- [Deprecated: SSE-S3 is now enabled by default - How to Prevent Uploads of Unencrypted Objects to Amazon S3](https://aws.amazon.com/blogs/security/how-to-prevent-uploads-of-unencrypted-objects-to-amazon-s3/)
+  > `x-amz-server-side-encryption` header
+- [What S3 bucket policy can I use to comply with the AWS Config rule s3-bucket-ssl-requests-only?](https://repost.aws/knowledge-center/s3-bucket-policy-for-config-rule)
+  > `aws:SecureTransport`
+
+### S3 Static Websites
+- [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
+- [Website endpoints](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteEndpoints.html)
+  > - s3-website dash (-) Region ‐ http://bucket-name.s3-website-Region.amazonaws.com
+  > - s3-website dot (.) Region ‐ http://bucket-name.s3-website.Region.amazonaws.com
+  >
+  > Amazon S3 website endpoints do not support HTTPS or access points. If you want to use HTTPS, you can use Amazon CloudFront to serve a static website hosted on Amazon S3.
+  - [Key differences between a website endpoint and a REST API endpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteEndpoints.html#WebsiteRestEndpointDiff)
+- [Deploying a static website to AWS Amplify Hosting from an S3 general purpose bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/website-hosting-amplify.html)
+- [Deleting an object from an MFA delete-enabled bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMFADelete.html)
+  - `x-amz-mfa` header
+
+  ### S3 Logging
+- [Logging options for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/logging-with-S3.html)
+  - AWS CloudTrail
+  - Amazon S3 server logs
+  >  We recommend that you use CloudTrail for logging bucket-level and object-level S3 API actions for your Amazon S3 resources
+- [Amazon S3 server access log format](https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html)
+
+### S3 Cross-account access
+- [How do I provide cross-account access to objects that are in Amazon S3 buckets?](https://repost.aws/knowledge-center/cross-account-access-s3)
+  > 1. **AWS Identity and Access Management (IAM) policies and resource-based bucket policies** for programmatic-only access to S3 bucket objects
+  >   - Create an S3 bucket in Account A.
+  >   - Create an IAM role or user in Account B.
+  > - Give the IAM role in Account B permission to download (GetObject) and upload (PutObject) objects to and from a specific bucket. 
+  > - Configure the bucket policy for Account A to grant permissions to the IAM role or user that you created in Account B. Use this bucket policy to grant a user the permissions to GetObject and PutObject for objects in a bucket that's owned by Account A
+  >
+  > 2. **IAM policies and resource-based access control lists (ACLs)** for programmatic-only access to S3 bucket objects
+  >
+  > 3. **Cross-account IAM roles** for programmatic and console access to S3 bucket objects
+  > - Create an IAM role in Account A.
+  > - Grant the role permissions to perform the required S3 operations.
+  > - In the role's trust policy, grant a role or user from Account B permissions to assume the role in Account A:
+  > - Grant an IAM role or user in Account B permissions to assume the IAM role that you created in Account A.
+- [Simplify and scale access management to shared datasets with cross-account Amazon S3 Access Points](https://aws.amazon.com/blogs/storage/simplify-and-scale-access-management-to-shared-datasets-with-cross-account-amazon-s3-access-points/)  
+  > In 2019, AWS launched Amazon S3 Access Points for bucket owners to easily create thousands of access configurations without having 
+  > to manage a single bucket policy that spans multiple access patterns as their application and storage footprint scales. 
+  > At re:Invent 2022, AWS launched cross-account Amazon S3 Access Points for bucket owners to delegate access management to trusted AWS accounts to create their own access points. 
+  > By using this feature, bucket owners can grant data access to cross-account users without managing IAM roles or multiple access point policies, 
+  > or maintaining duplicate copies of data. The trusted account can then define permissions to provide specific access to their own end users. 
+  > This simplifies access management for multiple trusted users and doesn’t require the bucket owner to configure each of those permissions themselves. 
+  > These trusted accounts can enforce distinct permissions by prefixes, object tags, and network controls on resources in the bucket owner’s account.
+
+### S3 Misc
+- [S3 Transfer Acceleration](https://aws.amazon.com/s3/transfer-acceleration/)
+- [General S3 FAQs](https://aws.amazon.com/s3/faqs/)
+  > **Q: How should I choose between S3 Transfer Acceleration and Amazon CloudFront’s PUT/POST?**
+  >
+  > S3 Transfer Acceleration optimizes the TCP protocol and adds additional intelligence between the client and the S3 bucket, making S3 Transfer Acceleration a better choice if a higher throughput is desired. If you have objects that are smaller than 1 GB or if the data set is less than 1 GB in size, you should consider using Amazon CloudFront's PUT/POST commands for optimal performance.
+- [Is it possible to read/write data from/to AWS S3 from a static website?](https://www.quora.com/Is-it-possible-to-read-write-data-from-to-AWS-S3-from-a-static-website)
+  > But if you’re asking if you can also read/write programmatically to S3 from a static website, yes you can! You can use Cognito with the JavaScript SDK to either authenticate users and delegate IAM roles to them, or delegate permissions to unauthenticated users.
+  >
+  > In either case, you could allow specific actions against a specific bucket - perhaps the ability to upload, read, delete objects.
+- [Amazon S3 Event Notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html)
+  - [Event notification types and destinations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-how-to-event-types-and-destinations.html)
+    > Destinations:
+    > - Amazon Simple Notification Service (Amazon SNS) topics
+    > - Amazon Simple Queue Service (Amazon SQS) queues
+    > - AWS Lambda
+    > - Amazon EventBridge
+    > - Amazon Simple Queue Service FIFO (First-In-First-Out) queues aren't supported as an Amazon S3 event notification destination. To send a notification for an Amazon S3 event to an Amazon SQS FIFO queue, you can use Amazon EventBridge. For more information, see Enabling Amazon EventBridge.
+- [How can I copy all objects from one Amazon S3 bucket to another bucket?](https://repost.aws/knowledge-center/move-objects-s3-bucket)
+  - aws s3 sync
+  - S3 Batch Operations 
+- [Working with object metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html)
+  > By default, S3 Metadata provides system-defined object metadata, such as an object's creation time and storage class, and custom metadata, such as tags and user-defined metadata that was included during object upload. 
+  > S3 Metadata also provides event metadata, such as when an object is updated or deleted, and the AWS account that made the request.
+  > 
+  > Metadata tables are stored in S3 table buckets, which provide storage that's optimized for tabular data. To query your metadata, you can integrate your table bucket with AWS analytics services, such as Amazon Athena, Amazon Redshift, and Amazon QuickSight.
+  >
+  > Amazon S3 uses AWS KMS keys to encrypt your Amazon S3 objects. AWS KMS encrypts only the object data. The checksum, along with the specified algorithm, are stored as part of the object's metadata. If server-side encryption is requested for the object, then the checksum is stored in encrypted form. For more information about server-side encryption, see Protecting data with encryption.
+- [Use Byte-Range Fetches](https://docs.aws.amazon.com/whitepapers/latest/s3-optimizing-performance-best-practices/use-byte-range-fetches.html)
+  > Using the Range HTTP header in a GET Object request, you can fetch a byte-range from an object, transferring only the specified portion. You can use concurrent connections to Amazon S3 to fetch different byte ranges from within the same object. This helps you achieve higher aggregate throughput versus a single whole-object request. Fetching smaller ranges of a large object also allows your application to improve retry times when requests are interrupted. 
+- [Deprecated: Querying data in place with Amazon S3 Select](https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html)
+  > Amazon S3 Select only allows you to query one object at a time. It works on an object stored in CSV, JSON, or Apache Parquet format. It also works with an object that is compressed with GZIP or BZIP2 (for CSV and JSON objects only), and a server-side encrypted object. You can specify the format of the results as either CSV or JSON, and you can determine how the records in the result are delimited.
+  >
+  > **Requests using scan ranges**
+  > - `ScanRange` parameter in [SelectObjectContent Request body](https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html#API_SelectObjectContent_RequestSyntax)
+
+## DynamoDB
+- [Choosing the Right DynamoDB Partition Key](https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/)
+- [DynamoDB on-demand and provisioned capacity](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/capacity.html)
+- [Managing throughput capacity automatically with DynamoDB auto scaling](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html)
+  > Amazon DynamoDB auto scaling uses the AWS Application Auto Scaling service to dynamically adjust provisioned throughput capacity on your behalf, in response to actual traffic patterns. This enables a table or a global secondary index (GSI) to increase its provisioned read and write capacity to handle sudden increases in traffic, without throttling. When the workload decreases, Application Auto Scaling decreases the throughput so that you don't pay for unused provisioned capacity.
+- [Amazon DynamoDB auto scaling: Performance and cost optimization at any scale](https://aws.amazon.com/blogs/database/amazon-dynamodb-auto-scaling-performance-and-cost-optimization-at-any-scale/)
+- [Change data capture for DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html)
+- [Using Kinesis Data Streams to capture changes to DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds.html)
+- [Amazon DynamoDB global tables](https://aws.amazon.com/dynamodb/global-tables/)
+- [Enable point-in-time recovery](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/PointInTimeRecovery_Howitworks.html)
+
+## FSx
+- [Choosing an Amazon FSx File System](https://aws.amazon.com/fsx/when-to-choose-fsx/)
+- [Mounting Amazon FSx file systems from on-premises or a peered Amazon VPC](https://docs.aws.amazon.com/fsx/latest/LustreGuide/mounting-on-premises.html)
+
+### FSx for Windows
+- [Availability and durability: Single-AZ and Multi-AZ file systems](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/high-availability-multiAZ.html)
+- [Accessing SMB file shares remotely with Amazon FSx for Windows File Server](https://aws.amazon.com/blogs/storage/accessing-smb-file-shares-remotely-with-amazon-fsx-for-windows-file-server/)
+
+### FSx for Lustre
+- [Amazon FSx for Lustre](https://aws.amazon.com/fsx/lustre/)
+- [Linking your file system to an Amazon S3 bucket](https://docs.aws.amazon.com/fsx/latest/LustreGuide/create-dra-linked-data-repo.html)
+- [Mounting from Amazon Elastic Container Service](https://docs.aws.amazon.com/fsx/latest/LustreGuide/mounting-ecs.html)
+  - Gotcha: Mounting FSx for Lustre on an AWS Fargate launch type isn't supported.
+  > Access and process Amazon S3 data from a high-performance file system by linking your file systems to S3 buckets.
+
+  ### FSx for NetApp ONTAP
+- [Amazon FSx for NetApp ONTAP](https://aws.amazon.com/fsx/netapp-ontap/)
+  - NetApp ONTAP or other NAS appliances
+  - NFS, SMB, iSCSI, and NVMe-over-TCP protocols
+
+## Storage gateway
+### File Gateway
+- [Amazon S3 File Gateway](https://aws.amazon.com/storagegateway/file/s3/)
+- [What is Amazon S3 File Gateway](https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html)
+- [How Amazon S3 File Gateway works](https://docs.aws.amazon.com/filegateway/latest/files3/file-gateway-concepts.html)
+- [Amazon FSx File Gateway](https://aws.amazon.com/storagegateway/file/fsx/)
+- [What is Amazon FSx File Gateway](https://docs.aws.amazon.com/filegateway/latest/filefsxw/what-is-file-fsxw.html)
+
+### Volume Gateway
+- [What is Volume Gateway?](https://docs.aws.amazon.com/storagegateway/latest/vgw/WhatIsStorageGateway.html)
+  - Cached volumes
+  - Stored volumes
+- [How Volume Gateway works](https://docs.aws.amazon.com/storagegateway/latest/vgw/StorageGatewayConcepts.html)
+
+### Tape Gateway
+- [What is Tape Gateway?](https://docs.aws.amazon.com/storagegateway/latest/tgw/WhatIsStorageGateway.html)
+- [How Tape Gateway works](https://docs.aws.amazon.com/storagegateway/latest/tgw/StorageGatewayConcepts.html)
+
+###  Storage Gateway Hardware Appliance
+- [AWS Storage Gateway Hardware Appliance](https://aws.amazon.com/storagegateway/hardware-appliance/)
+  > Frequently, branch offices, research and development departmental workgroups, and laboratory or industrial sites lack the on-premises infrastructure to run a virtual machine appliance, hypervisors, server clusters, and networked storage systems. Building and managing this infrastructure, or waiting for a future budgeting cycle to begin work or scale operations, simply may not make sense. The Storage Gateway Hardware Appliance can be dropped in and rapidly set up, providing local applications access to virtually unlimited cloud storage for a wide variety of use cases.
+  >
+  > The AWS Storage Gateway Hardware Appliance is a physical, standalone, validated server configuration for on-premises deployments. It comes pre-loaded with Storage Gateway software, and provides all the required CPU, memory, network, and SSD cache resources for creating and configuring File Gateway, Volume Gateway, or Tape Gateway. The Storage Gateway Hardware Appliance is designed to provide you with a simple out of the box experience that does not require any additional infrastructure, and is managed from the AWS Console or API.
+  >
+  > Compare AWS Storage gateway with AWS Storage gateway hardware appliance
+  >
+  > **AWS Storage Gateway (Software Appliance)**
+  > A software appliance that can be installed on a virtual machine or a physical server in your on-premises environment.
+  >
+  > **AWS Storage Gateway Hardware Appliance**
+  > * A pre-configured, physical appliance that is shipped to your location.
+
+## DataSync
+- [AWS DataSync features](https://aws.amazon.com/datasync/features/)
+- [AWS DataSync FAQs](https://aws.amazon.com/datasync/faqs/)
+- [Choosing a service endpoint for your AWS DataSync agent](https://docs.aws.amazon.com/datasync/latest/userguide/choose-service-endpoint.html)
+- [Transferring files from on premises to AWS and back without leaving your VPC using AWS DataSync](https://aws.amazon.com/blogs/storage/transferring-files-from-on-premises-to-aws-and-back-without-leaving-your-vpc-using-aws-datasync/)
+- [AWS data sync vs storage gateway use case](https://stackoverflow.com/questions/68175584/aws-data-sync-vs-storage-gateway-use-case)
+  > You can combine both services. Use AWS DataSync to migrate existing data to Amazon S3, and then use the File Gateway configuration of AWS Storage Gateway to retain access to the migrated data and ongoing updates from your on-premises file-based applications.
+
+## RDS
+- [What is Amazon Relational Database Service (Amazon RDS)?](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
+- [Configuring and managing a Multi-AZ deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html)
+  > Gotcha: Only one region
+- [Multi-AZ DB instance deployments](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZSingleStandby.html)
+  - Sync
+  - Only Failover
+- [Multi-AZ DB cluster deployments](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-clusters-concepts.html)
+  - Semisynchronous (requires acknowledgment from at least one reader DB instance in order for a change to be committed. It doesn't require acknowledgment that events have been fully executed and committed on all replicas)
+  - Failover & Reads
+- [Amazon RDS Read Replicas](https://aws.amazon.com/rds/features/read-replicas/)
+
+|Multi-AZ deployments                                                                                             | Multi-Region deployments                                                                                           | Read replicas                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| Main purpose is high availability                                                                                    | Main purpose is disaster recovery and local performance                                                                | Main purpose is scalability                                                                                                  |
+| Non-Aurora: synchronous replication; Aurora: synchronous replication                                                 | Asynchronous replication                                                                                               | Asynchronous replication                                                                                                     |
+| Non-Aurora: only the primary instance is active; Aurora: all instances are active                                    | All regions are accessible and can be used for&nbsp;reads                                                              | All&nbsp;read&nbsp;replicas&nbsp;are accessible and can be used for&nbsp;read scaling                                        |
+| Non-Aurora: automated backups are taken from standby; Aurora: automated backups are taken from shared storage layer  | Automated backups can be taken in each region                                                                          | No backups configured by default                                                                                             |
+| Always span at least two Availability Zones within a single region                                                   | Each region can have a Multi-AZ deployment                                                                             | Can be within an Availability Zone, Cross-AZ, or Cross-Region                                                                |
+| Non-Aurora: database engine version upgrades happen on primary; Aurora: all instances are updated together           | Non-Aurora: database engine version upgrade is independent in each region; Aurora: all instances are updated together  | Non-Aurora: database engine version upgrade is independent from source instance; Aurora: all instances are updated together  |
+| Automatic failover to standby (non-Aurora) or&nbsp;read&nbsp;replica (Aurora) when a problem is detected             | Aurora allows promotion of a secondary region to be the&nbsp;primary                                                   | Can be manually promoted to a standalone database instance (non-Aurora) or to be the primary instance (Aurora)               |
+
+- [Working with DB instance read replicas | Async](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
+  - Gotcha: You cannot create an RDS Read Replica of a database that is running on Amazon EC2.
+- [Working with Multi-AZ DB cluster read replicas for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_MultiAZDBCluster_ReadRepl.html)
+  > Currently, you can't create a Multi-AZ DB cluster read replica from an existing Multi-AZ DB cluster.
+- [Supported Regions and DB engines for cross-Region read replicas in Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.CrossRegionReadReplicas.html) 
+  - MariaDB, MySQL, PostgreSQL, Oracle, and SQL Server
+- [Amazon RDS Read Replicas Now Support Multi-AZ Deployments](https://aws.amazon.com/about-aws/whats-new/2018/01/amazon-rds-read-replicas-now-support-multi-az-deployments/)
+- [Encrypting Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html)
+- [Stopping an Amazon RDS DB instance temporarily](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInstance.html)
+- [IAM database authentication for MariaDB, MySQL, and PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html)
+- [Creating a database account using IAM authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.DBAccounts.html)
+  > With MariaDB and MySQL, authentication is handled by `AWSAuthenticationPlugin`—an AWS-provided plugin that works seamlessly with IAM to authenticate your users. Connect to the DB instance as the master user or a different user who can create users and grant privileges. After connecting, issue the `CREATE USER` statement, as shown in the following example.
+  > ```
+  >CREATE USER 'jane_doe' IDENTIFIED WITH AWSAuthenticationPlugin AS 'RDS'; 
+  >```          
+  > The `IDENTIFIED WITH` clause allows MariaDB and MySQL to use the `AWSAuthenticationPlugin` to authenticate the database account (`jane_doe`). The `AS 'RDS'` clause refers to the authentication method. Make sure the specified database user name is the same as a resource in the IAM policy for IAM database access.
+- [Managing capacity automatically with Amazon RDS storage autoscaling](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.StorageTypes.html#USER_PIOPS.Autoscaling)
+> Amazon RDS starts a storage modification for an autoscaling-enabled DB instance when these factors apply:
+> - Free available space is less than or equal to 10 percent of the allocated storage.
+> -  The low-storage condition lasts at least five minutes.
+> - At least six hours have passed since the last storage modification, or storage optimization has completed on the instance, whichever is longer.
+- [Encrypt an existing Amazon RDS for PostgreSQL DB instance | DMS to synchronize new data](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/encrypt-an-existing-amazon-rds-for-postgresql-db-instance.html)
+- [Using SSL/TLS to encrypt a connection to a DB instance or cluster](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html)
+- [RDS Performance Insights](https://aws.amazon.com/rds/performance-insights/)
+- [Amazon RDS Custom for Oracle – New Control Capabilities in Database Environment](https://aws.amazon.com/blogs/aws/amazon-rds-custom-for-oracle-new-control-capabilities-in-database-environment/)
+- [RDS encryption vs TDE](https://www.sqlservercentral.com/blogs/rds-encryption-vs-tde)
+- [Amazon RDS FAQs](https://aws.amazon.com/rds/faqs/)
+  > **What happens during Multi-AZ failover and how long does it take?**
+  > Failover is automatically handled by Amazon RDS so that you can resume database operations as quickly as possible without administrative intervention. When failing over, Amazon RDS simply flips the canonical name record (CNAME) for your DB instance to point at the standby, which is in turn promoted to become the new primary. We encourage you to follow best practices and implement database connection retry at the application layer.
+  >
+  > Failovers, as defined by the interval between the detection of the failure on the primary and the resumption of transactions on the standby, typically complete within one to two minutes. Failover time can also be affected by whether large uncommitted transactions must be recovered; the use of adequately large instance types is recommended with Multi-AZ for best results. AWS also recommends the use of Provisioned IOPS with Multi-AZ instances, for fast, predictable, and consistent throughput performance.
+  >
+  > **What is the difference between automated backups and DB Snapshots?**
+  > The automated backup feature of Amazon RDS enables point-in-time recovery of your DB instance. When automated backups are turned on for your DB Instance, Amazon RDS automatically performs a full daily snapshot of your data (during your preferred backup window) and captures transaction logs (as updates to your DB Instance are made).
+  > 
+  > DB Snapshots are user-initiated and enable you to back up your DB instance in a known state as frequently as you wish, and then restore to that specific state at any time.
+- [How do I minimize downtime during required Amazon RDS maintenance?](https://repost.aws/knowledge-center/rds-required-maintenance)
+  > Upgrades to the database engine level require downtime. Even if your RDS DB instance uses a Multi-AZ deployment, both the primary and standby DB instances upgrade at the same time. This causes downtime until the upgrade completes, and the duration of the downtime varies based on the size of your DB instance. For more information, check the documentation for your DB engine in Upgrading a DB instance engine version.
+- [Multi-tenant data isolation with PostgreSQL Row Level Security](https://aws.amazon.com/blogs/database/multi-tenant-data-isolation-with-postgresql-row-level-security/)  
+
+
+## Aurora
+- [Amazon Aurora DB clusters](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.html)
+  > An Amazon Aurora DB cluster consists of one or more DB instances and a cluster volume that manages the data for those DB instances. An Aurora cluster volume is a virtual database storage volume that spans multiple Availability Zones, with each Availability Zone having a copy of the DB cluster data. Two types of DB instances make up an Aurora DB cluster:
+  > - **Primary (writer) DB instance** – Supports read and write operations, and performs all of the data modifications to the cluster volume. Each Aurora DB cluster has one primary DB instance.
+  > - **Aurora Replica (reader DB instance)** – Connects to the same storage volume as the primary DB instance but supports only read operations. Each Aurora DB cluster can have up to 15 Aurora Replicas in addition to the primary DB instance. Maintain high availability by locating Aurora Replicas in separate Availability Zones. Aurora automatically fails over to an Aurora Replica in case the primary DB instance becomes unavailable. You can specify the failover priority for Aurora Replicas. Aurora Replicas can also offload read workloads from the primary DB instance.
+  > 
+  > The following diagram illustrates the relationship between the cluster volume, the writer DB instance, and reader DB instances in an Aurora DB cluster.
+  > ![](AWSResources/aurora_architecture.png "")
+- [Amazon Aurora endpoint connections](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.Endpoints.html)
+- [Replication with Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Replication.html)
+  > Amazon Aurora further extends the benefits of read replicas by employing an SSD-backed virtualized storage layer purpose-built for database workloads. Amazon Aurora replicas share the same underlying storage as the source instance, lowering costs and avoiding the need to copy data to the replica nodes.
+- [Amazon Aurora Global Database](https://aws.amazon.com/rds/aurora/global-database/)
+  > - Sub-second data access in any Region
+  > - Cross-Region disaster recovery:  RPO of 1 second and a RTO of less than 1 minute
+- [Using Amazon Aurora global databases](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html)
+  > By using an Amazon Aurora global database, you can run your globally distributed applications using a single Aurora database that spans multiple AWS Regions.
+  >
+  > An Aurora global database consists of one `primary` AWS Region where your data is written, and up to five read-only `secondary` AWS Regions. You issue write operations directly to the primary DB cluster in the primary AWS Region. Aurora replicates data to the secondary AWS Regions using dedicated infrastructure, with latency typically under a second.
+  > 
+  > You can scale up each secondary cluster independently, by adding one or more Aurora Replicas (read-only Aurora DB instances) to serve read-only workloads.
+  >
+  > Only the primary cluster performs write operations. Clients that perform write operations connect to the DB cluster endpoint of the primary DB cluster. As shown in the diagram, Aurora global database uses the cluster storage volume and not the database engine for replication.
+- [High availability for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.AuroraHighAvailability.html)
+  - High availability for Aurora data
+    > Aurora stores copies of the data in a DB cluster across multiple Availability Zones in a single AWS Region. Aurora stores these copies regardless of whether the instances in the DB cluster span multiple Availability Zones. For more information on Aurora, see Managing an Amazon Aurora DB cluster.
+    > 
+    > When data is written to the primary DB instance, Aurora synchronously replicates the data across Availability Zones to six storage nodes associated with your cluster volume. Doing so provides data redundancy, eliminates I/O freezes, and minimizes latency spikes during system backups. Running a DB instance with high availability can enhance availability during planned system maintenance, and help protect your databases against failure and Availability Zone disruption.
+  - High availability for Aurora DB instances
+    > After you create the primary (writer) instance, you can create up to 15 read-only Aurora Replicas. The Aurora Replicas are also known as reader instances.
+  - High availability across AWS Regions with Aurora global databases
+  - Fault tolerance for an Aurora DB cluster
+  - High availability with Amazon RDS Proxy
+    > With RDS Proxy, you can build applications that can transparently tolerate database failures without needing to write complex failure handling code. The proxy automatically routes traffic to a new database instance while preserving application connections. It also bypasses Domain Name System (DNS) caches to reduce failover times by up to 66% for Aurora Multi-AZ databases.
+  >
+  > **Read replica priorities**
+  >
+  > You can customize the order in which your Aurora Replicas are promoted to the primary instance after a failure by assigning each replica a priority. Priorities range from 0 for the highest priority to 15 for the lowest priority. If the primary instance fails, Amazon RDS promotes the Aurora Replica with the highest priority to the new primary instance. You can modify the priority of an Aurora Replica at any time. Modifying the priority doesn't trigger a failover.
+  > 
+  > More than one Aurora Replica can share the same priority, resulting in promotion tiers. If two or more Aurora Replicas share the same priority, then Amazon RDS promotes the replica that is largest in size. If two or more Aurora Replicas share the same priority and size, then Amazon RDS promotes an arbitrary replica in the same promotion tier.
+- [Recovering an Amazon Aurora global database from an unplanned outage](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery.html#aurora-global-database-failover)
+- [Amazon Aurora storage and reliability](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.StorageReliability.html)
+- [Using Aurora Serverless v2](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html)
+- [How is Aurora serverless different than aurora with autoscaling?](https://stackoverflow.com/questions/74352620/how-is-aurora-serverless-different-than-aurora-with-autoscaling)
+  > **AWS Aurora Autoscaling** works by adding more number of reader instances to the Aurora Cluster and when it has to scale down, it remove the reader instances. Important here, this process takes some time to spin up the new reader instances as well to remove them, so you should configure your autoscaling policy accordingly. Autoscaling only add read capacity to Aurora Cluster.
+  >
+  > **AWS Aurora Serverless** continuously tracks utilization of resources such as CPU, memory, and network and scale any writer or reader instance. AWS Aurora Serverless scales instantly to hundreds of thousands of transactions in a fraction of a second, it adjusts capacity in fine-grained increments to provide the right amount of database resources that the application needs. Aurora Serverles increase write and read capacity to Aurora Cluster.
+- [What is Amazon Aurora DSQL?](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/what-is-aurora-dsql.html)
+- [Unsupported PostgreSQL features in Aurora DSQL](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-with-postgresql-compatibility-unsupported-features.html#working-with-postgresql-compatibility-unsupported-objects)
+- [Multi-Master is no longer available as of Feb 28, 2023](https://aws.amazon.com/about-aws/whats-new/2019/08/amazon-aurora-multimaster-now-generally-available/)
+  >  - Multi-master was only available for Aurora MySQL 5.6, which is now deprecated.
+  - Gotcha: Multi-master used to work only within a Region it does not work across Regions.
+- [Using switchover or failover in an Amazon Aurora global database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery.html)
+  - [Recovering an Amazon Aurora global database from an unplanned outage](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery.html#aurora-global-database-failover)
+    - Managed failover
+    - Manual failover
+- [Overview of backing up and restoring an Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Backups.html)
+- [Sharing a DB snapshot](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ShareSnapshot.html)
+  - Sharing public snapshots
+  - [Sharing encrypted snapshots](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/share-encrypted-snapshot.html)
+    - Create a customer managed key and give access to it
+    - Copy and share the snapshot from the source account
+    - Copy the shared snapshot in the target account
+- [Amazon RDS Cross-Region Automated Backups Regional Expansion](https://aws.amazon.com/about-aws/whats-new/2021/07/amazon-rds-cross-region-automated-backups-regional-expansion/)
+- [Cloning a volume for an Amazon Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Clone.html)
+- [Backtracking an Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Backtrack.html)
+- [Replication between Aurora and MySQL or between Aurora and another Aurora DB cluster (binary log replication)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Replication.MySQL.html)
+
+## Caching
+- [What is Amazon ElastiCache?](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.html)
+    - Serverless caching
+    - Self designed clusters
+- [Amazon ElastiCache Serverless for Redis and Memcached is now available](https://aws.amazon.com/blogs/aws/amazon-elasticache-serverless-for-redis-and-memcached-now-generally-available/)
+    > If you use ElastiCache Serverless for Memcached, there are significant benefits of high availability and instant scaling because they are not natively available in the Memcached engine. You no longer have to write custom business logic, manage multiple caches, or use a third-party proxy layer to replicate data to get high availability with Memcached. Now you can get up to 99.99 percent availability SLA and data replication across multiple Availability Zones.
+- [Authenticating with the Redis AUTH command](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/auth.html)
+- [ElastiCache Role-Based Access Control (RBAC)](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Clusters.RBAC.html)
+- [Comparing Redis OSS and Memcached](https://aws.amazon.com/elasticache/redis-vs-memcached/)
+- [Comparing Valkey, Memcached, and Redis OSS self-designed caches](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SelectEngine.html)
+- [Turbocharge Amazon S3 with Amazon ElastiCache for Redis](https://aws.amazon.com/blogs/storage/turbocharge-amazon-s3-with-amazon-elasticache-for-redis/)
+- [Resilience in Amazon ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/disaster-recovery-resiliency.html)
+  - Redis OSS Replication Groups - 1 to 5 Read Replica nodes
+  - Redis OSS Multi-AZ
+- [Amazon ElastiCache for Redis is now HIPAA Eligible to help you power secure Healthcare Applications with sub-millisecond latency](https://aws.amazon.com/about-aws/whats-new/2017/11/amazon-elasticache-for-redis-is-now-hipaa-eligible-to-help-you-power-secure-healthcare-applications-with-sub-millisecond-latency/)
+- [Amazon ElastiCache for Memcached is now HIPAA eligible](https://aws.amazon.com/about-aws/whats-new/2022/08/amazon-elasticache-memcached-hipaa-eligible/)
+
+## Redshift
+- [System and architecture overview](https://docs.aws.amazon.com/redshift/latest/dg/c_redshift_system_overview.html)
+   - Data warehouse system architecture
+   - Amazon Redshift Performance
+   - Columnar storage
+   - Workload management
+   - Using Amazon Redshift with other services
+- [Amazon Redshift Introduces Result Caching for Sub-Second Response for Repeat Queries](https://aws.amazon.com/about-aws/whats-new/2017/11/amazon-redshift-introduces-result-caching-for-sub-second-response-for-repeat-queries/)
+  > Dashboard, visualization, and business intelligence (BI) tools that execute repeat queries will see a significant boost in performance due to result caching. In addition, result caching frees up resources to improve performance of all other queries.
+- [Quickly Filter Data in Amazon Redshift Using Interleaved Sorting](https://gitlab.ocado.tech/phoenix-business-logic/production-repositories/customer-order-processor/-/pipelines/25685232)
+
+### Redshift Spectrum
+- [Querying external data using Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-using-spectrum.html)
+   - Amazon Redshift Spectrum overview
+   - Getting started with Amazon Redshift Spectrum
+   - IAM policies for Amazon Redshift Spectrum
+   - Redshift Spectrum and AWS Lake Formation
+   - Data files for queries in Amazon Redshift Spectrum
+   - External schemas in Amazon Redshift Spectrum
+   - External tables for Redshift Spectrum
+   - Using Apache Iceberg tables with Amazon Redshift
+   - Amazon Redshift Spectrum query performance
+   - Data handling options
+   - Example: Performing correlated subqueries in Redshift Spectrum
+   - Metrics in Amazon Redshift Spectrum
+   - Query troubleshooting in Amazon Redshift Spectrum
+   - Tutorial: Querying nested data with Amazon Redshift Spectrum
+- [Amazon Redshift Spectrum Extends Data Warehousing Out to Exabytes—No Loading Required](https://aws.amazon.com/blogs/big-data/amazon-redshift-spectrum-extends-data-warehousing-out-to-exabytes-no-loading-required/)
+
+### Redshift cross account access
+- [How do I copy or unload data from Amazon Redshift to an Amazon S3 bucket that's in another account?](https://repost.aws/knowledge-center/redshift-s3-cross-account)
+- [Deprecared: My Amazon S3 bucket has data files created by the UNLOAD command from another account. Why can't I access those files?](https://web.archive.org/web/20221225124338/https://repost.aws/knowledge-center/s3-access-denied-redshift-unload)
+- [Deprecated: S3 Objects created using UNLOAD command from the Redshift cluster are not accessible to the bucket owner user of the AWS account](https://stackoverflow.com/questions/71059739/s3-objects-created-using-unload-command-from-the-redshift-cluster-are-not-access)
+- Deprecated by: [Amazon S3 now applies two security best practices to all new buckets by default](https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-s3-security-best-practices-buckets-default/)
+  
+## Lake Formation
+- [What is AWS Lake Formation?](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html)
+   > AWS Lake Formation helps you centrally govern, secure, and globally share data for analytics and machine learning. With Lake Formation, you can manage fine-grained access control for your data lake data on Amazon Simple Storage Service (Amazon S3) and its metadata in AWS Glue Data Catalog.
+   >
+   > Lake Formation provides its own permissions model that augments the IAM permissions model. Lake Formation permissions model enables fine-grained access to data stored in data lakes as well as external data sources such as Amazon Redshift data warehouses, Amazon DynamoDB databases, and third-party data sources through a simple grant or revoke mechanism, much like a relational database management system (RDBMS). Lake Formation permissions are enforced using granular controls at the column, row, and cell-levels across AWS analytics and machine learning services, including Amazon Athena, Amazon QuickSight, Amazon Redshift Spectrum, Amazon EMR, and AWS Glue.
+   - Data ingestion and management
+   - Security management
+   - Bring your data into the Data Catalog
+- [AWS Lake Formation: How it works](https://docs.aws.amazon.com/lake-formation/latest/dg/how-it-works.html)
+   > AWS Lake Formation provides a relational database management system (RDBMS) permissions model to grant or revoke access to Data Catalog resources such as databases, tables, and columns with underlying data in Amazon S3. The easy to manage Lake Formation permissions replace the complex Amazon S3 bucket policies and corresponding IAM policies.
+- [Granting and revoking permissions on Data Catalog resources](https://docs.aws.amazon.com/lake-formation/latest/dg/granting-catalog-permissions.html)
+- [Lake Formation tag-based access control](https://docs.aws.amazon.com/lake-formation/latest/dg/tag-based-access-control.html)
+
+# Data Migration & Transfer
+## Database Migration Service
+- [What is AWS Database Migration Service?](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html)
+   > With AWS DMS, you can discover your source data stores, convert your source schemas, and migrate your data.
+   >
+   > - To discover your source data infrastructure, you can use DMS Fleet Advisor. This service collects data from your on-premises database and analytic servers, and builds an inventory of servers, databases, and schemas that you can migrate to the AWS Cloud.
+   > - To migrate to a different database engine, you can use DMS Schema Conversion. This service automatically assesses and converts your source schemas to a new target engine. Alternatively, you can download the AWS Schema Conversion Tool (AWS SCT) to your local PC to convert your source schemas.
+   > - After you convert your source schemas and apply the converted code to your target database, you can use AWS DMS to migrate your data. You can perform one-time migrations or replicate ongoing changes to keep sources and targets in sync. Because AWS DMS is a part of the AWS Cloud, you get the cost efficiency, speed to market, security, and flexibility that AWS services offer.
+- [Using an Amazon DynamoDB database as a target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.DynamoDB.html)
+- [Creating tasks for ongoing replication using AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Task.CDC.html)
+  > You can create an AWS DMS task that captures ongoing changes from the source data store. You can do this capture while you are migrating your data. You can also create a task that captures ongoing changes after you complete your initial (full-load) migration to a supported target data store. This process is called ongoing replication or change data capture (CDC). AWS DMS uses this process when replicating ongoing changes from a source data store. This process works by collecting changes to the database logs using the database engine's native API.
+- [Migrate an on-premises Microsoft SQL Server database to Amazon RDS for SQL Server](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-on-premises-microsoft-sql-server-database-to-amazon-rds-for-sql-server.html)
+  - Using AWS DMS
+  - Using native SQL Server tools
+- [Migrate Your Procedural SQL Code with the AWS Schema Conversion Tool](https://aws.amazon.com/blogs/database/migrate-your-procedural-sql-code-with-the-aws-schema-conversion-tool/)
+- [Enable large-scale database migrations with AWS DMS and AWS Snowball](https://aws.amazon.com/blogs/storage/enable-large-scale-database-migrations-with-aws-dms-and-aws-snowball/)
+- [Migrating large data stores using AWS Database Migration Service and AWS Snowball Edge](https://web.archive.org/web/20230921201835/https://docs.aws.amazon.com/dms/latest/userguide/CHAP_LargeDBs.html)
+> When you're using an Edge device, the data migration process has the following stages:
+> 1. You use the AWS Schema Conversion Tool (AWS SCT) to extract the data locally and move it to an Edge device.
+> 2. You ship the Edge device or devices back to AWS.
+> 3. After AWS receives your shipment, the Edge device automatically loads its data into an Amazon S3 bucket.
+> 4. AWS DMS takes the files and migrates the data to the target data store. If you are using change data capture (CDC), those updates are written to the Amazon S3 bucket and then applied to the target data store.
+- [Streaming data from Amazon S3 to Amazon Kinesis Data Streams using AWS DMS](https://aws.amazon.com/blogs/big-data/streaming-data-from-amazon-s3-to-amazon-kinesis-data-streams-using-aws-dms/)
+
+## AWS Glue
+- [What is AWS Glue?](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html)
+  > AWS Glue is a fully managed extract, transform, and load (ETL) service. AWS Glue has three main components: 
+  > 1) a crawler that automatically scans your data sources, identifies data formats, and infers schemas, 
+  > 2) a fully managed ETL service that allows you to transform and move data to various destinations, and 
+  > 3) a Data Catalog that stores metadata information about databases and tables either stored in S3 or an ODBC- or JDBC-compliant data store.
+- [Deprecated: What is AWS Data Pipeline?](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/what-is-datapipeline.html)
+  > Now, there are other services that offer customers a better experience. For example, you can use:
+  > - AWS Glue to to run and orchestrate Apache Spark applications
+  > - AWS Step Functions to help orchestrate AWS service components
+  > - Amazon Managed Workflows for Apache Airflow (Amazon MWAA) to help manage workflow orchestration for Apache Airflow.
+
+## AWS Transfer Family
+- [AWS Transfer Family | Secure File Transfer Service](https://aws.amazon.com/aws-transfer-family/)
+  ![](AWSResources/transfer-family-diagram.png "")
+- [What is AWS Transfer Family?](https://docs.aws.amazon.com/transfer/latest/userguide/what-is-aws-transfer-family.html)
+- [AWS Transfer Family managed workflows](https://docs.aws.amazon.com/transfer/latest/userguide/transfer-workflows.html)
+
+## Snowball
+- [AWS Snowball](https://aws.amazon.com/snowball/)
+  - Discontinued ~~Snowcone: 8 TB HDD + 14TB SSD~~
+  - Discontinued ~~SNOWBALL EDGE STORAGE OPTIMIZED 80 TB~~
+  - SNOWBALL EDGE STORAGE OPTIMIZED 210 TB
+  - SNOWBALL EDGE COMPUTE OPTIMIZED 28 TB
+- [AWS Snowball features](https://aws.amazon.com/snowball/features/)
+- [AWS stops selling Snowmobile truck for cloud migrations March 2024](https://www.cnbc.com/2024/04/17/aws-stops-selling-snowmobile-truck-for-cloud-migrations.html)
+  - 100 PB
+  - suggested for over 10 PB
+- [AWS Snow device updates](https://aws.amazon.com/blogs/storage/aws-snow-device-updates/)
+  > Effective November 12, 2024, AWS will discontinue previous generation AWS Snowball devices and both Snowcone devices (HDD and SDD). We will continue to support existing customers using these end-of-life devices until November 12, 2025. The latest generation AWS Snowball devices are available for all customers.
